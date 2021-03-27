@@ -1,0 +1,70 @@
+#include "TitanAddons\description.hpp"
+
+// Mission Parameter  ----------------------------------------------------------------------------------------
+	class Header {
+		gameType=COOP;
+		minPlayers=01;
+		maxPlayers=67;
+	};
+
+	saving = false;
+	debriefing = true;
+
+// Mission Presentation  ---------------------------------------------------------------------------------v21-03-23
+	onLoadName = "Boot CAMP 8th SFG	(v21-03-23)";
+	Author = "8th SFG TITAN Platoon";
+	loadScreen = "Bilder\MissionPicture.jpg";
+	onLoadIntro= "SI VIS PACEM PARA BELLUM";
+
+	overviewText = "SI VIS PACEM PARA BELLUM";
+	overviewTextLocked = "SI VIS PACEM PARA BELLUM";
+	overviewPicture = "Bilder\MissionPicture.jpg";
+	onLoadIntroTime = false;
+	onLoadMissionTime = false;
+
+// Slotting  ---------------------------------------------------------------------------------------------------
+	disabledAI = true;
+	joinUnassigned = false;
+	skipLobby = false;
+	enableDebugConsole = 2;
+
+// Items/Information -------------------------------------------------------------------------------------------
+	showGPS = true;
+	showCompass = true;
+	showMap = true;
+	showNotePad = true;
+	showPad = true;
+	showWatch = true;
+	showUAVFeed = true;
+	showHUD[] = {
+		true,	// Scripted HUD (same as showHUD command)
+		true,	// Vehicle + soldier info
+		false,	// Vehicle radar [HIDDEN]
+		false,	// Vehicle compass [HIDDEN]
+		true,	// Tank direction indicator
+		true,	// Commanding menu
+		false,	// Group Bar
+		true,	// HUD Weapon Cursors
+		true	// HUD Squad Radar
+	};
+
+// Revive/Respawn config settings -------------------------------------------------------------------------------
+	respawn = 3;
+	respawnDelay = 15;
+	respawnTemplates[] = {"MenuPosition"};
+	respawnOnStart = -1;
+
+//Garbage Collector -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	corpseManagerMode = 1; // 0 = None - None of the units are managed by the manager / 1 = All - All units are managed by the manager / 2 = None_But_Respawned / 3 = All_But_Respawned
+	corpseLimit = 15; // Corpse limit before which ( <= ) corpseRemovalMaxTime applies and after which ( > ) corpseRemovalMinTime
+	corpseRemovalMinTime = 10; //in seconds / Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is breached
+	corpseRemovalMaxTime = 600; //seconds / Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
+
+	wreckManagerMode = 1; // 0 = None - None of the vehicles are managed by the manager / 1 = All - All vehicles are managed by the manager / 2 = None_But_Respawned / 3 = All_But_Respawned
+	wreckLimit = 5; // Vehicle wreck limit before which ( <= ) wreckRemovalMaxTime applies and after which ( > ) wreckRemovalMinTime applies (see below).
+	wreckRemovalMinTime = 10; //seconds / Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
+	wreckRemovalMaxTime = 600; //seconds / Maximum time a wreck can remain on the ground if total number of wrecks is equal or under wreckLimit.
+
+	minPlayerDistance = 50; //meters
+
+
