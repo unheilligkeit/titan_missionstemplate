@@ -1,0 +1,76 @@
+/* ================ Metadaten =============== */
+class header
+{
+   gameType = COOP;
+   minPlayers = 1;
+   maxPlayers = 88;
+};
+
+/* ================ Ladebildschirm =============== */
+onLoadName = "8th SFG Missionstemplate";
+author = "8th SFG TITAN Platoon";
+OnLoadMission = "";
+Respawn = "BASE";
+respawnTemplates[]  = {"MenuPosition","Spectator"};
+respawnDelay    = 30;
+respawnOnStart    = 0;
+overviewText = "SI VIS PACEM PARA BELLUM";
+overviewTextLocked = "SI VIS PACEM PARA BELLUM";
+DisabledAI = true;
+loadScreen = "";
+overviewPicture = "";
+enableDebugConsole = 1;
+
+
+/* ================ Includes =============== */
+
+class CfgFunctions
+{
+	#include "functions\CfgFunctions.hpp"
+};
+
+/*================== Prameter ============ */
+
+class Params
+{
+
+		class param_tarnmuster
+	{
+		title="Tarnmuster";
+		values[] = {0,1};
+		texts[] = {"BDU","MTP","JTP","WTP"};
+		default = 0;
+	};
+
+		class param_hc
+	{
+		title="Headless Client";
+		values[] = {0,1};
+		texts[] = {"Deaktiviert","Aktiviert"};
+		default = 0;
+	};
+
+        class debug_mode
+    {
+        title="Debuge Mode";
+        values[] = {0,1};
+        texts[] = {"Deaktiviert","Aktiviert"};
+        default = 0;
+    };
+
+};
+
+
+
+class CfgDebriefing
+{
+	class End2
+	{
+		title = "Mission Erfolgreich";
+		subtitle = "";
+		description = "Toll Leistung ..";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
