@@ -1,4 +1,4 @@
-class Titan
+class titan
 {
     tag = "titan";
 
