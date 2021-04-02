@@ -5,6 +5,7 @@ class Titan
     class titan_loudout
     {
         file = "titan_loudout\functions"
-        
+        class loadoutremove {};
+
     };
 };
