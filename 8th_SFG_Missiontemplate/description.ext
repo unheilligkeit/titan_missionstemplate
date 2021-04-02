@@ -3,7 +3,7 @@ class header
 {
    gameType = COOP;
    minPlayers = 1;
-   maxPlayers = 88;
+   maxPlayers = 64;
 };
 
 /* ================ Ladebildschirm =============== */
