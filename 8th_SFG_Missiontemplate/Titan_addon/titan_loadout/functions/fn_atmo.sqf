@@ -12,39 +12,16 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 // uniform laden
 
-switch (_tarnmuster) do
-{
-
-    // BDU
-    case ("0"): {
-
-        _unit forceAddUniform "U_B_CombatUniform_mcam";
-
-        _bdu_helm = profileNamespace getVariable "titan_bdu_helm";
-        if (isNil _bdu_helm) then {
-
-            _helmearray = selectRandom ["TITAN_Beret_Enlisted"];
-            _unit addHeadgear _helmearray;
-
-        } else {
-
-            _unit addHeadgear _bdu_helm;
-
-        };
-
-        _unit addVest "V_Rangemaster_belt";
-
-
-    };
-
     // MTP
-    case ("1"): {
+    if (_tarnmuster == 0) then
+    {
 
         _uniformarray = selectRandom ["MTP_V1_Full","MTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
         _unit forceAddUniform _uniformarray ;
 
         _mtp_atmo_helm = profileNamespace getVariable "titan_mtp_atmo_helm";
-        if (isNil _mtp_atmo_helm) then {
+        if (isNil _mtp_atmo_helm) then
+        {
 
             _helmearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","milgp_h_airframe_02_RGR_hexagon"];
             _unit addHeadgear _helmearray;
@@ -56,7 +33,8 @@ switch (_tarnmuster) do
         };
 
         _mtp_atmo_brille = profileNamespace getVariable "titan_mtp_atmo_brille";
-        if (isNil _mtp_atmo_brille) then {
+        if (isNil _mtp_atmo_brille) then
+        {
 
             _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
             _unit addGoggles _brillearray;
@@ -75,13 +53,15 @@ switch (_tarnmuster) do
 
 
     // JTP
-    case ("2"): {
+    if (_tarnmuster == 1) then
+    {
 
         _uniformarray = selectRandom ["JTP_V1_Sleeved","JTP_V1_Full","JTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
         _unit forceAddUniform _uniformarray ;
 
         _jtp_atmo_helm = profileNamespace getVariable "titan_jtp_atmo_helm";
-        if (isNil _jtp_atmo_helm) then {
+        if (isNil _jtp_atmo_helm) then
+        {
 
             _helmearray = selectRandom ["milgp_h_airframe_04_goggles_RGR_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","HALO_MOWHAK_2","milgp_h_airframe_02_RGR_hexagon"];
             _unit addHeadgear _helmearray;
@@ -93,7 +73,8 @@ switch (_tarnmuster) do
         };
 
         _jtp_atmo_brille = profileNamespace getVariable "titan_jtp_atmo_brille";
-        if (isNil _jtp_atmo_brille) then {
+        if (isNil _jtp_atmo_brille) then
+        {
 
             _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
             _unit addGoggles _brillearray;
@@ -110,13 +91,15 @@ switch (_tarnmuster) do
     };
 
     //WTP
-    case ("3"): {
+    if (_tarnmuster == 2) then
+    {
 
         _uniformarray = selectRandom ["WTP_V1_Full","wtp_V1_Neck"];
         _unit forceAddUniform _uniformarray ;
 
         _wtp_atmo_helm = profileNamespace getVariable "titan_wtp_atmo_helm";
-        if (isNil _wtp_atmo_helm) then {
+        if (isNil _wtp_atmo_helm) then
+        {
 
             _helmearray = selectRandom ["milgp_h_airframe_04_goggles_mca","HALO_MOWHAK","milgp_h_airframe_06_mca","milgp_h_airframe_01_mca","milgp_h_airframe_02_mca"];
             _unit addHeadgear _helmearray;
@@ -128,7 +111,8 @@ switch (_tarnmuster) do
         };
 
         _wtp_atmo_brille = profileNamespace getVariable "titan_wtp_atmo_brille";
-        if (isNil _wtp_atmo_brille) then {
+        if (isNil _wtp_atmo_brille) then
+        {
 
             _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
             _unit addGoggles _brillearray;
@@ -144,7 +128,7 @@ switch (_tarnmuster) do
 
     };
 
-};
+
 
 [_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
 
@@ -155,38 +139,35 @@ switch (_tarnmuster) do
 
 // waffen und equip
 
-switch (_tarnmuster) do
-{
+
 
     // mtp waffen
-    case ("1"): {
+    if (_tarnmuster == 0) then
+    {
         _unit addWeapon "SMA_HK416GLCQB";
 		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_TAN";
 		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_RDS";
     };
 
     // jtp waffen
-    case ("2"): {
+    if (_tarnmuster == 1) then
+    {
         _unit addWeapon "SMA_HK416GLCQB_ODP";
 		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
 		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_RDS";
     };
 
     // wtp waffen
-    case ("3"): {
+    if (_tarnmuster == 2) then 
+    {
         _unit addWeapon "SMA_HK416GLCQB_B";
 		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
 		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_RDS";
     };
-};
 
-if (_tarnmuster == 0) then {
 
-    _unit addWeapon "hgun_Pistol_heavy_01_F";
 
-} else {
-
-    //sec Weapon
+        //sec Weapon
 		_unit addWeapon "hgun_Pistol_heavy_01_F";
 
 		//Launcher
@@ -220,7 +201,7 @@ if (_tarnmuster == 0) then {
 
         [_unit] call titan_fnc_atmo_muni ;
 
-};
+
 
         _unit action ["SwitchWeapon", _unit, _unit, 100];
         missionNamespace setVariable ["titan_loadout_class", atmo];
