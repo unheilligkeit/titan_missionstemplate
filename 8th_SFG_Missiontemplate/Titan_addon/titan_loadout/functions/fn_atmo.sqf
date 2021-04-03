@@ -152,14 +152,73 @@ switch (_tarnmuster) do
 
 
 
-// waffen laden
+// waffen und equip
+
+switch (_tarnmuster) do
+{
+
+    // mtp waffen
+    case (1): {
+        _unit addWeapon "SMA_HK416GLCQB";
+		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_TAN";
+		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_RDS";
+    };
+
+    // jtp waffen
+    case (2): {
+        _unit addWeapon "SMA_HK416GLCQB_ODP";
+		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_RDS";
+    };
+
+    // wtp waffen
+    case (3): {
+        _unit addWeapon "SMA_HK416GLCQB_B";
+		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_RDS";
+    };
+};
+
+if (_tarnmuster == 0) then {
+
+    _unit addWeapon "hgun_Pistol_heavy_01_F";
+
+} else {
+
+    //sec Weapon
+		_unit addWeapon "hgun_Pistol_heavy_01_F";
+
+		//Launcher
+		_unit addWeapon "launch_MRAWS_green_F";
+		_unit addSecondaryWeaponItem "acc_pointer_IR";
+		_unit addWeapon "Rangefinder";
+		_unit addPrimaryWeaponItem "dcd_suck_M203";
+
+		//Items
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "tf_anprc152";
+		_unit linkItem "ItemGPS";
+
+        _unit addItem "acc_pointer_IR";
+		_unit addItem "muzzle_snds_acp";
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_microDAGR";
+		_unit addItem "SMA_CMORE";
+        _unit addItem "SMA_BARSKA";
+        _unit addItem "SMA_supp1tan_556";
+
+		//Backpack
+		_unit addItem "ACE_NVG_Wide";
+		_unit addItem "Patrol_Cap";
 
 
+        [_unit] call titan_fnc_addmedicalequipment ;
 
 
+        [_unit] call titan_fnc_atmo_muni ;
 
+};
 
-
-
-
-//munition und gegenstände
+        _unit action ["SwitchWeapon", _unit, _unit, 100];
