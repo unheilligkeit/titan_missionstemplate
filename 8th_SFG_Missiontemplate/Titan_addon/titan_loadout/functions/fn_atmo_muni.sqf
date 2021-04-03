@@ -1,5 +1,10 @@
+/*
+Hinzufügen von Mmunition für atmo
 
+[player] call titan_fnc_atmo_muni;
 
+Returns: Nothing
+*/
 
 
 
