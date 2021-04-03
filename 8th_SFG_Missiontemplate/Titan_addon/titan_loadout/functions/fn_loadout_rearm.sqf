@@ -11,7 +11,8 @@ _loadclass = missionNamespace getVariable "titan_loadout_class";
 [_unit] call titan_fnc_removeitems;
 
 
-switch (_loadclass) do {
+switch (_loadclass) do 
+{
 
     case ("atmo"):
     {
