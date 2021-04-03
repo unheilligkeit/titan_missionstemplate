@@ -62,7 +62,7 @@ switch (_tarnmuster) do
 
         } else {
 
-            _unit addGoggles _mtp_atmo_helm;
+            _unit addGoggles _mtp_atmo_brille;
 
         };
 
@@ -99,7 +99,7 @@ switch (_tarnmuster) do
 
         } else {
 
-            _unit addGoggles _jtp_atmo_helm;
+            _unit addGoggles _jtp_atmo_brille;
 
         };
 
@@ -108,9 +108,41 @@ switch (_tarnmuster) do
 
     };
 
+    //WTP
     case (3): {
-        //code
+
+        _uniformarray = selectRandom ["WTP_V1_Full","wtp_V1_Neck"];
+        _unit forceAddUniform _uniformarray ;
+
+        _wtp_atmo_helm = profileNamespace getVariable "titan_wtp_atmo_helm";
+        if (isNil _wtp_atmo_helm) then {
+
+            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_mca","HALO_MOWHAK","milgp_h_airframe_06_mca","milgp_h_airframe_01_mca","milgp_h_airframe_02_mca"];
+            _unit addHeadgear _helmearray;
+
+        } else {
+
+            _unit addHeadgear _wtp_atmo_helm;
+
+        };
+
+        _wtp_atmo_brille = profileNamespace getVariable "titan_wtp_atmo_brille";
+        if (isNil _wtp_atmo_brille) then {
+
+            _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
+            _unit addGoggles _brillearray;
+
+        } else {
+
+            _unit addGoggles _wtp_atmo_brille;
+
+        };
+
+        _unit addVest "milgp_v_marciras_grenadier_belt_rgr";
+        _unit addBackpack "SOG_ATMO_WTP";
+
     };
+
 };
 
 [_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
