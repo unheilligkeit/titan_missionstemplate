@@ -37,7 +37,23 @@ switch (_tarnmuster) do {
 
     // MTP
     case (1): {
-        //code
+
+        _uniformarray = selectRandom ["MTP_V1_Full","MTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
+        _unit forceAddUniform _uniformarray ;
+
+        _mtp_atmo_helm = profileNamespace getVariable "titan_mtp_atmo_helm";
+        if (isNil _mtp_atmo_helm) then {
+
+            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","milgp_h_airframe_02_RGR_hexagon"];
+            _unit addHeadgear _helmearray;
+
+        } else {
+
+            _unit addHeadgear _mtp_atmo_helm;
+
+        };
+
+
     };
 
     case (2): {
