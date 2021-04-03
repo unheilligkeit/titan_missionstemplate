@@ -15,10 +15,11 @@ switch (_tarnmuster) do {
 
     // BDU
     case (0): {
+
         _bdu_helm = profileNamespace getVariable "titan_bdu_helm";
         if (isNil _bdu_helm) then {
 
-            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon"];
+            _helmearray = selectRandom ["TITAN_Beret_Enlisted"];
             _unit addHeadgear _helmearray;
 
         } else {
