@@ -174,7 +174,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 		_unit addWeapon "launch_MRAWS_green_F";
 		_unit addSecondaryWeaponItem "acc_pointer_IR";
 		_unit addWeapon "Rangefinder";
-		_unit addPrimaryWeaponItem "dcd_suck_M203";
 
 		//Items
 		_unit linkItem "ItemMap";
