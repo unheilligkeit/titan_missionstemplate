@@ -2,7 +2,7 @@
 
 Hinzufügen von Medicalequipment
 
-[player] call titan_fnc_medicalequipment;
+[player] call titan_fnc_addmedicalequipment;
 
 Returns: Nothing
 
