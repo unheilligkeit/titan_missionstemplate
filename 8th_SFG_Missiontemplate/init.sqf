@@ -7,7 +7,7 @@
     "_caller distance _target < 3",						// Condition for the action to progress
     {},													// Code executed when action starts
     {},													// Code executed on every progress tick
-    { _this call titan_fnc_loadout_rearm },				// Code executed on completion
+    { _caller call titan_fnc_loadout_rearm },				// Code executed on completion
     {},													// Code executed on interrupted
     [],													// Arguments passed to the scripts as _this select 3
     12,													// Action duration [s]
