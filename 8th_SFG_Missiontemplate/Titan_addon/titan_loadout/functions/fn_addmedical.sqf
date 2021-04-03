@@ -11,6 +11,6 @@ Returns: Nothing
 params ["_unit"];
 
 
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_epinephrine";};
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_morphine";};
-for "_i" from 1 to 20 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_epinephrine";};
+for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 20 do {_unit addItemToUniform "ACE_fieldDressing";};
