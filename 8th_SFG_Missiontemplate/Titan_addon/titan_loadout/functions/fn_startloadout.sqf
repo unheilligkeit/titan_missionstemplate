@@ -38,3 +38,5 @@ for "_i" from 1 to 2 do {_unit addItem "Chemlight_red";};
 for "_i" from 1 to 2 do {_unit addItem "Chemlight_green";};
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
+
+missionNamespace setVariable ["titan_loadout_class", "start"];
