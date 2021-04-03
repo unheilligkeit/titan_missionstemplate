@@ -16,7 +16,7 @@ switch (_tarnmuster) do
 {
 
     // BDU
-    case (0): {
+    case ("0"): {
 
         _unit forceAddUniform "U_B_CombatUniform_mcam";
 
@@ -38,7 +38,7 @@ switch (_tarnmuster) do
     };
 
     // MTP
-    case (1): {
+    case ("1"): {
 
         _uniformarray = selectRandom ["MTP_V1_Full","MTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
         _unit forceAddUniform _uniformarray ;
@@ -75,7 +75,7 @@ switch (_tarnmuster) do
 
 
     // JTP
-    case (2): {
+    case ("2"): {
 
         _uniformarray = selectRandom ["JTP_V1_Sleeved","JTP_V1_Full","JTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
         _unit forceAddUniform _uniformarray ;
@@ -110,7 +110,7 @@ switch (_tarnmuster) do
     };
 
     //WTP
-    case (3): {
+    case ("3"): {
 
         _uniformarray = selectRandom ["WTP_V1_Full","wtp_V1_Neck"];
         _unit forceAddUniform _uniformarray ;
@@ -159,21 +159,21 @@ switch (_tarnmuster) do
 {
 
     // mtp waffen
-    case (1): {
+    case ("1"): {
         _unit addWeapon "SMA_HK416GLCQB";
 		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_TAN";
 		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_RDS";
     };
 
     // jtp waffen
-    case (2): {
+    case ("2"): {
         _unit addWeapon "SMA_HK416GLCQB_ODP";
 		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
 		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_RDS";
     };
 
     // wtp waffen
-    case (3): {
+    case ("3"): {
         _unit addWeapon "SMA_HK416GLCQB_B";
 		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
 		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_RDS";
