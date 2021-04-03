@@ -60,7 +60,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _unit forceAddUniform _uniformarray ;
 
         _jtp_atmo_helm = profileNamespace getVariable "titan_jtp_atmo_helm";
-        if (isNil _jtp_atmo_helm) then
+        if (isNil "_jtp_atmo_helm") then
         {
 
             _helmearray = selectRandom ["milgp_h_airframe_04_goggles_RGR_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","HALO_MOWHAK_2","milgp_h_airframe_02_RGR_hexagon"];
@@ -73,7 +73,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         };
 
         _jtp_atmo_brille = profileNamespace getVariable "titan_jtp_atmo_brille";
-        if (isNil _jtp_atmo_brille) then
+        if (isNil "_jtp_atmo_brille") then
         {
 
             _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
@@ -98,7 +98,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _unit forceAddUniform _uniformarray ;
 
         _wtp_atmo_helm = profileNamespace getVariable "titan_wtp_atmo_helm";
-        if (isNil _wtp_atmo_helm) then
+        if (isNil" _wtp_atmo_helm") then
         {
 
             _helmearray = selectRandom ["milgp_h_airframe_04_goggles_mca","HALO_MOWHAK","milgp_h_airframe_06_mca","milgp_h_airframe_01_mca","milgp_h_airframe_02_mca"];
@@ -111,7 +111,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         };
 
         _wtp_atmo_brille = profileNamespace getVariable "titan_wtp_atmo_brille";
-        if (isNil _wtp_atmo_brille) then
+        if (isNil "_wtp_atmo_brille") then
         {
 
             _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
