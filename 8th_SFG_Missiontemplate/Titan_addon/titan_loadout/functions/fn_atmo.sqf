@@ -36,7 +36,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_atmo_brille") then
         {
 
-            _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["milgp_f_face_shield_tactical_shemagh_RGR","milgp_f_face_shield_tactical_MC","milgp_f_face_shield_goggles_shemagh_MC","milgp_f_face_shield_tactical_shemagh_CB"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -76,7 +76,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_atmo_brille") then
         {
 
-            _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["milgp_f_face_shield_goggles_shemagh_RGR","milgp_f_face_shield_shemagh_RGR","Balaclava_jtp2","milgp_f_face_shield_tactical_shemagh_CB"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -114,7 +114,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_wtp_atmo_brille") then
         {
 
-            _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["Balaclava_wtp3","Balaclava_wtp2","Balaclava_wtp1","milgp_f_face_shield_BLK"];
             _unit addGoggles _brillearray;
 
         } else {
