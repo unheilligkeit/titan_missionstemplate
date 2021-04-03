@@ -6,6 +6,7 @@ class titan
     {
         file = "titan_loudout\functions"
         class loadoutremove {};
+        class addmedicalequipment{};
 
     };
 };
