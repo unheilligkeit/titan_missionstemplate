@@ -11,7 +11,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 // uniform laden
 
-switch (_tarnmuster) do {
+switch (_tarnmuster) do
+{
 
     // BDU
     case (0): {
@@ -56,7 +57,7 @@ switch (_tarnmuster) do {
         _mtp_atmo_brille = profileNamespace getVariable "titan_mtp_atmo_brille";
         if (isNil _mtp_atmo_brille) then {
 
-            _brillearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","milgp_h_airframe_02_RGR_hexagon"];
+            _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -67,19 +68,52 @@ switch (_tarnmuster) do {
 
         _unit addVest "milgp_v_marciras_grenadier_belt_rgr";
         _unit addBackpack "SOG_ATMO_MTP";
-        [_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
 
 
     };
 
+
+    // JTP
     case (2): {
-        //code
+
+        _uniformarray = selectRandom ["JTP_V1_Sleeved","JTP_V1_Full","JTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
+        _unit forceAddUniform _uniformarray ;
+
+        _jtp_atmo_helm = profileNamespace getVariable "titan_jtp_atmo_helm";
+        if (isNil _jtp_atmo_helm) then {
+
+            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_RGR_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","HALO_MOWHAK_2","milgp_h_airframe_02_RGR_hexagon"];
+            _unit addHeadgear _helmearray;
+
+        } else {
+
+            _unit addHeadgear _jtp_atmo_helm;
+
+        };
+
+        _jtp_atmo_brille = profileNamespace getVariable "titan_jtp_atmo_brille";
+        if (isNil _jtp_atmo_brille) then {
+
+            _brillearray = selectRandom ["mFrame_Oakley_Embr","Oakley_RGR_Clear","Oakley_MTP_Dark","milgp_f_face_shield_tactical_shemagh_CB"];
+            _unit addGoggles _brillearray;
+
+        } else {
+
+            _unit addGoggles _jtp_atmo_helm;
+
+        };
+
+        _unit addVest "milgp_v_marciras_grenadier_belt_rgr";
+        _unit addBackpack "8th_Kitbag_JTP_atmo";
+
     };
 
     case (3): {
         //code
     };
 };
+
+[_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
 
 
 
