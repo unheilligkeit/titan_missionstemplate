@@ -221,5 +221,9 @@ if (_tarnmuster == 0) then {
 
 };
 
+<<<<<<< HEAD
         _unit action ["SwitchWeapon", _unit, _unit, 100];
         missionNamespace setVariable ["titan_loadout_class", atmo];
+=======
+_unit action ["SwitchWeapon", _unit, _unit, 100];
+>>>>>>> 60d7977e7844f45766aef14b406bf5811d04f90d
