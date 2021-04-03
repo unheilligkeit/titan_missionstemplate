@@ -70,13 +70,6 @@ switch (_tarnmuster) do {
         [_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
 
 
-
-
-
-
-
-
-
     };
 
     case (2): {
