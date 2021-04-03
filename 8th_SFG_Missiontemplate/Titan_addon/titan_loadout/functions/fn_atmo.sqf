@@ -1,4 +1,5 @@
 
+params ["_unit"];
 _tarnmuster = "param_tarnmuster" call BIS_fnc_getParamValue;
 
 
