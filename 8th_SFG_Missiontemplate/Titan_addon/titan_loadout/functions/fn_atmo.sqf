@@ -11,6 +11,23 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 // uniform laden
 
+switch (_tarnmuster) do {
+    case (0): {
+        //code
+    };
+
+    case (1): {
+        //code
+    };
+
+    case (2): {
+        //code
+    };
+
+    case (3): {
+        //code
+    };
+};
 
 
 
