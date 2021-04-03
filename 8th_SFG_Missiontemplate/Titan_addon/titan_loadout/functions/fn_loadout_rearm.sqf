@@ -23,6 +23,60 @@ switch (_loadclass) do
         [_unit] call titan_fnc_atmo_muni;
 
     };
+
+    case ("cct"): {
+        //code
+    };
+
+    case ("eng"): {
+        //code
+    };
+
+    case ("fix"): {
+        //code
+    };
+
+    case ("ftl"): {
+        //code
+    };
+
+    case ("lrr"): {
+        //code
+    };
+
+    case ("lrs"): {
+        //code
+    };
+
+    case ("ptl"): {
+        //code
+    };
+
+    case ("rct"): {
+        //code
+    };
+
+    case ("rifle"): {
+        //code
+    };
+
+    case ("rot"): {
+        //code
+    };
+
+    case ("sql"): {
+        //code
+    };
+
+    case ("sotac"): {
+        //code
+    };
+
+    case ("wpn"): {
+        //code
+    };
+
+
 };
 
 systemChat "Rearm Done";
