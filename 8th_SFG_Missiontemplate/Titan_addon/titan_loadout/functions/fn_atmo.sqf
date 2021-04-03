@@ -53,6 +53,18 @@ switch (_tarnmuster) do {
 
         };
 
+        _mtp_atmo_brille = profileNamespace getVariable "titan_mtp_atmo_brille";
+        if (isNil _mtp_atmo_brille) then {
+
+            _brillearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","milgp_h_airframe_02_RGR_hexagon"];
+            _unit addGoggles _brillearray;
+
+        } else {
+
+            _unit addGoggles _mtp_atmo_helm;
+
+        };
+
         _unit addVest "milgp_v_marciras_grenadier_belt_rgr";
         _unit addBackpack "SOG_ATMO_MTP";
         [_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
