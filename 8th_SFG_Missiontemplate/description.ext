@@ -37,7 +37,7 @@ class Params
 		class param_tarnmuster
 	{
 		title="Tarnmuster";
-		values[] = {0,1};
+		values[] = {0,1,2,3};
 		texts[] = {"BDU","MTP","JTP","WTP"};
 		default = 0;
 	};
