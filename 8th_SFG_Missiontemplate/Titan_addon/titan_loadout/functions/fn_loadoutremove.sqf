@@ -17,10 +17,10 @@ removeAllItems _unit;
 removeAllAssignedItems _unit;
 removeUniform _unit;
 removeVest _unit;
-if (player call zade_boc_fnc_chestpack != "")
+if (_unit call zade_boc_fnc_chestpack != "")
 then {
-		[player] call zade_boc_fnc_actionSwap;
-		[player] call zade_boc_fnc_removeChestpack;
+		[_unit] call zade_boc_fnc_actionSwap;
+		[_unit] call zade_boc_fnc_removeChestpack;
 	 };
 removeBackpack _unit;
 removeHeadgear _unit;

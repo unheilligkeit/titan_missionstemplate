@@ -6,7 +6,7 @@ class titan
     {
         file = "Titan_addon\titan_loadout\functions"
         class loadoutremove {};
-        class addmedicalequipment{};
+        class addmedicalequipment {};
 
     };
 };
