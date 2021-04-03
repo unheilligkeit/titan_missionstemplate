@@ -221,4 +221,4 @@ if (_tarnmuster == 0) then {
 
 };
 
-        _unit action ["SwitchWeapon", _unit, _unit, 100];
+_unit action ["SwitchWeapon", _unit, _unit, 100];
