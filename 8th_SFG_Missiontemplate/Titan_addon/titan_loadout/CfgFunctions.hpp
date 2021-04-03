@@ -9,6 +9,7 @@ class titan
         class addmedicalequipment {};
         class atmo {};
         class atmo_muni {};
+        class removeitems {};
 
     };
 };
