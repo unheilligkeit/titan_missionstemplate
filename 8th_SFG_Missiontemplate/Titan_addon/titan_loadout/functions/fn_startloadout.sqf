@@ -36,3 +36,5 @@ _unit linkItem "ItemGPS";
 _unit addItem "ACE_MapTools";
 for "_i" from 1 to 2 do {_unit addItem "Chemlight_red";};
 for "_i" from 1 to 2 do {_unit addItem "Chemlight_green";};
+
+_unit action ["SwitchWeapon", _unit, _unit, 100];
