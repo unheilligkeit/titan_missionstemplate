@@ -16,6 +16,8 @@ switch (_tarnmuster) do {
     // BDU
     case (0): {
 
+        _unit forceAddUniform "U_B_CombatUniform_mcam";
+
         _bdu_helm = profileNamespace getVariable "titan_bdu_helm";
         if (isNil _bdu_helm) then {
 
@@ -27,6 +29,9 @@ switch (_tarnmuster) do {
             _unit addHeadgear _bdu_helm;
 
         };
+
+        _unit addVest "V_Rangemaster_belt";
+
 
     };
 
