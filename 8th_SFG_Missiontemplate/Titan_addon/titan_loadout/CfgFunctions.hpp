@@ -10,6 +10,7 @@ class titan
         class atmo {};
         class atmo_muni {};
         class removeitems {};
+        class loadout_rearm {};
 
     };
 };
