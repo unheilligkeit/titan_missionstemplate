@@ -14,4 +14,4 @@
     0,													// Priority
     false,												// Remove on completion
     false												// Show in unconscious state
-] remoteExec ["BIS_fnc_holdActionAdd", 0, _myLaptop];
+] remoteExec ["BIS_fnc_holdActionAdd", 0, uav1];
