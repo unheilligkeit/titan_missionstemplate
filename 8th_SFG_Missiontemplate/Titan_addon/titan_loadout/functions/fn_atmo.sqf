@@ -12,10 +12,24 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 // uniform laden
 
 switch (_tarnmuster) do {
+
+    // BDU
     case (0): {
-        //code
+        _bdu_helm = profileNamespace getVariable "titan_bdu_helm";
+        if (isNil _bdu_helm) then {
+
+            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon"];
+            _unit addHeadgear _helmearray;
+
+        } else {
+
+            _unit addHeadgear _bdu_helm;
+
+        };
+
     };
 
+    // MTP
     case (1): {
         //code
     };
