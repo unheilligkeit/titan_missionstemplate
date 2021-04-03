@@ -53,6 +53,17 @@ switch (_tarnmuster) do {
 
         };
 
+        _unit addVest "milgp_v_marciras_grenadier_belt_rgr";
+        _unit addBackpack "SOG_ATMO_MTP";
+        [_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
+
+
+
+
+
+
+
+
 
     };
 
