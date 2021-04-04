@@ -65,7 +65,9 @@ switch (_loadclass) do
     };
 
     case ("rifle"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_rifle_muni;
     };
 
     case ("rot"): {
@@ -73,11 +75,15 @@ switch (_loadclass) do
     };
 
     case ("sql"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_sql_muni;
     };
 
     case ("sotac"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_sotac_muni;
     };
 
     case ("wpn"): {

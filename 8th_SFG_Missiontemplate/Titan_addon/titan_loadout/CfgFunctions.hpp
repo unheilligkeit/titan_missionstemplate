@@ -17,6 +17,12 @@ class titan
         class rct_muni {};
         class ptl {};
         class ptl_muni {};
+        class rifle {};
+        class rifle_muni {};
+        class sql {};
+        class sql_muni {};
+        class sotac {};
+        class sotac_muni {};
         class removeitems {};
         class loadout_rearm {};
         class startloadout {};
