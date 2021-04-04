@@ -18,8 +18,8 @@ for "_i" from 1 to 2 do {_unit addItem "ACE_HandFlare_Yellow";};
 for "_i" from 1 to 2 do {_unit addItem "ACE_HandFlare_Green";};
 for "_i" from 1 to 4 do {_unit addItem "ACE_IR_Strobe_Item";};
 for "_i" from 1 to 2 do {_unit addItem "ACE_CableTie";};
+
 for "_i" from 1 to 5 do {_unit addItem "HandGrenade";};
-  
 for "_i" from 1 to 8 do {_unit addItem "SMA_20Rnd_762x51mm_Mk316_Mod_0_Special_Long_Range_Tracer";};
 for "_i" from 1 to 4 do {_unit addItem "11Rnd_45ACP_Mag";};
 
