@@ -16,19 +16,19 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom ["MTP_V1_Full"];
+        _uniformarray = selectRandom ["MTP_V4_Full"];
         _unit forceAddUniform _uniformarray ;
 
         _mtp_lrr_helm = profileNamespace getVariable "titan_mtp_lrr_helm";
         if (isNil "_mtp_lrr_helm") then
         {
 
-            _helmearray = selectRandom ["Booniehat_daguet_hs"];
+            _helmearray = selectRandom ["cap_tac_tan"];
             _unit addHeadgear _helmearray;
 
         } else {
 
-            _unit addHeadgear _mtp_lrr_helm;
+            _unit addHeadgear _mtp_lrs_helm;
 
         };
 
@@ -36,7 +36,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_lrr_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_shades_shemagh_MC"];
+            _brillearray = selectRandom ["shesh_neck_tan"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -45,8 +45,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "mbss_recon_OD";
-        _unit addBackpack "SOG_mark";
+        _unit addVest "JPC_4_OD";
+        _unit addBackpack "SOG_spotter";
 
 
     };
@@ -144,10 +144,11 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 // mtp waffen
   if (_tarnmuster == 0) then
   {
-    _unit addWeapon "arifle_SPAR_03_snd_F";
-	  _unit addPrimaryWeaponItem "bipod_01_F_snd";
-	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_TAN";
-    _unit addPrimaryWeaponItem "optic_DMS";
+    _unit addWeapon "SMA_Mk17_EGLM";
+	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
+	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+    _unit addWeapon "Laserdesignator";
+    _unit addMagazine "Laserbatteries";
   };
 
 // jtp waffen
@@ -182,27 +183,30 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "ItemWatch";
   _unit linkItem "tf_anprc152";
   _unit linkItem "B_UavTerminal";
+  _unit linkItem "milgp_f_tactical_khk";
 
-  _unit addItem "acc_pointer_IR";
-  _unit addItem "muzzle_snds_B_arid_F";
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
+  _unit addItem "SMA_eotech552";
+  _unit addItem "ACE_Kestrel4500";
   _unit addItem "acc_pointer_IR";
-  _unit addItem "ACE_Vector";
+  _unit addItem "SMA_supptan_762";
+  _unit addItem "ACE_MX2A";
 
 //Backpack
   _unit addItem "ACE_NVG_Wide";
   _unit addItem "Ops_core_strap_f";
-  _unit addItem "ACE_wirecutter";
+  _unit addItem "ACE_SpraypaintRed";
+  _unit addItem "ABS_Base_Jump_peltor_grey";
+  _unit addItem "ACE_SpottingScope";
+  _unit addItem "ACE_HuntIR_monitor";
   _unit addItem "itc_land_tablet_rover";
-  _unit addItem "MRH_TacticalDisplay";
-  _unit addItem "ACE_Clacker";
-  _unit addItem "ACE_M26_Clacker";
-  _unit addItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+  _unit addItem "ITC_ROVER_SIR";
+  _unit addItem "ACE_RangeCard"
 
-[_unit] call titan_fnc_addmedicalequipment ;
+[_unit] call titan_fnc_addmedicalequipment;
 
-[_unit] call titan_fnc_lrr_muni ;
+[_unit] call titan_fnc_lrs_muni;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
-missionNamespace setVariable ["titan_loadout_class", "lrr"];
+missionNamespace setVariable ["titan_loadout_class", "lrs"];
