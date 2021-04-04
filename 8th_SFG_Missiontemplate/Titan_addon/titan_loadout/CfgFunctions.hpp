@@ -9,6 +9,8 @@ class titan
         class addmedicalequipment {};
         class atmo {};
         class atmo_muni {};
+        class lrr {};
+        class lrr_muni {};
         class removeitems {};
         class loadout_rearm {};
         class startloadout {};
