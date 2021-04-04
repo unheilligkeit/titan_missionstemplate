@@ -21,7 +21,6 @@ switch (_loadclass) do
         [_unit] call titan_fnc_removeitems;
         [_unit] call titan_fnc_addmedicalequipment;
         [_unit] call titan_fnc_atmo_muni;
-
     };
 
     case ("cct"): {
@@ -40,8 +39,11 @@ switch (_loadclass) do
         //code
     };
 
-    case ("lrr"): {
-        //code //Long Range Reconnaissance Operator
+    case ("lrr"):
+    {
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_lrr_muni;
     };
 
     case ("lrs"): {
