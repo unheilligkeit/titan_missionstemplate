@@ -47,7 +47,9 @@ switch (_loadclass) do
     };
 
     case ("lrs"): {
-        //code //Long-range surveillance
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_lrs_muni;
     };
 
     case ("ptl"): {
@@ -55,7 +57,9 @@ switch (_loadclass) do
     };
 
     case ("rct"): {
-        //code //Recon Controller
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_rct_muni;
     };
 
     case ("rifle"): {

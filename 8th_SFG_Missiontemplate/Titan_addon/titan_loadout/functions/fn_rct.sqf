@@ -19,8 +19,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _uniformarray = selectRandom ["MTP_V1_Full"];
         _unit forceAddUniform _uniformarray ;
 
-        _mtp_lrr_helm = profileNamespace getVariable "titan_mtp_lrr_helm";
-        if (isNil "_mtp_lrr_helm") then
+        _mtp_rct_helm = profileNamespace getVariable "titan_mtp_rct_helm";
+        if (isNil "_mtp_rct_helm") then
         {
 
             _helmearray = selectRandom ["Booniehat_daguet_hs"];
@@ -28,25 +28,25 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addHeadgear _mtp_lrr_helm;
+            _unit addHeadgear _mtp_rct_helm;
 
         };
 
-        _mtp_lrr_brille = profileNamespace getVariable "titan_mtp_lrr_brille";
-        if (isNil "_mtp_lrr_brille") then
+        _mtp_rct_brille = profileNamespace getVariable "titan_mtp_rct_brille";
+        if (isNil "_mtp_rct_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_shades_shemagh_MC"];
+            _brillearray = selectRandom [""];
             _unit addGoggles _brillearray;
 
         } else {
 
-            _unit addGoggles _mtp_lrr_brille;
+            _unit addGoggles _mtp_rct_brille;
 
         };
 
         _unit addVest "mbss_recon_OD";
-        _unit addBackpack "SOG_mark";
+        _unit addBackpack "SOG_FTL_MTP";
 
 
     };
@@ -59,8 +59,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _uniformarray = selectRandom ["JTP_V1_Sleeved"];
         _unit forceAddUniform _uniformarray ;
 
-        _jtp_lrr_helm = profileNamespace getVariable "titan_jtp_lrr_helm";
-        if (isNil "_jtp_lrr_helm") then
+        _jtp_rct_helm = profileNamespace getVariable "titan_jtp_rct_helm";
+        if (isNil "_jtp_rct_helm") then
         {
 
             _helmearray = selectRandom [];
@@ -68,12 +68,12 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addHeadgear _jtp_lrr_helm;
+            _unit addHeadgear _jtp_rct_helm;
 
         };
 
-        _jtp_lrr_brille = profileNamespace getVariable "titan_jtp_lrr_brille";
-        if (isNil "_jtp_lrr_brille") then
+        _jtp_rct_brille = profileNamespace getVariable "titan_jtp_rct_brille";
+        if (isNil "_jtp_rct_brille") then
         {
 
             _brillearray = selectRandom [];
@@ -81,7 +81,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addGoggles _jtp_lrr_brille;
+            _unit addGoggles _jtp_rct_brille;
 
         };
 
@@ -97,8 +97,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _uniformarray = selectRandom ["WTP_V1_Full"];
         _unit forceAddUniform _uniformarray ;
 
-        _wtp_lrr_helm = profileNamespace getVariable "titan_wtp_lrr_helm";
-        if (isNil" _wtp_lrr_helm") then
+        _wtp_rct_helm = profileNamespace getVariable "titan_wtp_rct_helm";
+        if (isNil" _wtp_rct_helm") then
         {
 
             _helmearray = selectRandom [];
@@ -106,12 +106,12 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addHeadgear _wtp_lrr_helm;
+            _unit addHeadgear _wtp_rct_helm;
 
         };
 
-        _wtp_lrr_brille = profileNamespace getVariable "titan_wtp_lrr_brille";
-        if (isNil "_wtp_lrr_brille") then
+        _wtp_rct_brille = profileNamespace getVariable "titan_wtp_rct_brille";
+        if (isNil "_wtp_rct_brille") then
         {
 
             _brillearray = selectRandom [];
@@ -119,7 +119,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addGoggles _wtp_lrr_brille;
+            _unit addGoggles _wtp_rct_brille;
 
         };
 
@@ -144,10 +144,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 // mtp waffen
   if (_tarnmuster == 0) then
   {
-    _unit addWeapon "arifle_SPAR_03_snd_F";
-	  _unit addPrimaryWeaponItem "bipod_01_F_snd";
-	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_TAN";
-    _unit addPrimaryWeaponItem "optic_DMS";
+    _unit addWeapon "SMA_MK17_green";
+	  _unit addPrimaryWeaponItem "SMA_SFPEQ_SCARTOP_BLK";
+	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_Green_ARDRDS";
   };
 
 // jtp waffen
@@ -183,25 +182,21 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "tf_anprc152";
   _unit linkItem "B_UavTerminal";
 
-  _unit addItem "acc_pointer_IR";
-  _unit addItem "muzzle_snds_B_arid_F";
+  _unit addItem "SMA_supp_762";
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
   _unit addItem "acc_pointer_IR";
+  _unit addItem "SMA_eotech552";
   _unit addItem "ACE_Vector";
 
 //Backpack
   _unit addItem "ACE_NVG_Wide";
-  _unit addItem "Ops_core_strap_f";
-  _unit addItem "ACE_wirecutter";
   _unit addItem "itc_land_tablet_rover";
   _unit addItem "ACE_Clacker";
-  _unit addItem "ACE_M26_Clacker";
-  _unit addItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
 
 [_unit] call titan_fnc_addmedicalequipment;
 
-[_unit] call titan_fnc_lrr_muni;
+[_unit] call titan_fnc_rct_muni;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
-missionNamespace setVariable ["titan_loadout_class", "lrr"];
+missionNamespace setVariable ["titan_loadout_class", "rct"];
