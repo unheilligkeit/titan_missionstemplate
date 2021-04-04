@@ -17,6 +17,10 @@ class titan
     class titan_extraitem
     {
         file = "Titan_addon\titan_loadout\extraitem"
-        class extrawurstitems {};
+        class limitarsenal {};
+        class extraitems_bdu {};
+        class extraitems_mtp {};
+        class extraitems_jtp {};
+        class extraitems_wtp {};
     };
 };
