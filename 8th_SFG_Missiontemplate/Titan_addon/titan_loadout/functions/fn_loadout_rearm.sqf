@@ -71,7 +71,9 @@ switch (_loadclass) do
     };
 
     case ("rot"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_rot_muni;
     };
 
     case ("sql"): {
@@ -87,7 +89,9 @@ switch (_loadclass) do
     };
 
     case ("wpn"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_wpn_muni;
     };
 
 

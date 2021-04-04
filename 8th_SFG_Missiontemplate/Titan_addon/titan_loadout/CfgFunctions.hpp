@@ -23,6 +23,10 @@ class titan
         class sql_muni {};
         class sotac {};
         class sotac_muni {};
+        class wpn {};
+        class wpn_muni {};
+        class rot {};
+        class rot_muni {};
         class removeitems {};
         class loadout_rearm {};
         class startloadout {};
