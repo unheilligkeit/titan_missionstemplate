@@ -1,7 +1,7 @@
 /*
-Hinzufügen von Mmunition für lrr (long-range reconnaissance operator)
+Hinzufügen von Mmunition für lrs (Long Range Surveillance Operator)
 
-[_unit] call titan_fnc_lrs_muni;
+[player] call titan_fnc_lrs_muni;
 
 Returns: Nothing
 */

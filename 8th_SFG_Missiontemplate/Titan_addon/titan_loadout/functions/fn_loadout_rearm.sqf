@@ -53,7 +53,9 @@ switch (_loadclass) do
     };
 
     case ("ptl"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_ptl_muni;
     };
 
     case ("rct"): {

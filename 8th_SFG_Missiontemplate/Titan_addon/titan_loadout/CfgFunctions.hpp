@@ -15,6 +15,8 @@ class titan
         class lrs_muni {};
         class rct {};
         class rct_muni {};
+        class ptl {};
+        class ptl_muni {};
         class removeitems {};
         class loadout_rearm {};
         class startloadout {};

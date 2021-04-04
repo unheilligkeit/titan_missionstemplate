@@ -1,7 +1,7 @@
 /*
 Hinzufügen von Mmunition für rct (Reacon Controller)
 
-[_unit] call titan_fnc_rct_muni;
+[player] call titan_fnc_rct_muni;
 
 Returns: Nothing
 */
