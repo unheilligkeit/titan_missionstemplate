@@ -200,9 +200,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit addItem "ACE_M26_Clacker";
   _unit addItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
 
-[_unit] call titan_fnc_addmedicalequipment ;
+[_unit] call titan_fnc_addmedicalequipment;
 
-[_unit] call titan_fnc_lrr_muni ;
+[_unit] call titan_fnc_lrr_muni;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "lrr"];

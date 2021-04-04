@@ -202,7 +202,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit addItem "ACE_HuntIR_monitor";
   _unit addItem "itc_land_tablet_rover";
   _unit addItem "ITC_ROVER_SIR";
-  _unit addItem "ACE_RangeCard"
+  _unit addItem "ACE_RangeCard";
 
 [_unit] call titan_fnc_addmedicalequipment;
 
