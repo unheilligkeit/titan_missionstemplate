@@ -41,11 +41,11 @@ switch (_loadclass) do
     };
 
     case ("lrr"): {
-        //code
+        //code //Long Range Reconnaissance Operator
     };
 
     case ("lrs"): {
-        //code
+        //code //Long-range surveillance
     };
 
     case ("ptl"): {
@@ -53,7 +53,7 @@ switch (_loadclass) do
     };
 
     case ("rct"): {
-        //code
+        //code //Recon Controller
     };
 
     case ("rifle"): {
