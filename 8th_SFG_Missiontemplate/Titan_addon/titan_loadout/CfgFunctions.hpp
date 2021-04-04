@@ -12,11 +12,11 @@ class titan
         class removeitems {};
         class loadout_rearm {};
         class startloadout {};
-        class extrawurstitems {};
     };
 
     class titan_extraitem
     {
         file = "Titan_addon\titan_loadout\extraitem"
+        class extrawurstitems {};
     };
 };
