@@ -7,11 +7,10 @@ Returns: Nothing
 */
 
 params ["_unit"];
-missionNamespace setVariable ["diver_changeuniform"," "];
 
-diver_changeuniform = [
+_diver_changeuniform = [
 	"diver_changeuniform",
-	"Uniform tauschen",
+	"Taucher Uniform tauschen",
 	"",
 	{
 

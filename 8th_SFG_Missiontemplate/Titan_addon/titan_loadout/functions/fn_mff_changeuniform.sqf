@@ -7,11 +7,11 @@ Returns: Nothing
 */
 
 params ["_unit"];
-missionNamespace setVariable ["mff_changeuniform"," "];
 
-mff_changeuniform = [
+
+_mff_changeuniform = [
 	"mff_changeuniform",
-	"Uniform tauschen",
+	"Falschirm Uniform tauschen",
 	"",
 	{
 

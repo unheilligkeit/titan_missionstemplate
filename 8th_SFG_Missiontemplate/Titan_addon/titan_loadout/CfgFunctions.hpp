@@ -17,6 +17,7 @@ class titan
         class mff_changeuniform {};
         class diver {};
         class diver_muni {};
+        class diver_changeuniform {};
         class eng {};
         class eng_muni {};
         class fix {};
