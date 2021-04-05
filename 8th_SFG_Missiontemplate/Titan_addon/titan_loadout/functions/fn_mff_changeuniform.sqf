@@ -86,6 +86,8 @@ fs_uniform = [
 
       };
 
+			[_unit, 1, ["ACE_SelfActions", "uniform change"]] call ace_interact_menu_fnc_removeActionFromObject;
+
   },
 {true},
 {},
@@ -93,3 +95,5 @@ fs_uniform = [
 [0,0,0],
 100
 ] call ace_interact_menu_fnc_createAction;
+
+[_unit, 1, ["ACE_SelfActions", "fs_uniform"], fn_mff_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
