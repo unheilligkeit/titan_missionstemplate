@@ -16,78 +16,8 @@ _fs_uniform = [
 	"Uniform tauschen",
 	"",
 	{
+			hint "Hallo welt";
 
-
-      if (_unit call zade_boc_fnc_chestpack != "") then
-      {
-          [_unit, (backpack _unit)] call zade_boc_fnc_removeChestpack;
-      };
-
-      switch (_loadclass) do
-      {
-          case ("atmo"):
-          {
-              [_unit] call titan_fnc_atmo;
-          };
-
-          case ("cct"):
-          {
-              [_unit] call titan_fnc_cct;
-          };
-
-          case ("eng"):
-          {
-              [_unit] call titan_fnc_eng;
-          };
-
-          case ("ftl"):
-          {
-            [_unit] call titan_fnc_ftl;
-          };
-
-          case ("lrr"):
-          {
-              [_unit] call titan_fnc_lrr;
-          };
-
-          case ("lrs"):
-          {
-              [_unit] call titan_fnc_lrs;
-          };
-
-          case ("ptl"):
-          {
-              [_unit] call titan_fnc_ptl;
-          };
-
-          case ("rct"):
-          {
-              [_unit] call titan_fnc_rct;
-          };
-
-          case ("rifle"):
-          {
-              [_unit] call titan_fnc_rifle;
-          };
-
-          case ("sql"):
-          {
-              [_unit] call titan_fnc_sql;
-          };
-
-          case ("sotac"):
-          {
-              [_unit] call titan_fnc_sotac;
-          };
-
-          case ("wpn"):
-          {
-              [_unit] call titan_fnc_wpn;
-          };
-
-      };
-
-			[_unit, 1, ["ACE_SelfActions", "uniform change"]] call ace_interact_menu_fnc_removeActionFromObject;
 
   },
 {true}
