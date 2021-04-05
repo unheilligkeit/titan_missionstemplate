@@ -15,6 +15,8 @@ class titan
         class eng_muni {};
         class fix {};
         class fix_muni {};
+        class ftl {};
+        class ftl_muni {};
         class lrr {};
         class lrr_muni {};
         class lrs {};
