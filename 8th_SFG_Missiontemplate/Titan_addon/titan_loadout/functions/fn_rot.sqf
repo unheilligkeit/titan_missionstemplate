@@ -189,9 +189,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 
 
-[_unit] call titan_fnc_addmedicalequipment ;
+[_unit] call titan_fnc_addpilotmedical;
 
-[_unit] call titan_fnc_rot_muni ;
+[_unit] call titan_fnc_rot_muni;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "rot"];

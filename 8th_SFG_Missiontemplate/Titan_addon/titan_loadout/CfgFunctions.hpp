@@ -11,6 +11,8 @@ class titan
         class addengmedical {};
         class atmo {};
         class atmo_muni {};
+        class eng {};
+        class eng_muni {};
         class lrr {};
         class lrr_muni {};
         class lrs {};
