@@ -6,15 +6,16 @@ Hinzufügen von Mmunition für mff
 Returns: Nothing
 */
 
-fs_uniform = [
-	"uniform change",
+params ["_unit"];
+_loadclass = missionNamespace getVariable "titan_loadout_class";
+_chemlightoff = missionNamespace getVariable "titan_mff_chemlite_off";
+deletevehicle chlight;
+
+_fs_uniform = [
+	"fs_uniform",
 	"Uniform tauschen",
 	"",
 	{
-      params ["_unit"];
-      _loadclass = missionNamespace getVariable "titan_loadout_class";
-      _chemlightoff = missionNamespace getVariable "titan_mff_chemlite_off";
-      deletevehicle chlight;
 
       _backpack = backpack player;
       if (_unit call zade_boc_fnc_chestpack != "") then
@@ -89,11 +90,7 @@ fs_uniform = [
 			[_unit, 1, ["ACE_SelfActions", "uniform change"]] call ace_interact_menu_fnc_removeActionFromObject;
 
   },
-{true},
-{},
-[],
-[0,0,0],
-100
+{true}
 ] call ace_interact_menu_fnc_createAction;
 
-[_unit, 1, ["ACE_SelfActions", "fs_uniform"], fn_mff_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
+[_unit, 1, ["ACE_SelfActions", "fs_uniform"], _fs_uniform] call ace_interact_menu_fnc_addActiontoObject;
