@@ -28,11 +28,11 @@ switch (_loadclass) do
     };
 
     case ("eng"): {
-        //code
+        [_unit] call titan_fnc_addengmedical;
     };
 
     case ("fix"): {
-        //code
+        [_unit] call titan_fnc_addpilotmedical;
     };
 
     case ("ftl"): {
@@ -72,7 +72,7 @@ switch (_loadclass) do
 
     case ("rot"): {
       [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_addpilotmedical;
       [_unit] call titan_fnc_rot_muni;
     };
 

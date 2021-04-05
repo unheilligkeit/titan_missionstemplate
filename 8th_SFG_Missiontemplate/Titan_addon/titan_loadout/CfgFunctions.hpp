@@ -7,6 +7,8 @@ class titan
         file = "Titan_addon\titan_loadout\functions"
         class loadoutremove {};
         class addmedicalequipment {};
+        class addpilotmedical {};
+        class addengmedical {};
         class atmo {};
         class atmo_muni {};
         class lrr {};
