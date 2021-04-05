@@ -11,6 +11,7 @@ class titan
         class addengmedical {};
         class atmo {};
         class atmo_muni {};
+        class mff_chemlight {};
         class diver {};
         class diver_muni {};
         class eng {};
