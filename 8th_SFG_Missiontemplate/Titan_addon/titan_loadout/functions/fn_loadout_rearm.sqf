@@ -41,7 +41,9 @@ switch (_loadclass) do
     };
 
     case ("ftl"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_ftl_muni;
     };
 
     case ("lrr"):
