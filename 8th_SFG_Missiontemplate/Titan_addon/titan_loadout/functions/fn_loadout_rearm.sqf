@@ -101,6 +101,11 @@ switch (_loadclass) do
         [_unit] call titan_fnc_wpn_muni;
     };
 
+    case ("diver"): {
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_diver_muni;
+    };
 
 };
 
