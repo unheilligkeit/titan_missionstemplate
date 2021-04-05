@@ -24,11 +24,15 @@ switch (_loadclass) do
     };
 
     case ("cct"): {
-        //code
+      [_unit] call titan_fnc_removeitems;
+      [_unit] call titan_fnc_addmedicalequipment;
+      [_unit] call titan_fnc_cct_muni;
     };
 
     case ("eng"): {
+        [_unit] call titan_fnc_removeitems;
         [_unit] call titan_fnc_addengmedical;
+        [_unit] call titan_fnc_eng_muni;
     };
 
     case ("fix"): {
