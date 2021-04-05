@@ -51,5 +51,6 @@ _unit setVariable ["ace_medical_medicClass", 0, true];
 
 [_unit] call titan_fnc_diver_muni ;
 
+[_unit] call titan_fnc_diver_changeuniform;
+
 _unit action ["SwitchWeapon", _unit, _unit, 100];
-missionNamespace setVariable ["titan_loadout_class", "diver"];
