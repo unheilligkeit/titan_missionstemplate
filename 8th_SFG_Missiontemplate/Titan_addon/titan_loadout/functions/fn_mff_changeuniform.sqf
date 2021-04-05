@@ -7,9 +7,7 @@ Returns: Nothing
 */
 
 params ["_unit"];
-_loadclass = missionNamespace getVariable "titan_loadout_class";
-_chemlightoff = missionNamespace getVariable "titan_mff_chemlite_off";
-deletevehicle chlight;
+
 
 _fs_uniform = [
 	"fs_uniform",
@@ -17,10 +15,16 @@ _fs_uniform = [
 	"",
 	{
 
+		params ["_unit"];
+		_loadclass = missionNamespace getVariable "titan_loadout_class";
+		_chemlightoff = missionNamespace getVariable "titan_mff_chemlite_off";
+
 		if (_unit call zade_boc_fnc_chestpack != "") then
 		{
 				[_unit, (backpack _unit)] call zade_boc_fnc_removeChestpack;
 		};
+
+		deletevehicle chlight;
 
 		switch (_loadclass) do
 		{
