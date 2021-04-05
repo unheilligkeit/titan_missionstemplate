@@ -9,7 +9,7 @@ Returns: Nothing
 params ["_unit"];
 
 
-_fs_uniform = [
+_mff_changeuniform = [
 	"fs_uniform",
 	"Uniform tauschen",
 	"",
@@ -90,11 +90,11 @@ _fs_uniform = [
 
 		};
 
-		[_unit, 1, ["ACE_SelfActions", "uniform change"]] call ace_interact_menu_fnc_removeActionFromObject;
+		[_unit, 1, ["ACE_SelfActions", "_mff_changeuniform"]] call ace_interact_menu_fnc_removeActionFromObject;
 
 
   },
 {true}
 ] call ace_interact_menu_fnc_createAction;
 
-[_unit, 1, ["ACE_SelfActions"], _fs_uniform] call ace_interact_menu_fnc_addActiontoObject;
+[_unit, 1, ["ACE_SelfActions"], _mff_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
