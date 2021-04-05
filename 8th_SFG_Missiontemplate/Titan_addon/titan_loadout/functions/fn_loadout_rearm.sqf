@@ -12,7 +12,6 @@ _loadclass = missionNamespace getVariable "titan_loadout_class";
 switch (_loadclass) do
 {
     case ("start"): {
-
         hint "Die Jugend ist die Zeit, Weisheit zu lernen. Das Alter ist die Zeit, sie auszuüben."
     };
 
@@ -24,9 +23,9 @@ switch (_loadclass) do
     };
 
     case ("cct"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_cct_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_cct_muni;
     };
 
     case ("eng"): {
@@ -36,7 +35,9 @@ switch (_loadclass) do
     };
 
     case ("fix"): {
+        [_unit] call titan_fnc_removeitems;
         [_unit] call titan_fnc_addpilotmedical;
+        [_unit] call titan_fnc_fix_muni;
     };
 
     case ("ftl"): {
@@ -51,51 +52,51 @@ switch (_loadclass) do
     };
 
     case ("lrs"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_lrs_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_lrs_muni;
     };
 
     case ("ptl"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_ptl_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_ptl_muni;
     };
 
     case ("rct"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_rct_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_rct_muni;
     };
 
     case ("rifle"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_rifle_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_rifle_muni;
     };
 
     case ("rot"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addpilotmedical;
-      [_unit] call titan_fnc_rot_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addpilotmedical;
+        [_unit] call titan_fnc_rot_muni;
     };
 
     case ("sql"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_sql_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_sql_muni;
     };
 
     case ("sotac"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_sotac_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_sotac_muni;
     };
 
     case ("wpn"): {
-      [_unit] call titan_fnc_removeitems;
-      [_unit] call titan_fnc_addmedicalequipment;
-      [_unit] call titan_fnc_wpn_muni;
+        [_unit] call titan_fnc_removeitems;
+        [_unit] call titan_fnc_addmedicalequipment;
+        [_unit] call titan_fnc_wpn_muni;
     };
 
 

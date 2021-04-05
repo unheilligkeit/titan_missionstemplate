@@ -19,21 +19,21 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
         _unit forceAddUniform _uniformarray ;
 
-        _mtp_rot_helm = profileNamespace getVariable "titan_mtp_rot_helm";
-        if (isNil "_mtp_rot_helm") then
+        _mtp_fix_helm = profileNamespace getVariable "titan_mtp_fix_helm";
+        if (isNil "_mtp_fix_helm") then
         {
 
-            _helmearray = selectRandom ["Heli_Helmet_Base"];
+            _helmearray = selectRandom ["Titan_ScorpionHMCS"];
             _unit addHeadgear _helmearray;
 
         } else {
 
-            _unit addHeadgear _mtp_rot_helm;
+            _unit addHeadgear _mtp_fix_helm;
 
         };
 
-        _mtp_rot_brille = profileNamespace getVariable "titan_mtp_rot_brille";
-        if (isNil "_mtp_rot_brille") then
+        _mtp_fix_brille = profileNamespace getVariable "titan_mtp_fix_brille";
+        if (isNil "_mtp_fix_brille") then
         {
 
             _brillearray = selectRandom [];
@@ -41,12 +41,12 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addGoggles _mtp_rot_brille;
+            _unit addGoggles _mtp_fix_brille;
 
         };
 
-        _unit addVest "V_PlateCarrier1_rgr_noflag_F";
-        //_unit addBackpack "SOG_rot_MTP_1";
+        _unit addVest "V_Rangemaster_belt";
+        //_unit addBackpack "SOG_fix_MTP_1";
 
 
     };
@@ -59,21 +59,21 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
         _unit forceAddUniform _uniformarray ;
 
-        _jtp_rot_helm = profileNamespace getVariable "titan_jtp_rot_helm";
-        if (isNil "_jtp_rot_helm") then
+        _jtp_fix_helm = profileNamespace getVariable "titan_jtp_fix_helm";
+        if (isNil "_jtp_fix_helm") then
         {
 
-            _helmearray = selectRandom ["Heli_Helmet_Base"];
+            _helmearray = selectRandom ["Titan_ScorpionHMCS"];
             _unit addHeadgear _helmearray;
 
         } else {
 
-            _unit addHeadgear _jtp_rot_helm;
+            _unit addHeadgear _jtp_fix_helm;
 
         };
 
-        _jtp_rot_brille = profileNamespace getVariable "titan_jtp_rot_brille";
-        if (isNil "_jtp_rot_brille") then
+        _jtp_fix_brille = profileNamespace getVariable "titan_jtp_fix_brille";
+        if (isNil "_jtp_fix_brille") then
         {
 
             _brillearray = selectRandom ["milgp_f_face_shield_goggles_shemagh_RGR","milgp_f_face_shield_shemagh_RGR","Balaclava_jtp2","milgp_f_face_shield_tactical_shemagh_CB"];
@@ -81,12 +81,12 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addGoggles _jtp_rot_brille;
+            _unit addGoggles _jtp_fix_brille;
 
         };
 
-        _unit addVest "V_PlateCarrier1_rgr_noflag_F";
-        //_unit addBackpack "8th_Kitbag_JTP_rot";
+        _unit addVest "V_Rangemaster_belt";
+        //_unit addBackpack "8th_Kitbag_JTP_fix";
 
     };
 
@@ -97,21 +97,21 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
         _unit forceAddUniform _uniformarray ;
 
-        _wtp_rot_helm = profileNamespace getVariable "titan_wtp_rot_helm";
-        if (isNil" _wtp_rot_helm") then
+        _wtp_fix_helm = profileNamespace getVariable "titan_wtp_fix_helm";
+        if (isNil" _wtp_fix_helm") then
         {
 
-            _helmearray = selectRandom ["Heli_Helmet_Base"];
+            _helmearray = selectRandom ["Titan_ScorpionHMCS"];
             _unit addHeadgear _helmearray;
 
         } else {
 
-            _unit addHeadgear _wtp_rot_helm;
+            _unit addHeadgear _wtp_fix_helm;
 
         };
 
-        _wtp_rot_brille = profileNamespace getVariable "titan_wtp_rot_brille";
-        if (isNil "_wtp_rot_brille") then
+        _wtp_fix_brille = profileNamespace getVariable "titan_wtp_fix_brille";
+        if (isNil "_wtp_fix_brille") then
         {
 
             _brillearray = selectRandom [];
@@ -119,12 +119,12 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         } else {
 
-            _unit addGoggles _wtp_rot_brille;
+            _unit addGoggles _wtp_fix_brille;
 
         };
 
-        _unit addVest "V_PlateCarrier1_rgr_noflag_F";
-        //_unit addBackpack "SOG_rot_WTP_1";
+        _unit addVest "V_Rangemaster_belt";
+        //_unit addBackpack "SOG_fix_WTP_1";
 
     };
 
@@ -182,6 +182,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
   _unit addItem "ACE_EarPlugs";
+
   _unit addItem "ACE_IR_Strobe_Item";
   _unit addItem "ACE_NVG_Wide";
 
@@ -192,7 +193,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 [_unit] call titan_fnc_addpilotmedical;
 
-[_unit] call titan_fnc_rot_muni;
+[_unit] call titan_fnc_fix_muni;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
-missionNamespace setVariable ["titan_loadout_class", "rot"];
+missionNamespace setVariable ["titan_loadout_class", "fix"];
