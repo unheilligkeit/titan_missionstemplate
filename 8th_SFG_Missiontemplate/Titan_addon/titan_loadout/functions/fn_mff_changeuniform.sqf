@@ -10,7 +10,7 @@ params ["_unit"];
 
 
 _mff_changeuniform = [
-	"fs_uniform",
+	"mff_changeuniform",
 	"Uniform tauschen",
 	"",
 	{
