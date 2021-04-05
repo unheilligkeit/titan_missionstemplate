@@ -17,10 +17,10 @@ _fs_uniform = [
 	"",
 	{
 
-      _backpack = backpack player;
+
       if (_unit call zade_boc_fnc_chestpack != "") then
       {
-          [_unit,_backpack] call zade_boc_fnc_removeChestpack;
+          [_unit, (backpack _unit)] call zade_boc_fnc_removeChestpack;
       };
 
       switch (_loadclass) do
