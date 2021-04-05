@@ -7,9 +7,9 @@ Returns: Nothing
 */
 
 params ["_unit"];
+missionNamespace setVariable ["mff_changeuniform"," "];
 
-
-_mff_changeuniform = [
+mff_changeuniform = [
 	"mff_changeuniform",
 	"Uniform tauschen",
 	"",
@@ -90,7 +90,7 @@ _mff_changeuniform = [
 
 		};
 
-		[_unit, 1, ["ACE_SelfActions", "_mff_changeuniform"]] call ace_interact_menu_fnc_removeActionFromObject;
+		[_unit, 1, ["ACE_SelfActions", _mff_changeuniform]] call ace_interact_menu_fnc_removeActionFromObject;
 
 
   },
