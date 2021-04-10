@@ -27,6 +27,7 @@ enableDebugConsole = 1;
 class CfgFunctions
 {
 	#include "Titan_addon\titan_loadout\CfgFunctions.hpp"
+    #include "Titan_addon\SotacTabletSystem\functions.hpp"
 };
 
 /*================== Prameter ============ */
