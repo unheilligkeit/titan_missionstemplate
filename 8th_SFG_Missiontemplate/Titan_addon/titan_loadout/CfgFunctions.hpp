@@ -56,4 +56,9 @@ class titan
         class extraitems_jtp {};
         class extraitems_wtp {};
     };
+
+    class titan_creategroup
+    {
+        file = "Titan_addon\titan_loadout\creategroup"
+    };
 };
