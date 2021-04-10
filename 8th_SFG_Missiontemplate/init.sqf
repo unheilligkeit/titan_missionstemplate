@@ -1,7 +1,3 @@
-#include "macros.hpp";
-
-INIT_MODULE(SotacTabletSystem);
-
 
 [
     uav1,											// Object the action is attached to
