@@ -51,7 +51,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_mff_waffen") then
         {
 
-            _brillearray = selectRandom ["SMA_MK18afgTAN", "SMA_MK18MOETAN","SMA_MK18MOEOD"];
+            _waffenarray = selectRandom ["SMA_MK18afgTAN", "SMA_MK18MOETAN","SMA_MK18MOEOD"];
             _unit addWeapon _waffenarray;
 
         } else {
@@ -103,7 +103,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_mff_waffen") then
         {
 
-            _brillearray = selectRandom ["SMA_MK18afgTAN", "SMA_MK18MOETAN","SMA_MK18MOEOD"];
+            _waffenarray = selectRandom ["SMA_MK18afgTAN", "SMA_MK18MOETAN","SMA_MK18MOEOD"];
             _unit addWeapon _waffenarray;
 
         } else {
