@@ -189,6 +189,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 [_unit] call titan_fnc_mff_chemlight;
 
-[_unit] call titan_fnc_mff_changeuniform;
+[_unit, 1, ["ACE_SelfActions"], mff_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];

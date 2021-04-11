@@ -51,6 +51,6 @@ _unit setVariable ["ace_medical_medicClass", 0, true];
 
 [_unit] call titan_fnc_diver_muni ;
 
-[_unit] call titan_fnc_diver_changeuniform;
+[_unit, 1, ["ACE_SelfActions"], diver_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];

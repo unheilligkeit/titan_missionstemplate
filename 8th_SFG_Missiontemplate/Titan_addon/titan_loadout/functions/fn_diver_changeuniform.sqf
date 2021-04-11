@@ -8,7 +8,7 @@ Returns: Nothing
 
 params ["_unit"];
 
-_diver_changeuniform = [
+diver_changeuniform = [
 	"diver_changeuniform",
 	"Taucher Uniform tauschen",
 	"",
@@ -81,11 +81,10 @@ _diver_changeuniform = [
 
 		};
 
-		[_unit, 1, ["ACE_SelfActions", _diver_changeuniform]] call ace_interact_menu_fnc_removeActionFromObject;
+		[_unit, 1, ["ACE_SelfActions", "diver_changeuniform"]] call ace_interact_menu_fnc_removeActionFromObject;
 
 
   },
 {true}
 ] call ace_interact_menu_fnc_createAction;
 
-[_unit, 1, ["ACE_SelfActions"], _diver_changeuniform] call ace_interact_menu_fnc_addActiontoObject;

@@ -9,7 +9,7 @@ Returns: Nothing
 params ["_unit"];
 
 
-_mff_changeuniform = [
+mff_changeuniform = [
 	"mff_changeuniform",
 	"Falschirm Uniform tauschen",
 	"",
@@ -90,11 +90,9 @@ _mff_changeuniform = [
 
 		};
 
-		[_unit, 1, ["ACE_SelfActions", _mff_changeuniform]] call ace_interact_menu_fnc_removeActionFromObject;
+		[_unit, 1, ["ACE_SelfActions", "mff_changeuniform"]] call ace_interact_menu_fnc_removeActionFromObject;
 
 
   },
 {true}
 ] call ace_interact_menu_fnc_createAction;
-
-[_unit, 1, ["ACE_SelfActions"], _mff_changeuniform] call ace_interact_menu_fnc_addActiontoObject;

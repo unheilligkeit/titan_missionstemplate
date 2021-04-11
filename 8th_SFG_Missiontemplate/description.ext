@@ -27,11 +27,11 @@ enableDebugConsole = 1;
 class CfgFunctions
 {
 	#include "Titan_addon\titan_loadout\CfgFunctions.hpp"
-    #include "Titan_addon\SotacTabletSystem\functions.hpp"
+   // #include "Titan_addon\SotacTabletSystem\functions.hpp"
 };
 
-#include "Titan_addon\AirSupport\dialogs\dialog_AirSupport.hpp"
-#include "Titan_addon\AirSupport\dialogs\dialog_AirSupport_2.hpp"
+// #include "Titan_addon\AirSupport\dialogs\dialog_AirSupport.hpp"
+// #include "Titan_addon\AirSupport\dialogs\dialog_AirSupport_2.hpp"
 /*================== Prameter ============ */
 
 class Params
