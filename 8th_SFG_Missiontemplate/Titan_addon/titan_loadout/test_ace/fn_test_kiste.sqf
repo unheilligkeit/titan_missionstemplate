@@ -81,6 +81,19 @@ params ["_testobjekt"];
      [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rot] call ace_interact_menu_fnc_addActionToObject;
 
 
+     //ACE Mainmenü spzeial
+      _testobjekt_special = ["test_special", "Special", "", {}, {true}] call ace_interact_menu_fnc_createAction;
+      [_testobjekt, 0, ["ACE_MainActions"], _testobjekt_special] call ace_interact_menu_fnc_addActionToObject;
+
+     //ACe untermneü
+
+      _test_mff = ["test_mff", "MFF", "", { [ _this select 1 ] call titan_fnc_mff }, {true}] call ace_interact_menu_fnc_createAction;
+      [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_mff] call ace_interact_menu_fnc_addActionToObject;
+
+      _test_diver = ["test_diver", "Diver", "", { [_this select 1 ] call titan_fnc_diver }, {true}] call ace_interact_menu_fnc_createAction;
+      [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_diver] call ace_interact_menu_fnc_addActionToObject;
+
+
 
      _testobjekt_radio = ["test_radio", "Funkeinstellen", "", {[ _this select 1 ] call titan_fnc_sw_radiosettings}, {true}] call ace_interact_menu_fnc_createAction;
      [_testobjekt, 0, ["ACE_MainActions"], _testobjekt_radio] call ace_interact_menu_fnc_addActionToObject;
