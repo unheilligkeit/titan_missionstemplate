@@ -45,6 +45,7 @@ class titan
         class removeitems {};
         class loadout_rearm {};
         class startloadout {};
+        class radiosettings {};
     };
 
     class titan_extraitem

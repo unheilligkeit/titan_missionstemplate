@@ -6,21 +6,32 @@ class header
    maxPlayers = 64;
 };
 
+saving = false;
+debriefing = true;
+cba_settings_hasSettingsFile = 1;
+
 /* ================ Ladebildschirm =============== */
 onLoadName = "8th SFG Missionstemplate";
 author = "8th SFG TITAN Platoon";
 OnLoadMission = "";
 Respawn = "BASE";
 respawnTemplates[]  = {"MenuPosition","Spectator"};
-respawnDelay    = 30;
-respawnOnStart    = 0;
+respawnDelay    = 15;
+respawnOnStart    = -1;
 overviewText = "SI VIS PACEM PARA BELLUM";
 overviewTextLocked = "SI VIS PACEM PARA BELLUM";
 DisabledAI = true;
-loadScreen = "";
-overviewPicture = "";
+loadScreen = "Bilder\MissionPicture.jpg";
+overviewPicture = "Bilder\MissionPicture.jpg";
 enableDebugConsole = 1;
+onLoadIntroTime = false;
+onLoadMissionTime = false;
 
+/* ================ Slottings =============== */
+disabledAI = true;
+joinUnassigned = false;
+skipLobby = false;
+enableDebugConsole = 2;
 
 /* ================ Includes =============== */
 
@@ -33,6 +44,9 @@ class CfgFunctions
 #include "Titan_addon\defines.hpp"
 #include "Titan_addon\AirSupport\dialogs\dialog_AirSupport.hpp"
 #include "Titan_addon\AirSupport\dialogs\dialog_AirSupport_2.hpp"
+
+
+
 /*================== Prameter ============ */
 
 class Params
@@ -65,7 +79,7 @@ class Params
 };
 
 
-
+/*================== Debriefing ============ */
 class CfgDebriefing
 {
 	class End2

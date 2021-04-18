@@ -8,7 +8,7 @@ o6	-	Rochhy			Controller
 o7	-	Rage			Operator
 o8	-	PlaygroundNr1	Commander
 o9	-	Ego				Operator
-o10	-	Sebey			Operator
+o10	-	ColeTricle		Operator
 o11	-	Blake			Commander
 o12	-	Argonox			Commander
 o13	-	Capon			Commander
@@ -17,7 +17,7 @@ o15	-	Sarias			Operator
 o16	-	Icer4in			Operator
 o17	-	B4ndit			Operator
 o18	-	AnteroVeli		Commander
-o19	-	Ito				Operator
+o19	-	Jeroen			Operator
 o20	-	Shrimpi			Commander
 o21	-	Minimu			Operator
 o22	-	Wunderwaffel	Controller
@@ -27,7 +27,7 @@ o25	-	Trunks			Operator
 o26	-	HellRider	 	Operator
 o27	-	Ari				Operator
 o28	-	Puffi			Operator
-o29	-	Gangolf			Operator
+o29	-	Operator
 o30	-	Erryn			Operator
 o31	-	Troxin			Operator
 o32 -	Maruk			Operator

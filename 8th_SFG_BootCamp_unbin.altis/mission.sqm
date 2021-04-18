@@ -12,18 +12,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=396;
+		nextID=407;
 	};
 	class Camera
 	{
-		pos[]={14597.892,47.898365,16779.092};
-		dir[]={0.41193542,-0.25696364,-0.87423766};
-		up[]={0.1095305,0.96641785,-0.23245387};
-		aside[]={-0.90461171,8.095958e-008,-0.42624834};
+		pos[]={14619.094,45.796844,16742.359};
+		dir[]={0.20043497,-0.95549577,-0.21654586};
+		up[]={0.6490472,0.29499498,-0.70121771};
+		aside[]={-0.7338931,-1.2629171e-006,-0.67929089};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_BootCamp_V21-03-22_unbin";
+sourceName="8th_SFG_BootCamp_V21-04-17_unbin";
 addons[]=
 {
 	"A3_Characters_F",
@@ -413,7 +413,26 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute1
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=2;
 	};
 };
 class Mission
@@ -1528,8 +1547,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -1538,10 +1557,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="fsof_FemaleCauc01t4_BlueEyes_NoHair";
+													value=0;
 												};
 											};
 										};
@@ -1623,8 +1642,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -1633,10 +1652,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="fsof_FemaleCauc01t4_BlueEyes_NoHair";
 												};
 											};
 										};
@@ -1735,8 +1754,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -1745,10 +1764,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="WhiteHead_20";
 												};
 											};
 										};
@@ -1830,8 +1849,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -1840,10 +1859,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="WhiteHead_20";
+													value=0;
 												};
 											};
 										};
@@ -1942,8 +1961,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -1952,10 +1971,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="WhiteHead_10";
+													value=0;
 												};
 											};
 										};
@@ -2037,8 +2056,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -2047,10 +2066,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="WhiteHead_10";
 												};
 											};
 										};
@@ -2150,8 +2169,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -2160,10 +2179,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="asczHead_picleson_A3";
+													value=0;
 												};
 											};
 										};
@@ -2245,8 +2264,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -2255,10 +2274,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="asczHead_picleson_A3";
 												};
 											};
 										};
@@ -2351,8 +2370,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -2361,10 +2380,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="GreekHead_A3_09";
 												};
 											};
 										};
@@ -2446,8 +2465,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -2456,10 +2475,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="GreekHead_A3_09";
+													value=0;
 												};
 											};
 										};
@@ -3379,7 +3398,7 @@ class Mission
 									{
 										skill=1;
 										name="o10";
-										description="Sebey";
+										description="ColeTrickle";
 										isPlayable=1;
 										class Inventory
 										{
@@ -3456,8 +3475,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -3466,10 +3485,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="WhiteHead_12";
 												};
 											};
 										};
@@ -3551,8 +3570,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -3561,10 +3580,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="WhiteHead_12";
+													value=0;
 												};
 											};
 										};
@@ -4149,8 +4168,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -4159,10 +4178,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="GreekHead_A3_05";
 												};
 											};
 										};
@@ -4244,8 +4263,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -4254,10 +4273,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="GreekHead_A3_05";
+													value=0;
 												};
 											};
 										};
@@ -5812,8 +5831,8 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
@@ -5822,10 +5841,10 @@ class Mission
 													{
 														type[]=
 														{
-															"BOOL"
+															"STRING"
 														};
 													};
-													value=0;
+													value="GreekHead_A3_08";
 												};
 											};
 										};
@@ -5907,8 +5926,8 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
@@ -5917,10 +5936,10 @@ class Mission
 													{
 														type[]=
 														{
-															"STRING"
+															"BOOL"
 														};
 													};
-													value="GreekHead_A3_08";
+													value=0;
 												};
 											};
 										};
@@ -6351,7 +6370,7 @@ class Mission
 									{
 										skill=1;
 										name="o19";
-										description="Ito";
+										description="Jeroen";
 										isPlayable=1;
 										class Inventory
 										{
@@ -11979,7 +11998,7 @@ class Mission
 									{
 										skill=1;
 										name="o29";
-										description="Gangolf";
+										description="Operator";
 										isPlayable=1;
 										class Inventory
 										{
