@@ -51,5 +51,36 @@ params ["_testobjekt"];
    _test_rifle = ["test_rifle", "RIFLE", "", { [ _this select 1 ] call titan_fnc_rifle }, {true}] call ace_interact_menu_fnc_createAction;
    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rifle] call ace_interact_menu_fnc_addActionToObject;
 
-   _test_tfar = ["test_tfar", "Radio Einstellen", "", { [ _this select 1 ] call titan_fnc_sw_radiosettings;r }, {true}] call ace_interact_menu_fnc_createAction;
-   [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_tfar] call ace_interact_menu_fnc_addActionToObject;
+
+   //ACE Mainmenü recon
+    _testobjekt_recon = ["test_recon", "Recon", "", {}, {true}] call ace_interact_menu_fnc_createAction;
+    [_testobjekt, 0, ["ACE_MainActions"], _testobjekt_recon] call ace_interact_menu_fnc_addActionToObject;
+
+   //ACe untermneü
+
+    _test_rct = ["test_rct", "RCT", "", { [ _this select 1 ] call titan_fnc_rct }, {true}] call ace_interact_menu_fnc_createAction;
+    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rct] call ace_interact_menu_fnc_addActionToObject;
+
+    _test_lrr = ["test_lrr", "LRR", "", { [_this select 1 ] call titan_fnc_lrr }, {true}] call ace_interact_menu_fnc_createAction;
+    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_lrr] call ace_interact_menu_fnc_addActionToObject;
+
+    _test_lrs = ["test_lrs", "LRS", "", { [ _this select 1 ] call titan_fnc_lrs }, {true}] call ace_interact_menu_fnc_createAction;
+    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_lrs] call ace_interact_menu_fnc_addActionToObject;
+
+
+    //ACE Mainmenü piloten
+     _testobjekt_pilot = ["test_pilot", "Pilot", "", {}, {true}] call ace_interact_menu_fnc_createAction;
+     [_testobjekt, 0, ["ACE_MainActions"], _testobjekt_pilot] call ace_interact_menu_fnc_addActionToObject;
+
+    //ACe untermneü
+
+     _test_fix = ["test_fix", "FIX", "", { [ _this select 1 ] call titan_fnc_fix }, {true}] call ace_interact_menu_fnc_createAction;
+     [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_fix] call ace_interact_menu_fnc_addActionToObject;
+
+     _test_rot = ["test_rot", "ROT", "", { [_this select 1 ] call titan_fnc_rot }, {true}] call ace_interact_menu_fnc_createAction;
+     [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rot] call ace_interact_menu_fnc_addActionToObject;
+
+
+
+     _testobjekt_radio = ["test_radio", "Funkeinstellen", "", {[ _this select 1 ] call titan_fnc_sw_radiosettings}, {true}] call ace_interact_menu_fnc_createAction;
+     [_testobjekt, 0, ["ACE_MainActions"], _testobjekt_radio] call ace_interact_menu_fnc_addActionToObject;

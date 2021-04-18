@@ -15,7 +15,7 @@
     { _caller call titan_fnc_loadout_rearm },				// Code executed on completion
     {},													// Code executed on interrupted
     [],													// Arguments passed to the scripts as _this select 3
-    5,													// Action duration [s]
+    3,													// Action duration [s]
     0,													// Priority
     false,												// Remove on completion
     false												// Show in unconscious state
