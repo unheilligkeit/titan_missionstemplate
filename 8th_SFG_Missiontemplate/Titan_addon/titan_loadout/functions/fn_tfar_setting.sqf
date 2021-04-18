@@ -1,6 +1,6 @@
 /*
- * Author original: Belbo
- * Author changes: Fallingstorm
+  * Author original: Belbo (ADV)
+  * Author changes: Fallingstorm (8th SFG Titan-Platoon)
  *
  * Contains all the variables important for tfar in SeL missions.
  * Basic settings have to be set in cba_settings.sqf in main mission folder.
@@ -14,7 +14,7 @@
  * tfar present and set? - <BOOL>
  *
  * Example:
- * [] call compile preprocessFileLineNumbers "fn_tfarSettings.sqf";
+ * [] call compile preprocessFileLineNumbers "fn_tfar_settings.sqf";
  *
  * Public: No
  */
