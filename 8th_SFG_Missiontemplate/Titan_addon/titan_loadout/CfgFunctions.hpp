@@ -60,8 +60,9 @@ class titan
         class extraitems_wtp {};
     };
 
-    class titan_creategroup
+    class titan_test_kiste
     {
-        file = "Titan_addon\titan_loadout\creategroup";
+        file = "Titan_addon\titan_loadout\test_ace";
+        class test_kiste {};
     };
 };
