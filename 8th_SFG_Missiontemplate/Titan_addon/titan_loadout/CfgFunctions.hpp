@@ -46,6 +46,7 @@ class titan
         class loadout_rearm {};
         class startloadout {};
         class lr_radiosettings {};
+        class sw_radiosettings {};
         class tfar_settings {};
     };
 
