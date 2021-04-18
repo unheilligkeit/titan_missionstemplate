@@ -6,6 +6,9 @@ Hinzufügen von SWFrequenzen
 Returns: Nothing
 */
 
+params ["_fqSW", "_freq", "_sw1", "_sw2", "_sw3", "_sw4", "_sw5", "_sw6", "_sw7"];
+
+
 _fqSW =[
 	"80.1",
 	"81",
