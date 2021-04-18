@@ -26,12 +26,9 @@ overviewPicture = "Bilder\MissionPicture.jpg";
 enableDebugConsole = 1;
 onLoadIntroTime = false;
 onLoadMissionTime = false;
-
-/* ================ Slottings =============== */
-disabledAI = true;
-joinUnassigned = false;
 skipLobby = false;
-enableDebugConsole = 2;
+joinUnassigned = false;
+
 
 /* ================ Includes =============== */
 
