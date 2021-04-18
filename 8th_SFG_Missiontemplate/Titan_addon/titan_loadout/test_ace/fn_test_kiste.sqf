@@ -1,4 +1,4 @@
-params [_testobjekt];
+params ["_testobjekt"];
 
 
 
@@ -50,3 +50,6 @@ params [_testobjekt];
 
    _test_rifle = ["test_rifle", "RIFLE", "", { [ _this select 1 ] call titan_fnc_rifle }, {true}] call ace_interact_menu_fnc_createAction;
    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rifle] call ace_interact_menu_fnc_addActionToObject;
+
+   _test_tfar = ["test_tfar", "Radio Einstellen", "", { [ _this select 1 ] call titan_fnc_sw_radiosettings;r }, {true}] call ace_interact_menu_fnc_createAction;
+   [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_tfar] call ace_interact_menu_fnc_addActionToObject;
