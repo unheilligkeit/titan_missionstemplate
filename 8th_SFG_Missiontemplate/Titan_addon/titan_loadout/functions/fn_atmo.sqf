@@ -199,7 +199,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 [_unit] call titan_fnc_atmo_muni ;
 
-[_unit] call titan_fnc_sw_radiosettings;
+[_unit] spawn titan_fnc_sw_radiosettings;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "atmo"];
