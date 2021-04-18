@@ -7,7 +7,8 @@ Returns: Nothing
 */
 
 params ["_groupID", "_fqSW", "_freq", "_sw1", "_sw2", "_sw3", "_sw4", "_sw5", "_sw6", "_sw7"];
-_groupID = group player;
+_groupID = format ["%1", group player];
+
 
 _fqSW =[
 	"80.1",
@@ -19,7 +20,7 @@ _fqSW =[
 ];
 
 switch true do {
-	case (_groupID == "TITAN_1_0"):
+	case (_groupID isEqualTo "B TITAN_1_0"):
   {
     _freq = [
     	format ["%1", _fqSW select 1],
@@ -32,7 +33,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_2_0"):
+	case (_groupID isEqualTo "B TITAN_2_0"):
   {
     _freq = [
     	format ["%1", _fqSW select 2],
@@ -45,7 +46,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_2_1"):
+	case (_groupID isEqualTo "B TITAN_2_1"):
   {
     _freq = [
     	format ["%1", _fqSW select 3],
@@ -58,7 +59,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_2_2"):
+	case (_groupID isEqualTo "B TITAN_2_2"):
   {
     _freq = [
     	format ["%1", _fqSW select 4],
@@ -71,7 +72,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_2_3"):
+	case (_groupID isEqualTo "B TITAN_2_3"):
   {
     _freq = [
     	format ["%1", _fqSW select 5],
@@ -84,7 +85,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_3_0"):
+	case (_groupID isEqualTo "B TITAN_3_0"):
   {
     _freq = [
     	format ["%1", _fqSW select 6],
@@ -97,7 +98,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_3_1"):
+	case (_groupID isEqualTo "B TITAN_3_1"):
   {
     _freq = [
     	format ["%1", _fqSW select 7],
@@ -110,7 +111,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_3_2"):
+	case (_groupID isEqualTo "B TITAN_3_2"):
   {
     _freq =[
     	format ["%1", _fqSW select 8],
@@ -123,7 +124,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_3_3"):
+	case (_groupID isEqualTo "B TITAN_3_3"):
   {
     _freq = [
     	format ["%1", _fqSW select 9],
@@ -136,7 +137,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_4_0"):
+	case (_groupID isEqualTo "B TITAN_4_0"):
   {
     _freq =  [
     	format ["%1", _fqSW select 10],
@@ -149,7 +150,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_4_1"):
+	case (_groupID isEqualTo "B TITAN_4_1"):
   {
     _freq = [
     	format ["%1", _fqSW select 11],
@@ -162,7 +163,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_4_2"):
+	case (_groupID isEqualTo "B TITAN_4_2"):
   {
     _freq = [
     	format ["%1", _fqSW select 12],
@@ -175,7 +176,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "TITAN_4_3"):
+	case (_groupID isEqualTo "B TITAN_4_3"):
   {
     _freq = [
     	format ["%1", _fqSW select 13],
@@ -188,7 +189,7 @@ switch true do {
     	format ["%1", _fqSW select 16]
     ];
   };
-	case (_groupID == "EAGLE"):
+	case (_groupID isEqualTo "B EAGLE"):
   {
     _freq = [
     	format ["%1", _fqSW select 14],
@@ -201,7 +202,7 @@ switch true do {
     	format ["%1", _fqSW select 14]
     ];
   };
-	case (_groupID == "FALCON"):
+	case (_groupID isEqualTo "B FALCON"):
   {
     _freq = [
       format ["%1", _fqSW select 16],
@@ -214,7 +215,7 @@ switch true do {
     	format ["%1", _fqSW select 14]
     ];
   };
-	case (_groupID == "HAWK"):
+	case (_groupID isEqualTo "B HAWK"):
   {
     _freq = [
     	format ["%1", _fqSW select 15],
@@ -227,7 +228,7 @@ switch true do {
     	format ["%1", _fqSW select 14]
     ];
   };
-	case (_groupID == "VULTURE"):
+	case (_groupID isEqualTo "B VULTURE"):
   {
     _freq = [
     	format ["%1", _fqSW select 17],
@@ -269,23 +270,23 @@ if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then {
 };
 
 switch true do {
-	case (_groupID == "TITAN_1_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_2_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_2_1"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_2_2"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_2_3"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_3_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_3_1"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_3_2"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_3_3"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_4_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_4_1"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_4_2"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "TITAN_4_3"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "EAGLE"): {TITAN_Channel = 0; TITAN_Freq = 1; TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "FALCON"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "HAWK"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
-	case (_groupID == "VULTURE"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_1_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_2_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_2_1"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_2_2"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_2_3"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_3_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_3_1"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_3_2"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_3_3"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_4_0"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_4_1"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_4_2"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B TITAN_4_3"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B EAGLE"): {TITAN_Channel = 0; TITAN_Freq = 1; TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B FALCON"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B HAWK"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B VULTURE"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
 };
 
 

@@ -19,9 +19,8 @@
  * Public: No
  */
 
- params["_unit"];
 
-_unit setVariable ["tf_sendingDistanceMultiplicator", 25, true];
+player setVariable ["tf_sendingDistanceMultiplicator", 25, true];
 
 if (isClass(configFile >> "CfgPatches" >> "tfar_core")) exitWith {
 	//general:

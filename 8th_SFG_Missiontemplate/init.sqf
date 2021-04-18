@@ -1,6 +1,6 @@
 
 
-[] call compile preprocessFileLineNumbers "Titan_addon\titan_loadout\fn_tfar_settings.sqf";
+
 
 
 [
@@ -23,5 +23,6 @@
 
 [box1] call titan_fnc_limitarsenal ;
 
+[] call compile preprocessFileLineNumbers "Titan_addon\titan_loadout\functions\fn_tfar_settings.sqf";
 [] call compile preprocessFileLineNumbers "Titan_addon\titan_loadout\functions\fn_mff_changeuniform.sqf";
 [] call compile preprocessFileLineNumbers "Titan_addon\titan_loadout\functions\fn_diver_changeuniform.sqf";

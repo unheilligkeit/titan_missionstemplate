@@ -946,6 +946,7 @@ force force VCM_AISkills_General_EM_CLDWN = 60;
 force force Vcm_AISkills_SideSpecific = false;
 force force VCM_AISNIPERS = true;
 force force VCM_AISUPPRESS = true;
+force force VCM_ARTYSIDES = [WEST]; 
 force force VCM_ARTYDELAY = 279.786;
 force force VCM_ARTYENABLE = false;
 force force VCM_ARTYSIDES = [WEST];
