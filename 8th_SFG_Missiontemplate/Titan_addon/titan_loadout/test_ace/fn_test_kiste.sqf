@@ -59,13 +59,13 @@ params ["_testobjekt"];
    //ACe untermneü
 
     _test_rct = ["test_rct", "RCT", "", { [ _this select 1 ] call titan_fnc_rct }, {true}] call ace_interact_menu_fnc_createAction;
-    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rct] call ace_interact_menu_fnc_addActionToObject;
+    [_testobjekt, 0, ["ACE_MainActions", "test_recon"], _test_rct] call ace_interact_menu_fnc_addActionToObject;
 
     _test_lrr = ["test_lrr", "LRR", "", { [_this select 1 ] call titan_fnc_lrr }, {true}] call ace_interact_menu_fnc_createAction;
-    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_lrr] call ace_interact_menu_fnc_addActionToObject;
+    [_testobjekt, 0, ["ACE_MainActions", "test_recon"], _test_lrr] call ace_interact_menu_fnc_addActionToObject;
 
     _test_lrs = ["test_lrs", "LRS", "", { [ _this select 1 ] call titan_fnc_lrs }, {true}] call ace_interact_menu_fnc_createAction;
-    [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_lrs] call ace_interact_menu_fnc_addActionToObject;
+    [_testobjekt, 0, ["ACE_MainActions", "test_recon"], _test_lrs] call ace_interact_menu_fnc_addActionToObject;
 
 
     //ACE Mainmenü piloten
@@ -75,10 +75,10 @@ params ["_testobjekt"];
     //ACe untermneü
 
      _test_fix = ["test_fix", "FIX", "", { [ _this select 1 ] call titan_fnc_fix }, {true}] call ace_interact_menu_fnc_createAction;
-     [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_fix] call ace_interact_menu_fnc_addActionToObject;
+     [_testobjekt, 0, ["ACE_MainActions", "test_pilot"], _test_fix] call ace_interact_menu_fnc_addActionToObject;
 
      _test_rot = ["test_rot", "ROT", "", { [_this select 1 ] call titan_fnc_rot }, {true}] call ace_interact_menu_fnc_createAction;
-     [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_rot] call ace_interact_menu_fnc_addActionToObject;
+     [_testobjekt, 0, ["ACE_MainActions", "test_pilot"], _test_rot] call ace_interact_menu_fnc_addActionToObject;
 
 
      //ACE Mainmenü spzeial
@@ -88,10 +88,10 @@ params ["_testobjekt"];
      //ACe untermneü
 
       _test_mff = ["test_mff", "MFF", "", { [ _this select 1 ] call titan_fnc_mff }, {true}] call ace_interact_menu_fnc_createAction;
-      [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_mff] call ace_interact_menu_fnc_addActionToObject;
+      [_testobjekt, 0, ["ACE_MainActions", "test_special"], _test_mff] call ace_interact_menu_fnc_addActionToObject;
 
       _test_diver = ["test_diver", "Diver", "", { [_this select 1 ] call titan_fnc_diver }, {true}] call ace_interact_menu_fnc_createAction;
-      [_testobjekt, 0, ["ACE_MainActions", "test_operator"], _test_diver] call ace_interact_menu_fnc_addActionToObject;
+      [_testobjekt, 0, ["ACE_MainActions", "test_special"], _test_diver] call ace_interact_menu_fnc_addActionToObject;
 
 
 
