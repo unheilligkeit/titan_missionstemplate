@@ -1,4 +1,8 @@
 
+
+[] call compile preprocessFileLineNumbers "Titan_addon\titan_loadout\fn_tfar_settings.sqf";
+
+
 [
     uav1,											// Object the action is attached to
     "Rearm",										// Title of the action
