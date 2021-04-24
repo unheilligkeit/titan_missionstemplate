@@ -6,7 +6,7 @@ Hinzufügen von SWFrequenzen
 Returns: Nothing
 */
 
-params ["_groupID", "_fqSW", "_freq", "_sw1", "_sw2", "_sw3", "_sw4", "_sw5", "_sw6", "_sw7"];
+params ["_unit", "_groupID", "_fqSW", "_freq", "_sw1", "_sw2", "_sw3", "_sw4", "_sw5", "_sw6", "_sw7"];
 _groupID = format ["%1", group player];
 
 
@@ -294,3 +294,6 @@ if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then {
 	[(call TFAR_fnc_activeSwRadio), TITAN_Channel] call TFAR_fnc_setSwChannel;
 	[(call TFAR_fnc_activeSwRadio), TITAN_Freq, TITAN_Freq_Set] call TFAR_fnc_SetChannelFrequency;
 };
+
+_hasLR = call TFAR_fnc_haveLRRadio;
+if (_hasLR) then {[_unit] call titan_fnc_lr_radiosettings;};
