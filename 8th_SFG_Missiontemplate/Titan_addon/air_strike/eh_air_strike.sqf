@@ -13,9 +13,9 @@
 			- von _smoke1, smoke2 etc zu _array _smoke gewechselt, alten code gelöscht.
 */
 //---------------------------------------------------------------------------
-_permVar = missionNamespace getVariable "permVar";
+_permVar = missionNamespace getVariable "titan_loadout_class";
 
-if (_permvar == "tac") then {
+if (_permvar == "sotac") then {
 	player addEventHandler ["Fired",
 		{
 			//_isSmoke = (_this select 4); hint format ["%1", _isSmoke]; //Abfrage bezeichnung des Fired objects
