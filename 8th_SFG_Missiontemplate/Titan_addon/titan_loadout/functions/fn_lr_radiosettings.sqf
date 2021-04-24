@@ -235,7 +235,7 @@ switch true do {
 
    ];
   };
-	case (_groupID isEqualTo "EAGLE"):
+	case (_groupID isEqualTo "B EAGLE"):
   {
     _freq =
     [
@@ -252,7 +252,7 @@ switch true do {
 
     ];
   };
-	case (_groupID isEqualTo "FALCON"):
+	case (_groupID isEqualTo "B FALCON"):
   {
     _freq =
     [
@@ -269,7 +269,7 @@ switch true do {
 
     ];
   };
-	case (_groupID isEqualTo "HAWK"):
+	case (_groupID isEqualTo "B HAWK"):
   {
     _freq =
     [
@@ -286,7 +286,7 @@ switch true do {
 
     ];
   };
-	case (_groupID isEqualTo "VULTURE"):
+	case (_groupID isEqualTo "B VULTURE"):
   {
     _freq =
     [

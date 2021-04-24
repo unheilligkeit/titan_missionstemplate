@@ -11,12 +11,10 @@ _groupID = format ["%1", group player];
 
 
 _fqSW =[
-	"80.1",
-	"81",
-	"82", "82.1", "82.2", "82.3",
-	"83", "83.1", "83.2", "83.3",
-	"84", "84.1", "84.2", "84.3",
-	"88", "88.1", "88.2", "88.3","88.4"
+	"80.1",	"81",	"82", "82.1", "82.2", "82.3",	"83", "83.1", "83.2", "83.3",	"84", "84.1", "84.2", "84.3",
+	"88", "88.1", "88.2", "88.3","88.4",
+	//Pilot
+	"78","78.1","78.2","78.3","78.4","80.1","81","88"
 ];
 
 switch true do {
@@ -241,6 +239,19 @@ switch true do {
     	format ["%1", _fqSW select 14]
     ];
   };
+	case (_groupID isEqualTo "B SQUADRON"):
+	{
+		_freq = [
+			format ["%1", _fqSW select 19],
+			format ["%1", _fqSW select 20],
+			format ["%1", _fqSW select 21],
+			format ["%1", _fqSW select 22],
+			format ["%1", _fqSW select 23],
+			format ["%1", _fqSW select 24],
+			format ["%1", _fqSW select 25],
+			format ["%1", _fqSW select 26]
+		];
+	};
 };
 
 _sw1 = format ["%1", _freq select 0];
@@ -287,6 +298,7 @@ switch true do {
 	case (_groupID isEqualTo "B FALCON"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
 	case (_groupID isEqualTo "B HAWK"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
 	case (_groupID isEqualTo "B VULTURE"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
+	case (_groupID isEqualTo "B SQUADRON"): {TITAN_Channel = 0; TITAN_Freq = 1;TITAN_Freq_Set = format ["%1", _freq select 0]};
 };
 
 
