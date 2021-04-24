@@ -37,10 +37,14 @@ class CfgFunctions
 	#include "Titan_addon\SotacTabletSystem\functions.hpp"
 };
 
+class RscTitles {
+	#include "Titan_addon\vehicle_service\veh_dialogs.hpp"
+};
+
 #include "Titan_addon\defines.hpp"
 #include "Titan_addon\AirSupport\dialogs\dialog_AirSupport.hpp"
 #include "Titan_addon\AirSupport\dialogs\dialog_AirSupport_2.hpp"
-
+#include "Titan_addon\air_strike\air_strike.sqf"
 
 
 /*================== Prameter ============ */

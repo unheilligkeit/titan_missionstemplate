@@ -329,7 +329,7 @@ fs_rearm =
 					forEach _magazine;
 
 					12 cutRsc ["default","PLAIN"];
-titleText ["Rearming Turrets left done","PLAIN DOWN"];
+					titleText ["Rearming Turrets left done","PLAIN DOWN"];
 				};
 			};
 		};
