@@ -1,12 +1,12 @@
 /*
- * *** fn_AS_spawn ***	
+ * *** fn_AS_spawn ***
  *
  * Author: Fallingstorm, 8thSFG TITAN
  *
  * get selected button and spawn vehicle
  *
  * Arguments:
- * 
+ *
  *
  * Return Value:
  *
@@ -22,7 +22,7 @@
 */
 //----------------------------------------------------------------------------------------------------
 private [
-	"_veh1", "_veh2", "_veh3", "_veh4", "_vehicle", "_column1", "_column2", "_column3", 
+	"_veh1", "_veh2", "_veh3", "_veh4", "_vehicle", "_column1", "_column2", "_column3",
 	"_column4", "_i" , "_spCheck", "_spawn_1", "_spawn_2", "_spawn_3", "_spawn_4"
 ];
 
@@ -35,7 +35,7 @@ _veh4 = "";
 _debug = false;
 
 ParkPos_5 = getMarkerPos "ParkPos_5";
-_direction_1 = markerDir "ParkPos_5";  
+_direction_1 = markerDir "ParkPos_5";
 ParkPos_6 = getMarkerPos "ParkPos_6";
 _direction_2 = markerDir "ParkPos_6";
 ParkPos_7 = getMarkerPos "ParkPos_7";
@@ -57,7 +57,7 @@ _column4 = [AS5401, AS5402, AS5403, AS6401, AS6402, AS6403, AS6404, AS7401, AS74
 //Check Buttons Column 1 Box 1 to 5
 for "_i" from 0 to 12 do {
 	if ((_column1 select _i) == false) then {
-		_column = _i; 
+		_column = _i;
 		switch (_column) do {
 			case (0): {_veh1 = format ["%1", (_vehicle select 0) select 0];};
 			case (1): {_veh1 = format ["%1", (_vehicle select 0) select 1];};
@@ -73,13 +73,13 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh1 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh1 = format["%1", (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_6,["landVehicle","Air","Ship"],28] select 0; 
+				_spCheck = nearestObjects[ParkPos_6,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
-		}; 
-		_spCheck = nearestObjects[ParkPos_5,["landVehicle","Air","Ship"],28] select 0; 
+		};
+		_spCheck = nearestObjects[ParkPos_5,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-	};	
+	};
 };
 
 
@@ -87,7 +87,7 @@ for "_i" from 0 to 12 do {
 //Check Buttons Column 2 Box 1 to 5
 for "_i" from 0 to 12 do {
 	if ((_column2 select _i) == false) then {
-		_column = _i; 
+		_column = _i;
 		switch (_column) do {
 			case (0): {_veh2 = format ["%1",  (_vehicle select 0) select 0];};
 			case (1): {_veh2 = format ["%1",  (_vehicle select 0) select 1];};
@@ -103,13 +103,13 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh2 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh2 = format ["%1",  (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_5,["landVehicle","Air","Ship"],28] select 0; 
+				_spCheck = nearestObjects[ParkPos_5,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-				_spCheck = nearestObjects[ParkPos_7,["landVehicle","Air","Ship"],28] select 0; 
+				_spCheck = nearestObjects[ParkPos_7,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
-		}; 	
-		_spCheck = nearestObjects[ParkPos_6,["landVehicle","Air","Ship"],28] select 0; 
+		};
+		_spCheck = nearestObjects[ParkPos_6,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
@@ -118,7 +118,7 @@ for "_i" from 0 to 12 do {
 //Check Buttons Column 1 Box 1 to 5
 for "_i" from 0 to 12 do {
 	if ((_column3 select _i) == false) then {
-		_column = _i; 
+		_column = _i;
 		switch (_column) do {
 			case (0): {_veh3 = format ["%1",  (_vehicle select 0) select 0];};
 			case (1): {_veh3 = format ["%1",  (_vehicle select 0) select 1];};
@@ -134,13 +134,13 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh3 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh3 = format ["%1",  (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_6,["landVehicle","Air","Ship"],28] select 0; 
+				_spCheck = nearestObjects[ParkPos_6,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-				_spCheck = nearestObjects[ParkPos_8,["landVehicle","Air","Ship"],28] select 0; 
-				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};			
+				_spCheck = nearestObjects[ParkPos_8,["landVehicle","Air","Ship"],28] select 0;
+				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
-		}; 
-		_spCheck = nearestObjects[ParkPos_7,["landVehicle","Air","Ship"],28] select 0; 
+		};
+		_spCheck = nearestObjects[ParkPos_7,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
@@ -165,12 +165,12 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh4 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh4 = format ["%1",  (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_7,["landVehicle","Air","Ship"],28] select 0; 
-				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};			
+				_spCheck = nearestObjects[ParkPos_7,["landVehicle","Air","Ship"],28] select 0;
+				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
-		}; 
-		_spCheck = nearestObjects[ParkPos_8,["landVehicle","Air","Ship"],28] select 0; 
-		if(!isNil "_spCheck") then {deleteVehicle _spCheck;}; 
+		};
+		_spCheck = nearestObjects[ParkPos_8,["landVehicle","Air","Ship"],28] select 0;
+		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
 sleep 0.5;
@@ -193,7 +193,7 @@ if ((surfaceIsWater ParkPos_5) || (surfaceIsWater ParkPos_6) || (surfaceIsWater 
 	_spawn_2 = _veh2 createVehicle ParkPos_6;
 	_spawn_2 setPos ParkPos_6;
 	_spawn_2 setDir _direction_2;
-	
+
 	if ((_veh3 in AS_FWM) || (_veh3 in AS_FWSL)) then {
 		_veh3 = "";
 	};
@@ -201,7 +201,7 @@ if ((surfaceIsWater ParkPos_5) || (surfaceIsWater ParkPos_6) || (surfaceIsWater 
 	_spawn_3 = _veh3 createVehicle ParkPos_7;
 	_spawn_3 setPos ParkPos_7;
 	_spawn_3 setDir _direction_3;
-	
+
 	if ((_veh4 in AS_FWM) || (_veh4 in AS_FWSL)) then {
 		_veh4 = "";
 	};
@@ -209,12 +209,12 @@ if ((surfaceIsWater ParkPos_5) || (surfaceIsWater ParkPos_6) || (surfaceIsWater 
 	_spawn_4 = _veh4 createVehicle ParkPos_8;
 	_spawn_4 setPos ParkPos_8;
 	_spawn_4 setDir _direction_4;
-	
+
 } else {
 	_spawn_1 = _veh1 createVehicle ParkPos_5;
 	_spawn_1 setPos ParkPos_5;
 	_spawn_1 setDir _direction_1;
-	
+
 	_spawn_2 = _veh2 createVehicle ParkPos_6;
 	_spawn_2 setPos ParkPos_6;
 	_spawn_2 setDir _direction_2;
@@ -222,7 +222,7 @@ if ((surfaceIsWater ParkPos_5) || (surfaceIsWater ParkPos_6) || (surfaceIsWater 
 	_spawn_3 = _veh3 createVehicle ParkPos_7;
 	_spawn_3 setPos ParkPos_7;
 	_spawn_3 setDir _direction_3;
-	
+
 	_spawn_4 = _veh4 createVehicle ParkPos_8;
 	_spawn_4 setPos ParkPos_8;
 	_spawn_4 setDir _direction_4;
@@ -237,5 +237,5 @@ if (_debug) then {
 
 if (true) exitWith {
 	closeDialog 0;
-	[] execVM "TitanAddons\LegacySystems\AirSupport\functions_2\fn_ASBTN.sqf";
+	[] execVM "Titan_addon\AirSupport\functions_2\fn_ASBTN.sqf";
 };

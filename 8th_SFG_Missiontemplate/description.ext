@@ -42,8 +42,8 @@ class RscTitles {
 };
 
 #include "Titan_addon\defines.hpp"
-#include "Titan_addon\AirSupport\dialogs\dialog_AirSupport.hpp"
-#include "Titan_addon\AirSupport\dialogs\dialog_AirSupport_2.hpp"
+#include "Titan_addon\AirSupport\Dialogs\dialog_AirSupport.hpp"
+#include "Titan_addon\AirSupport\Dialogs\dialog_AirSupport_2.hpp"
 //#include "Titan_addon\air_strike\eh_air_strike.sqf"
 
 
