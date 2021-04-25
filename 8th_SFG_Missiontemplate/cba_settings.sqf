@@ -469,7 +469,7 @@ force diwako_dui_indicators_crew_range_enabled = true;
 diwako_dui_indicators_fov_scale = false;
 diwako_dui_indicators_icon_buddy = true;
 diwako_dui_indicators_icon_leader = true;
-diwako_dui_indicators_icon_medic = true;
+diwako_dui_indicators_icon_medic = false;
 diwako_dui_indicators_range = 30.1042;
 diwako_dui_indicators_range_crew = 300;
 diwako_dui_indicators_range_scale = false;
@@ -488,17 +488,7 @@ diwako_dui_main_squadBlue = [0,0,1,1];
 diwako_dui_main_squadGreen = [0,1,0,1];
 diwako_dui_main_squadMain = [1,1,1,1];
 diwako_dui_main_squadRed = [1,0,0,1];
-diwako_dui_main_squadYellow = [1,1,0,1];// ACE Allgemein
-force ace_common_allowFadeMusic = true;
-force force ace_common_checkPBOsAction = 0;
-force force ace_common_checkPBOsCheckAll = true;
-force ace_common_checkPBOsWhitelist = "[]";
-force ace_common_displayTextColor = [0,0,0,0.1];
-force ace_common_displayTextFontColor = [1,1,1,1];
-force ace_common_settingFeedbackIcons = 1;
-force ace_common_settingProgressBarLocation = 0;
-force ace_noradio_enabled = true;
-force ace_parachute_hideAltimeter = true;
+diwako_dui_main_squadYellow = [1,1,0,1];
 
 // LAMBS Danger
 force lambs_danger_cqbRange = 60;
