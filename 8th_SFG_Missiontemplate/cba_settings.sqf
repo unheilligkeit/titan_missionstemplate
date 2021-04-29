@@ -111,6 +111,7 @@ ace_vehicles_speedLimiterStep = 5;
 force force ace_vehiclelock_defaultLockpickStrength = 10;
 force force ace_vehiclelock_lockVehicleInventory = true;
 force force ace_vehiclelock_vehicleStartingLockState = -1;
+<<<<<<< HEAD
 
 // ACE Fingerzeig
 force force ace_finger_enabled = true;
@@ -123,6 +124,20 @@ force ace_captives_allowSurrender = true;
 force ace_captives_requireSurrender = 1;
 force ace_captives_requireSurrenderAi = false;
 
+=======
+
+// ACE Fingerzeig
+force force ace_finger_enabled = true;
+force force ace_finger_indicatorColor = [0,1,0,1];
+force force ace_finger_maxRange = 25;
+
+// ACE Gefangene
+force ace_captives_allowHandcuffOwnSide = true;
+force ace_captives_allowSurrender = true;
+force ace_captives_requireSurrender = 1;
+force ace_captives_requireSurrenderAi = false;
+
+>>>>>>> 94594611ae15cc8ac26a707d7ce16fbc2b4a1eed
 // ACE GehÃ¶r
 force force ace_hearing_autoAddEarplugsToUnits = true;
 force force ace_hearing_disableEarRinging = true;
@@ -469,7 +484,11 @@ force diwako_dui_indicators_crew_range_enabled = true;
 diwako_dui_indicators_fov_scale = false;
 diwako_dui_indicators_icon_buddy = true;
 diwako_dui_indicators_icon_leader = true;
+<<<<<<< HEAD
 diwako_dui_indicators_icon_medic = false;
+=======
+diwako_dui_indicators_icon_medic = true;
+>>>>>>> 94594611ae15cc8ac26a707d7ce16fbc2b4a1eed
 diwako_dui_indicators_range = 30.1042;
 diwako_dui_indicators_range_crew = 300;
 diwako_dui_indicators_range_scale = false;
@@ -488,7 +507,21 @@ diwako_dui_main_squadBlue = [0,0,1,1];
 diwako_dui_main_squadGreen = [0,1,0,1];
 diwako_dui_main_squadMain = [1,1,1,1];
 diwako_dui_main_squadRed = [1,0,0,1];
+<<<<<<< HEAD
 diwako_dui_main_squadYellow = [1,1,0,1];
+=======
+diwako_dui_main_squadYellow = [1,1,0,1];// ACE Allgemein
+force ace_common_allowFadeMusic = true;
+force force ace_common_checkPBOsAction = 0;
+force force ace_common_checkPBOsCheckAll = true;
+force ace_common_checkPBOsWhitelist = "[]";
+force ace_common_displayTextColor = [0,0,0,0.1];
+force ace_common_displayTextFontColor = [1,1,1,1];
+force ace_common_settingFeedbackIcons = 1;
+force ace_common_settingProgressBarLocation = 0;
+force ace_noradio_enabled = true;
+force ace_parachute_hideAltimeter = true;
+>>>>>>> 94594611ae15cc8ac26a707d7ce16fbc2b4a1eed
 
 // LAMBS Danger
 force lambs_danger_cqbRange = 60;
