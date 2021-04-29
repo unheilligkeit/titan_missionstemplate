@@ -18,7 +18,7 @@ force ace_mk6mortar_allowCompass = false;
 force ace_mk6mortar_allowComputerRangefinder = false;
 force ace_mk6mortar_useAmmoHandling = false;
 
-// ACE AuÃŸenlaststationen
+// ACE Aussenlaststationen
 force force ace_pylons_enabledForZeus = true;
 force force ace_pylons_enabledFromAmmoTrucks = true;
 force force ace_pylons_rearmNewPylons = true;
@@ -123,7 +123,7 @@ force ace_captives_allowSurrender = true;
 force ace_captives_requireSurrender = 1;
 force ace_captives_requireSurrenderAi = false;
 
-// ACE GehÃ¶r
+// ACE Gehoer
 force force ace_hearing_autoAddEarplugsToUnits = true;
 force force ace_hearing_disableEarRinging = true;
 force force ace_hearing_earplugsVolume = 0.5;
