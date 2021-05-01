@@ -36,7 +36,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_fix_brille") then
         {
 
-            _brillearray = selectRandom [];
+            _brillearray = selectRandom [""];
             _unit addGoggles _brillearray;
 
         } else {

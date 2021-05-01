@@ -30,6 +30,8 @@ class titan
         class lrs_muni {};
         class rct {};
         class rct_muni {};
+        class cct {};
+        class cct_muni {};
         class ptl {};
         class ptl_muni {};
         class rifle {};

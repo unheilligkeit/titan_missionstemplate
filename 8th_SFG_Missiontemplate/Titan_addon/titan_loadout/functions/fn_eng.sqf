@@ -8,8 +8,8 @@ _tarnmuster = "param_tarnmuster" call BIS_fnc_getParamValue;
 
 // Ace medic deklaration
 _unit setVariable ["ace_medical_medicClass", 2, true];
-_player setVariable ["ACE_IsEngineer",1,true];
-_player setVariable ["ACE_isEOD",1,true];
+_unit setVariable ["ACE_IsEngineer",1,true];
+_unit setVariable ["ACE_isEOD",1,true];
 
 // uniform laden
 
