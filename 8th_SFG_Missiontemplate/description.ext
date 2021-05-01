@@ -43,6 +43,7 @@ class RscTitles {
 
 #include "Titan_addon\defines.hpp"
 #include "Titan_addon\titan_loadout\gui\dialog\dialog_loadout.hpp"
+#include "Titan_addon\titan_loadout\loadout_gui\dialog\dialog_loadout.hpp"
 #include "Titan_addon\AirSupport\Dialogs\dialog_AirSupport.hpp"
 #include "Titan_addon\AirSupport\Dialogs\dialog_AirSupport_2.hpp"
 

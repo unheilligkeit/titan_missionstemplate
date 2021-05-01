@@ -12,7 +12,7 @@ class loadout_gui
 		{
 			idc = 1201;
 			text = "Titan_addon\titan_loadout\loadout_gui\picture\TITAN_Loadout_Panel.paa";
-			
+
 			x = 0 - pixelW * pixelGrid * 5;
 			y = 0 - pixelH * pixelGrid * 20;
 			w = pixelW * pixelGrid * 86;
@@ -25,10 +25,10 @@ class loadout_gui
 		{
 			idc = -1;
 			text = "Titan_addon\titan_loadout\loadout_gui\picture\TITANLogo.paa";
-			
+
 			x = 0 + pixelW * pixelGrid * 7;
 			y = 0;
-			w = pixelW * pixelGrid * 30;      
+			w = pixelW * pixelGrid * 30;
 			h = pixelH * pixelGrid * 10;
 
 		};
@@ -41,7 +41,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 37;
 			y = 0;
-			w = pixelW * pixelGrid * 30;      
+			w = pixelW * pixelGrid * 30;
 			h = pixelH * pixelGrid * 12;
 
 		};
@@ -55,7 +55,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 8;
 			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
 
@@ -67,7 +67,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 22;
 			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
 
@@ -79,7 +79,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 36;
 			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
 
@@ -91,7 +91,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 50;
 			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
 
@@ -103,10 +103,10 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 8;
 			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
-		
+
 		// Box 6
 		class txtBox6: TITANBoxLow
 		{
@@ -115,7 +115,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 22;
 			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
 /*
@@ -124,13 +124,13 @@ class loadout_gui
 		{
 			idc = -1;
 			text = "";
-			
+
 			x = 0 + pixelW * pixelGrid * 36;
 			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
-*/		
+*/
 		// Box 8
 		class txtBox8: TITANBoxLow
 		{
@@ -139,7 +139,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 50;
 			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;  
+			w = pixelW * pixelGrid * 13;
 			h = pixelH * pixelGrid * 14;
 		};
 
@@ -157,7 +157,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 72;
 			y = 0 + pixelH * pixelGrid * 40;
-			w = pixelW * pixelGrid * 3;  
+			w = pixelW * pixelGrid * 3;
 			h = pixelH * pixelGrid * 3;
 			tooltip = "CLOSE";
 			action = "closeDialog 1000;";
@@ -171,7 +171,7 @@ class loadout_gui
 
 			x = 0 + pixelW * pixelGrid * 23;
 			y = 0 + pixelH * pixelGrid * 42.5;
-			w = pixelW * pixelGrid * 11;  
+			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
 			action = "";
@@ -189,7 +189,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action =  "";
+			action =  "[player] call titan_fnc_ptl";
 		};
 
 		class button_1_2: TITAN_LO_Button
@@ -258,12 +258,12 @@ class loadout_gui
 
 			action = "";
 		};
-		
+
 /*		class button_2_3: TITAN_LO_Button
 		{
 			idc = 0203;
 			text = "";
-			
+
 			x = 0 + pixelW * pixelGrid * 23;
 			y = 0 + pixelH * pixelGrid * 20;
 			w = pixelW * pixelGrid * 11;
@@ -271,7 +271,7 @@ class loadout_gui
 
 			action = "";
 		};
- 
+
 		class button_2_4: TITAN_LO_Button
 		{
 			idc = 0204;
@@ -376,7 +376,7 @@ class loadout_gui
 
 			action = "";
 		};
-	
+
 /*		class button_4_4: TITAN_LO_Button
 		{
 			idc = 0404;
@@ -417,7 +417,7 @@ class loadout_gui
 
 			action = "";
 		};
-		
+
 /*		class button_5_3: TITAN_LO_Button
 		{
 			idc = 0503;
@@ -430,7 +430,7 @@ class loadout_gui
 
 			action = "";
 		};
-		
+
 		class button_5_4: TITAN_LO_Button
 		{
 			idc = 0504;
@@ -500,7 +500,7 @@ class loadout_gui
 
 			action = ""
 		};
-*/		
+*/
 		// BUTTON REIHE BOX 8
 		class button_8_1: TITAN_LO_Button
 		{
@@ -527,5 +527,5 @@ class loadout_gui
 
 			action = ""
 		};
-	};	
+	};
 };
