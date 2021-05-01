@@ -456,7 +456,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[] call Titan_addons_SotacTabletSystem_fnc_loginPilot";
+			action = "[] call TitanAddons_SotacTabletSystem_fnc_loginPilot";
 		};
 
 		class button_6_2: TITAN_LO_Button
@@ -469,7 +469,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[name player] call Titan_addons_SotacTabletSystem_fnc_logoutPilot";
+			action = "[name player] call TitanAddons_SotacTabletSystem_fnc_logoutPilot";
 		};
 
 
