@@ -5,7 +5,7 @@
 	Titel: eh_air_strike.sqf
 
 	Action:	When chemlight / smoke <color> thrown, then set marker air_strike
-			Marker exist solong as grenade / smoke is true plus 18 sec.
+			Marker exist as long as grenade / smoke is true plus 18 sec.
 
 */
 //---------------------------------------------------------------------------
