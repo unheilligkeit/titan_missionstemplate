@@ -2,67 +2,65 @@
 /*
 	Author: Fallingstorm
 
-	Titel: AirTarget.sqf
+	Titel: eh_air_strike.sqf
 
-	Action:	Wenn Chemlight / Smoke <farbe> geworfen, dann erstelle Marker AirTarget
-			Marker existiert solange Grenade true plus 18 sec. (Theoretisch solange der Rauch existiert)
+	Action:	When chemlight / smoke <color> thrown, then set marker air_strike
+			Marker exist solong as grenade / smoke is true plus 18 sec.
 
-	TP_count ist in Loadout\functions\fn_serverInit.sqf deklariert
-
-	Change - 23.04.2020 Fallingstorm
-			- von _smoke1, smoke2 etc zu _array _smoke gewechselt, alten code gelöscht.
 */
 //---------------------------------------------------------------------------
-_permVar = missionNamespace getVariable "titan_loadout_class";
+params ["_smoke", "_smoke1", "_isSmoke", "_color", "_colort", "_count", "_grenadePos", "_grenadeObj", "_grenadeDir", "_marker", "_smokes"];
 
-if (_permvar == "sotac") then {
+_loadclass = missionNamespace getVariable "titan_loadout_class";
+
+counter = 0;
+
+if (_loadclass == "sotac") then {
 	player addEventHandler ["Fired",
 		{
 			//_isSmoke = (_this select 4); hint format ["%1", _isSmoke]; //Abfrage bezeichnung des Fired objects
 
-			private _smoke = ["G_40mm_SmokeGreen","G_40mm_SmokeYellow","G_40mm_SmokeBlue","G_40mm_SmokePurple","F_40mm_Green","F_40mm_Yellow"];
+			_smoke = ["G_40mm_SmokeGreen","G_40mm_SmokeYellow","G_40mm_SmokeBlue","G_40mm_SmokePurple","F_40mm_Green","F_40mm_Yellow"];
 
 			if ((_this select 4) in _smoke ) then
 			{
+				
+				
 				_grenadeObj = (_this select 6);
 				_moveMarker = [_grenadeObj] spawn {
 
-					private ["_color","_colort","_count","_grenadePos","_grenadeObj"];
+					
 					// initialize
 					_color = "colorRed";
 					_colort = "ColorBlue";
-					_count = TP_count;
+					_count = counter;
 					_grenadeObj = (_this select 0);
 					waitUntil { (getPosATL _grenadeObj select 2) < 0.2 };
 					_grenadePos = getPosATL _grenadeObj;
 					_grenadeDir = getDir player;
 
-					// marker AirStrike
+					// marker air_strike
 					_marker = createMarker [format ["%1_marker",_count],_grenadePos];
 					_marker setMarkerDir _grenadeDir;
 					_marker setMarkerShape "RECTANGLE";
 					_marker setMarkerAlpha 0.4;
-					_marker	setMarkerColor _color;//"ColorRed";
+					_marker	setMarkerColor _color;
 					_marker setMarkerSize [200, 50];
 
-					// marker Text
+					// marker text
 					_markert = createMarker [format ["KillZone_%1",_count],_grenadePos];
 					_markert setMarkerType "Select";
-					_markert setMarkerColor _colort;//"ColorBlue";
+					_markert setMarkerColor _colort;
 					_markert setMarkerText format["KillZone_%1", _count];
 					_markert setMarkerPos _grenadePos;
 
-					publicVariable "TP_count";
-
 					hint format ["KillZone_%1 \n HOT!",_count];
 
-					TP_count = _count + 1; //TP_count = anzahl vorhandener  Smoke
-
+					counter = _count + 1;
 
 					// delete marker after smoke
 					waitUntil {(!alive _grenadeObj)};
 					if (!alive _grenadeObj) then {
-
 						sleep 90;
 						deleteMarker _marker;
 						deleteMarker _markert;

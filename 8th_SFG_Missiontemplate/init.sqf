@@ -21,7 +21,7 @@
     false												// Show in unconscious state
 ] remoteExec ["BIS_fnc_holdActionAdd", 0, uav1];
 
-[box1] call titan_fnc_limitarsenal_bdu;
+[box1] call titan_fnc_limitarsenal ;
 [Box2] call titan_fnc_test_kiste;
 
 [player] call titan_fnc_tfar_settings;

@@ -201,3 +201,5 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "sotac"];
+
+_this = [] call compile preprocessFileLineNumbers "Titan_addon\air_strike\eh_air_strike.sqf";
