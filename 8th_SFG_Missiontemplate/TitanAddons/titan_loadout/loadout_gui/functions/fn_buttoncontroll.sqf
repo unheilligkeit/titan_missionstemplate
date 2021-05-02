@@ -1,4 +1,4 @@
-createDialog "loadout_gui";
+
 _loadclass = missionNamespace getVariable "titan_loadout_class";
 
 
