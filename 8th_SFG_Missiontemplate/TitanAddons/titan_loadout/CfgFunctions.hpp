@@ -62,11 +62,6 @@ class titan
         class extraitems_wtp {};
     };
 
-    class titan_test_kiste
-    {
-        file = "TitanAddons\titan_loadout\test_ace";
-        class test_kiste {};
-    };
 
     class titan_dialog_function
     {
