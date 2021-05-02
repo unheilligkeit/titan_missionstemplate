@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1563;
+		nextID=1577;
 	};
 	class Camera
 	{
@@ -337,7 +337,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout WIP </t>"","""","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""createDialog 'loadout_gui'"","""", 100, false, True, """", """", 5];}";
 								name="box1";
 								description="Loadout Gross";
 							};
@@ -407,7 +407,7 @@ class Mission
 																"STRING"
 															};
 														};
-														value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+														value="";
 													};
 												};
 												class Item2
@@ -421,7 +421,7 @@ class Mission
 																"STRING"
 															};
 														};
-														value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+														value="";
 													};
 												};
 												class Item3
