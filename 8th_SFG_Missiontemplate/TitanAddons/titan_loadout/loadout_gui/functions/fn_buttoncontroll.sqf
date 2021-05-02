@@ -12,12 +12,18 @@ if (_loadclass == "start") then {
     ctrlEnable [0802, true];
 };
 
-if ((_loadclass == "rot") || (_loadclass == "fix")) then {
-  if ([name player] call TitanAddons_SotacTabletSystem_fnc_isPilotLoggedIn) then {
-		ctrlEnable [0601, false];
-		ctrlEnable [0602, true];
-	} else {
-        ctrlEnable [0601, true];
+
+if (!(_loadclass == "rot") || !(_loadclass == "fix")) then {
+        ctrlEnable [0601, false];
         ctrlEnable [0602, false];
+} else {
+	if ((_loadclass == "rot") || (_loadclass == "fix")) then {
+		if ([name player] call TitanAddons_SotacTabletSystem_fnc_isPilotLoggedIn) then {
+		  ctrlEnable [0601, false];
+		  ctrlEnable [0602, true];
+	  } else {
+		  ctrlEnable [0601, true];
+		  ctrlEnable [0602, false];
+	  };
   };
 };
