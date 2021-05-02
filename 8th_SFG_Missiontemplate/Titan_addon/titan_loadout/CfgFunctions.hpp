@@ -4,7 +4,7 @@ class titan
 
     class titan_loadout
     {
-        file = "Titan_addon\titan_loadout\functions";
+        file = "TitanAddons\titan_loadout\functions";
         class loadoutremove {};
         class addmedicalequipment {};
         class addpilotmedical {};
@@ -54,7 +54,7 @@ class titan
 
     class titan_extraitem
     {
-        file = "Titan_addon\titan_loadout\extraitem";
+        file = "TitanAddons\titan_loadout\extraitem";
         class limitarsenal {};
         class extraitems_bdu {};
         class extraitems_mtp {};
@@ -64,7 +64,7 @@ class titan
 
     class titan_test_kiste
     {
-        file = "Titan_addon\titan_loadout\test_ace";
+        file = "TitanAddons\titan_loadout\test_ace";
         class test_kiste {};
     };
 };

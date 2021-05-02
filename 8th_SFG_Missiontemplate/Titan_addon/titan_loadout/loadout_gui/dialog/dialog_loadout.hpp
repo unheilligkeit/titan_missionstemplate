@@ -11,7 +11,7 @@ class loadout_gui
 		class home_screen: RscPicture
 		{
 			idc = 1201;
-			text = "Titan_addon\titan_loadout\loadout_gui\picture\TITAN_Loadout_Panel.paa";
+			text = "TitanAddons\titan_loadout\loadout_gui\picture\TITAN_Loadout_Panel.paa";
 
 			x = 0 - pixelW * pixelGrid * 5;
 			y = 0 - pixelH * pixelGrid * 20;
@@ -24,7 +24,7 @@ class loadout_gui
 		class Logo: TITANLogo
 		{
 			idc = -1;
-			text = "Titan_addon\titan_loadout\loadout_gui\picture\TITANLogo.paa";
+			text = "TitanAddons\titan_loadout\loadout_gui\picture\TITANLogo.paa";
 
 			x = 0 + pixelW * pixelGrid * 7;
 			y = 0;
@@ -174,7 +174,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_loadoutrearm";
+			action = "[player] call titan_fnc_loadout_rearm";
 		};
 
 //============================================= UNIFORM BUTTONS ==========================

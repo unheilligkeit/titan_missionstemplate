@@ -33,19 +33,19 @@ joinUnassigned = false;
 
 class CfgFunctions
 {
-	#include "Titan_addon\titan_loadout\CfgFunctions.hpp"
-	#include "Titan_addon\SotacTabletSystem\functions.hpp"
+	#include "TitanAddons\titan_loadout\CfgFunctions.hpp"
+	#include "TitanAddons\SotacTabletSystem\functions.hpp"
 };
 
 class RscTitles {
-	#include "Titan_addon\vehicle_service\veh_dialogs.hpp"
+	#include "TitanAddons\vehicle_service\veh_dialogs.hpp"
 };
 
-#include "Titan_addon\defines.hpp"
-#include "Titan_addon\titan_loadout\gui\dialog\dialog_loadout.hpp"
-#include "Titan_addon\titan_loadout\loadout_gui\dialog\dialog_loadout.hpp"
-#include "Titan_addon\AirSupport\Dialogs\dialog_AirSupport.hpp"
-#include "Titan_addon\AirSupport\Dialogs\dialog_AirSupport_2.hpp"
+#include "TitanAddons\defines.hpp"
+#include "TitanAddons\titan_loadout\gui\dialog\dialog_loadout.hpp"
+#include "TitanAddons\titan_loadout\loadout_gui\dialog\dialog_loadout.hpp"
+#include "TitanAddons\AirSupport\Dialogs\dialog_AirSupport.hpp"
+#include "TitanAddons\AirSupport\Dialogs\dialog_AirSupport_2.hpp"
 
 
 /*================== Prameter ============ */
