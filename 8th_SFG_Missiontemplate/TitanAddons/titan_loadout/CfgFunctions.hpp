@@ -67,4 +67,10 @@ class titan
         file = "TitanAddons\titan_loadout\test_ace";
         class test_kiste {};
     };
+
+    class titan_dialog_function
+    {
+        file = "TitanAddons\titan_loadout\loadout_gui\functions";
+        class buttoncontroll {};
+    };
 };
