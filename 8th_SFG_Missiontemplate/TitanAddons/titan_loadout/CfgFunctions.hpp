@@ -67,5 +67,6 @@ class titan
     {
         file = "TitanAddons\titan_loadout\loadout_gui\functions";
         class buttoncontroll {};
+        class loadoutgui {};
     };
 };

@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1577;
+		nextID=1591;
 	};
 	class Camera
 	{
-		pos[]={14610.321,75.760605,16785.869};
-		dir[]={0.43240246,-0.7520054,-0.49750975};
-		up[]={0.49331048,0.65915698,-0.56758869};
-		aside[]={-0.75476682,2.9802322e-008,-0.65599322};
+		pos[]={14601.636,39.362926,16765.682};
+		dir[]={0.59470457,-0.58042669,-0.55630541};
+		up[]={0.42388311,0.81430227,-0.39651215};
+		aside[]={-0.68315011,2.4698966e-007,-0.7303071};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_Missiontemplate";
+sourceName="titan_missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -337,7 +337,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""createDialog 'loadout_gui'"","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="box1";
 								description="Loadout Gross";
 							};

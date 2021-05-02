@@ -53,6 +53,7 @@ class loadout_gui
 			idc = -1;
 			text = "COMMAND";
 
+
 			x = 0 + pixelW * pixelGrid * 8;
 			y = 0 + pixelH * pixelGrid * 12;
 			w = pixelW * pixelGrid * 13;
@@ -189,7 +190,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action =  "[player] call titan_fnc_ptl";
+			action =  "[player] call titan_fnc_ptl; call titan_fnc_buttoncontroll";
 		};
 
 		class button_1_2: TITAN_LO_Button
@@ -202,7 +203,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_sql";
+			action = "[player] call titan_fnc_sql; call titan_fnc_buttoncontroll";
 		};
 
 		class button_1_3: TITAN_LO_Button
@@ -215,7 +216,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_ftl";
+			action = "[player] call titan_fnc_ftl; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_1_4: TITAN_LO_Button
@@ -243,7 +244,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_cct";
+			action = "[player] call titan_fnc_cct; call titan_fnc_buttoncontroll";
 		};
 
 		class button_2_2: TITAN_LO_Button
@@ -256,7 +257,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_sotac";
+			action = "[player] call titan_fnc_sotac; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_2_3: TITAN_LO_Button
@@ -297,7 +298,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_eng";
+			action = "[player] call titan_fnc_eng; call titan_fnc_buttoncontroll";
 		};
 
 		class button_3_2: TITAN_LO_Button
@@ -310,7 +311,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_wpn";
+			action = "[player] call titan_fnc_wpn; call titan_fnc_buttoncontroll";
 		};
 
 		class button_3_3: TITAN_LO_Button
@@ -323,7 +324,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_atmo";
+			action = "[player] call titan_fnc_atmo; call titan_fnc_buttoncontroll";
 		};
 		class button_3_4: TITAN_LO_Button
 		{
@@ -335,7 +336,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_rifle";
+			action = "[player] call titan_fnc_rifle; call titan_fnc_buttoncontroll";
 		};
 
 
@@ -350,7 +351,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_rct";
+			action = "[player] call titan_fnc_rct; call titan_fnc_buttoncontroll";
 		};
 		class button_4_2: TITAN_LO_Button
 		{
@@ -362,7 +363,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_lrr";
+			action = "[player] call titan_fnc_lrr; call titan_fnc_buttoncontroll";
 		};
 		class button_4_3: TITAN_LO_Button
 		{
@@ -374,7 +375,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_lrs";
+			action = "[player] call titan_fnc_lrs; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_4_4: TITAN_LO_Button
@@ -402,7 +403,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_fix";
+			action = "[player] call titan_fnc_fix; call titan_fnc_buttoncontroll";
 		};
 
 		class button_5_2: TITAN_LO_Button
@@ -415,7 +416,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_rot";
+			action = "[player] call titan_fnc_rot; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_5_3: TITAN_LO_Button
@@ -451,12 +452,13 @@ class loadout_gui
 			idc = 0601;
 			text = "STS IN";
 
+
 			x = 0 + pixelW * pixelGrid * 23;
 			y = 0 + pixelH * pixelGrid * 29;
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[] call TitanAddons_SotacTabletSystem_fnc_loginPilot";
+			action = "[] call TitanAddons_SotacTabletSystem_fnc_loginPilot; call titan_fnc_buttoncontroll";
 		};
 
 		class button_6_2: TITAN_LO_Button
@@ -464,12 +466,13 @@ class loadout_gui
 			idc = 0602;
 			text = "STS OUT";
 
+
 			x = 0 + pixelW * pixelGrid * 23;
 			y = 0 + pixelH * pixelGrid * 32;
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[name player] call TitanAddons_SotacTabletSystem_fnc_logoutPilot";
+			action = "[name player] call TitanAddons_SotacTabletSystem_fnc_logoutPilot; call titan_fnc_buttoncontroll";
 		};
 
 
@@ -507,12 +510,13 @@ class loadout_gui
 			idc = 0801;
 			text = "DIVER";
 
+
 			x = 0 + pixelW * pixelGrid * 51;
 			y = 0 + pixelH * pixelGrid * 29;
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_diver";
+			action = "[player] call titan_fnc_diver; closeDialog 1000;";
 		};
 
 		class button_8_2: TITAN_LO_Button
@@ -520,12 +524,13 @@ class loadout_gui
 			idc = 0802;
 			text = "MFF";
 
+
 			x = 0 + pixelW * pixelGrid * 51;
 			y = 0 + pixelH * pixelGrid * 32;
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_mff"
+			action = "[player] call titan_fnc_mff; closeDialog 1000;"
 		};
 	};
 };
