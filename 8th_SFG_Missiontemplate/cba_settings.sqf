@@ -1,8 +1,8 @@
 // ACE Allgemein
 force force ace_common_allowFadeMusic = true;
-force force force ace_common_checkPBOsAction = 0;
+force force ace_common_checkPBOsAction = 1;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "[]";
+force force ace_common_checkPBOsWhitelist = "['BCTracers_Edited','tracers','warfxpe_edited','3denEnhanced']";
 force force ace_common_displayTextColor = [0,0,0,0.1];
 force force ace_common_displayTextFontColor = [1,1,1,1];
 force force ace_common_settingFeedbackIcons = 1;
