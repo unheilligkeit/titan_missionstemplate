@@ -13,17 +13,27 @@ if (_loadclass == "start") then {
 };
 
 
-if (!(_loadclass == "rot") || !(_loadclass == "fix")) then {
+if ((_loadclass != "fix") && (_loadclass != "rot")) then {
         ctrlEnable [0601, false];
-        ctrlEnable [0602, false];
+        ctrlEnable [0602, false]; 
 } else {
-	if ((_loadclass == "rot") || (_loadclass == "fix")) then {
-		if ([name player] call TitanAddons_SotacTabletSystem_fnc_isPilotLoggedIn) then {
+	 if ([name player] call TitanAddons_SotacTabletSystem_fnc_isPilotLoggedIn) then {
 		  ctrlEnable [0601, false];
 		  ctrlEnable [0602, true];
-	  } else {
-		  ctrlEnable [0601, true];
-		  ctrlEnable [0602, false];
-	  };
-  };
+	 } else {
+		 ctrlEnable [0601, true];
+		 ctrlEnable [0602, false];
+	 };
 };
+
+if (_loadclass == "fix") then {
+	ctrlEnable [0501, false];
+} else {
+	ctrlEnable [0501, true];
+};
+
+if (_loadclass == "rot") then {
+	ctrlEnable [0502, false];
+} else {
+	ctrlEnable [0502, true];
+}; 

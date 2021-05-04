@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1029;
+	toggles=5;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1591;
+		nextID=2053;
 	};
 	class Camera
 	{
 		pos[]={14601.636,39.362926,16765.682};
-		dir[]={0.59470457,-0.58042669,-0.55630541};
-		up[]={0.42388311,0.81430227,-0.39651215};
-		aside[]={-0.68315011,2.4698966e-007,-0.7303071};
+		dir[]={0.59469199,-0.58041394,-0.5562923};
+		up[]={0.42387128,0.81432164,-0.3965016};
+		aside[]={-0.68313587,0,-0.73029137};
 	};
 };
 binarizationWanted=0;
-sourceName="titan_missiontemplate";
+sourceName="8th_SFG_Missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
