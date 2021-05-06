@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2053;
+		nextID=2067;
 	};
 	class Camera
 	{
-		pos[]={14601.636,39.362926,16765.682};
+		pos[]={14604.369,39.362926,16790.369};
 		dir[]={0.59469199,-0.58041394,-0.5562923};
 		up[]={0.42387128,0.81432164,-0.3965016};
 		aside[]={-0.68313587,0,-0.73029137};
@@ -338,7 +338,6 @@ class Mission
 							{
 								skill=0.60000002;
 								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
-								name="box1";
 								description="Loadout Gross";
 							};
 							id=69;
@@ -622,8 +621,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout WIP </t>"","""","""", 100, false, True, """", """", 5];}";
-								name="uav1";
+								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								description="Loadout klein";
 							};
 							id=70;
@@ -703,8 +701,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout WIP </t>"","""","""", 100, false, True, """", """", 5];}";
-								name="box2";
+								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								description="Loadout klein";
 							};
 							id=348;
@@ -1400,9 +1397,9 @@ class Mission
 									{
 										skill=1;
 										lock="UNLOCKED";
-										init="call{this setcaptive true; this allowdamage false;  " \n "this addAction [""<t color='#FCB514'> Loadout WIP </t>"", """", """", 100, false, True, """", """", 5];}";
-										name="Mulli1";
-										description="Mulli-1";
+										init="call{this setcaptive true; this allowdamage false;  " \n "}";
+										name="Muli1";
+										description="Muli-1";
 										textures="Blufor";
 										reportRemoteTargets=1;
 										receiveRemoteTargets=1;
@@ -1602,9 +1599,9 @@ class Mission
 									{
 										skill=1;
 										lock="UNLOCKED";
-										init="call{this setcaptive true; this allowdamage false;  " \n "this addAction [""<t color='#FCB514'> Loadout WIP </t>"", """", """", 100, false, True, """", """", 5];}";
-										name="Mulli2";
-										description="Mulli-2";
+										init="call{this setcaptive true; this allowdamage false;  " \n "}";
+										name="Muli2";
+										description="Muli-2";
 										textures="Blufor";
 										reportRemoteTargets=1;
 										receiveRemoteTargets=1;
@@ -1804,9 +1801,9 @@ class Mission
 									{
 										skill=1;
 										lock="UNLOCKED";
-										init="call{this setcaptive true; this allowdamage false;  " \n "this addAction [""<t color='#FCB514'> Loadout WIP </t>"", """", """", 100, false, True, """", """", 5];}";
-										name="Mulli3";
-										description="Mulli-3";
+										init="call{this setcaptive true; this allowdamage false;  " \n "}";
+										name="Muli3";
+										description="Muli-3";
 										textures="Blufor";
 										reportRemoteTargets=1;
 										receiveRemoteTargets=1;
@@ -28761,13 +28758,13 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14660.107,18.831163,16762.33};
-								angles[]={0,5.4634361,0};
+								angles[]={0,5.4634395,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""Titan_addon\AirSupport\support_entry.sqf"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout WIP</t>"","""","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""Titan_addon\AirSupport\support_entry.sqf"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="ASVS_1";
 								description="Air_Support_Tablet_1";
 							};
@@ -28787,7 +28784,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""Titan_addon\AirSupport\support_entry_2.sqf"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout WIP</t>"","""","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""Titan_addon\AirSupport\support_entry_2.sqf"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="ASVS_2";
 								description="Air_Support_Tablet_2";
 							};
