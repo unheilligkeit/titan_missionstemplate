@@ -69,14 +69,6 @@ class Params
 		default = 0;
 	};
 
-        class debug_mode
-    {
-        title="Debuge Mode";
-        values[] = {0,1};
-        texts[] = {"Deaktiviert","Aktiviert"};
-        default = 0;
-    };
-
 };
 
 

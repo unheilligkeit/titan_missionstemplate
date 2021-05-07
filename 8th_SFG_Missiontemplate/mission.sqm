@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2291;
+		nextID=2305;
 	};
 	class Camera
 	{
-		pos[]={14647.759,39.849419,16763.922};
-		dir[]={0.61442918,-0.73577756,-0.28479519};
-		up[]={0.66755408,0.67722327,-0.30941921};
-		aside[]={-0.42053366,0,-0.90727705};
+		pos[]={14672.641,27.909479,16748.572};
+		dir[]={-0.87037754,-0.040118054,0.49077451};
+		up[]={-0.034953691,0.99919552,0.019708995};
+		aside[]={0.49116912,6.0535967e-007,0.87108076};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_Missiontemplate";
+sourceName="titan_missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -24646,7 +24646,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -24660,7 +24660,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -24929,7 +24929,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14657.301,17.911438,16775.102};
+												position[]={14657.3,17.911438,16775.102};
 												angles[]={0,2.3660557,0};
 											};
 											side="West";
@@ -24938,7 +24938,7 @@ class Mission
 											{
 												skill=1;
 												name="p4";
-												description="Wolverine@TITAN Squadron";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												class Inventory
 												{
@@ -25085,7 +25085,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="asczHead_price_A3";
+															value="";
 														};
 													};
 												};
@@ -25303,7 +25303,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -25317,7 +25317,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -25596,7 +25596,7 @@ class Mission
 												skill=1;
 												rank="LIEUTENANT";
 												name="p3";
-												description="Hijack@TITAN Squadron";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												class Inventory
 												{
@@ -25812,7 +25812,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14655.699,17.911438,16773.502};
+												position[]={14655.7,17.911438,16773.502};
 												angles[]={0,2.3668935,0};
 											};
 											side="West";
@@ -25821,7 +25821,7 @@ class Mission
 											{
 												skill=1;
 												name="p5";
-												description="Jannik@TITAN Squadron";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												class Inventory
 												{
@@ -25958,7 +25958,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -25972,7 +25972,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -26318,7 +26318,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14654.101,17.911438,16771.902};
+												position[]={14654.1,17.911438,16771.902};
 												angles[]={0,2.3535938,0};
 											};
 											side="West";
@@ -26327,7 +26327,7 @@ class Mission
 											{
 												skill=1;
 												name="p6";
-												description="Crow@TITAN Squadron";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												class Inventory
 												{
@@ -26543,7 +26543,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14662.101,17.911438,16779.902};
+												position[]={14662.1,17.911438,16779.902};
 												angles[]={0,2.3675389,0};
 											};
 											side="West";
@@ -26553,7 +26553,7 @@ class Mission
 												skill=1;
 												rank="CAPTAIN";
 												name="p7";
-												description="AirborneBeast@TITAN Squadron";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												ignoreByDynSimulGrid=1;
 												class Inventory
@@ -26779,7 +26779,7 @@ class Mission
 											{
 												skill=1;
 												name="p8";
-												description="Jalisco@TITAN_SQUADRON";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												ignoreByDynSimulGrid=1;
 												class Inventory
@@ -27005,7 +27005,7 @@ class Mission
 											{
 												skill=1;
 												name="p9";
-												description="Pilot";
+												description="Pilot@TITAN_SQUADRON";
 												isPlayable=1;
 												ignoreByDynSimulGrid=1;
 												class Inventory
