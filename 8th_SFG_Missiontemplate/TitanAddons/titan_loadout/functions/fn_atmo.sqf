@@ -16,14 +16,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom ["MTP_V1_Full","MTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
+        _uniformarray = selectRandom ["","","",""];
         _unit forceAddUniform _uniformarray ;
 
         _mtp_atmo_helm = profileNamespace getVariable "titan_mtp_atmo_helm";
         if (isNil "_mtp_atmo_helm") then
         {
 
-            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","milgp_h_airframe_02_RGR_hexagon"];
+            _helmearray = selectRandom ["","","",""];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -36,7 +36,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_atmo_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_tactical_shemagh_RGR","milgp_f_face_shield_tactical_MC","milgp_f_face_shield_goggles_shemagh_MC","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["","","",""];
             _unit addGoggles _brillearray;
 
         } else {

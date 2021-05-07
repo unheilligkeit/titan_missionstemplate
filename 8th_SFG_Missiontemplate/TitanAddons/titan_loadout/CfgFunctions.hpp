@@ -50,6 +50,7 @@ class titan
         class lr_radiosettings {};
         class sw_radiosettings {};
         class tfar_settings {};
+        class open_rearm {};
     };
 
     class titan_extraitem

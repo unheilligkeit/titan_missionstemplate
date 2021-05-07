@@ -178,6 +178,20 @@ class loadout_gui
 			action = "[player] call titan_fnc_loadout_rearm";
 		};
 
+		// SET RADIO
+		class button_freq: TITAN_LO_Button
+		{
+			idc = 0007;
+			text = "SET RADIO";
+
+			x = 0 + pixelW * pixelGrid * 37;
+			y = 0 + pixelH * pixelGrid * 42.5;
+			w = pixelW * pixelGrid * 11;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[player] call titan_fnc_sw_radiosettings";
+		};
+
 //============================================= UNIFORM BUTTONS ==========================
 		//BUTTON REIHE BOX 1
 		class button_1_1: TITAN_LO_Button
@@ -530,7 +544,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_mff; closeDialog 1000;"
+			action = "[player] call titan_fnc_mff; closeDialog 1000;";
 		};
 	};
 };

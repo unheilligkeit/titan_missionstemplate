@@ -47,6 +47,7 @@ class RscTitles {
 #include "TitanAddons\AirSupport\Dialogs\dialog_AirSupport_2.hpp"
 
 
+
 /*================== Prameter ============ */
 
 class Params
@@ -86,7 +87,7 @@ class CfgDebriefing
 	{
 		title = "Mission Erfolgreich";
 		subtitle = "";
-		description = "Toll Leistung ..";
+		description = "Tolle Leistung ..";
 		pictureBackground = "";
 		picture = "b_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
