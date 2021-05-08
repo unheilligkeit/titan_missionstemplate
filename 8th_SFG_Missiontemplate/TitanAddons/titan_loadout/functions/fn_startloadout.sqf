@@ -9,7 +9,7 @@ params ["_unit"];
 [_unit] call titan_fnc_loadoutremove;
 
 
-_unit forceAddUniform "U_B_CombatUniform_mcam";
+_unit forceAddUniform "USP_SOFTSHELL_G3C_VQ_RGR_MC";
 
 _bdu_helm = profileNamespace getVariable "titan_bdu_start_helm";
 if ( isNil "_bdu_helm" ) then
@@ -27,7 +27,7 @@ _bdu_brille = profileNamespace getVariable "titan_bdu_start_brille";
 if (isNil "_bdu_brille") then
 {
 
-    _brillearray = selectRandom ["","G_Aviator"];
+    _brillearray = selectRandom [""];
     _unit addGoggles _brillearray;
 
 } else {
@@ -37,6 +37,8 @@ if (isNil "_bdu_brille") then
 };
 
 _unit addVest "V_Rangemaster_belt";
+
+[_unit,"TITAN_Patch_SF"] call bis_fnc_setUnitInsignia;
 
 _unit addWeapon "hgun_Pistol_heavy_01_F";
 for "_i" from 1 to 2 do {_unit addItem "11Rnd_45ACP_Mag";};

@@ -16,7 +16,7 @@
     0,													// Priority
     false,												// Remove on completion
     false												// Show in unconscious state
-] remoteExec ["BIS_fnc_holdActionAdd", 0, muli1];
+] call BIS_fnc_holdActionAdd;
 
 [
     muli2,											// Object the action is attached to
@@ -34,7 +34,7 @@
     0,													// Priority
     false,												// Remove on completion
     false												// Show in unconscious state
-] remoteExec ["BIS_fnc_holdActionAdd", 0, muli2];
+] call BIS_fnc_holdActionAdd;
 
 [
     muli3,											// Object the action is attached to
@@ -52,4 +52,4 @@
     0,													// Priority
     false,												// Remove on completion
     false												// Show in unconscious state
-] remoteExec ["BIS_fnc_holdActionAdd", 0, muli3];
+] call BIS_fnc_holdActionAdd;
