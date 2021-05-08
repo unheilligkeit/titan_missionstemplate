@@ -9,4 +9,6 @@ call compileFinal preprocessFileLineNumbers "TitanAddons\init.sqf";
 
 [box1] call titan_fnc_limitarsenal;
 
-[] call titan_fnc_open_rearm;
+[muli1] call titan_fnc_open_rearm;
+[muli2] call titan_fnc_open_rearm;
+[muli3] call titan_fnc_open_rearm;
