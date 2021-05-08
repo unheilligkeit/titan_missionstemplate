@@ -48,7 +48,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _westarray = selectRandom ["USP_VEST_PLATEFRAME_LOAD2_MC","USP_VEST_STRANDHOGG2_MC","USP_EAGLE_MMAC_FAST_MC","USP_CRYE_JPC_ASLTB","USP_CRYE_CPC_MEDIC_BELT_MC","USP_CRYE_JPC_TLB","USP_CRYE_JPC_MG","USP_CRYE_JPC_DMB","USP_CRYE_JPC_TL","USP_CRYE_JPC_FS","USP_CRYE_JPC_GRB","USP_CRYE_JPC_ASLTB"];
         _unit addVest _westarray;
 
-        _unit addBackpack "milgp_bp_Pointman_rgr";
+        _unit addBackpack "USP_PACK_HYDRATION";
 
 
     };
@@ -89,7 +89,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         _westarray = selectRandom ["USP_CRYE_CPC_MEDIC_BELT_RGR","USP_VEST_STRANDHOGG2_MCT","USP_EAGLE_MBAV_LOAD_MCT","USP_CRYE_CPC_MEDIC_BELT_RGR"];
         _unit addVest _westarray;
-        _unit addBackpack "milgp_bp_Pointman_rgr";
+        _unit addBackpack "USP_ZIPON_PANEL_RGR";
 
     };
 
@@ -128,7 +128,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         _westarray = selectRandom ["USP_EAGLE_MBAV_LOAD_MCA","USP_VEST_STRANDHOGG2_MCA"];
         _unit addVest _westarray;
-        _unit addBackpack "milgp_bp_Pointman_rgr";
+        _unit addBackpack "USP_ZIPON_PANEL_MCA";
 
     };
 
