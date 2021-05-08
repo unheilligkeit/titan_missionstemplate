@@ -76,7 +76,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_fix_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_goggles_shemagh_RGR","milgp_f_face_shield_shemagh_RGR","Balaclava_jtp2","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom [""];
             _unit addGoggles _brillearray;
 
         } else {
@@ -114,7 +114,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_wtp_fix_brille") then
         {
 
-            _brillearray = selectRandom [];
+            _brillearray = selectRandom [""];
             _unit addGoggles _brillearray;
 
         } else {

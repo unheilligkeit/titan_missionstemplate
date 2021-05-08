@@ -19,6 +19,6 @@ for "_i" from 1 to 4 do {_unit addItem "ACE_IR_Strobe_Item";};
 for "_i" from 1 to 2 do {_unit addItem "ACE_CableTie";};
 
 for "_i" from 1 to 3 do {_unit addItem "11Rnd_45ACP_Mag";};
-for "_i" from 1 to 15 do {_unit addItem "SMA_150Rnd_762_M80A1_Tracer";};
+for "_i" from 1 to 12 do {_unit addItem "hlc_200rnd_556x45_M_SAW";};
 for "_i" from 1 to 5 do {_unit addItem "MiniGrenade";};
 for "_i" from 1 to 10 do {_unit addItem "SmokeShell";};

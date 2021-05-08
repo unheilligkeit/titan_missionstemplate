@@ -16,14 +16,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom ["MTP_V1_Full","MTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
+        _uniformarray = selectRandom ["USP_G3C_KP_MC","USP_SOFTSHELL_G3C_VQ_MC","USP_PCU_G3C_KP_MX3_MC","USP_G3C_RS2_KP_MX4_VQ_MC","USP_G3C_RS_KP_MX7_MC","USP_G3C_VQ_MC"];
         _unit forceAddUniform _uniformarray ;
 
         _mtp_cct_helm = profileNamespace getVariable "titan_mtp_cct_helm";
         if (isNil "_mtp_cct_helm") then
         {
 
-            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_khk_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","milgp_h_airframe_02_RGR_hexagon"];
+            _helmearray = selectRandom ["USP_OPSCORE_FASTMTC_MG","USP_OPSCORE_FASTMTC_M","USP_OPSCORE_FASTMTC_C","USP_OPSCORE_FASTMT_CGTW","USP_OPSCORE_FASTMT_FCV_TW","USP_OPSCORE_FASTMTC_CMGTW"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -36,7 +36,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_cct_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_tactical_shemagh_RGR","milgp_f_face_shield_tactical_MC","milgp_f_face_shield_goggles_shemagh_MC","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["","USP_DETCORD_TAN3_SM2","USP_BALACLAVA_MC","USP_DETCORD_SMC5","USP_OAKLEY_SI2_MC_BLK","USP_DETCORD_MC2"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -44,9 +44,10 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
             _unit addGoggles _mtp_cct_brille;
 
         };
+        _westarray = selectRandom ["USP_VEST_PLATEFRAME_LOAD2_MC","USP_VEST_STRANDHOGG2_MC","USP_EAGLE_MMAC_FAST_MC","USP_CRYE_JPC_ASLTB","USP_CRYE_CPC_MEDIC_BELT_MC","USP_CRYE_JPC_TLB","USP_CRYE_JPC_MG","USP_CRYE_JPC_DMB","USP_CRYE_JPC_TL","USP_CRYE_JPC_FS","USP_CRYE_JPC_GRB","USP_CRYE_JPC_ASLTB"];
+        _unit addVest _westarray;
 
-        _unit addVest "milgp_v_mmac_teamleader_belt_rgr";
-        _unit addBackpack "SOG_CCT_MTP";
+        _unit addBackpack "8th_ilbe_CCT_MTP";
 
 
     };
@@ -56,14 +57,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom ["JTP_V1_Sleeved","JTP_V1_Full","JTP_V2_Full","MTP_V3_Full","MTP_V4_Full"];
+        _uniformarray = selectRandom ["USP_G3C_KP_MX3_MCT","USP_G3C_RS_KP_MCT"];
         _unit forceAddUniform _uniformarray ;
 
         _jtp_cct_helm = profileNamespace getVariable "titan_jtp_cct_helm";
         if (isNil "_jtp_cct_helm") then
         {
 
-            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_RGR_hexagon","HALO_MOWHAK","milgp_h_airframe_06_RGR_hexagon","HALO_MOWHAK_2","milgp_h_airframe_02_RGR_hexagon"];
+            _helmearray = selectRandom ["USP_OPSCORE_FASTMT_OD_CMGTW","USP_OPSCORE_FASTMTC_TGS_SW"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -76,7 +77,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_cct_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_goggles_shemagh_RGR","milgp_f_face_shield_shemagh_RGR","Balaclava_jtp2","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["","USP_OAKLEY_SI2_BLK","USP_DETCORD_TAN_UP_SMC2","USP_BALACLAVA_RGR"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -85,8 +86,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "milgp_v_mmac_teamleader_belt_rgr";
-        _unit addBackpack "8th_ilbe_TAC_jtp";
+        _westarray = selectRandom ["USP_CRYE_CPC_MEDIC_BELT_RGR","USP_VEST_STRANDHOGG2_MCT","USP_EAGLE_MBAV_LOAD_MCT","USP_CRYE_CPC_MEDIC_BELT_RGR"];
+        _unit addVest _westarray;
+        _unit addBackpack "8th_ilbe_CCT_JTP";
 
     };
 
@@ -94,14 +96,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom ["WTP_V1_Full","wtp_V1_Neck"];
+        _uniformarray = selectRandom ["USP_OVERWHITE_G3C_MX_VQ_MCA_MC","USP_SOFTSHELL_G3C_GRY_BLK"];
         _unit forceAddUniform _uniformarray ;
 
         _wtp_cct_helm = profileNamespace getVariable "titan_wtp_cct_helm";
         if (isNil" _wtp_cct_helm") then
         {
 
-            _helmearray = selectRandom ["milgp_h_airframe_04_goggles_mca","HALO_MOWHAK","milgp_h_airframe_06_mca","milgp_h_airframe_01_mca","milgp_h_airframe_02_mca"];
+            _helmearray = selectRandom ["USP_OPSCORE_FASTMTC_KTYETI_SW","USP_OPSCORE_FASTMTC_MCA_GT"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -114,7 +116,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_wtp_cct_brille") then
         {
 
-            _brillearray = selectRandom ["Balaclava_wtp3","Balaclava_wtp2","Balaclava_wtp1","milgp_f_face_shield_BLK"];
+            _brillearray = selectRandom ["","USP_BALACLAVA_WHT","USP_ADVANCER_SF"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -123,8 +125,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "milgp_v_mmac_teamleader_belt_rgr";
-        _unit addBackpack "SOG_CCT_MTP";
+        _westarray = selectRandom ["USP_EAGLE_MBAV_LOAD_MCA","USP_VEST_STRANDHOGG2_MCA"];
+        _unit addVest _westarray;
+        _unit addBackpack "8th_ilbe_CCT_WTP_v2";
 
     };
 
@@ -193,8 +196,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 //Backpack
   _unit addItem "ACE_NVG_Wide";
   _unit addItem "ACE_HuntIR_monitor";
-  _unit addItem "milgp_h_cap_03_RGR";
   _unit addItem "itc_land_tablet_rover";
+  _unit addItem "USP_A2_PATROL_CAP_MC";
 
 
 [_unit] call titan_fnc_addmedicalequipment;

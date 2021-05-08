@@ -16,14 +16,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom ["USP_G3C_KP_MC","USP_SOFTSHELL_G3C_VQ_MC","USP_PCU_G3C_KP_MX3_MC","USP_G3C_RS2_KP_MX4_VQ_MC","USP_G3C_RS_KP_MX7_MC"];
+        _uniformarray = selectRandom ["USP_G3C_KP_MC","USP_SOFTSHELL_G3C_VQ_MC","USP_PCU_G3C_KP_MX3_MC","USP_G3C_RS2_KP_MX4_VQ_MC","USP_G3C_RS_KP_MX7_MC","USP_G3C_VQ_MC"];
         _unit forceAddUniform _uniformarray ;
 
         _mtp_atmo_helm = profileNamespace getVariable "titan_mtp_atmo_helm";
         if (isNil "_mtp_atmo_helm") then
         {
 
-            _helmearray = selectRandom ["USP_OPSCORE_FASTMTC_MG","USP_OPSCORE_FASTMTC_M","USP_OPSCORE_FASTMTC_C","USP_OPSCORE_FASTMT_CGTW","USP_OPSCORE_FASTMT_FCV_TW"];
+            _helmearray = selectRandom ["USP_OPSCORE_FASTMTC_MG","USP_OPSCORE_FASTMTC_M","USP_OPSCORE_FASTMTC_C","USP_OPSCORE_FASTMT_CGTW","USP_OPSCORE_FASTMT_FCV_TW","USP_OPSCORE_FASTMTC_CMGTW"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -36,7 +36,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_atmo_brille") then
         {
 
-            _brillearray = selectRandom ["","USP_DETCORD_TAN3_SM2","USP_BALACLAVA_MC","USP_DETCORD_SMC5","USP_OAKLEY_SI2_MC_BLK"];
+            _brillearray = selectRandom ["","USP_DETCORD_TAN3_SM2","USP_BALACLAVA_MC","USP_DETCORD_SMC5","USP_OAKLEY_SI2_MC_BLK","USP_DETCORD_MC2"];
             _unit addGoggles _brillearray;
 
         } else {
@@ -44,7 +44,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
             _unit addGoggles _mtp_atmo_brille;
 
         };
-        _westarray = selectRandom ["USP_VEST_PLATEFRAME_LOAD2_MC","USP_VEST_STRANDHOGG2_MC","USP_EAGLE_MMAC_FAST_MC","USP_CRYE_JPC_ASLTB","USP_CRYE_CPC_MEDIC_BELT_MC"];
+        _westarray = selectRandom ["USP_VEST_PLATEFRAME_LOAD2_MC","USP_VEST_STRANDHOGG2_MC","USP_EAGLE_MMAC_FAST_MC","USP_CRYE_JPC_ASLTB","USP_CRYE_CPC_MEDIC_BELT_MC","USP_CRYE_JPC_TLB","USP_CRYE_JPC_MG","USP_CRYE_JPC_DMB","USP_CRYE_JPC_TL","USP_CRYE_JPC_FS","USP_CRYE_JPC_GRB","USP_CRYE_JPC_ASLTB"];
         _unit addVest _westarray;
 
         _unit addBackpack "Titan_BAG_ATMO_MTP";
@@ -194,7 +194,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 //Backpack
   _unit addItem "USP_GPNVG18_TAN";
-  _unit addItem "Patrol_Cap";
+  _unit addItem "USP_A2_PATROL_CAP_MC";
 
 
 [_unit] call titan_fnc_addmedicalequipment ;

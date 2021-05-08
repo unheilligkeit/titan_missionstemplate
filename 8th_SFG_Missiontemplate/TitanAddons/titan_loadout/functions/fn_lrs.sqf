@@ -16,14 +16,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom ["MTP_V4_Full"];
+        _uniformarray = selectRandom ["USP_G3C_KP_MC","USP_SOFTSHELL_G3C_VQ_MC","USP_PCU_G3C_KP_MX3_MC","USP_G3C_RS2_KP_MX4_VQ_MC","USP_G3C_RS_KP_MX7_MC","USP_G3C_VQ_MC"];
         _unit forceAddUniform _uniformarray ;
 
         _mtp_lrr_helm = profileNamespace getVariable "titan_mtp_lrr_helm";
         if (isNil "_mtp_lrr_helm") then
         {
 
-            _helmearray = selectRandom ["cap_tac_tan"];
+            _helmearray = selectRandom ["USP_BOONIE_HAT_MC"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -56,14 +56,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom ["JTP_V1_Sleeved"];
+        _uniformarray = selectRandom ["USP_G3C_KP_MX3_MCT","USP_G3C_RS_KP_MCT"];
         _unit forceAddUniform _uniformarray ;
 
         _jtp_lrr_helm = profileNamespace getVariable "titan_jtp_lrr_helm";
         if (isNil "_jtp_lrr_helm") then
         {
 
-            _helmearray = selectRandom [];
+            _helmearray = selectRandom ["H_Booniehat_tna_F"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -76,7 +76,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_lrr_brille") then
         {
 
-            _brillearray = selectRandom [];
+            _brillearray = selectRandom [""];
             _unit addGoggles _brillearray;
 
         } else {
@@ -85,7 +85,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "";
+        _westarray = selectRandom ["USP_CRYE_CPC_MEDIC_BELT_RGR","USP_VEST_STRANDHOGG2_MCT","USP_EAGLE_MBAV_LOAD_MCT","USP_CRYE_CPC_MEDIC_BELT_RGR"];
+        _unit addVest _westarray;
         _unit addBackpack "";
 
     };
@@ -94,14 +95,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom ["WTP_V1_Full"];
+        _uniformarray = selectRandom ["USP_OVERWHITE_G3C_MX_VQ_MCA_MC","USP_SOFTSHELL_G3C_GRY_BLK"];
         _unit forceAddUniform _uniformarray ;
 
         _wtp_lrr_helm = profileNamespace getVariable "titan_wtp_lrr_helm";
         if (isNil" _wtp_lrr_helm") then
         {
 
-            _helmearray = selectRandom [];
+            _helmearray = selectRandom ["USP_THM_BEANIE"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -114,7 +115,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_wtp_lrr_brille") then
         {
 
-            _brillearray = selectRandom [];
+            _brillearray = selectRandom [""];
             _unit addGoggles _brillearray;
 
         } else {
@@ -123,7 +124,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "";
+        _westarray = selectRandom ["USP_EAGLE_MBAV_LOAD_MCA","USP_VEST_STRANDHOGG2_MCA"];
+        _unit addVest _westarray;
         _unit addBackpack "";
 
     };
@@ -144,27 +146,31 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 // mtp waffen
   if (_tarnmuster == 0) then
   {
-    _unit addWeapon "SMA_Mk17_EGLM";
-	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
-	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
-    _unit addWeapon "Laserdesignator";
-    _unit addMagazine "Laserbatteries";
+      _unit addWeapon "SMA_Mk17_EGLM";
+  	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
+  	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+      _unit addWeapon "Laserdesignator";
+      _unit addMagazine "Laserbatteries";
   };
 
 // jtp waffen
   if (_tarnmuster == 1) then
   {
-    _unit addWeapon "";
-		_unit addPrimaryWeaponItem "";
-		_unit addPrimaryWeaponItem "";
+      _unit addWeapon "SMA_Mk17_EGLM";
+  	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
+  	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+      _unit addWeapon "Laserdesignator";
+      _unit addMagazine "Laserbatteries";
   };
 
 // wtp waffen
   if (_tarnmuster == 2) then
   {
-    _unit addWeapon "";
-		_unit addPrimaryWeaponItem "";
-		_unit addPrimaryWeaponItem "";
+      _unit addWeapon "SMA_Mk17_EGLM";
+  	  _unit addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
+  	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+      _unit addWeapon "Laserdesignator";
+      _unit addMagazine "Laserbatteries";
   };
 
 
@@ -183,7 +189,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "ItemWatch";
   _unit linkItem "tf_anprc152";
   _unit linkItem "B_UavTerminal";
-  _unit linkItem "milgp_f_tactical_khk";
 
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
@@ -195,7 +200,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 //Backpack
   _unit addItem "ACE_NVG_Wide";
-  _unit addItem "Ops_core_strap_f";
   _unit addItem "ACE_SpraypaintRed";
   _unit addItem "ABS_Base_Jump_peltor_grey";
   _unit addItem "ACE_SpottingScope";
