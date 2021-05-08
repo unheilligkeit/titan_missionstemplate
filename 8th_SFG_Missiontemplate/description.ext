@@ -33,7 +33,7 @@ joinUnassigned = false;
 
 class CfgFunctions
 {
-    #include "TitanAddons\titan_missionsbau\CfgFunctions.hpp"
+    #include "TitanAddons\titan_missionsbau\missionFunctions.hpp"
 	#include "TitanAddons\titan_loadout\CfgFunctions.hpp"
 	#include "TitanAddons\SotacTabletSystem\functions.hpp"
 };

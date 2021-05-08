@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1115;
+		nextID=1117;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2333;
+		nextID=2347;
 	};
 	class Camera
 	{
-		pos[]={14662.233,44.036835,16697.164};
-		dir[]={-0.66164291,-0.40613723,0.63043296};
-		up[]={-0.29407534,0.91377133,0.28020617};
-		aside[]={0.6898874,-8.0150494e-007,0.72403324};
+		pos[]={14696.544,61.242023,16670.238};
+		dir[]={-0.6942696,-0.29598281,0.65603662};
+		up[]={-0.21513118,0.95519322,0.20328404};
+		aside[]={0.68681031,0,0.72683674};
 	};
 };
 binarizationWanted=0;
@@ -607,7 +607,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14641.25,18.802422,16743};
-								angles[]={-0,2.3480439,0};
+								angles[]={0,2.3480439,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1760,7 +1760,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{this addAction [""<t color='#FCB514'> Teleport </t>"",""call titan_fnc_teleport_to_group"","""",51,true,true,"""","""", 5];}";
+										init="call{this addAction [""<t color='#FCB514'> Teleport </t>"",""call titanMB_fnc_teleport_to_group"","""",51,true,true,"""","""", 5];}";
 										name="Teleporter";
 									};
 									id=93;

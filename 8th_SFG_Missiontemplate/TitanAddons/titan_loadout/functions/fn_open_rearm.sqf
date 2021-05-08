@@ -1,4 +1,4 @@
-params ["_objektrearm"]
+params ["_objektrearm"];
 
 [
     _objektrearm,											// Object the action is attached to

@@ -1,7 +1,7 @@
-class titan
+class titanMB
 {
 
-    tag = "titan";
+    tag = "titanMB";
 
     class titan_spawn_functions
     {
