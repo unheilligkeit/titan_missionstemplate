@@ -45,7 +45,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "JPC_4_OD";
+        _westarray = selectRandom ["USP_VEST_PLATEFRAME_LOAD2_MC","USP_VEST_STRANDHOGG2_MC","USP_EAGLE_MMAC_FAST_MC","USP_CRYE_JPC_ASLTB","USP_CRYE_CPC_MEDIC_BELT_MC","USP_CRYE_JPC_TLB","USP_CRYE_JPC_MG","USP_CRYE_JPC_DMB","USP_CRYE_JPC_TL","USP_CRYE_JPC_FS","USP_CRYE_JPC_GRB","USP_CRYE_JPC_ASLTB"];
+        _unit addVest _westarray;
         _unit addBackpack "USP_PACK_HYDRATION";
 
 

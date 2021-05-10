@@ -9,7 +9,7 @@ params ["_unit"];
 [_unit] call titan_fnc_loadoutremove;
 
 
-_unit forceAddUniform "USP_SOFTSHELL_G3C_VQ_RGR_MC";
+_unit forceAddUniform "U_B_CombatUniform_mcam";
 
 _bdu_helm = profileNamespace getVariable "titan_bdu_start_helm";
 if ( isNil "_bdu_helm" ) then
