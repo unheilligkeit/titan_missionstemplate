@@ -189,7 +189,8 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_sw_radiosettings";
+			action = "player remoteExec ['titan_fnc_sw_radiosettings', player];";
+		
 		};
 
 //============================================= UNIFORM BUTTONS ==========================

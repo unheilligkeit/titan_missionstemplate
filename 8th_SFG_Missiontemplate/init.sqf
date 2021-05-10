@@ -1,5 +1,5 @@
 
-[player] call titan_fnc_tfar_settings;
+//[player] call titan_fnc_tfar_settings;
 [player] call titan_fnc_mff_changeuniform;
 [player] call titan_fnc_diver_changeuniform;
 [] call compile preprocessFileLineNumbers "TitanAddons\AirSupport\functions\fn_ASBTN.sqf";
