@@ -357,7 +357,7 @@ force force ace_nametags_playerNamesMaxAlpha = 0.8;
 force force ace_nametags_playerNamesViewDistance = 15;
 force force ace_nametags_showCursorTagForVehicles = true;
 force force ace_nametags_showNamesForAI = false;
-force force ace_nametags_showPlayerNames = 1;
+force force ace_nametags_showPlayerNames = 0;
 force force ace_nametags_showPlayerRanks = true;
 force force ace_nametags_showSoundWaves = 2;
 force force ace_nametags_showVehicleCrewInfo = true;
@@ -549,10 +549,10 @@ force force TFAR_spectatorCanHearFriendlies = true;
 force force TFAR_takingRadio = 1;
 force TFAR_setting_defaultFrequencies_lr_east = "";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
-force TFAR_setting_defaultFrequencies_lr_west = "";
+force force TFAR_setting_defaultFrequencies_lr_west = "80.1,80.2,80.3,80.4,78,78.1,78.2,78.3,78.4";
 force TFAR_setting_defaultFrequencies_sr_east = "";
 force TFAR_setting_defaultFrequencies_sr_independent = "";
-force TFAR_setting_defaultFrequencies_sr_west = "";
+force force TFAR_setting_defaultFrequencies_sr_west = "81,82,83,84,81.1,83.1,84.1,89.3";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
@@ -686,17 +686,7 @@ FARE_STATE_MEDICAL = true;
 mts_markers_saveLastSelection = true;
 mts_markers_showPresetsUI = false;
 
-// UH-60M
-vtx_uh60_anvishud_defaultMode = -1;
-vtx_uh60m_enabled_waypts = true;
-vtx_uh60m_simpleCollective = false;
-vtx_uh60m_simpleStartup = false;
-vtx_uh60m_trackIR_interaction_cursor = false;
-vtx_uh60m_trackIR_interaction_cursorSensitivity = 2.5;
 
-// VXF Interaction
-vtx_ace_viv_loadDistance = 15;
-vtx_ace_viv_timeFactor = 1;
 
 // F/A-18
 js_jc_fa18_advancedStart = false;
