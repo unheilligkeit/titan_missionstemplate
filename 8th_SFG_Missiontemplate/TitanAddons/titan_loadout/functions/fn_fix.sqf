@@ -45,7 +45,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "V_Rangemaster_belt";
+        _unit addVest "FIR_pilot_vest";
         //_unit addBackpack "SOG_fix_MTP_1";
 
 
@@ -85,7 +85,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "V_Rangemaster_belt";
+        _unit addVest "FIR_pilot_vest";
         //_unit addBackpack "8th_Kitbag_JTP_fix";
 
     };
@@ -123,7 +123,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _unit addVest "V_Rangemaster_belt";
+        _unit addVest "FIR_pilot_vest";
         //_unit addBackpack "SOG_fix_WTP_1";
 
     };
