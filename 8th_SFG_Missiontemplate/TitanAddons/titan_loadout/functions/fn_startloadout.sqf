@@ -38,7 +38,7 @@ if (isNil "_bdu_brille") then
 
 _unit addVest "V_Rangemaster_belt";
 
-[_unit,"TITAN_Patch_SF"] call bis_fnc_setUnitInsignia;
+//[_unit,"TITAN_Patch_SF"] call bis_fnc_setUnitInsignia;
 
 _unit addWeapon "hgun_Pistol_heavy_01_F";
 for "_i" from 1 to 2 do {_unit addItem "11Rnd_45ACP_Mag";};

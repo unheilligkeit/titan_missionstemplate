@@ -139,7 +139,6 @@ _unit setVariable ["ACE_isEOD",1,true];
 
     };
 
-[_unit,"TITAN_Patch_OP"] call bis_fnc_setUnitInsignia;
 
 
 

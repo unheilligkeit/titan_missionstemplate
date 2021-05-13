@@ -134,7 +134,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 
 
-[_unit,"TITAN_Patch_SOTAC"] call bis_fnc_setUnitInsignia;
+
 
 
 
