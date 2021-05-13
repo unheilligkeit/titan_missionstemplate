@@ -39,28 +39,6 @@ if (isClass(configFile >> "CfgPatches" >> "tfar_core")) exitWith {
 	//update the plugin settings:
 	call TFAR_fnc_sendPluginConfig;
 
-	//side settings:
-	//blufor:
-	private _defaultFrequencies_sr_west = ["81", "82", "83", "84", "81.1", "83.1", "84.1", "89.3"];
-	private _defaultFrequencies_lr_west = ["80.1","80.2","80.3","80.4","78","78.1","78.2","78.3","78.4"];
-	private _west_code = "_bluefor";
-
-
-	//// don't edit below this line ////
-
-	_settingsSRWest = false call TFAR_fnc_generateSRSettings;
-	_settingsLrWest = false call TFAR_fnc_generateLrSettings;
-
-	_settingsSRWest set [2, _defaultFrequencies_sr_west];
-	_settingsSRWest set [4, _west_code];
-	TFAR_freq_sr_west = _settingsSRWest;
-
-	_settingsLrWest set [2, _defaultFrequencies_lr_west];
-	_settingsLrWest set [4, _west_code];
-	TFAR_freq_lr_west = _settingsLrWest;
-
-	missionNamespace setVariable ["tf_west_radio_code",_west_code];
-
 	true;
 };
 
