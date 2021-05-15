@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1122;
+		nextID=1123;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2417;
+		nextID=2711;
 	};
 	class Camera
 	{
-		pos[]={14650.42,77.518074,16696.461};
-		dir[]={-0.53693062,-0.68774337,0.48858422};
-		up[]={-0.50866938,0.72595394,0.46286765};
-		aside[]={0.67302382,1.4901161e-008,0.73962092};
+		pos[]={14673.222,48.819607,16750.166};
+		dir[]={-0.72629422,-0.68660492,-0.032717727};
+		up[]={-0.68590933,0.72703075,-0.030898491};
+		aside[]={-0.04500185,0,0.99898696};
 	};
 };
 binarizationWanted=0;
-sourceName="titan_missiontemplate";
+sourceName="8th_SFG_Missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -330,7 +330,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];                      this addAction [""<t color='#FCB514'> Titan Arsenal </t>"",""call titan_fnc_arsenalgui"","""", 100, false, True, """", """", 5];}";
 								description="Loadout Gross";
 							};
 							id=69;
