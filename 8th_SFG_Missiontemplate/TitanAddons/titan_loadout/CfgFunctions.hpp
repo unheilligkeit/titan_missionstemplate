@@ -70,4 +70,11 @@ class titan
         class buttoncontroll {};
         class loadoutgui {};
     };
+
+    class titan_arsenal
+    {
+        file = "TitanAddons\titan_loadout\titan_arsenal\functions";
+        class buttonarsenal {};
+        class arsenalgui {};
+    };
 };
