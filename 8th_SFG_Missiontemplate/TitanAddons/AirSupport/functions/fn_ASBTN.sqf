@@ -1,32 +1,3 @@
-/*
- * *** fn_ASBTN ***	
- *
- * Author: Fallingstorm, 8thSFG TITAN
- *
- * Define Buttons 
- *
- * Arguments:
- * 0: <STRING>
- * 1: <OBJECT>
- *
- * Return Value:
- * bool
- *
- * Example:
- * non
- *
- * Public: Yes
- */
-
-//----------------------------------------------------------------------------------------------------
-/*
-	!!!!!!!!!! DON´T TOUCH THIS !!!!!!!!!!!!!!!!
-*/
-//----------------------------------------------------------------------------------------------------
-
-if (isDedicated) exitWith {};
-waitUntil {!(isNull player)};
-
 
 //----------------------------------------------------------------------------------------------------
 /*
@@ -38,9 +9,9 @@ AS1001 = false; publicVariable "AS1001";
 
 // Slots Clear
 AS1100 = false; publicVariable "AS1100";
-AS1200 = false; publicVariable "AS1200"; 
-AS1300 = false; publicVariable "AS1300"; 
-AS1400 = false; publicVariable "AS1400"; 
+AS1200 = false; publicVariable "AS1200";
+AS1300 = false; publicVariable "AS1300";
+AS1400 = false; publicVariable "AS1400";
 
 //Rotary Wing mats
 AS1101 = true; publicVariable "AS1101";
@@ -119,4 +90,3 @@ AS5201 = true; publicVariable "AS5201";
 AS5301 = true; publicVariable "AS5301";
 
 AS5401 = true; publicVariable "AS5401";
-

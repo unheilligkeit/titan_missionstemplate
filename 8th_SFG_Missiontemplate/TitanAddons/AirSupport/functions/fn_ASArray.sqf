@@ -1,43 +1,5 @@
-/*
- * *** fn_ASArray ***
- *
- * Author: Fallingstorm, 8thSFG TITAN
- *
- * Define buttons after select
- *
- * Arguments:
- * 0: <INTAGER>
- * 1: <INTAGER>
- * 2: <INTAGER>
- *
- * Return Value:
- * bool
- *
- * Example:
- * non
- *
- * Public: Yes
- */
-
-//----------------------------------------------------------------------------------------------------
-/*
-	!!!!!!!!!! DON´T TOUCH THIS !!!!!!!!!!!!!!!!
-*/
-//----------------------------------------------------------------------------------------------------
 
 params ["_row", "_column", "_pos"];
-private ["_debug"];
-
-_debug = false;
-if (_debug) then {
-		hint format ["Es wurde Script fn_ASArray aufgerufen\n und folgende Werte übergeben: \n\n Reihe  %1, \n Spalte  %2, \n Position  %3", _row, _column, _pos];
-};
-//ParkPositionen für AirSupport Vehicle Spawner
-ParkPos_1 = [0,0,0];
-ParkPos_2 = [0,0,0];
-ParkPos_3 = [0,0,0];
-ParkPos_4 = [0,0,0];
-
 
 switch (_row) do {
 //-----------------------------------------------------------------------------------
@@ -429,5 +391,5 @@ if (AS5301 && AS1301 && AS1302 && AS1303 && AS2301 && AS2302 && AS2303 && AS2304
 //=============================== EXIT =============================================
 if (true) exitWith {
 	closeDialog 0;
-	[] call compile preprocessFileLineNumbers "TitanAddons\AirSupport\support_entry.sqf";
+	[] call titan_air_fnc_support_entry;
 };

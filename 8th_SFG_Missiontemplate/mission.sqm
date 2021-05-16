@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2767;
+		nextID=2809;
 	};
 	class Camera
 	{
@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="1_titan_arsenal";
+sourceName="8th_SFG_Missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -30455,7 +30455,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""TitanAddons\AirSupport\support_entry.sqf"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""call titan_air_fnc_support_gui"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="ASVS_1";
 								description="Air_Support_Tablet_1";
 							};
@@ -30475,7 +30475,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""TitanAddons\AirSupport\support_entry_2.sqf"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""call titan_air_fnc_support_gui"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="ASVS_2";
 								description="Air_Support_Tablet_2";
 							};

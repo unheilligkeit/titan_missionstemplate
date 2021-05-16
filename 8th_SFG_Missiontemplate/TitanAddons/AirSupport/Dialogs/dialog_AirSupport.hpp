@@ -1,4 +1,4 @@
-class air_support
+class support
 {
 	idd = 10000;
 	movingable = 0;
@@ -21,7 +21,7 @@ class air_support
 			y = 0.070 * safezoneH + safezoneY;
 			w = 0.590 * SafeZoneW;
 			h = 0.880 * SafeZoneH;
-			
+
 		};
 
 		// TITAN LOGO
@@ -48,17 +48,6 @@ class air_support
 			h = 0.090 * safezoneH;
 		};
 
-/*		// AUTHOR
-		class createby: TITANMade
-		{
-			idc = -1;
-
-			x = 0.307 * safezoneW + safezoneX;
-			y = 0.758 * safezoneH + safezoneY;
-			w = 0.328 * safezoneW;
-			h = 0.020 * safezoneH;
-		};
-*/
 //========================================= SLOTS ====================================
 		//SLOT 1
 		class slot_1: TITANSlots
@@ -193,7 +182,7 @@ class air_support
 			w = 0.283 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[] execVM ""TitanAddons\AirSupport\functions\fn_AS_spawn.sqf"";";
+			action = "[] call titan_air_fnc_support_spawn";
 		};
 
 		// CLEAR SPAWN AREA
@@ -207,7 +196,7 @@ class air_support
 			w = 0.170 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[] execVM ""TitanAddons\AirSupport\functions\fn_ASClear.sqf"";";
+			action = "[] call titan_air_fnc_support_clear";
 		};
 
 		// CLOSE BUTTON
@@ -265,7 +254,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1100""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1100""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_120: TITAN_AS_Button
@@ -279,7 +268,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1200""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1200""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_130: TITAN_AS_Button
@@ -293,7 +282,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1300""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1300""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_140: TITAN_AS_Button
@@ -307,7 +296,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1400""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1400""] call titan_air_fnc_support_button";
 		};
 
 //========================================= Rotary Wing mats ====================================
@@ -322,7 +311,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1101""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1101""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_112: TITAN_AS_Button
@@ -335,7 +324,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1102""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1102""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_113: TITAN_AS_Button
@@ -348,7 +337,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1103""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1103""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------RWM12-------------------------------------
@@ -362,7 +351,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1201""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1201""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_122: TITAN_AS_Button
@@ -375,7 +364,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1202""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1202""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_123: TITAN_AS_Button
@@ -388,7 +377,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1203""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1203""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------RWM13-------------------------------------
@@ -402,7 +391,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1301""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1301""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_132: TITAN_AS_Button
@@ -415,7 +404,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1302""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1302""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_133: TITAN_AS_Button
@@ -428,7 +417,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1303""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1303""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------RWM14-------------------------------------
@@ -442,7 +431,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1401""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1401""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_142: TITAN_AS_Button
@@ -455,7 +444,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1402""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1402""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWM_143: TITAN_AS_Button
@@ -468,7 +457,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1403""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWM_1403""] call titan_air_fnc_support_button";
 		};
 
 //========================================= Rotary Wing Strike =======================================
@@ -483,7 +472,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2101""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2101""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_212: TITAN_AS_Button
@@ -496,7 +485,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2102""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2102""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_213: TITAN_AS_Button
@@ -509,7 +498,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2103""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2103""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_214: TITAN_AS_Button
@@ -522,7 +511,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2104""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2104""] call titan_air_fnc_support_button";
 		};
 //-------------------------------------RWS22-------------------------------------
 		class button_RWS_221: TITAN_AS_Button
@@ -535,7 +524,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2201""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2201""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_222: TITAN_AS_Button
@@ -548,7 +537,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2202""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2202""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_223: TITAN_AS_Button
@@ -561,7 +550,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2203""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2203""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_224: TITAN_AS_Button
@@ -574,7 +563,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2204""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2204""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------RWS23-------------------------------------
@@ -588,7 +577,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2301""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2301""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_232: TITAN_AS_Button
@@ -601,7 +590,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2302""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2302""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_233: TITAN_AS_Button
@@ -614,7 +603,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2303""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2303""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_234: TITAN_AS_Button
@@ -627,7 +616,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2304""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2304""] call titan_air_fnc_support_button";
 		};
 //-------------------------------------RWS24-------------------------------------
 		class button_RWS_241: TITAN_AS_Button
@@ -640,7 +629,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2401""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2401""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_242: TITAN_AS_Button
@@ -653,7 +642,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2402""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2402""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_243: TITAN_AS_Button
@@ -666,7 +655,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2403""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2403""] call titan_air_fnc_support_button";
 		};
 
 		class button_RWS_244: TITAN_AS_Button
@@ -679,7 +668,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWS_2404""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""RWS_2404""] call titan_air_fnc_support_button";
 		};
 
 //========================================= Fixed Wing Strike Land =======================================
@@ -694,7 +683,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3101""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3101""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_312: TITAN_AS_Button
@@ -707,7 +696,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3102""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3102""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_313: TITAN_AS_Button
@@ -720,7 +709,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3103""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3103""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWLS32-------------------------------
@@ -734,7 +723,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3201""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3201""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_322: TITAN_AS_Button
@@ -747,7 +736,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3202""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3202""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_323: TITAN_AS_Button
@@ -760,7 +749,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3203""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3203""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWLS33-------------------------------
@@ -774,7 +763,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3301""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3301""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_332: TITAN_AS_Button
@@ -787,7 +776,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3302""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3302""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_333: TITAN_AS_Button
@@ -800,7 +789,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3303""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3303""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWLS34-------------------------------
@@ -814,7 +803,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3401""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3401""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_342: TITAN_AS_Button
@@ -827,7 +816,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3402""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3402""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWLS_343: TITAN_AS_Button
@@ -840,7 +829,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSL_3403""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSL_3403""] call titan_air_fnc_support_button";
 		};
 
 //========================================= Fix Strike Sea =======================================
@@ -855,7 +844,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4101""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4101""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWSS_412: TITAN_AS_Button
@@ -868,7 +857,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4102""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4102""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWSS42-------------------------------
@@ -882,7 +871,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4201""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4201""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWSS_422: TITAN_AS_Button
@@ -895,7 +884,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4202""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4202""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWSS43-------------------------------
@@ -909,7 +898,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4301""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4301""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWSS_432: TITAN_AS_Button
@@ -922,7 +911,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4302""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4302""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWSS44-------------------------------
@@ -936,7 +925,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4401""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4401""] call titan_air_fnc_support_button";
 		};
 
 		class button_FWSS_394: TITAN_AS_Button
@@ -949,7 +938,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWSS_4402""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWSS_4402""] call titan_air_fnc_support_button";
 		};
 
 //========================================= Fixed Wing mats =======================================
@@ -964,7 +953,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWM_5101""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWM_5101""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWM52--------------------------------------------------------------
@@ -980,7 +969,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWM_5201""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWM_5201""] call titan_air_fnc_support_button";
 		};
 */
 
@@ -995,7 +984,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWM_5301""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWM_5301""] call titan_air_fnc_support_button";
 		};
 
 //-------------------------------------FWM54-------------------------------
@@ -1010,7 +999,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""FWM_5401""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
+			action = "[""FWM_5401""] call titan_air_fnc_support_button";
 		};
 */
 	};

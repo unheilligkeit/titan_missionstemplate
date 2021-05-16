@@ -1,30 +1,41 @@
-/*
- * *** fn_AS_spawn ***
- *
- * Author: Fallingstorm, 8thSFG TITAN
- *
- * get selected button and spawn vehicle
- *
- * Arguments:
- *
- *
- * Return Value:
- *
- * Example:
- * non
- *
- * Public: Yes
- */
 
-//----------------------------------------------------------------------------------------------------
-/*
-	!!!!!!!!!! DON´T TOUCH THIS !!!!!!!!!!!!!!!!
-*/
-//----------------------------------------------------------------------------------------------------
 private [
-	"_veh1", "_veh2", "_veh3", "_veh4", "_vehicle", "_column1", "_column2", "_column3",
-	"_column4", "_i" , "_spCheck", "_spawn_1", "_spawn_2", "_spawn_3", "_spawn_4"
+	"_veh1", "_veh2", "_veh3", "_veh4", "_direction_1", "_direction_2", "_direction_3",
+	"_direction_4",	"_vehicle", "_column1", "_column2", "_column3",	"_column4", "_i" ,
+	"_spCheck", "_spawn_1", "_spawn_2", "_spawn_3", "_spawn_4"
 ];
+
+if (tablet == "_tablet_1") then {
+	ParkPos_1 = getMarkerPos "ParkPos_1";
+	_direction_1 = markerDir "ParkPos_1";
+	ParkPos_2 = getMarkerPos "ParkPos_2";
+	_direction_2 = markerDir "ParkPos_2";
+	ParkPos_3 = getMarkerPos "ParkPos_3";
+	_direction_3 = markerDir "ParkPos_3";
+	ParkPos_4 = getMarkerPos "ParkPos_4";
+	_direction_4 = markerDir "ParkPos_4";
+
+	parken_1 = ParkPos_1;
+	parken_2 = ParkPos_2;
+	parken_3 = ParkPos_3;
+	parken_4 = ParkPos_4;
+};
+
+if (tablet == "_tablet_2") then {
+	ParkPos_5 = getMarkerPos "ParkPos_5";
+	_direction_1 = markerDir "ParkPos_5";
+	ParkPos_6 = getMarkerPos "ParkPos_6";
+	_direction_2 = markerDir "ParkPos_6";
+	ParkPos_7 = getMarkerPos "ParkPos_7";
+	_direction_3 = markerDir "ParkPos_7";
+	ParkPos_8 = getMarkerPos "ParkPos_8";
+	_direction_4 = markerDir "ParkPos_8";
+
+	parken_1 = ParkPos_5;
+	parken_2 = ParkPos_6;
+	parken_3 = ParkPos_7;
+	parken_4 = ParkPos_8;
+};
 
 #include "..\Vehicles.sqf"
 
@@ -33,16 +44,6 @@ _veh2 = "";
 _veh3 = "";
 _veh4 = "";
 _debug = false;
-
-ParkPos_1 = getMarkerPos "ParkPos_1";
-_direction_1 = markerDir "ParkPos_1";
-ParkPos_2 = getMarkerPos "ParkPos_2";
-_direction_2 = markerDir "ParkPos_2";
-ParkPos_3 = getMarkerPos "ParkPos_3";
-_direction_3 = markerDir "ParkPos_3";
-ParkPos_4 = getMarkerPos "ParkPos_4";
-_direction_4 = markerDir "ParkPos_4";
-
 
 //------------------------------------------------------------------------------------------------
 //Variables from Vehicles (_vehicle_+ _column+_row )
@@ -73,11 +74,11 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh1 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh1 = format["%1", (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_2,["landVehicle","Air","Ship"],28] select 0;
+				_spCheck = nearestObjects[parken_2,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
 		};
-		_spCheck = nearestObjects[ParkPos_1,["landVehicle","Air","Ship"],28] select 0;
+		_spCheck = nearestObjects[parken_1,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
@@ -103,13 +104,13 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh2 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh2 = format ["%1",  (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_1,["landVehicle","Air","Ship"],28] select 0;
+				_spCheck = nearestObjects[parken_1,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-				_spCheck = nearestObjects[ParkPos_3,["landVehicle","Air","Ship"],28] select 0;
+				_spCheck = nearestObjects[parken_3,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
 		};
-		_spCheck = nearestObjects[ParkPos_2,["landVehicle","Air","Ship"],28] select 0;
+		_spCheck = nearestObjects[parken_2,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
@@ -134,13 +135,13 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh3 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh3 = format ["%1",  (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_2,["landVehicle","Air","Ship"],28] select 0;
+				_spCheck = nearestObjects[parken_2,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-				_spCheck = nearestObjects[ParkPos_4,["landVehicle","Air","Ship"],28] select 0;
+				_spCheck = nearestObjects[parken_4,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
 		};
-		_spCheck = nearestObjects[ParkPos_3,["landVehicle","Air","Ship"],28] select 0;
+		_spCheck = nearestObjects[parken_3,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
@@ -165,73 +166,67 @@ for "_i" from 0 to 12 do {
 			case (11): {_veh4 = format ["%1", (_vehicle select 3) select 1];};
 			case (12): {
 				_veh4 = format ["%1",  (_vehicle select 4) select 0];
-				_spCheck = nearestObjects[ParkPos_3,["landVehicle","Air","Ship"],28] select 0;
+				_spCheck = nearestObjects[parken_3,["landVehicle","Air","Ship"],28] select 0;
 				if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 			};
 		};
-		_spCheck = nearestObjects[ParkPos_4,["landVehicle","Air","Ship"],28] select 0;
+		_spCheck = nearestObjects[parken_4,["landVehicle","Air","Ship"],28] select 0;
 		if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
 	};
 };
-sleep 0.5;
+
 
 
 //------------------------------------------------------------------------------------------------
-if ((surfaceIsWater ParkPos_1) || (surfaceIsWater ParkPos_2) || (surfaceIsWater ParkPos_3) || (surfaceIsWater ParkPos_4)) then {
+if ((surfaceIsWater parken_1) || (surfaceIsWater parken_2) || (surfaceIsWater parken_3) || (surfaceIsWater parken_4)) then {
 	if ((_veh1 in AS_FWM) || (_veh1 in AS_FWSL)) then {
 		_veh1 = "";
 	};
-	ParkPos_1 = ParkPos_1 vectorAdd [0,0,10.5];
-	_spawn_1 = _veh1 createVehicle ParkPos_1;
-	_spawn_1 setPos ParkPos_1;
+	parken_1 = parken_1 vectorAdd [0,0,10.5];
+	_spawn_1 = _veh1 createVehicle parken_1;
+	_spawn_1 setPos parken_1;
 	_spawn_1 setDir _direction_1;
 
 	if ((_veh2 in AS_FWM) || (_veh2 in AS_FWSL)) then {
 		_veh2 = "";
 	};
-	ParkPos_2 = ParkPos_2 vectorAdd [0,0,10.5];
-	_spawn_2 = _veh2 createVehicle ParkPos_2;
-	_spawn_2 setPos ParkPos_2;
+	parken_2 = parken_2 vectorAdd [0,0,10.5];
+	_spawn_2 = _veh2 createVehicle parken_2;
+	_spawn_2 setPos parken_2;
 	_spawn_2 setDir _direction_2;
 
 	if ((_veh3 in AS_FWM) || (_veh3 in AS_FWSL)) then {
 		_veh3 = "";
 	};
-	ParkPos_3 = ParkPos_3 vectorAdd [0,0,10.5];
-	_spawn_3 = _veh3 createVehicle ParkPos_3;
-	_spawn_3 setPos ParkPos_3;
+	parken_3 = parken_3 vectorAdd [0,0,10.5];
+	_spawn_3 = _veh3 createVehicle parken_3;
+	_spawn_3 setPos parken_3;
 	_spawn_3 setDir _direction_3;
 
 	if ((_veh4 in AS_FWM) || (_veh4 in AS_FWSL)) then {
 		_veh4 = "";
 	};
-	ParkPos_4 = ParkPos_4 vectorAdd [0,0,10.5];
-	_spawn_4 = _veh4 createVehicle ParkPos_4;
-	_spawn_4 setPos ParkPos_4;
+	parken_4 = parken_4 vectorAdd [0,0,10.5];
+	_spawn_4 = _veh4 createVehicle parken_4;
+	_spawn_4 setPos parken_4;
 	_spawn_4 setDir _direction_4;
 
 } else {
-	_spawn_1 = _veh1 createVehicle ParkPos_1;
-	_spawn_1 setPos ParkPos_1;
+	_spawn_1 = _veh1 createVehicle parken_1;
+	_spawn_1 setPos parken_1;
 	_spawn_1 setDir _direction_1;
 
-	_spawn_2 = _veh2 createVehicle ParkPos_2;
-	_spawn_2 setPos ParkPos_2;
+	_spawn_2 = _veh2 createVehicle parken_2;
+	_spawn_2 setPos parken_2;
 	_spawn_2 setDir _direction_2;
 
-	_spawn_3 = _veh3 createVehicle ParkPos_3;
-	_spawn_3 setPos ParkPos_3;
+	_spawn_3 = _veh3 createVehicle parken_3;
+	_spawn_3 setPos parken_3;
 	_spawn_3 setDir _direction_3;
 
-	_spawn_4 = _veh4 createVehicle ParkPos_4;
-	_spawn_4 setPos ParkPos_4;
+	_spawn_4 = _veh4 createVehicle parken_4;
+	_spawn_4 setPos parken_4;
 	_spawn_4 setDir _direction_4;
-};
-
-
-//============================================== Reset und Exit ===========================
-if (_debug) then {
-	hint format [ "Dies ist fn_AS_Spawn DEBUG \n\n Pos1: %1 \n Pos2: %2 \n Pos3: %3 \n Pos4: %4", _veh1, _veh2, _veh3, _veh4];
 };
 
 

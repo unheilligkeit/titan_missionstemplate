@@ -3,21 +3,21 @@
 		*** Air Support ***
 */
 //----------------------------------------------------------------------------------------------------
-if (!isServer) then {waitUntil {!(isNull player)};};
 
 // Var for slots and vehicles
-#include "functions\fn_ASVar.sqf" 
+#include "fn_ASVar.sqf"
+
 
 //open dialog
-_ok = createDialog "air_support";
+_ok = createDialog "support";
 
 //=========================================================================================
 /*
-					set spawn button false 
+					set spawn button false
 */
 //=========================================================================================
 
-if ((AS1100 == false) && (AS1200 == false) && (AS1300 == false) && (AS1400 == false)) then { 
+if ((AS1100 == false) && (AS1200 == false) && (AS1300 == false) && (AS1400 == false)) then {
 	AS1001 = false
 } else {
 	AS1001 = true
@@ -26,9 +26,9 @@ if ((AS1100 == false) && (AS1200 == false) && (AS1300 == false) && (AS1400 == fa
 
 //=========================================================================================
 /*
-						NERVER TOUCH THIS 
+						NERVER TOUCH THIS
 						define Buttons bool
-						
+
 */
 //=========================================================================================
 
@@ -36,23 +36,23 @@ if ((AS1100 == false) && (AS1200 == false) && (AS1300 == false) && (AS1400 == fa
 ctrlEnable [1001, AS1001];
 
 // CLEAR Slot 1
-ctrlEnable [1100, AS1100]; 
+ctrlEnable [1100, AS1100];
 if (AS1100 == false) then {ctrlSetText [100, _slot1];};
 
 // CLEAR Slot 1
-ctrlEnable [1200, AS1200]; 
+ctrlEnable [1200, AS1200];
 if (AS1200 == false) then {ctrlSetText [200, _slot2];};
 
 // CLEAR Slot 1
-ctrlEnable [1300, AS1300]; 
+ctrlEnable [1300, AS1300];
 if (AS1300 == false) then {ctrlSetText [300, _slot3];};
 
 // CLEAR Slot 1
-ctrlEnable [1400, AS1400]; 
+ctrlEnable [1400, AS1400];
 if (AS1400 == false) then {ctrlSetText [400, _slot4];};
 
 //=========================================================================================
-//RWM 
+//RWM
 ctrlEnable [1101, AS1101];
 if (AS1101 == false) then {ctrlSetText [100, _RWM_1];};
 ctrlEnable [1102, AS1102];
@@ -190,7 +190,7 @@ if (AS5401 == false) then {ctrlSetText [400, _FWM_1];};
 
 //=========================================================================================
 /*
-						NERVER TOUCH THIS 
+						NERVER TOUCH THIS
 				Buttons become Variable for Aircraft Names
 					from "include fn_ASVar"
 */
@@ -272,12 +272,3 @@ ctrlSetText [5201, _FWM_1];
 ctrlSetText [5301, _FWM_1];
 
 ctrlSetText [5401, _FWM_1];
-
-
-//============================== EXIT ===========================================================
-
-if (!_ok) then {hint "Dialog couldn't be opened!"};
-if(true) exitWith{};
-
-
-
