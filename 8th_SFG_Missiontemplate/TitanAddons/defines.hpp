@@ -1440,7 +1440,7 @@ class RscControlsGroup
 
 //-----------------------------------------------------------------------------------------
 //			TITAN base defines for GUI
-// 
+//
 //
 //-----------------------------------------------------------------------------------------
 #define COLOR_ORANGE {0.988, 0.522, 0.118, 1} 				//#FC851E
@@ -1463,10 +1463,10 @@ class TITANBackground: RscText
 };
 
 class TITANHeader: RscText
-{	
+{
 	type = 0;
 	style = 2;
-	
+
 
 	colorBackground[] = COLOR_BLACK;
 	colorText[] = COLOR_ORANGE;
@@ -1474,22 +1474,34 @@ class TITANHeader: RscText
 	sizeEx = 0.09;
 };
 
+class TITAN_ArsenalHeader: RscText
+{
+	type = 0;
+	style = 528;
+
+  lineSpacing = 1;
+	colorBackground[] = COLOR_BLACK;
+	colorText[] = COLOR_ORANGE;
+	font = "PuristaMedium";
+	sizeEx = 0.07;
+};
+
 class TITANLogo: RscPicture
-{	
+{
 	type = 0;
 	style = 48;
-	
+
 	colorBackground[] = COLOR_BLACK;
 	colorText[] = COLOR_WHITE;
 };
 
 
 class TITANMade: RscText
-{	
+{
 	text = "by Fallingstorm";
 	sizeEx = 0.02;
 	font = "PuristaMedium";
-	
+
 	colorText[] = COLOR_WHITE;
 };
 
@@ -1500,7 +1512,7 @@ class TITANSlots: RscText
 	font = "PuristaMedium";
 	sizeEx = 0.04;//0.09;
 	borderSize = 2;
-	
+
 	colorText[] = COLOR_WHITE;//COLOR_ORANGE;
 	colorBackground[] = COLOR_GRAY_DARK;
 };
@@ -1512,7 +1524,7 @@ class TITANBoxLow
 	font = "PuristaMedium";
 	sizeEx = 0.03;
 	shadow = 2;
-	
+
 	colorBackground[] = COLOR_BACKGROUND;
 	colorText[] = COLOR_WHITE;
 };
@@ -1520,7 +1532,7 @@ class TITANBoxLow
 class TITAN_AS_Button: RscButton
 {
 	font = "PuristaMedium";
-	
+
 	period = 0;
 
 	colorText[] = COLOR_WHITE_DIRTY; // Text color if button enebled
@@ -1533,7 +1545,7 @@ class TITAN_AS_Button: RscButton
 class TITAN_LO_Button: RscButton
 {
 	font = "PuristaMedium";
-	
+
 	period = 0;
 
 	colorText[] = COLOR_WHITE_DIRTY; // Text color if button enebled
@@ -1543,10 +1555,24 @@ class TITAN_LO_Button: RscButton
 	colorBackgroundActive[] = COLOR_FOCUSED;
 };
 
+class TITAN_ArsenalButton: RscButton
+{
+	font = "PuristaMedium";
+
+	period = 0;
+
+	colorText[] = COLOR_WHITE_DIRTY; // Text color if button enebled
+	colorDisabled[] = COLOR_WHITE_DARK; // Text color if button disabled
+	colorBackground[] = COLOR_GRAY_DARK;
+	colorBackgroundDisabled[] = COLOR_GRAY_BLACK;
+	colorBackgroundActive[] = COLOR_FOCUSED;
+};
+
+
 class TITAN_TELE_Button: RscButton
 {
 	font = "PuristaMedium";
-	
+
 	period = 0;
 
 	colorText[] = COLOR_WHITE_DIRTY; // Text color if button enebled
@@ -1573,22 +1599,17 @@ class TITAN_Close_Button: RscButton
     soundPush[] = {"\ca\ui\data\sound\new1",0,0};
     soundClick[] = {"\ca\ui\data\sound\onclick",0.07,1};
     soundEscape[] = {"\ca\ui\data\sound\onescape",0.09,1};
-	style = 2;	
-	x = 0;	
-	y = 0;	
-	w = 0.095589;	
-	h = 0.039216;	
-	shadow = 2;	
-	font = "PuristaMedium";	
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";	
-	offsetX = 0.003;	
-	offsetY = 0.003;	
-	offsetPressedX = 0.002;	
-	offsetPressedY = 0.002;	
+	style = 2;
+	x = 0;
+	y = 0;
+	w = 0.095589;
+	h = 0.039216;
+	shadow = 2;
+	font = "PuristaMedium";
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	offsetX = 0.003;
+	offsetY = 0.003;
+	offsetPressedX = 0.002;
+	offsetPressedY = 0.002;
 	borderSize = 0;
 };
-
-
-
-
-

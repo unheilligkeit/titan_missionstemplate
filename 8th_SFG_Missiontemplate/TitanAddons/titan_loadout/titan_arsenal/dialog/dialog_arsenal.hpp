@@ -12,29 +12,29 @@ class titan_arsenal_gui
 		class home_wallpaper: RscPicture
 		{
 			idc = -1;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\pad-air-wallpaper.paa";
+			text = "TitanAddons\titan_loadout\titan_arsenal\picture\titan_background.paa";
 
-			x = 0 + pixelW * pixelGrid * 6.15;
-			y = 0 - pixelH * pixelGrid * 2.15;
-			w = pixelW * pixelGrid * 64.5;
-			h = pixelH * pixelGrid * 51.5;
+			x = 0 + pixelW * pixelGrid * 4.15;
+			y = 0 - pixelH * pixelGrid * 1.5;
+			w = pixelW * pixelGrid * 65.5;
+			h = pixelH * pixelGrid * 53;
 
 		};
 
-		class home_screen: RscPicture
+		class home_ipad: RscPicture
 		{
 			idc = -1;
 			text = "TitanAddons\titan_loadout\titan_arsenal\picture\titan_arsenal_pad.paa";
 
-			x = 0 - pixelW * pixelGrid * 5;
-			y = 0 - pixelH * pixelGrid * 20;
-			w = pixelW * pixelGrid * 86;
-			h = pixelH * pixelGrid * 90;
+			x = 0 - pixelW * pixelGrid * 7;
+			y = 0 - pixelH * pixelGrid * 19;
+			w = pixelW * pixelGrid * 87;
+			h = pixelH * pixelGrid * 89;
 
 		};
 
 		// Titan Logo
-		class Logo: TITANLogo
+		class logo: TITANLogo
 		{
 			idc = -1;
 			text = "TitanAddons\titan_loadout\titan_arsenal\picture\TITANLogo.paa";
@@ -47,347 +47,529 @@ class titan_arsenal_gui
 		};
 
 		// Header
-		class txtHeader: TITANHeader
+		class txtHeader: TITAN_ArsenalHeader
 		{
 			idc = -1;
-			text = "TITAN SHOP";
+			text = "     LOADOUT CONFIGURATOR";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0;
+			x = 0 + pixelW * pixelGrid * 44;
+			y = 0 + pixelH * pixelGrid * 1;
 			w = pixelW * pixelGrid * 30;
 			h = pixelH * pixelGrid * 12;
 
 		};
 
-//============================================= Frames ==========================
-		// Box 1
-		class Logo_1: TITANLogo
+//================================= units ======================================
+		class logo_mtp: TITANLogo
 		{
-			idc = 100;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\helmets.paa";
+			idc = mtp_model;
+			text = "TitanAddons\titan_loadout\titan_arsenal\picture\mtp.paa";
 
-			x = 0 + pixelW * pixelGrid * 8;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0 - pixelW * pixelGrid * 6;
+			y = 0 + pixelH * pixelGrid * 9;
+			w = pixelW * pixelGrid * 36;
+			h = pixelH * pixelGrid * 32;
 		};
 
-		// Box 2
-		class Logo_2: TITANLogo
+		class logo_jtp: TITANLogo
 		{
-			idc = 200;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\vests.paa";
+			idc = jtp_model;
+			text = "TitanAddons\titan_loadout\titan_arsenal\picture\jtp.paa";
 
-			x = 0 + pixelW * pixelGrid * 22;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0 + pixelW * pixelGrid * 16.3;
+			y = 0 + pixelH * pixelGrid * 9;
+			w = pixelW * pixelGrid * 36;
+			h = pixelH * pixelGrid * 32;
 		};
 
-		// Box 3
-		class Logo_3: TITANLogo
+		class logo_wtp: TITANLogo
 		{
-			idc = 300;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\mx_gun.paa";
+			idc = wtp_model;
+			text = "TitanAddons\titan_loadout\titan_arsenal\picture\wtp.paa";
 
-			x = 0 + pixelW * pixelGrid * 36;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0 + pixelW * pixelGrid * 38;
+			y = 0 + pixelH * pixelGrid * 9;
+			w = pixelW * pixelGrid * 36;
+			h = pixelH * pixelGrid * 32;
 		};
 
-		// Box 4
-		class Logo_4: TITANLogo
-		{
-			idc = 400;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\pistols.paa";
+//=============================== frames =======================================
 
-			x = 0 + pixelW * pixelGrid * 50;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+		class txtBox_mtp: TITANBoxLow
+		{
+			idc = -1;
+			text = "";
+
+			x = 0 + pixelW * pixelGrid * 5;
+			y = 0 + pixelH * pixelGrid * 11;
+			w = pixelW * pixelGrid * 20;
+			h = pixelH * pixelGrid * 32;
 		};
 
-		// Box 5
-		class Logo_5: TITANLogo
+		class txtBox_jtp: TITANBoxLow
 		{
-			idc = 500;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\accesoires.paa";
+			idc = -1;
+			text = "";
 
-			x = 0 + pixelW * pixelGrid * 8;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0 + pixelW * pixelGrid * 27;
+			y = 0 + pixelH * pixelGrid * 11;
+			w = pixelW * pixelGrid * 20;
+			h = pixelH * pixelGrid * 32;
 		};
 
-		// Box 6
-		class Logo_6: TITANLogo
+		class txtBox_wtp: TITANBoxLow
 		{
-			idc = 600;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\comingsoon.paa";
+			idc = -1;
+			text = "";
 
-			x = 0 + pixelW * pixelGrid * 22;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0 + pixelW * pixelGrid * 49;
+			y = 0 + pixelH * pixelGrid * 11;
+			w = pixelW * pixelGrid * 20;
+			h = pixelH * pixelGrid * 32;
 		};
 
-		// Box 7
-		class Logo_7: TITANLogo
+		class txtBox_bdu: TITANBoxLow
 		{
-			idc = 700;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\comingsoon.paa";
+			idc = -1;
+			text = "";
 
-			x = 0 + pixelW * pixelGrid * 36;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-		};
-
-		// Box 8
-		class Logo_8: TITANLogo
-		{
-			idc = 800;
-			text = "TitanAddons\titan_loadout\titan_arsenal\picture\comingsoon.paa";
-
-			x = 0 + pixelW * pixelGrid * 50;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0 + pixelW * pixelGrid * 5;
+			y = 0 + pixelH * pixelGrid * 43.5;
+			w = pixelW * pixelGrid * 20;
+			h = pixelH * pixelGrid * 5;
 		};
 
 	};
 
-
-//=================================== Controls =====================
+//============================== Controls ======================================
 	class Controls
 	{
+
 		class CloseButton: TITAN_Close_Button
 		//class CloseButton: TITAN_LO_Button
 		{
-			idc = 0001;
+			idc = arsenal_close;
 			//text = "CLOSE";
-		//	colorText[] = {1,1,1,1};
+			//colorText[] = {1,1,1,1};
 
-			x = 0 + pixelW * pixelGrid * 73;
-			y = 0 + pixelH * pixelGrid * 22;
+			x = 0 + pixelW * pixelGrid * 72.8;
+			y = 0 + pixelH * pixelGrid * 21.4;
 			w = pixelW * pixelGrid * 4;
 			h = pixelH * pixelGrid * 4;
 			tooltip = "CLOSE";
 			action = "closeDialog 1000;";
 		};
 
-		//REARM BUTTON
-		class button_re: TITAN_LO_Button
+//=============================== SAVE ============================
+		class button_mtp_save: TITAN_ArsenalButton
 		{
-			idc = 0002;
-			text = "SAVE";
+			idc = mtp_save;
+			text = "MTP-SAVE";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 42.5;
-			w = pixelW * pixelGrid * 11;
+			x = 0 + pixelW * pixelGrid * 6.7;
+			y = 0 + pixelH * pixelGrid * 40;
+			w = pixelW * pixelGrid * 8;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "";
+			action = "[""mtp_save""] call titan_fnc_buttonarsenal";
 		};
 
-
-//============================================= UNIFORM BUTTONS ==========================
-		//BUTTON BOX 1
-		class button_1_1: TITAN_LO_Button
+		class button_jtp_save: TITAN_ArsenalButton
 		{
-			idc = 101;
+			idc = jtp_save;
+			text = "JTP-SAVE";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			access = 0;
-	    type = 1;
+			x = 0 + pixelW * pixelGrid * 29,5;
+			y = 0 + pixelH * pixelGrid * 40;
+			w = pixelW * pixelGrid * 8;
+			h = pixelH * pixelGrid * 2.5;
 
-	    colorText[] = {0, 0, 0, 0 };
-	    colorDisabled[] = {0, 0, 0, 0  };
-	    colorBackground[] = {0, 0, 0, 0 };
-	    colorBackgroundDisabled[] = {0, 0, 0, 0 };
-	    colorBackgroundActive[] = {0, 0, 0, 0 };
-	    colorFocused[] = {0, 0, 0, 0 };
-	    colorShadow[] = {0, 0, 0, 0 };
-	    colorBorder[] = {0, 0, 0, 0 };
-
-			x = 0 + pixelW * pixelGrid * 8;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[101] call titan_fnc_buttonarsenal;";
+			action = "[""jtp_save""] call titan_fnc_buttonarsenal";
 		};
 
-		//BUTTON BOX 2
-		class button_2_1: TITAN_LO_Button
+		class button_wtp_save: TITAN_ArsenalButton
 		{
-			idc = 201;
-			access = 0;
-			type = 1;
+			idc = wtp_save;
+			text = "WTP-SAVE";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 51;
+			y = 0 + pixelH * pixelGrid * 40;
+			w = pixelW * pixelGrid * 8;
+			h = pixelH * pixelGrid * 2.5;
 
-			x = 0 + pixelW * pixelGrid * 22;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[201] call titan_fnc_buttonarsenal;";
+			action = "[""wtp_save""] call titan_fnc_buttonarsenal";
 		};
 
-		//BUTTON BOX 3
-		class button_3_1: TITAN_LO_Button
+		class button_bdu_save: TITAN_ArsenalButton
 		{
-			idc = 301;
-			access = 0;
-			type = 1;
+			idc = bdu_save;
+			text = "BDU-SAVE";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 6.7;
+			y = 0 + pixelH * pixelGrid * 44.7;
+			w = pixelW * pixelGrid * 8;
+			h = pixelH * pixelGrid * 2.5;
 
-			x = 0 + pixelW * pixelGrid * 36;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[301] call titan_fnc_buttonarsenal;";
+			action = "[""bdu_save""] call titan_fnc_buttonarsenal";
 		};
 
-		//OPERATOR BUTTON BOX 4
-		class button_4_1: TITAN_LO_Button
+//================================ CLASS ========================
+
+//================================ MTP ==========================
+		class button_mtp_ptl: TITAN_ArsenalButton
 		{
-			idc = 401;
-			access = 0;
-			type = 1;
+			idc = mtp_ptl;
+			text = "PTL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 13;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
 
-			x = 0 + pixelW * pixelGrid * 50;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[401] call titan_fnc_buttonarsenal;";
+			action = "[""mtp_ptl""] call titan_fnc_buttonarsenal";
 		};
 
-//===================================================================
-		//BUTTON BOX 5
-		class button_5_1: TITAN_LO_Button
+		class button_mtp_sql: TITAN_ArsenalButton
 		{
-			idc = 501;
+			idc = mtp_sql;
+			text = "SQL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			access = 0;
-			type = 1;
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 16;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
 
-			x = 0 + pixelW * pixelGrid * 8;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[501] call titan_fnc_buttonarsenal;";
+			action = "[""mtp_sql""] call titan_fnc_buttonarsenal";
 		};
 
-
-//============================================== Spacial Buttons ===================================
-		//BUTTON BOX 6
-		class button_6_1: TITAN_LO_Button
+		class button_mtp_ftl: TITAN_ArsenalButton
 		{
-			idc = 601;
+			idc = mtp_ftl;
+			text = "FTL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			access = 0;
-			type = 1;
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 19;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
 
-			x = 0 + pixelW * pixelGrid * 22;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[601] call titan_fnc_buttonarsenal;";
+			action = "[""mtp_ftl""] call titan_fnc_buttonarsenal";
 		};
 
-		//BUTTON BOX 7
-		class button_7_1: TITAN_LO_Button
+		class button_mtp_cct: TITAN_ArsenalButton
 		{
-			idc = 701;
+			idc = mtp_cct;
+			text = "CCT";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			access = 0;
-			type = 1;
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 22;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
 
-
-			x = 0 + pixelW * pixelGrid * 36;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[701] call titan_fnc_buttonarsenal;";
+			action = "[""mtp_cct""] call titan_fnc_buttonarsenal";
 		};
 
-		// BUTTON BOX 8
-		class button_8_1: TITAN_LO_Button
+		class button_mtp_sotac: TITAN_ArsenalButton
 		{
-			idc = 801;
+			idc = mtp_sotac;
+			text = "SOTAC";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
-			access = 0;
-			type = 1;
-			colorText[] = {0, 0, 0, 0 };
-			colorDisabled[] = {0, 0, 0, 0  };
-			colorBackground[] = {0, 0, 0, 0 };
-			colorBackgroundDisabled[] = {0, 0, 0, 0 };
-			colorBackgroundActive[] = {0, 0, 0, 0 };
-			colorFocused[] = {0, 0, 0, 0 };
-			colorShadow[] = {0, 0, 0, 0 };
-			colorBorder[] = {0, 0, 0, 0 };
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 25;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
 
-			x = 0 + pixelW * pixelGrid * 50;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
-
-			action = "[801] call titan_fnc_buttonarsenal;";
+			action = "[""mtp_sotac""] call titan_fnc_buttonarsenal";
 		};
+
+		class button_mtp_eng: TITAN_ArsenalButton
+		{
+			idc = mtp_eng;
+			text = "ENG";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 28;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""mtp_eng""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_mtp_wpn: TITAN_ArsenalButton
+		{
+			idc = mtp_wpn;
+			text = "WPN";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 31;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""mtp_wpn""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_mtp_atmo: TITAN_ArsenalButton
+		{
+			idc = mtp_atmo;
+			text = "ATMO";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 34;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""mtp_atmo""] call titan_fnc_buttonarsenal";
+		};
+//================================ jtp ==========================
+		class button_jtp_ptl: TITAN_ArsenalButton
+		{
+			idc = jtp_ptl;
+			text = "PTL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 13;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_ptl""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_sql: TITAN_ArsenalButton
+		{
+			idc = jtp_sql;
+			text = "SQL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 16;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_sql""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_ftl: TITAN_ArsenalButton
+		{
+			idc = jtp_ftl;
+			text = "FTL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 19;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_ftl""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_cct: TITAN_ArsenalButton
+		{
+			idc = jtp_cct;
+			text = "CCT";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 22;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_cct""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_sotac: TITAN_ArsenalButton
+		{
+			idc = jtp_sotac;
+			text = "SOTAC";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 25;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_sotac""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_eng: TITAN_ArsenalButton
+		{
+			idc = jtp_eng;
+			text = "ENG";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 28;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_eng""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_wpn: TITAN_ArsenalButton
+		{
+			idc = jtp_wpn;
+			text = "WPN";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 31;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_wpn""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_jtp_atmo: TITAN_ArsenalButton
+		{
+			idc = jtp_atmo;
+			text = "ATMO";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 40;
+			y = 0 + pixelH * pixelGrid * 34;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""jtp_atmo""] call titan_fnc_buttonarsenal";
+		};
+
+//================================ wtp ==========================
+		class button_wtp_ptl: TITAN_ArsenalButton
+		{
+			idc = wtp_ptl;
+			text = "PTL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 13;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_ptl""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_sql: TITAN_ArsenalButton
+		{
+			idc = wtp_sql;
+			text = "SQL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 16;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_sql""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_ftl: TITAN_ArsenalButton
+		{
+			idc = wtp_ftl;
+			text = "FTL";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 19;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_ftl""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_cct: TITAN_ArsenalButton
+		{
+			idc = wtp_cct;
+			text = "CCT";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 22;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_cct""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_sotac: TITAN_ArsenalButton
+		{
+			idc = wtp_sotac;
+			text = "SOTAC";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 25;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_sotac""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_eng: TITAN_ArsenalButton
+		{
+			idc = wtp_eng;
+			text = "ENG";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 28;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_eng""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_wpn: TITAN_ArsenalButton
+		{
+			idc = wtp_wpn;
+			text = "WPN";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 31;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_wpn""] call titan_fnc_buttonarsenal";
+		};
+
+		class button_wtp_atmo: TITAN_ArsenalButton
+		{
+			idc = wtp_atmo;
+			text = "ATMO";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 62;
+			y = 0 + pixelH * pixelGrid * 34;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""wtp_atmo""] call titan_fnc_buttonarsenal";
+		};
+//======================== startloadout ========================================
+		class button_bdu: TITAN_ArsenalButton
+		{
+			idc = mtp_atmo;
+			text = "BDU";
+			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
+
+			x = 0 + pixelW * pixelGrid * 18;
+			y = 0 + pixelH * pixelGrid * 44.7;
+			w = pixelW * pixelGrid * 6;
+			h = pixelH * pixelGrid * 2.5;
+
+			action = "[""bdu""] call titan_fnc_buttonarsenal";
+		};
+
 	};
 };
