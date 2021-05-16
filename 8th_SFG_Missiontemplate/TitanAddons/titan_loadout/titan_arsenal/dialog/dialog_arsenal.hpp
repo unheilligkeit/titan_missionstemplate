@@ -157,7 +157,7 @@ class titan_arsenal_gui
 			w = pixelW * pixelGrid * 4;
 			h = pixelH * pixelGrid * 4;
 			tooltip = "CLOSE";
-			action = "closeDialog 1000;";
+			action = "closeDialog 3;";
 		};
 
 //=============================== SAVE ============================

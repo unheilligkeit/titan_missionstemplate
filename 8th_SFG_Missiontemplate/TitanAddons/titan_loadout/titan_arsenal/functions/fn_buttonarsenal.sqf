@@ -34,4 +34,10 @@ switch (_button) do {
 
   case "bdu": {hint "Auswahl Start Loaddout"};
   case "bdu_save":{hint "Speichern von Start Loadout";};
+
+  case "fix": {hint "Auswahl Fixwing"};
+  case "fix_save": {hint "Auswahl Fixwing Save"};
+
+  case "rot": {hint "Auswahl Rotarywing"};
+  case "rot_save": {hint "Auswahl Rotarywing Save"};
 };

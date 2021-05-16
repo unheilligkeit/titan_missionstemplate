@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1123;
+		nextID=1125;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2711;
+		nextID=2767;
 	};
 	class Camera
 	{
-		pos[]={14673.222,48.819607,16750.166};
-		dir[]={-0.72629422,-0.68660492,-0.032717727};
-		up[]={-0.68590933,0.72703075,-0.030898491};
-		aside[]={-0.04500185,0,0.99898696};
+		pos[]={14677.498,49.278954,16751.061};
+		dir[]={-0.6305393,-0.64046776,0.43843037};
+		up[]={-0.52584368,0.76798511,0.36563277};
+		aside[]={0.57088399,0,0.82103074};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_Missiontemplate";
+sourceName="1_titan_arsenal";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -330,7 +330,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];                      this addAction [""<t color='#FCB514'> Titan Arsenal </t>"",""call titan_fnc_arsenalgui"","""", 100, false, True, """", """", 5];}";
+								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];                      this addAction [""<t color='#FCB514'> Titan Arsenal </t>"",""call titan_fnc_arsenalgui"","""", 100, false, True, """", """", 5];                      this addAction [""<t color='#FCB514'> Titan Piloten Arsenal </t>"",""[""""pilot""""] call titan_fnc_arsenalgui"","""", 100, false, True, """", """", 5];}";
 								description="Loadout Gross";
 							};
 							id=69;

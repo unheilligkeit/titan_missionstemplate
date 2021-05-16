@@ -11,11 +11,17 @@ class air_support
 		{
 			idc = -1;
 			text = "TitanAddons\AirSupport\picture\Air_Panel.paa";
-
+			/*
+			x = 0 - pixelW * pixelGrid * 12;
+			y = 0 - pixelH * pixelGrid * 17;
+			w = pixelW * pixelGrid * 116;
+			h = pixelH * pixelGrid * 95;
+			*/
 			x = 0.240 * safezoneW + safezoneX;
 			y = 0.070 * safezoneH + safezoneY;
 			w = 0.590 * SafeZoneW;
 			h = 0.880 * SafeZoneH;
+			
 		};
 
 		// TITAN LOGO
@@ -382,7 +388,7 @@ class air_support
 			w = 0.062 * safezoneW;
 			h = 0.022 * safezoneH;
 
-			action = "[""RWM_1203""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";	
+			action = "[""RWM_1203""] execVM ""TitanAddons\AirSupport\vSup.sqf"";";
 		};
 
 //-------------------------------------RWM13-------------------------------------
