@@ -7,7 +7,6 @@
 // Var for slots and vehicles
 #include "fn_ASVar.sqf"
 
-
 //open dialog
 _ok = createDialog "support";
 
