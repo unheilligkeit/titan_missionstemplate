@@ -28,48 +28,48 @@ force force ace_pylons_searchDistance = 20;
 force force ace_pylons_timePerPylon = 1;
 
 // ACE BenutzeroberflÃ¤che
-force ace_ui_allowSelectiveUI = true;
-force ace_ui_ammoCount = false;
-force ace_ui_ammoType = true;
-force ace_ui_commandMenu = true;
-force ace_ui_firingMode = true;
-force ace_ui_groupBar = false;
-force ace_ui_gunnerAmmoCount = true;
-force ace_ui_gunnerAmmoType = true;
-force ace_ui_gunnerFiringMode = true;
-force ace_ui_gunnerLaunchableCount = true;
-force ace_ui_gunnerLaunchableName = true;
-force ace_ui_gunnerMagCount = true;
-force ace_ui_gunnerWeaponLowerInfoBackground = true;
-force ace_ui_gunnerWeaponName = true;
-force ace_ui_gunnerWeaponNameBackground = true;
-force ace_ui_gunnerZeroing = true;
-force ace_ui_magCount = true;
-force ace_ui_soldierVehicleWeaponInfo = true;
-force ace_ui_staminaBar = true;
-force ace_ui_stance = true;
-force ace_ui_throwableCount = true;
-force ace_ui_throwableName = true;
-force ace_ui_vehicleAltitude = true;
-force ace_ui_vehicleCompass = true;
-force ace_ui_vehicleDamage = true;
-force ace_ui_vehicleFuelBar = true;
-force ace_ui_vehicleInfoBackground = true;
-force ace_ui_vehicleName = true;
-force ace_ui_vehicleNameBackground = true;
-force ace_ui_vehicleRadar = true;
-force ace_ui_vehicleSpeed = true;
-force ace_ui_weaponLowerInfoBackground = true;
-force ace_ui_weaponName = true;
-force ace_ui_weaponNameBackground = true;
-force ace_ui_zeroing = true;
+force force ace_ui_allowSelectiveUI = true;
+force force ace_ui_ammoCount = false;
+force force ace_ui_ammoType = true;
+force force ace_ui_commandMenu = true;
+force force ace_ui_firingMode = true;
+force force ace_ui_groupBar = false;
+force force ace_ui_gunnerAmmoCount = true;
+force force ace_ui_gunnerAmmoType = true;
+force force ace_ui_gunnerFiringMode = true;
+force force ace_ui_gunnerLaunchableCount = true;
+force force ace_ui_gunnerLaunchableName = true;
+force force ace_ui_gunnerMagCount = true;
+force force ace_ui_gunnerWeaponLowerInfoBackground = true;
+force force ace_ui_gunnerWeaponName = true;
+force force ace_ui_gunnerWeaponNameBackground = true;
+force force ace_ui_gunnerZeroing = true;
+force force ace_ui_magCount = true;
+force force ace_ui_soldierVehicleWeaponInfo = true;
+force force ace_ui_staminaBar = true;
+force force ace_ui_stance = true;
+force force ace_ui_throwableCount = true;
+force force ace_ui_throwableName = true;
+force force ace_ui_vehicleAltitude = true;
+force force ace_ui_vehicleCompass = true;
+force force ace_ui_vehicleDamage = true;
+force force ace_ui_vehicleFuelBar = true;
+force force ace_ui_vehicleInfoBackground = true;
+force force ace_ui_vehicleName = true;
+force force ace_ui_vehicleNameBackground = true;
+force force ace_ui_vehicleRadar = true;
+force force ace_ui_vehicleSpeed = true;
+force force ace_ui_weaponLowerInfoBackground = true;
+force force ace_ui_weaponName = true;
+force force ace_ui_weaponNameBackground = true;
+force force ace_ui_zeroing = true;
 
 // ACE Crew Served Weapons
-force ace_csw_ammoHandling = 2;
-force ace_csw_defaultAssemblyMode = false;
-force ace_csw_dragAfterDeploy = true;
-force ace_csw_handleExtraMagazines = true;
-force ace_csw_progressBarTimeCoefficent = 1;
+force force ace_csw_ammoHandling = 2;
+force force ace_csw_defaultAssemblyMode = false;
+force force ace_csw_dragAfterDeploy = true;
+force force ace_csw_handleExtraMagazines = true;
+force force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE DurchzÃ¼ndung
 force force ace_cookoff_ammoCookoffDuration = 0;
@@ -118,10 +118,10 @@ force force ace_finger_indicatorColor = [0,1,0,1];
 force force ace_finger_maxRange = 25;
 
 // ACE Gefangene
-force ace_captives_allowHandcuffOwnSide = true;
-force ace_captives_allowSurrender = true;
-force ace_captives_requireSurrender = 1;
-force ace_captives_requireSurrenderAi = false;
+force force ace_captives_allowHandcuffOwnSide = true;
+force force ace_captives_allowSurrender = true;
+force force ace_captives_requireSurrender = 1;
+force force ace_captives_requireSurrenderAi = false;
 
 // ACE Gehoer
 force force ace_hearing_autoAddEarplugsToUnits = true;
@@ -164,40 +164,40 @@ force force ace_interact_menu_useListMenu = true;
 force force ace_interact_menu_useListMenuSelf = true;
 
 // ACE Karte
-force ace_map_BFT_Enabled = true;
-force ace_map_BFT_HideAiGroups = true;
-force ace_map_BFT_Interval = 1;
-force ace_map_BFT_ShowPlayerNames = false;
-force ace_map_DefaultChannel = 1;
-force ace_map_mapGlow = true;
-force ace_map_mapIllumination = true;
-force ace_map_mapLimitZoom = false;
-force ace_map_mapShake = true;
-force ace_map_mapShowCursorCoordinates = true;
-force ace_markers_moveRestriction = 0;
-ace_markers_timestampEnabled = true;
-ace_markers_timestampFormat = "HH:MM";
-ace_markers_timestampHourFormat = 24;
+force force ace_map_BFT_Enabled = true;
+force force ace_map_BFT_HideAiGroups = true;
+force force ace_map_BFT_Interval = 1;
+force force ace_map_BFT_ShowPlayerNames = false;
+force force ace_map_DefaultChannel = 1;
+force force ace_map_mapGlow = true;
+force force ace_map_mapIllumination = true;
+force force ace_map_mapLimitZoom = false;
+force force ace_map_mapShake = true;
+force force ace_map_mapShowCursorCoordinates = true;
+force force ace_markers_moveRestriction = 0;
+force force ace_markers_timestampEnabled = true;
+force force ace_markers_timestampFormat = "HH:MM";
+force force ace_markers_timestampHourFormat = 24;
 
 // ACE Kartenwerkzeug
-force ace_maptools_drawStraightLines = true;
-force ace_maptools_rotateModifierKey = 1;
+force force ace_maptools_drawStraightLines = true;
+force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Kartenzeichen
-ace_map_gestures_allowCurator = true;
-ace_map_gestures_allowSpectator = true;
-ace_map_gestures_briefingMode = 0;
-ace_map_gestures_defaultColor = [1,0.88,0,0.7];
-ace_map_gestures_defaultLeadColor = [1,0.88,0,0.95];
-force ace_map_gestures_enabled = true;
-force ace_map_gestures_interval = 0.03;
-force ace_map_gestures_maxRange = 10;
-force ace_map_gestures_maxRangeCamera = 14;
-ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
-force ace_map_gestures_onlyShowFriendlys = false;
+force force ace_map_gestures_allowCurator = true;
+force force ace_map_gestures_allowSpectator = true;
+force force ace_map_gestures_briefingMode = 0;
+force force ace_map_gestures_defaultColor = [1,0.88,0,0.7];
+force force ace_map_gestures_defaultLeadColor = [1,0.88,0,0.95];
+force force ace_map_gestures_enabled = true;
+force force ace_map_gestures_interval = 0.03;
+force force ace_map_gestures_maxRange = 10;
+force force ace_map_gestures_maxRangeCamera = 14;
+force force ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
+force force ace_map_gestures_onlyShowFriendlys = false;
 
 // ACE Logistik
-orce force ace_cargo_enable = true;
+force force ace_cargo_enable = true;
 force force ace_cargo_loadTimeCoefficient = 5;
 force force ace_cargo_paradropTimeCoefficent = 2.5;
 force force ace_rearm_distance = 20;
@@ -272,11 +272,11 @@ force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_maxRange = 3;
 
 // ACE Schnellzugang
-force ace_quickmount_distance = 3;
-force ace_quickmount_enabled = true;
-ace_quickmount_enableMenu = 3;
-ace_quickmount_priority = 0;
-force ace_quickmount_speed = 18;
+force force ace_quickmount_distance = 3;
+force force ace_quickmount_enabled = true;
+force force ace_quickmount_enableMenu = 3;
+force force ace_quickmount_priority = 0;
+force force ace_quickmount_speed = 18;
 
 // ACE Schutzbrille
 force force ace_goggles_effects = 3;
@@ -284,12 +284,12 @@ force force ace_goggles_showClearGlasses = true;
 force force ace_goggles_showInThirdPerson = true;
 
 // ACE Sichtweitenbegrenzung
-force ace_viewdistance_enabled = true;
-force ace_viewdistance_limitViewDistance = 12000;
-ace_viewdistance_objectViewDistanceCoeff = 0;
-ace_viewdistance_viewDistanceAirVehicle = 0;
-ace_viewdistance_viewDistanceLandVehicle = 0;
-ace_viewdistance_viewDistanceOnFoot = 0;
+force force ace_viewdistance_enabled = true;
+force force ace_viewdistance_limitViewDistance = 12000;
+force force ace_viewdistance_objectViewDistanceCoeff = 0;
+force force ace_viewdistance_viewDistanceAirVehicle = 0;
+force force ace_viewdistance_viewDistanceLandVehicle = 0;
+force force ace_viewdistance_viewDistanceOnFoot = 0;
 
 // ACE Splittersimulation
 force force ace_frag_enabled = true;
@@ -347,12 +347,12 @@ force force ace_winddeflection_simulationInterval = 0.2;
 force force ace_winddeflection_vehicleEnabled = false;
 
 // ACE Zeige Spielernamen
-ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
-ace_nametags_nametagColorBlue = [0.67,0.67,1,1];
-ace_nametags_nametagColorGreen = [0.67,1,0.67,1];
-ace_nametags_nametagColorMain = [1,1,1,1];
-ace_nametags_nametagColorRed = [1,0.67,0.67,1];
-ace_nametags_nametagColorYellow = [1,1,0.67,1];
+force force ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
+force force ace_nametags_nametagColorBlue = [0.67,0.67,1,1];
+force force ace_nametags_nametagColorGreen = [0.67,1,0.67,1];
+force force ace_nametags_nametagColorMain = [1,1,1,1];
+force force ace_nametags_nametagColorRed = [1,0.67,0.67,1];
+force force ace_nametags_nametagColorYellow = [1,1,0.67,1];
 force force ace_nametags_playerNamesMaxAlpha = 0.8;
 force force ace_nametags_playerNamesViewDistance = 15;
 force force ace_nametags_showCursorTagForVehicles = true;
@@ -451,55 +451,55 @@ acex_viewrestriction_preserveView = false;
 force force acex_fortify_settingHint = 0;
 
 // CBA UI
-cba_diagnostic_ConsoleIndentType = -1;
-cba_ui_notifyLifetime = 4;
-cba_ui_StorePasswords = 1;
+force force cba_diagnostic_ConsoleIndentType = -1;
+force force cba_ui_notifyLifetime = 4;
+force force cba_ui_StorePasswords = 1;
 
 // CBA Waffen
 force force cba_disposable_dropUsedLauncher = 2;
 force force cba_disposable_replaceDisposableLauncher = true;
-cba_events_repetitionMode = 1;
-cba_optics_usePipOptics = true;
+force force cba_events_repetitionMode = 1;
+force force cba_optics_usePipOptics = true;
 
 // Community Base Addons - Netzwerk
-force cba_network_loadoutValidation = 0;
+force force cba_network_loadoutValidation = 0;
 
 // DUI - Squad Radar - Indikatoren
-force diwako_dui_indicators_crew_range_enabled = true;
-diwako_dui_indicators_fov_scale = false;
-diwako_dui_indicators_icon_buddy = true;
-diwako_dui_indicators_icon_leader = true;
-diwako_dui_indicators_icon_medic = false;
-diwako_dui_indicators_range = 30.1042;
-diwako_dui_indicators_range_crew = 300;
-diwako_dui_indicators_range_scale = false;
-diwako_dui_indicators_show = true;
-diwako_dui_indicators_size = 1;
-diwako_dui_indicators_style = "standard";
-diwako_dui_indicators_useACENametagsRange = true;
+force force diwako_dui_indicators_crew_range_enabled = true;
+force force diwako_dui_indicators_fov_scale = false;
+force force diwako_dui_indicators_icon_buddy = true;
+force force diwako_dui_indicators_icon_leader = true;
+force force diwako_dui_indicators_icon_medic = false;
+force force diwako_dui_indicators_range = 30.1042;
+force force diwako_dui_indicators_range_crew = 300;
+force force diwako_dui_indicators_range_scale = false;
+force force diwako_dui_indicators_show = true;
+force force diwako_dui_indicators_size = 1;
+force force diwako_dui_indicators_style = "standard";
+force force diwako_dui_indicators_useACENametagsRange = true;
 
 // DUI - Squad Radar - Main
-diwako_dui_ace_hide_interaction = true;
-diwako_dui_colors = "standard";
-diwako_dui_font = "RobotoCondensed";
-diwako_dui_icon_style = "standard";
-diwako_dui_main_hide_ui_by_default = false;
-diwako_dui_main_squadBlue = [0,0,1,1];
-diwako_dui_main_squadGreen = [0,1,0,1];
-diwako_dui_main_squadMain = [1,1,1,1];
-diwako_dui_main_squadRed = [1,0,0,1];
-diwako_dui_main_squadYellow = [1,1,0,1];
+force force diwako_dui_ace_hide_interaction = true;
+force force diwako_dui_colors = "standard";
+force force diwako_dui_font = "RobotoCondensed";
+force force diwako_dui_icon_style = "standard";
+force force diwako_dui_main_hide_ui_by_default = false;
+force force diwako_dui_main_squadBlue = [0,0,1,1];
+force force diwako_dui_main_squadGreen = [0,1,0,1];
+force force diwako_dui_main_squadMain = [1,1,1,1];
+force force diwako_dui_main_squadRed = [1,0,0,1];
+force force diwako_dui_main_squadYellow = [1,1,0,1];
 
 // LAMBS Danger
-force lambs_danger_cqbRange = 60;
-lambs_danger_disableAIAutonomousManoeuvres = false;
-lambs_danger_disableAIDeployStaticWeapons = false;
-lambs_danger_disableAIFindStaticWeapons = false;
-lambs_danger_disableAIHideFromTanksAndAircraft = false;
-lambs_danger_disableAIPlayerGroup = false;
-lambs_danger_disableAIPlayerGroupReaction = false;
-lambs_danger_disableAutonomousFlares = false;
-force lambs_danger_panicChance = 0.1;
+force force lambs_danger_cqbRange = 60;
+force force lambs_danger_disableAIAutonomousManoeuvres = false;
+force force lambs_danger_disableAIDeployStaticWeapons = false;
+force force lambs_danger_disableAIFindStaticWeapons = false;
+force force lambs_danger_disableAIHideFromTanksAndAircraft = false;
+force force lambs_danger_disableAIPlayerGroup = false;
+force force lambs_danger_disableAIPlayerGroupReaction = false;
+force force lambs_danger_disableAutonomousFlares = false;
+force force lambs_danger_panicChance = 0.1;
 
 // LAMBS Danger Eventhandlers
 force force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
@@ -532,7 +532,7 @@ force force lambs_main_radioShout = 100;
 force force lambs_main_radioWest = 500;
 
 // TFAR - Allgemeine Einstellungen
-force TFAR_allowDebugging = true;
+force force TFAR_allowDebugging = true;
 force force TFAR_AICanHearPlayer = false;
 force force TFAR_AICanHearSpeaker = false;
 force force TFAR_enableIntercom = true;
@@ -547,34 +547,34 @@ force force TFAR_SameSRFrequenciesForSide = true;
 force force TFAR_spectatorCanHearEnemyUnits = false;
 force force TFAR_spectatorCanHearFriendlies = true;
 force force TFAR_takingRadio = 1;
-force TFAR_setting_defaultFrequencies_lr_east = "";
-force TFAR_setting_defaultFrequencies_lr_independent = "";
+force force TFAR_setting_defaultFrequencies_lr_east = "";
+force force TFAR_setting_defaultFrequencies_lr_independent = "";
 force force TFAR_setting_defaultFrequencies_lr_west = "80.1,80.2,80.3,80.4,78,78.1,78.2,78.3,78.4";
-force TFAR_setting_defaultFrequencies_sr_east = "";
-force TFAR_setting_defaultFrequencies_sr_independent = "";
+force force TFAR_setting_defaultFrequencies_sr_east = "";
+force force TFAR_setting_defaultFrequencies_sr_independent = "";
 force force TFAR_setting_defaultFrequencies_sr_west = "81,82,83,84,81.1,83.1,84.1,89.3";
-force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
-force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
-force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
-force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
-force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
-force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
-force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
-force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
-force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
-force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_pnr1000a";
-force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc154";
-force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_rf7800str";
-force tfar_radiocode_east = "_opfor";
-force tfar_radiocode_independent = "_independent";
-force tfar_radiocode_west = "_bluefor";
-force tfar_radioCodesDisabled = false;
-force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
-force TFAR_Teamspeak_Channel_Password = "123";
+force force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
+force force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
+force force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
+force force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
+force force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
+force force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
+force force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
+force force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
+force force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
+force force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_pnr1000a";
+force force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc154";
+force force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_rf7800str";
+force force tfar_radiocode_east = "_opfor";
+force force tfar_radiocode_independent = "_independent";
+force force tfar_radiocode_west = "_bluefor";
+force force tfar_radioCodesDisabled = false;
+force force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
+force force TFAR_Teamspeak_Channel_Password = "123";
 force force tfar_core_noTSNotConnectedHint = true;
-force TFAR_disableAutoMute = false;
+force force TFAR_disableAutoMute = false;
 force force TFAR_experimentalVehicleIsolation = true;
-force TFAR_instantiate_instantiateAtBriefing = false;
+force force TFAR_instantiate_instantiateAtBriefing = false;
 force force TFAR_objectInterceptionStrength = 400;
 force force TFAR_globalRadioRangeCoef = 10;
 force force tfar_terrain_interception_coefficient = 1;
@@ -599,104 +599,104 @@ TFAR_VolumeHudTransparency = 0;
 TFAR_volumeModifier_forceSpeech = false;
 
 // Zeus Enhanced
-zen_camera_adaptiveSpeed = true;
-zen_camera_defaultSpeedCoef = 1;
-zen_camera_fastSpeedCoef = 1;
-zen_camera_followTerrain = true;
+force force zen_camera_adaptiveSpeed = true;
+force force zen_camera_defaultSpeedCoef = 1;
+force force zen_camera_fastSpeedCoef = 1;
+force force zen_camera_followTerrain = true;
 force force zen_common_ascensionMessages = false;
 force force zen_common_autoAddObjects = false;
 force force zen_common_cameraBird = false;
 force force zen_common_darkMode = true;
 force force zen_common_disableGearAnim = true;
-zen_common_preferredArsenal = 1;
+force force zen_common_preferredArsenal = 1;
 force force zen_compat_ace_hideModules = true;
-zen_context_menu_enabled = 2;
-zen_editor_addGroupIcons = false;
-zen_editor_declutterEmptyTree = true;
-zen_editor_disableLiveSearch = false;
-zen_editor_moveDisplayToEdge = true;
-force zen_editor_parachuteSounds = true;
-zen_editor_previews_enabled = true;
-zen_editor_randomizeCopyPaste = false;
-zen_editor_removeWatermark = true;
-zen_editor_unitRadioMessages = 0;
-zen_placement_enabled = false;
-zen_visibility_enabled = false;
-zen_vision_enableBlackHot = false;
-zen_vision_enableBlackHotGreenCold = false;
-zen_vision_enableBlackHotRedCold = false;
-zen_vision_enableGreenHotCold = false;
-zen_vision_enableNVG = true;
-zen_vision_enableRedGreenThermal = false;
-zen_vision_enableRedHotCold = false;
-zen_vision_enableWhiteHot = true;
-zen_vision_enableWhiteHotRedCold = false;
+force force zen_context_menu_enabled = 2;
+force force zen_editor_addGroupIcons = false;
+force force zen_editor_declutterEmptyTree = true;
+force force zen_editor_disableLiveSearch = false;
+force force zen_editor_moveDisplayToEdge = true;
+force force zen_editor_parachuteSounds = true;
+force force zen_editor_previews_enabled = true;
+force force zen_editor_randomizeCopyPaste = false;
+force force zen_editor_removeWatermark = true;
+force force zen_editor_unitRadioMessages = 0;
+force force zen_placement_enabled = false;
+force force zen_visibility_enabled = false;
+force force zen_vision_enableBlackHot = false;
+force force zen_vision_enableBlackHotGreenCold = false;
+force force zen_vision_enableBlackHotRedCold = false;
+force force zen_vision_enableGreenHotCold = false;
+force force zen_vision_enableNVG = true;
+force force zen_vision_enableRedGreenThermal = false;
+force force zen_vision_enableRedHotCold = false;
+force force zen_vision_enableWhiteHot = true;
+force force zen_vision_enableWhiteHotRedCold = false;
 
 // Zeus Enhanced - Fraktionsfilter
-zen_faction_filter_0_OPF_F = true;
-zen_faction_filter_0_OPF_G_F = true;
-zen_faction_filter_0_OPF_GEN_F = true;
-zen_faction_filter_0_OPF_R_F = true;
-zen_faction_filter_0_OPF_T_F = true;
-zen_faction_filter_1_BLU_CTRG_F = true;
-zen_faction_filter_1_BLU_F = true;
-zen_faction_filter_1_BLU_G_F = true;
-zen_faction_filter_1_BLU_GEN_F = true;
-zen_faction_filter_1_BLU_T_F = true;
-zen_faction_filter_1_BLU_W_F = true;
-zen_faction_filter_2_IND_C_F = true;
-zen_faction_filter_2_IND_E_F = true;
-zen_faction_filter_2_IND_F = true;
-zen_faction_filter_2_IND_G_F = true;
-zen_faction_filter_2_IND_L_F = true;
-zen_faction_filter_3_CIV_F = true;
-zen_faction_filter_3_CIV_IDAP_F = true;
-zen_faction_filter_3_IND_L_F = true;
+force force zen_faction_filter_0_OPF_F = true;
+force force zen_faction_filter_0_OPF_G_F = true;
+force force zen_faction_filter_0_OPF_GEN_F = true;
+force force zen_faction_filter_0_OPF_R_F = true;
+force force zen_faction_filter_0_OPF_T_F = true;
+force force zen_faction_filter_1_BLU_CTRG_F = true;
+force force zen_faction_filter_1_BLU_F = true;
+force force zen_faction_filter_1_BLU_G_F = true;
+force force zen_faction_filter_1_BLU_GEN_F = true;
+force force zen_faction_filter_1_BLU_T_F = true;
+force force zen_faction_filter_1_BLU_W_F = true;
+force force zen_faction_filter_2_IND_C_F = true;
+force force zen_faction_filter_2_IND_E_F = true;
+force force zen_faction_filter_2_IND_F = true;
+force force zen_faction_filter_2_IND_G_F = true;
+force force zen_faction_filter_2_IND_L_F = true;
+force force zen_faction_filter_3_CIV_F = true;
+force force zen_faction_filter_3_CIV_IDAP_F = true;
+force force zen_faction_filter_3_IND_L_F = true;
 
 
 // Special forces repo
 // Auto Weapon Lower
-FARE_ANIM_LOWER = true;
-FARE_ANIM_RAISE = true;
-FARE_ANIM_SPEEDUP = 1.3;
-FARE_CHECK_ADS = true;
-FARE_CHECK_HANDGUN = true;
-FARE_CHECK_LASER = true;
-FARE_CHECK_LEAN = true;
-FARE_CHECK_LIGHT = true;
-FARE_CHECK_MOVE = true;
-FARE_CHECK_NEAR = false;
-FARE_CHECK_RELOAD = true;
-FARE_CHECK_REST = true;
-FARE_CHECK_SHOOT = true;
-FARE_CHECK_TACTICAL = true;
-FARE_CHECK_WALK = true;
-FARE_DELAY_DAYTIME = 0.8;
-FARE_DELAY_DEFAULT = 2;
-FARE_DELAY_NEAR = 0;
-FARE_DELAY_SHOOT = 3;
-FARE_DISTANCE_FIRED = 10;
-FARE_ENABLED = true;
-FARE_STATE_ACE_MENU = true;
-FARE_STATE_DAYTIME = true;
-FARE_STATE_GEAR = true;
-FARE_STATE_MEDICAL = true;
+force force FARE_ANIM_LOWER = true;
+force force FARE_ANIM_RAISE = true;
+force force FARE_ANIM_SPEEDUP = 1.3;
+force force FARE_CHECK_ADS = true;
+force force FARE_CHECK_HANDGUN = true;
+force force FARE_CHECK_LASER = true;
+force force FARE_CHECK_LEAN = true;
+force force FARE_CHECK_LIGHT = true;
+force force FARE_CHECK_MOVE = true;
+force force FARE_CHECK_NEAR = false;
+force force FARE_CHECK_RELOAD = true;
+force force FARE_CHECK_REST = true;
+force force FARE_CHECK_SHOOT = true;
+force force FARE_CHECK_TACTICAL = true;
+force force FARE_CHECK_WALK = true;
+force force FARE_DELAY_DAYTIME = 0.8;
+force force FARE_DELAY_DEFAULT = 2;
+force force FARE_DELAY_NEAR = 0;
+force force FARE_DELAY_SHOOT = 3;
+force force FARE_DISTANCE_FIRED = 10;
+force force FARE_ENABLED = true;
+force force FARE_STATE_ACE_MENU = true;
+force force FARE_STATE_DAYTIME = true;
+force force FARE_STATE_GEAR = true;
+force force FARE_STATE_MEDICAL = true;
 
 // Metis Marker
-mts_markers_saveLastSelection = true;
-mts_markers_showPresetsUI = false;
+force force mts_markers_saveLastSelection = true;
+force force mts_markers_showPresetsUI = false;
 
 
 
 // F/A-18
-js_jc_fa18_advancedStart = false;
-js_jc_fa18_atflirRequire = false;
-js_jc_fa18_canopyLoss = false;
-js_jc_fa18_cursorSensitivity = 2.5;
-js_jc_fa18_interactCursor = true;
-js_jc_fa18_interactionRadiusMod = 1;
-js_jc_fa18_mav_tdcDepressRequiredForMove = true;
-js_jc_fa18_showLabels = true;
+force force js_jc_fa18_advancedStart = false;
+force force js_jc_fa18_atflirRequire = false;
+force force js_jc_fa18_canopyLoss = false;
+force force js_jc_fa18_cursorSensitivity = 2.5;
+force force js_jc_fa18_interactCursor = true;
+force force js_jc_fa18_interactionRadiusMod = 1;
+force force js_jc_fa18_mav_tdcDepressRequiredForMove = true;
+force force js_jc_fa18_showLabels = true;
 
 // IFF strobe
 force force GDMN_setting_NVG = true;
