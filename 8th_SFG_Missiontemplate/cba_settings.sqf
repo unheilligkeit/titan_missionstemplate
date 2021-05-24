@@ -286,10 +286,10 @@ force force ace_goggles_showInThirdPerson = true;
 // ACE Sichtweitenbegrenzung
 force force ace_viewdistance_enabled = true;
 force force ace_viewdistance_limitViewDistance = 12000;
-force force ace_viewdistance_objectViewDistanceCoeff = 0;
-force force ace_viewdistance_viewDistanceAirVehicle = 0;
-force force ace_viewdistance_viewDistanceLandVehicle = 0;
-force force ace_viewdistance_viewDistanceOnFoot = 0;
+ace_viewdistance_objectViewDistanceCoeff = 0;
+ace_viewdistance_viewDistanceAirVehicle = 0;
+ace_viewdistance_viewDistanceLandVehicle = 0;
+ace_viewdistance_viewDistanceOnFoot = 0;
 
 // ACE Splittersimulation
 force force ace_frag_enabled = true;
