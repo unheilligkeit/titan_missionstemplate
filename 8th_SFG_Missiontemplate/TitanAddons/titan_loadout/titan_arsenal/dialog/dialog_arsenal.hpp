@@ -65,9 +65,9 @@ class titan_arsenal_gui
 			idc = mtp_model;
 			text = "TitanAddons\titan_loadout\titan_arsenal\picture\mtp.paa";
 
-			x = 0 - pixelW * pixelGrid * 6;
+			x = 0 - pixelW * pixelGrid * 4;
 			y = 0 + pixelH * pixelGrid * 9;
-			w = pixelW * pixelGrid * 36;
+			w = pixelW * pixelGrid * 32;
 			h = pixelH * pixelGrid * 32;
 		};
 
@@ -76,9 +76,9 @@ class titan_arsenal_gui
 			idc = jtp_model;
 			text = "TitanAddons\titan_loadout\titan_arsenal\picture\jtp.paa";
 
-			x = 0 + pixelW * pixelGrid * 16.3;
+			x = 0 + pixelW * pixelGrid * 18.7;
 			y = 0 + pixelH * pixelGrid * 9;
-			w = pixelW * pixelGrid * 36;
+			w = pixelW * pixelGrid * 32;
 			h = pixelH * pixelGrid * 32;
 		};
 
@@ -87,9 +87,9 @@ class titan_arsenal_gui
 			idc = wtp_model;
 			text = "TitanAddons\titan_loadout\titan_arsenal\picture\wtp.paa";
 
-			x = 0 + pixelW * pixelGrid * 38;
+			x = 0 + pixelW * pixelGrid * 42;
 			y = 0 + pixelH * pixelGrid * 9;
-			w = pixelW * pixelGrid * 36;
+			w = pixelW * pixelGrid * 32;
 			h = pixelH * pixelGrid * 32;
 		};
 
