@@ -56,11 +56,14 @@ class titan
     class titan_extraitem
     {
         file = "TitanAddons\titan_loadout\extraitem";
-        class limitarsenal {};
         class extraitems_bdu {};
         class extraitems_mtp {};
         class extraitems_jtp {};
         class extraitems_wtp {};
+        class limitarsenal_bdu {postInit = 1;};
+        class limitarsenal_mtp {postInit = 1;};
+        class limitarsenal_jtp {postInit = 1;};
+        class limitarsenal_wtp {postInit = 1;};
     };
 
 

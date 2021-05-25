@@ -1,6 +1,6 @@
 
-params ["_unit"];
-_tarnmuster = "param_tarnmuster" call BIS_fnc_getParamValue;
+params ["_unit","_tarnmuster"];
+
 
 
 
@@ -65,7 +65,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_ptl_helm") then
         {
 
-            _brillearray = selectRandom ["","USP_OAKLEY_SI2_BLK","USP_DETCORD_TAN_UP_SMC2","USP_BALACLAVA_RGR"];
+            _helmearray = selectRandom ["","USP_OAKLEY_SI2_BLK","USP_DETCORD_TAN_UP_SMC2","USP_BALACLAVA_RGR"];
             _unit addHeadgear _helmearray;
 
         } else {
