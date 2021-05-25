@@ -10,14 +10,11 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 // uniform laden
 
-    // MTP
-    if (_tarnmuster == 0) then
-    {
 
         _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
         _unit forceAddUniform _uniformarray ;
 
-        _mtp_fix_helm = profileNamespace getVariable "titan_mtp_fix_helm";
+        _mtp_fix_helm = profileNamespace getVariable "titan_fix_helm";
         if (isNil "_mtp_fix_helm") then
         {
 
@@ -30,7 +27,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _mtp_fix_brille = profileNamespace getVariable "titan_mtp_fix_brille";
+        _mtp_fix_brille = profileNamespace getVariable "titan_fix_brille";
         if (isNil "_mtp_fix_brille") then
         {
 
@@ -45,93 +42,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         _unit addVest "FIR_pilot_vest";
         //_unit addBackpack "SOG_fix_MTP_1";
-
-
-    };
-
-
-    // JTP
-    if (_tarnmuster == 1) then
-    {
-
-        _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
-        _unit forceAddUniform _uniformarray ;
-
-        _jtp_fix_helm = profileNamespace getVariable "titan_jtp_fix_helm";
-        if (isNil "_jtp_fix_helm") then
-        {
-
-            _helmearray = selectRandom ["Titan_ScorpionHMCS"];
-            _unit addHeadgear _helmearray;
-
-        } else {
-
-            _unit addHeadgear _jtp_fix_helm;
-
-        };
-
-        _jtp_fix_brille = profileNamespace getVariable "titan_jtp_fix_brille";
-        if (isNil "_jtp_fix_brille") then
-        {
-
-            _brillearray = selectRandom [""];
-            _unit addGoggles _brillearray;
-
-        } else {
-
-            _unit addGoggles _jtp_fix_brille;
-
-        };
-
-        _unit addVest "FIR_pilot_vest";
-        //_unit addBackpack "8th_Kitbag_JTP_fix";
-
-    };
-
-    //WTP
-    if (_tarnmuster == 2) then
-    {
-
-        _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
-        _unit forceAddUniform _uniformarray ;
-
-        _wtp_fix_helm = profileNamespace getVariable "titan_wtp_fix_helm";
-        if (isNil" _wtp_fix_helm") then
-        {
-
-            _helmearray = selectRandom ["Titan_ScorpionHMCS"];
-            _unit addHeadgear _helmearray;
-
-        } else {
-
-            _unit addHeadgear _wtp_fix_helm;
-
-        };
-
-        _wtp_fix_brille = profileNamespace getVariable "titan_wtp_fix_brille";
-        if (isNil "_wtp_fix_brille") then
-        {
-
-            _brillearray = selectRandom [""];
-            _unit addGoggles _brillearray;
-
-        } else {
-
-            _unit addGoggles _wtp_fix_brille;
-
-        };
-
-        _unit addVest "FIR_pilot_vest";
-        //_unit addBackpack "SOG_fix_WTP_1";
-
-    };
-
-
-
-
-
-
-
 
 
 // waffen und equip

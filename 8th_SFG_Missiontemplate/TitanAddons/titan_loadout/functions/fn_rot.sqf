@@ -10,14 +10,11 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 // uniform laden
 
-    // MTP
-    if (_tarnmuster == 0) then
-    {
 
         _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
         _unit forceAddUniform _uniformarray ;
 
-        _mtp_rot_helm = profileNamespace getVariable "titan_mtp_rot_helm";
+        _mtp_rot_helm = profileNamespace getVariable "titan_rot_helm";
         if (isNil "_mtp_rot_helm") then
         {
 
@@ -30,7 +27,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _mtp_rot_brille = profileNamespace getVariable "titan_mtp_rot_brille";
+        _mtp_rot_brille = profileNamespace getVariable "titan_rot_brille";
         if (isNil "_mtp_rot_brille") then
         {
 
@@ -45,93 +42,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         _unit addVest "V_PlateCarrier1_rgr_noflag_F";
         //_unit addBackpack "SOG_rot_MTP_1";
-
-
-    };
-
-
-    // JTP
-    if (_tarnmuster == 1) then
-    {
-
-        _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
-        _unit forceAddUniform _uniformarray ;
-
-        _jtp_rot_helm = profileNamespace getVariable "titan_jtp_rot_helm";
-        if (isNil "_jtp_rot_helm") then
-        {
-
-            _helmearray = selectRandom ["H_PilotHelmetHeli_B"];
-            _unit addHeadgear _helmearray;
-
-        } else {
-
-            _unit addHeadgear _jtp_rot_helm;
-
-        };
-
-        _jtp_rot_brille = profileNamespace getVariable "titan_jtp_rot_brille";
-        if (isNil "_jtp_rot_brille") then
-        {
-
-            _brillearray = selectRandom [""];
-            _unit addGoggles _brillearray;
-
-        } else {
-
-            _unit addGoggles _jtp_rot_brille;
-
-        };
-
-        _unit addVest "V_PlateCarrier1_rgr_noflag_F";
-        //_unit addBackpack "8th_Kitbag_JTP_rot";
-
-    };
-
-    //WTP
-    if (_tarnmuster == 2) then
-    {
-
-        _uniformarray = selectRandom ["U_B_HeliPilotCoveralls"];
-        _unit forceAddUniform _uniformarray ;
-
-        _wtp_rot_helm = profileNamespace getVariable "titan_wtp_rot_helm";
-        if (isNil" _wtp_rot_helm") then
-        {
-
-            _helmearray = selectRandom ["H_PilotHelmetHeli_B"];
-            _unit addHeadgear _helmearray;
-
-        } else {
-
-            _unit addHeadgear _wtp_rot_helm;
-
-        };
-
-        _wtp_rot_brille = profileNamespace getVariable "titan_wtp_rot_brille";
-        if (isNil "_wtp_rot_brille") then
-        {
-
-            _brillearray = selectRandom [""];
-            _unit addGoggles _brillearray;
-
-        } else {
-
-            _unit addGoggles _wtp_rot_brille;
-
-        };
-
-        _unit addVest "V_PlateCarrier1_rgr_noflag_F";
-        //_unit addBackpack "SOG_rot_WTP_1";
-
-    };
-
-
-
-
-
-
-
 
 
 

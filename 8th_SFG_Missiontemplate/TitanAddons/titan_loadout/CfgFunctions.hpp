@@ -71,9 +71,12 @@ class titan
         class extraitems_mtp {};
         class extraitems_jtp {};
         class extraitems_wtp {};
+        class extraitems_pilot {};
         class limitarsenal_bdu {postInit = 1;};
         class limitarsenal_mtp {postInit = 1;};
         class limitarsenal_jtp {postInit = 1;};
         class limitarsenal_wtp {postInit = 1;};
+        class limitarsenal_rot {postInit = 1;};
+        class limitarsenal_fix {postInit = 1;};
     };
 };
