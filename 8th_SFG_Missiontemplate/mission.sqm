@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1125;
+		nextID=1129;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2823;
+		nextID=2879;
 	};
 	class Camera
 	{
-		pos[]={14677.498,49.278954,16751.061};
-		dir[]={-0.6305393,-0.64046776,0.43843037};
-		up[]={-0.52584368,0.76798511,0.36563277};
-		aside[]={0.57088399,0,0.82103074};
+		pos[]={14710.209,75.20446,16687.469};
+		dir[]={-0.58455729,-0.5511536,0.59541798};
+		up[]={-0.38612103,0.83440375,0.39329487};
+		aside[]={0.7135849,1.4901161e-008,0.7005688};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_Missiontemplate";
+sourceName="titan_missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -60,13 +60,14 @@ addons[]=
 	"ace_dragging",
 	"A3_Ui_F",
 	"A3_Props_F_Enoch_Military_Camps",
-	"A3_Props_F_Exp_A_Military_Equipment"
+	"A3_Props_F_Exp_A_Military_Equipment",
+	"A3_Structures_F_EPC_Civ_Garbage"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Weapons_F";
@@ -236,6 +237,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item25
+		{
+			className="A3_Structures_F_EPC";
+			name="Arma 3 Win Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -302,7 +310,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1;
+		items=5;
 		class Item0
 		{
 			dataType="Layer";
@@ -316,7 +324,7 @@ class Mission
 					name="TITAN Supply";
 					class Entities
 					{
-						items=3;
+						items=2;
 						class Item0
 						{
 							dataType="Object";
@@ -330,7 +338,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];                      this addAction [""<t color='#FCB514'> Titan Arsenal </t>"",""call titan_fnc_arsenalgui"","""", 100, false, True, """", """", 5];                      this addAction [""<t color='#FCB514'> Titan Piloten Arsenal </t>"",""[""""pilot""""] call titan_fnc_arsenalgui"","""", 100, false, True, """", """", 5];}";
+								name="loadout_box_1";
 								description="Loadout Gross";
 							};
 							id=69;
@@ -614,7 +622,7 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
+								name="loadout_box_2";
 								description="Loadout Gross";
 							};
 							id=1113;
@@ -885,294 +893,8 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={14621.863,18.927422,16804.684};
-								angles[]={0,2.3480439,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								skill=0.60000002;
-								init="call{this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
-								name="box1";
-								description="Loadout Gross";
-							};
-							id=1114;
-							type="B_supplyCrate_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_HoldAction";
-									expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=13;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item2
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item3
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="true";
-													};
-												};
-												class Item4
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="true";
-													};
-												};
-												class Item5
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item6
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item7
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item8
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item9
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=10;
-													};
-												};
-												class Item10
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1000;
-													};
-												};
-												class Item11
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=0;
-													};
-												};
-												class Item12
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ammoBox";
-									expression="[_this,_value] call bis_fnc_initAmmoBox;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="[[[[""Medikit""],[2]],[[""SatchelCharge_Remote_Mag"",""ClaymoreDirectionalMine_Remote_Mag"",""APERSBoundingMine_Range_Mag"",""SLAMDirectionalMine_Wire_Mag"",""DemoCharge_Remote_Mag""],[20,10,10,10,20]],[[""MineDetector"",""ToolKit""],[2,2]],[[""B_Mortar_01_support_F"",""B_Mortar_01_weapon_F"",""B_Static_Designator_01_weapon_F"",""B_UAV_01_backpack_F""],[4,4,4,4]]],false]";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=4;
-							};
-						};
 					};
 					id=68;
-					atlOffset=0.0625;
 				};
 				class Item1
 				{
@@ -1644,7 +1366,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={14641.127,17.91,16736.578};
-										angles[]={0,3.9784656,0};
+										angles[]={0,3.9784606,0};
 									};
 									id=92;
 									type="ModuleRespawnPosition_F";
@@ -1760,8 +1482,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{this addAction [""<t color='#FCB514'> Teleport </t>"",""call titanMB_fnc_teleport_to_group"","""",51,true,true,"""","""", 5];}";
-										name="Teleporter";
+										name="Flage";
 									};
 									id=93;
 									type="Flag_US_F";
@@ -2433,7 +2154,7 @@ class Mission
 											{
 												rank="CAPTAIN";
 												name="C1";
-												description="COMANDER@TITAN_1_0";
+												description="PTL@TITAN_1_0";
 												isPlayable=1;
 												class Inventory
 												{
@@ -2550,14 +2271,15 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14608.849,17.911438,16726.951};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												rank="LIEUTENANT";
+												description="CCT";
 												isPlayable=1;
 												class Inventory
 												{
@@ -2675,7 +2397,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -2689,7 +2411,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -3749,7 +3471,7 @@ class Mission
 									side="West";
 									class Entities
 									{
-										items=4;
+										items=2;
 										class Item0
 										{
 											dataType="Object";
@@ -3762,8 +3484,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_2_0";
+												rank="LIEUTENANT";
+												description="SQL@TITAN_2_0";
 												isPlayable=1;
 												class Inventory
 												{
@@ -3879,15 +3601,16 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14611.351,17.911438,16729.451};
-												angles[]={0,2.3575253,0};
+												position[]={14611.35,17.911438,16729.451};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												rank="CORPORAL";
+												description="SOTAC";
 												isPlayable=1;
 												class Inventory
 												{
@@ -4005,7 +3728,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -4019,787 +3742,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item3
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item4
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item5
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
 																		value="";
-																	};
-																};
-																class Item6
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item7
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item8
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item9
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=10;
-																	};
-																};
-																class Item10
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=991;
-																	};
-																};
-																class Item11
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=0;
-																	};
-																};
-																class Item12
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male06ENG";
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.01;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="unitName";
-													expression="_this setname _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Operator";
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TITAN_Patch_Can";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=6;
-											};
-										};
-										class Item2
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14609.692,17.911438,16731.043};
-												angles[]={0,2.3575253,0};
-											};
-											side="West";
-											flags=4;
-											class Attributes
-											{
-												skill=1;
-												description="Operator";
-												isPlayable=1;
-												class Inventory
-												{
-													class handgun
-													{
-														name="hgun_P07_F";
-														class primaryMuzzleMag
-														{
-															name="16Rnd_9x21_Mag";
-															ammoLeft=16;
-														};
-													};
-													class binocular
-													{
-														name="Binocular";
-													};
-													class uniform
-													{
-														typeName="U_B_CombatUniform_mcam";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="FirstAidKit";
-																count=5;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="V_Rangemaster_belt";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="16Rnd_9x21_Mag";
-																count=3;
-																ammoLeft=16;
-															};
-															class Item1
-															{
-																name="Chemlight_blue";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_green";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="Chemlight_red";
-																count=3;
-																ammoLeft=1;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													gps="I_UavTerminal";
-													headgear="TITAN_Beret_Enlisted";
-												};
-											};
-											id=849;
-											type="B_recon_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ENH_HoldAction";
-													expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"ARRAY"
-																};
-															};
-															class value
-															{
-																items=13;
-																class Item0
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item2
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item3
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item4
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item5
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item6
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item7
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item8
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item9
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=10;
-																	};
-																};
-																class Item10
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=991;
-																	};
-																};
-																class Item11
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=0;
-																	};
-																};
-																class Item12
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male06ENG";
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.01;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="unitName";
-													expression="_this setname _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Operator";
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TITAN_Patch_Can";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=6;
-											};
-										};
-										class Item3
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14608.036,17.911438,16732.635};
-												angles[]={0,2.3575253,0};
-											};
-											side="West";
-											flags=4;
-											class Attributes
-											{
-												skill=1;
-												description="Operator";
-												isPlayable=1;
-												class Inventory
-												{
-													class handgun
-													{
-														name="hgun_P07_F";
-														class primaryMuzzleMag
-														{
-															name="16Rnd_9x21_Mag";
-															ammoLeft=16;
-														};
-													};
-													class binocular
-													{
-														name="Binocular";
-													};
-													class uniform
-													{
-														typeName="U_B_CombatUniform_mcam";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="FirstAidKit";
-																count=5;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="V_Rangemaster_belt";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="16Rnd_9x21_Mag";
-																count=3;
-																ammoLeft=16;
-															};
-															class Item1
-															{
-																name="Chemlight_blue";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_green";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="Chemlight_red";
-																count=3;
-																ammoLeft=1;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													gps="I_UavTerminal";
-													headgear="TITAN_Beret_Enlisted";
-												};
-											};
-											id=850;
-											type="B_recon_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ENH_HoldAction";
-													expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"ARRAY"
-																};
-															};
-															class value
-															{
-																items=13;
-																class Item0
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item2
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
 																	};
 																};
 																class Item3
@@ -5092,8 +4035,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_2_1";
+												rank="SERGEANT";
+												description="FTL@TITAN_2_1";
 												isPlayable=1;
 												class Inventory
 												{
@@ -5210,14 +4153,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14613.849,17.911438,16731.951};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -5335,7 +4278,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -5349,7 +4292,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -5600,14 +4543,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14612.192,17.911438,16733.543};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -5725,7 +4668,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -5739,7 +4682,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -5990,14 +4933,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14610.534,17.911438,16735.137};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -6115,7 +5058,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -6129,7 +5072,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -6422,8 +5365,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_2_2";
+												rank="SERGEANT";
+												description="FTL@TITAN_2_2";
 												isPlayable=1;
 												class Inventory
 												{
@@ -6539,15 +5482,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14616.351,17.911438,16734.453};
-												angles[]={0,2.3575253,0};
+												position[]={14616.35,17.911438,16734.453};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -6665,7 +5608,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -6679,7 +5622,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -6930,14 +5873,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14614.693,17.911438,16736.043};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -7055,7 +5998,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -7069,7 +6012,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -7320,14 +6263,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14613.035,17.911438,16737.635};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -7445,7 +6388,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -7459,7 +6402,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -7752,8 +6695,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_2_3";
+												rank="SERGEANT";
+												description="FTL@TITAN_2_3";
 												isPlayable=1;
 												class Inventory
 												{
@@ -7870,14 +6813,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14618.85,17.911438,16737.076};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -7995,7 +6938,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -8009,7 +6952,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -8260,14 +7203,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14617.192,17.911438,16738.668};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -8385,7 +7328,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -8399,7 +7342,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -8649,15 +7592,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14615.535,17.911438,16740.26};
-												angles[]={0,2.3575253,0};
+												position[]={14615.535,17.911438,16740.262};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -8775,7 +7718,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -8789,7 +7732,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -9069,7 +8012,7 @@ class Mission
 									side="West";
 									class Entities
 									{
-										items=4;
+										items=2;
 										class Item0
 										{
 											dataType="Object";
@@ -9082,8 +8025,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_3_0";
+												rank="LIEUTENANT";
+												description="SQL@TITAN_3_0";
 												isPlayable=1;
 												class Inventory
 												{
@@ -9200,14 +8143,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14621.349,17.911438,16739.576};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="SOTAC";
 												isPlayable=1;
 												class Inventory
 												{
@@ -9325,7 +8268,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -9339,787 +8282,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item3
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item4
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item5
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
 																		value="";
-																	};
-																};
-																class Item6
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item7
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item8
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item9
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=10;
-																	};
-																};
-																class Item10
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=991;
-																	};
-																};
-																class Item11
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=0;
-																	};
-																};
-																class Item12
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male06ENG";
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.01;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="unitName";
-													expression="_this setname _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Operator";
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TITAN_Patch_Can";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=6;
-											};
-										};
-										class Item2
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14619.692,17.911438,16741.168};
-												angles[]={0,2.3575253,0};
-											};
-											side="West";
-											flags=4;
-											class Attributes
-											{
-												skill=1;
-												description="Operator";
-												isPlayable=1;
-												class Inventory
-												{
-													class handgun
-													{
-														name="hgun_P07_F";
-														class primaryMuzzleMag
-														{
-															name="16Rnd_9x21_Mag";
-															ammoLeft=16;
-														};
-													};
-													class binocular
-													{
-														name="Binocular";
-													};
-													class uniform
-													{
-														typeName="U_B_CombatUniform_mcam";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="FirstAidKit";
-																count=5;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="V_Rangemaster_belt";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="16Rnd_9x21_Mag";
-																count=3;
-																ammoLeft=16;
-															};
-															class Item1
-															{
-																name="Chemlight_blue";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_green";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="Chemlight_red";
-																count=3;
-																ammoLeft=1;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													gps="I_UavTerminal";
-													headgear="TITAN_Beret_Enlisted";
-												};
-											};
-											id=869;
-											type="B_recon_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ENH_HoldAction";
-													expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"ARRAY"
-																};
-															};
-															class value
-															{
-																items=13;
-																class Item0
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item2
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item3
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item4
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item5
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item6
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item7
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item8
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item9
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=10;
-																	};
-																};
-																class Item10
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=991;
-																	};
-																};
-																class Item11
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=0;
-																	};
-																};
-																class Item12
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male06ENG";
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.01;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="unitName";
-													expression="_this setname _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Operator";
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TITAN_Patch_Can";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=6;
-											};
-										};
-										class Item3
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14618.034,17.911438,16742.758};
-												angles[]={0,2.3575253,0};
-											};
-											side="West";
-											flags=4;
-											class Attributes
-											{
-												skill=1;
-												description="Operator";
-												isPlayable=1;
-												class Inventory
-												{
-													class handgun
-													{
-														name="hgun_P07_F";
-														class primaryMuzzleMag
-														{
-															name="16Rnd_9x21_Mag";
-															ammoLeft=16;
-														};
-													};
-													class binocular
-													{
-														name="Binocular";
-													};
-													class uniform
-													{
-														typeName="U_B_CombatUniform_mcam";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="FirstAidKit";
-																count=5;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="V_Rangemaster_belt";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="16Rnd_9x21_Mag";
-																count=3;
-																ammoLeft=16;
-															};
-															class Item1
-															{
-																name="Chemlight_blue";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_green";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="Chemlight_red";
-																count=3;
-																ammoLeft=1;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													gps="I_UavTerminal";
-													headgear="TITAN_Beret_Enlisted";
-												};
-											};
-											id=870;
-											type="B_recon_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ENH_HoldAction";
-													expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"ARRAY"
-																};
-															};
-															class value
-															{
-																items=13;
-																class Item0
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item2
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
 																	};
 																};
 																class Item3
@@ -10412,8 +8575,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_3_1";
+												rank="SERGEANT";
+												description="FTL@TITAN_3_1";
 												isPlayable=1;
 												class Inventory
 												{
@@ -10530,14 +8693,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14623.85,17.911438,16742.074};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -10655,7 +8818,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -10669,7 +8832,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -10920,14 +9083,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14622.192,17.911438,16743.668};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -11045,7 +9208,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -11059,7 +9222,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -11309,15 +9472,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14620.534,17.911438,16745.26};
-												angles[]={0,2.3575253,0};
+												position[]={14620.534,17.911438,16745.262};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -11435,7 +9598,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -11449,7 +9612,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -11742,8 +9905,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_3_2";
+												rank="SERGEANT";
+												description="FTL@TITAN_3_2";
 												isPlayable=1;
 												class Inventory
 												{
@@ -11860,14 +10023,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14626.349,17.911438,16744.574};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -11985,7 +10148,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -11999,7 +10162,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -12250,14 +10413,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14624.692,17.911438,16746.168};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -12375,7 +10538,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -12389,7 +10552,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -12640,14 +10803,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14623.034,17.911438,16747.758};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -12765,7 +10928,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -12779,7 +10942,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -13072,8 +11235,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_3_3";
+												rank="SERGEANT";
+												description="FTL@TITAN_3_3";
 												isPlayable=1;
 												class Inventory
 												{
@@ -13190,14 +11353,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14628.85,17.911438,16747.074};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -13315,7 +11478,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -13329,7 +11492,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -13580,14 +11743,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14627.192,17.911438,16748.668};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -13705,7 +11868,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -13719,7 +11882,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -13969,15 +12132,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14625.534,17.911438,16750.26};
-												angles[]={0,2.3575253,0};
+												position[]={14625.534,17.911438,16750.262};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -14095,7 +12258,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -14109,7 +12272,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -14389,7 +12552,7 @@ class Mission
 									side="West";
 									class Entities
 									{
-										items=4;
+										items=2;
 										class Item0
 										{
 											dataType="Object";
@@ -14402,8 +12565,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_4_0";
+												rank="LIEUTENANT";
+												description="SQL@TITAN_4_0";
 												isPlayer=1;
 												isPlayable=1;
 												class Inventory
@@ -14521,14 +12684,15 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14631.35,17.911438,16749.699};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												rank="CORPORAL";
+												description="SOTAC";
 												isPlayable=1;
 												class Inventory
 												{
@@ -14646,7 +12810,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -14660,787 +12824,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item3
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item4
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item5
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
 																		value="";
-																	};
-																};
-																class Item6
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item7
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item8
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item9
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=10;
-																	};
-																};
-																class Item10
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=991;
-																	};
-																};
-																class Item11
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=0;
-																	};
-																};
-																class Item12
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male06ENG";
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.01;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="unitName";
-													expression="_this setname _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Operator";
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TITAN_Patch_Can";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=6;
-											};
-										};
-										class Item2
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14629.692,17.911438,16751.293};
-												angles[]={0,2.3575253,0};
-											};
-											side="West";
-											flags=4;
-											class Attributes
-											{
-												skill=1;
-												description="Operator";
-												isPlayable=1;
-												class Inventory
-												{
-													class handgun
-													{
-														name="hgun_P07_F";
-														class primaryMuzzleMag
-														{
-															name="16Rnd_9x21_Mag";
-															ammoLeft=16;
-														};
-													};
-													class binocular
-													{
-														name="Binocular";
-													};
-													class uniform
-													{
-														typeName="U_B_CombatUniform_mcam";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="FirstAidKit";
-																count=5;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="V_Rangemaster_belt";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="16Rnd_9x21_Mag";
-																count=3;
-																ammoLeft=16;
-															};
-															class Item1
-															{
-																name="Chemlight_blue";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_green";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="Chemlight_red";
-																count=3;
-																ammoLeft=1;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													gps="I_UavTerminal";
-													headgear="TITAN_Beret_Enlisted";
-												};
-											};
-											id=824;
-											type="B_recon_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ENH_HoldAction";
-													expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"ARRAY"
-																};
-															};
-															class value
-															{
-																items=13;
-																class Item0
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item2
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item3
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item4
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="true";
-																	};
-																};
-																class Item5
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item6
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item7
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item8
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item9
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=10;
-																	};
-																};
-																class Item10
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"SCALAR"
-																			};
-																		};
-																		value=991;
-																	};
-																};
-																class Item11
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=0;
-																	};
-																};
-																class Item12
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"BOOL"
-																			};
-																		};
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male06ENG";
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.01;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="unitName";
-													expression="_this setname _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Operator";
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TITAN_Patch_Can";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=6;
-											};
-										};
-										class Item3
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14628.035,17.911438,16752.885};
-												angles[]={0,2.3575253,0};
-											};
-											side="West";
-											flags=4;
-											class Attributes
-											{
-												skill=1;
-												description="Operator";
-												isPlayable=1;
-												class Inventory
-												{
-													class handgun
-													{
-														name="hgun_P07_F";
-														class primaryMuzzleMag
-														{
-															name="16Rnd_9x21_Mag";
-															ammoLeft=16;
-														};
-													};
-													class binocular
-													{
-														name="Binocular";
-													};
-													class uniform
-													{
-														typeName="U_B_CombatUniform_mcam";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="FirstAidKit";
-																count=5;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="V_Rangemaster_belt";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="16Rnd_9x21_Mag";
-																count=3;
-																ammoLeft=16;
-															};
-															class Item1
-															{
-																name="Chemlight_blue";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_green";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="Chemlight_red";
-																count=3;
-																ammoLeft=1;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													gps="I_UavTerminal";
-													headgear="TITAN_Beret_Enlisted";
-												};
-											};
-											id=825;
-											type="B_recon_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ENH_HoldAction";
-													expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"ARRAY"
-																};
-															};
-															class value
-															{
-																items=13;
-																class Item0
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="";
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-																	};
-																};
-																class Item2
-																{
-																	class data
-																	{
-																		class type
-																		{
-																			type[]=
-																			{
-																				"STRING"
-																			};
-																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
 																	};
 																};
 																class Item3
@@ -15733,8 +13117,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_4_1";
+												rank="SERGEANT";
+												description="FTL@TITAN_4_1";
 												isPlayable=1;
 												class Inventory
 												{
@@ -15850,15 +13234,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14633.851,17.911438,16752.201};
-												angles[]={0,2.3575253,0};
+												position[]={14633.85,17.911438,16752.201};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -15976,7 +13360,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -15990,7 +13374,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -16241,14 +13625,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14632.193,17.911438,16753.791};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -16366,7 +13750,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -16380,7 +13764,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -16631,14 +14015,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14630.535,17.911438,16755.385};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -16756,7 +14140,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -16770,7 +14154,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -17063,8 +14447,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_4_2";
+												rank="SERGEANT";
+												description="FTL@TITAN_4_2";
 												isPlayable=1;
 												class Inventory
 												{
@@ -17181,14 +14565,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14636.35,17.911438,16754.826};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -17306,7 +14690,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -17320,7 +14704,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -17571,14 +14955,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14634.692,17.911438,16756.418};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -17696,7 +15080,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -17710,7 +15094,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -17960,15 +15344,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14633.034,17.911438,16758.01};
-												angles[]={0,2.3575253,0};
+												position[]={14633.034,17.911438,16758.012};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -18086,7 +15470,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -18100,7 +15484,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -18393,8 +15777,8 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
-												description="COMANDER@TITAN_4_3";
+												rank="SERGEANT";
+												description="FTL@TITAN_4_3";
 												isPlayable=1;
 												class Inventory
 												{
@@ -18510,15 +15894,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14638.851,17.911438,16757.326};
-												angles[]={0,2.3575253,0};
+												position[]={14638.85,17.911438,16757.326};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ENG";
 												isPlayable=1;
 												class Inventory
 												{
@@ -18636,7 +16020,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -18650,7 +16034,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -18901,14 +16285,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14637.192,17.911438,16758.918};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="WPN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -19026,7 +16410,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -19040,7 +16424,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -19290,15 +16674,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14635.536,17.911438,16760.51};
-												angles[]={0,2.3575253,0};
+												position[]={14635.536,17.911438,16760.512};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="ATMO";
 												isPlayable=1;
 												class Inventory
 												{
@@ -19416,7 +16800,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -19430,7 +16814,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -19723,7 +17107,6 @@ class Mission
 											flags=7;
 											class Attributes
 											{
-												rank="CAPTAIN";
 												description="Reserve@RESERVE";
 												isPlayable=1;
 												class Inventory
@@ -21010,6 +18393,29 @@ class Mission
 									{
 									};
 									id=1117;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="groupID";
+											expression="[_this, _value] call CBA_fnc_setCallsign";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RESERVE";
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 							};
 							id=886;
@@ -21042,7 +18448,7 @@ class Mission
 											{
 												skill=1;
 												rank="LIEUTENANT";
-												description="COMANDER@EAGLE";
+												description="RCT@EAGLE";
 												isPlayable=1;
 												class Inventory
 												{
@@ -21155,7 +18561,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -21169,7 +18575,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -21516,14 +18922,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14640.717,17.911438,16762.646};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRS";
 												isPlayable=1;
 												class Inventory
 												{
@@ -21641,7 +19047,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -21655,7 +19061,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -21906,14 +19312,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14639.061,17.911438,16764.236};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRR";
 												isPlayable=1;
 												class Inventory
 												{
@@ -22031,7 +19437,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -22045,7 +19451,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -22340,7 +19746,7 @@ class Mission
 											{
 												skill=1;
 												rank="LIEUTENANT";
-												description="COMANDER@FALCON";
+												description="RCT@FALCON";
 												isPlayable=1;
 												class Inventory
 												{
@@ -22453,7 +19859,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -22467,7 +19873,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -22814,14 +20220,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14641.72,17.911438,16763.645};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRS";
 												isPlayable=1;
 												class Inventory
 												{
@@ -22939,7 +20345,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -22953,7 +20359,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -23204,14 +20610,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14640.061,17.911438,16765.236};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRR";
 												isPlayable=1;
 												class Inventory
 												{
@@ -23329,7 +20735,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -23343,7 +20749,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -23638,7 +21044,7 @@ class Mission
 											{
 												skill=1;
 												rank="LIEUTENANT";
-												description="COMANDER@HAWK";
+												description="RCT@HAWK";
 												isPlayable=1;
 												class Inventory
 												{
@@ -23751,7 +21157,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -23765,7 +21171,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -24093,14 +21499,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14642.718,17.911438,16764.52};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRS";
 												isPlayable=1;
 												class Inventory
 												{
@@ -24218,7 +21624,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -24232,7 +21638,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -24483,14 +21889,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14641.061,17.911438,16766.111};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRR";
 												isPlayable=1;
 												class Inventory
 												{
@@ -24608,7 +22014,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -24622,7 +22028,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -24917,7 +22323,7 @@ class Mission
 											{
 												skill=1;
 												rank="LIEUTENANT";
-												description="COMANDER@VULTURE";
+												description="RCT@VULTURE";
 												isPlayable=1;
 												class Inventory
 												{
@@ -25030,7 +22436,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -25044,7 +22450,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -25391,14 +22797,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14643.969,17.911438,16765.646};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRS";
 												isPlayable=1;
 												class Inventory
 												{
@@ -25516,7 +22922,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -25530,7 +22936,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -25781,14 +23187,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14642.311,17.911438,16767.238};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												skill=1;
-												description="Operator";
+												description="LRR";
 												isPlayable=1;
 												class Inventory
 												{
@@ -25906,7 +23312,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -25920,7 +23326,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -30115,7 +27521,7 @@ class Mission
 							{
 								name="heli_1";
 								condition="call{this and (vehicle player in thisList)}";
-								onActivation="call{_nul = [vehicle player,heli_1]execVM ""Titan_Addon\VehicleService\VehicleService.sqf"";}";
+								onActivation="call{_nul = [vehicle player,heli_1]execVM ""TitanAddon\vehicle_service\VehicleService.sqf"";}";
 								sizeA=5;
 								sizeB=5;
 								sizeC=5;
@@ -30455,7 +27861,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""call titan_air_fnc_support_gui"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="ASVS_1";
 								description="Air_Support_Tablet_1";
 							};
@@ -30475,7 +27880,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addAction [""<t color='#FCB514'> Air-Support </t>"",""call titan_air_fnc_support_gui"","""", 100, false, True, """", """", 5]; this addAction [""<t color='#FCB514'> Loadout </t>"",""call titan_fnc_loadoutgui"","""", 100, false, True, """", """", 5];}";
 								name="ASVS_2";
 								description="Air_Support_Tablet_2";
 							};
@@ -30530,7 +27934,75 @@ class Mission
 				};
 			};
 			id=0;
-			atlOffset=0.1682663;
+			atlOffset=0.16631317;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14635.66,18.523844,16789.047};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_bdu";
+				description="nicht löschen";
+			};
+			id=1125;
+			type="Land_GarbageBarrel_01_F";
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14636.858,18.523844,16790.193};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_mtp";
+				description="nicht löschen";
+			};
+			id=1126;
+			type="Land_GarbageBarrel_01_F";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14637.81,18.523844,16791.32};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_jtp";
+				description="nicht löschen";
+			};
+			id=1127;
+			type="Land_GarbageBarrel_01_F";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14639.138,18.523844,16792.566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_wtp";
+				description="nicht löschen";
+			};
+			id=1128;
+			type="Land_GarbageBarrel_01_F";
 		};
 	};
 	class Connections
