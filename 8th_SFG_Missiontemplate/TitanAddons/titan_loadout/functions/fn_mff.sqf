@@ -1,6 +1,4 @@
-
-params ["_unit"];
-_tarnmuster = "param_tarnmuster" call BIS_fnc_getParamValue;
+params ["_unit","_tarnmuster"];
 
 
 [_unit] call titan_fnc_loadoutremove;

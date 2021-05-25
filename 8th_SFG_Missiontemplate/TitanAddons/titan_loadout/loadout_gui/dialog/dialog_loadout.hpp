@@ -218,7 +218,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_sql; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_sql; call titan_fnc_buttoncontroll";
 		};
 
 		class button_1_3: TITAN_LO_Button
@@ -231,7 +231,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_ftl; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_ftl; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_1_4: TITAN_LO_Button
@@ -259,7 +259,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_cct; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_cct; call titan_fnc_buttoncontroll";
 		};
 
 		class button_2_2: TITAN_LO_Button
@@ -272,7 +272,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_sotac; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_sotac; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_2_3: TITAN_LO_Button
@@ -313,7 +313,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_eng; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_eng; call titan_fnc_buttoncontroll";
 		};
 
 		class button_3_2: TITAN_LO_Button
@@ -326,7 +326,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_wpn; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_wpn; call titan_fnc_buttoncontroll";
 		};
 
 		class button_3_3: TITAN_LO_Button
@@ -339,7 +339,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_atmo; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_atmo; call titan_fnc_buttoncontroll";
 		};
 		class button_3_4: TITAN_LO_Button
 		{
@@ -351,7 +351,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_rifle; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_rifle; call titan_fnc_buttoncontroll";
 		};
 
 
@@ -366,7 +366,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_rct; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_rct; call titan_fnc_buttoncontroll";
 		};
 		class button_4_2: TITAN_LO_Button
 		{
@@ -378,7 +378,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_lrr; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_lrr; call titan_fnc_buttoncontroll";
 		};
 		class button_4_3: TITAN_LO_Button
 		{
@@ -390,7 +390,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_lrs; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_lrs; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_4_4: TITAN_LO_Button
@@ -418,7 +418,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_fix; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_fix; call titan_fnc_buttoncontroll";
 		};
 
 		class button_5_2: TITAN_LO_Button
@@ -431,7 +431,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_rot; call titan_fnc_buttoncontroll";
+			action = "[player,tarnmuster] call titan_fnc_rot; call titan_fnc_buttoncontroll";
 		};
 
 /*		class button_5_3: TITAN_LO_Button
@@ -531,7 +531,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_diver; closeDialog 1000;";
+			action = "[player,tarnmuster] call titan_fnc_diver; closeDialog 1000;";
 		};
 
 		class button_8_2: TITAN_LO_Button
@@ -545,7 +545,7 @@ class loadout_gui
 			w = pixelW * pixelGrid * 11;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_mff; closeDialog 1000;";
+			action = "[player,tarnmuster] call titan_fnc_mff; closeDialog 1000;";
 		};
 	};
 };

@@ -231,7 +231,7 @@ class titan_arsenal_gui
 			w = pixelW * pixelGrid * 6;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player,0] call titan_fnc_ptl; [box_mtp, player] call ace_arsenal_fnc_openBox ;[""mtp_ptl""] call titan_fnc_buttonarsenal";
+			action = "[""mtp_ptl""] call titan_fnc_buttonarsenal";
 		};
 
 		class button_mtp_sql: TITAN_ArsenalButton
@@ -343,7 +343,7 @@ class titan_arsenal_gui
 			w = pixelW * pixelGrid * 6;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player,1] call titan_fnc_ptl; [box_jtp, player] call ace_arsenal_fnc_openBox ;[""jtp_ptl""] call titan_fnc_buttonarsenal";
+			action = "[""jtp_ptl""] call titan_fnc_buttonarsenal";
 		};
 
 		class button_jtp_sql: TITAN_ArsenalButton
@@ -456,7 +456,7 @@ class titan_arsenal_gui
 			w = pixelW * pixelGrid * 6;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player,2] call titan_fnc_ptl; [box_wtp, player] call ace_arsenal_fnc_openBox ;[""wtp_ptl""] call titan_fnc_buttonarsenal";
+			action = "[""wtp_ptl""] call titan_fnc_buttonarsenal";
 		};
 
 		class button_wtp_sql: TITAN_ArsenalButton
@@ -568,7 +568,7 @@ class titan_arsenal_gui
 			w = pixelW * pixelGrid * 6;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[player] call titan_fnc_startloadout; [box_bdu, player] call ace_arsenal_fnc_openBox ;[""bdu""] call titan_fnc_buttonarsenal;";
+			action = "[""bdu""] call titan_fnc_buttonarsenal;";
 		};
 
 	};

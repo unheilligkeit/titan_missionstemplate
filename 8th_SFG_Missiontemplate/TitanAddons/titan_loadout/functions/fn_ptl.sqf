@@ -65,7 +65,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_ptl_helm") then
         {
 
-            _helmearray = selectRandom ["","USP_OAKLEY_SI2_BLK","USP_DETCORD_TAN_UP_SMC2","USP_BALACLAVA_RGR"];
+            _helmearray = selectRandom ["USP_OPSCORE_FASTMT_OD_CMGTW","USP_OPSCORE_FASTMTC_TGS_SW"];
             _unit addHeadgear _helmearray;
 
         } else {
@@ -78,7 +78,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_ptl_brille") then
         {
 
-            _brillearray = selectRandom ["milgp_f_face_shield_goggles_shemagh_RGR","milgp_f_face_shield_shemagh_RGR","Balaclava_jtp2","milgp_f_face_shield_tactical_shemagh_CB"];
+            _brillearray = selectRandom ["","USP_OAKLEY_SI2_BLK","USP_DETCORD_TAN_UP_SMC2","USP_BALACLAVA_RGR"];
             _unit addGoggles _brillearray;
 
         } else {
