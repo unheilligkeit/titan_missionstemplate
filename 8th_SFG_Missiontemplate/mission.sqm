@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1136;
+		nextID=1143;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2921;
+		nextID=2935;
 	};
 	class Camera
 	{
-		pos[]={14665.665,35.68269,16746.053};
-		dir[]={-0.57852876,-0.35588586,0.73392767};
-		up[]={-0.22031431,0.93452942,0.27949303};
-		aside[]={0.78534466,0,0.61905891};
+		pos[]={14660.512,25.809547,16815.143};
+		dir[]={-0.8290388,-0.45105642,0.33053532};
+		up[]={-0.4189854,0.89249551,0.16704829};
+		aside[]={0.37034988,4.627509e-008,0.9288981};
 	};
 };
 binarizationWanted=0;
@@ -62,13 +62,14 @@ addons[]=
 	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Props_F_Exp_A_Military_Equipment",
 	"A3_Structures_F_EPC_Civ_Garbage",
-	"Fm"
+	"Fm",
+	"A3_Supplies_F_Heli_CargoNets"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=28;
 		class Item0
 		{
 			className="A3_Weapons_F";
@@ -252,11 +253,19 @@ class AddonsMetaData
 			author="Florian Meier";
 			url="https://titan-platoon.de";
 		};
+		class Item27
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
 {
-	"Contact"
+	"Contact",
+	"Heli"
 };
 randomSeed=16310411;
 class ScenarioData
@@ -318,7 +327,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			dataType="Layer";
@@ -28056,6 +28065,40 @@ class Mission
 			title="Nicht Löschen";
 			id=1133;
 			atlOffset=0.125;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14650.25,18.544996,16821.25};
+				angles[]={-0,5.5103011,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_arsenal_normal";
+			};
+			id=1140;
+			type="CargoNet_01_box_F";
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14644.375,18.544996,16826.875};
+				angles[]={-0,5.5103011,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_arsenal_pilot";
+			};
+			id=1141;
+			type="CargoNet_01_box_F";
 		};
 	};
 	class Connections
