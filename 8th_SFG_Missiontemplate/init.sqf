@@ -22,3 +22,25 @@ ASVS_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui"
 //air support
 ASVS_1 addAction ["<t color='#FCB514'> Air-Support </t>","call titan_air_fnc_support_gui","", 100, false, True, "", "", 5];
 ASVS_2 addAction ["<t color='#FCB514'> Air-Support </t>","call titan_air_fnc_support_gui","", 100, false, True, "", "", 5];
+
+
+// Storyline
+_hcvar = "param_hc" call BIS_fnc_getParamValue;
+
+if ( _hcvar == 1 ) then {
+    // Run on the HC only
+    if !(isServer or hasInterface) then {
+        execVM "TitanAddons\titan_missionsbau\storyline.sqf";
+    };
+} else {
+    // Run on the server only
+    if isServer then {
+        execVM "TitanAddons\titan_missionsbau\storyline.sqf";
+    };
+};
+
+
+
+// Tasks
+
+if (isServer) then {execVM "TitanAddons\titan_missionsbau\task.sqf"};
