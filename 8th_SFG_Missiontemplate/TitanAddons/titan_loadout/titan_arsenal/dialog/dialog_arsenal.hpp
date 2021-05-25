@@ -568,7 +568,7 @@ class titan_arsenal_gui
 			w = pixelW * pixelGrid * 6;
 			h = pixelH * pixelGrid * 2.5;
 
-			action = "[""bdu""] call titan_fnc_buttonarsenal;";
+			action = "[""bdu""] call titan_fnc_buttonarsenal";
 		};
 
 	};
