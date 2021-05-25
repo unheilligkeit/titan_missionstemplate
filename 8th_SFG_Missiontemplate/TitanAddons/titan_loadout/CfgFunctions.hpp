@@ -53,18 +53,6 @@ class titan
         class open_rearm {};
     };
 
-    class titan_extraitem
-    {
-        file = "TitanAddons\titan_loadout\extraitem";
-        class extraitems_bdu {};
-        class extraitems_mtp {};
-        class extraitems_jtp {};
-        class extraitems_wtp {};
-        class limitarsenal_bdu {postInit = 1;};
-        class limitarsenal_mtp {postInit = 1;};
-        class limitarsenal_jtp {postInit = 1;};
-        class limitarsenal_wtp {postInit = 1;};
-    };
 
 
     class titan_dialog_function
@@ -79,5 +67,13 @@ class titan
         file = "TitanAddons\titan_loadout\titan_arsenal\functions";
         class buttonarsenal {};
         class arsenalgui {};
+        class extraitems_bdu {};
+        class extraitems_mtp {};
+        class extraitems_jtp {};
+        class extraitems_wtp {};
+        class limitarsenal_bdu {postInit = 1;};
+        class limitarsenal_mtp {postInit = 1;};
+        class limitarsenal_jtp {postInit = 1;};
+        class limitarsenal_wtp {postInit = 1;};
     };
 };
