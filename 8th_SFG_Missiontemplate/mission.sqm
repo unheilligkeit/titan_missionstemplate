@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1129;
+		nextID=1136;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2879;
+		nextID=2921;
 	};
 	class Camera
 	{
-		pos[]={14710.209,75.20446,16687.469};
-		dir[]={-0.58455729,-0.5511536,0.59541798};
-		up[]={-0.38612103,0.83440375,0.39329487};
-		aside[]={0.7135849,1.4901161e-008,0.7005688};
+		pos[]={14665.665,35.68269,16746.053};
+		dir[]={-0.57852876,-0.35588586,0.73392767};
+		up[]={-0.22031431,0.93452942,0.27949303};
+		aside[]={0.78534466,0,0.61905891};
 	};
 };
 binarizationWanted=0;
@@ -61,13 +61,14 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Props_F_Exp_A_Military_Equipment",
-	"A3_Structures_F_EPC_Civ_Garbage"
+	"A3_Structures_F_EPC_Civ_Garbage",
+	"Fm"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			className="A3_Weapons_F";
@@ -244,6 +245,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item26
+		{
+			className="Fm";
+			name="Fm";
+			author="Florian Meier";
+			url="https://titan-platoon.de";
+		};
 	};
 };
 dlcs[]=
@@ -310,7 +318,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -27941,7 +27949,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14635.66,18.523844,16789.047};
+				position[]={14585.154,18.648844,16800.277};
 			};
 			side="Empty";
 			flags=4;
@@ -27958,7 +27966,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14636.858,18.523844,16790.193};
+				position[]={14586.353,18.648844,16801.424};
 			};
 			side="Empty";
 			flags=4;
@@ -27975,7 +27983,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14637.81,18.523844,16791.32};
+				position[]={14587.304,18.648844,16802.551};
 			};
 			side="Empty";
 			flags=4;
@@ -27992,7 +28000,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14639.138,18.523844,16792.566};
+				position[]={14588.632,18.648844,16803.797};
 			};
 			side="Empty";
 			flags=4;
@@ -28003,6 +28011,51 @@ class Mission
 			};
 			id=1128;
 			type="Land_GarbageBarrel_01_F";
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14589.889,18.648844,16804.98};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_fix";
+				description="nicht löschen";
+			};
+			id=1131;
+			type="Land_GarbageBarrel_01_F";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14590.875,18.648844,16806.125};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="box_rot";
+				description="nicht löschen";
+			};
+			id=1132;
+			type="Land_GarbageBarrel_01_F";
+		};
+		class Item7
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14589.619,18.035,16800.855};
+			};
+			title="Nicht Löschen";
+			id=1133;
+			atlOffset=0.125;
 		};
 	};
 	class Connections
