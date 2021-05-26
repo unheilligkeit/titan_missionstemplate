@@ -11,12 +11,12 @@ force force ace_noradio_enabled = true;
 force force ace_parachute_hideAltimeter = false;
 
 // ACE Artillerie
-force ace_artillerytables_advancedCorrections = false;
-force ace_artillerytables_disableArtilleryComputer = false;
-force ace_mk6mortar_airResistanceEnabled = false;
-force ace_mk6mortar_allowCompass = false;
-force ace_mk6mortar_allowComputerRangefinder = false;
-force ace_mk6mortar_useAmmoHandling = false;
+force force ace_artillerytables_advancedCorrections = false;
+force force ace_artillerytables_disableArtilleryComputer = false;
+force force ace_mk6mortar_airResistanceEnabled = false;
+force force ace_mk6mortar_allowCompass = false;
+force force ace_mk6mortar_allowComputerRangefinder = false;
+force force ace_mk6mortar_useAmmoHandling = false;
 
 // ACE Aussenlaststationen
 force force ace_pylons_enabledForZeus = true;
@@ -172,7 +172,7 @@ force force ace_map_DefaultChannel = 1;
 force force ace_map_mapGlow = true;
 force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
-force force ace_map_mapShake = true;
+force force ace_map_mapShake = false;
 force force ace_map_mapShowCursorCoordinates = true;
 force force ace_markers_moveRestriction = 0;
 force force ace_markers_timestampEnabled = true;
@@ -284,8 +284,8 @@ force force ace_goggles_showClearGlasses = true;
 force force ace_goggles_showInThirdPerson = true;
 
 // ACE Sichtweitenbegrenzung
-force force ace_viewdistance_enabled = true;
-force force ace_viewdistance_limitViewDistance = 12000;
+ace_viewdistance_enabled = true;
+ace_viewdistance_limitViewDistance = 12000;
 ace_viewdistance_objectViewDistanceCoeff = 0;
 ace_viewdistance_viewDistanceAirVehicle = 0;
 ace_viewdistance_viewDistanceLandVehicle = 0;
@@ -440,11 +440,11 @@ force force acex_volume_remindIfLowered = true;
 force force acex_volume_showNotification = true;
 
 // ACEX SichteinschrÃ¤nkungen
-force acex_viewrestriction_mode = 0;
-force acex_viewrestriction_modeSelectiveAir = 0;
-force acex_viewrestriction_modeSelectiveFoot = 0;
-force acex_viewrestriction_modeSelectiveLand = 0;
-force acex_viewrestriction_modeSelectiveSea = 0;
+acex_viewrestriction_mode = 0;
+acex_viewrestriction_modeSelectiveAir = 0;
+acex_viewrestriction_modeSelectiveFoot = 0;
+acex_viewrestriction_modeSelectiveLand = 0;
+acex_viewrestriction_modeSelectiveSea = 0;
 acex_viewrestriction_preserveView = false;
 
 // ACEX VerstÃ¤rken
@@ -533,7 +533,7 @@ force force lambs_main_radioWest = 500;
 
 // TFAR - Allgemeine Einstellungen
 force force TFAR_allowDebugging = true;
-force force TFAR_AICanHearPlayer = false;
+force force TFAR_AICanHearPlayer = true;
 force force TFAR_AICanHearSpeaker = false;
 force force TFAR_enableIntercom = true;
 force force TFAR_defaultIntercomSlot = -1;
@@ -569,7 +569,7 @@ force force tfar_radiocode_east = "_opfor";
 force force tfar_radiocode_independent = "_independent";
 force force tfar_radiocode_west = "_bluefor";
 force force tfar_radioCodesDisabled = false;
-force force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
+force force TFAR_Teamspeak_Channel_Name = "Operation";
 force force TFAR_Teamspeak_Channel_Password = "123";
 force force tfar_core_noTSNotConnectedHint = true;
 force force TFAR_disableAutoMute = false;
@@ -689,14 +689,14 @@ force force mts_markers_showPresetsUI = false;
 
 
 // F/A-18
-force force js_jc_fa18_advancedStart = false;
-force force js_jc_fa18_atflirRequire = false;
-force force js_jc_fa18_canopyLoss = false;
-force force js_jc_fa18_cursorSensitivity = 2.5;
-force force js_jc_fa18_interactCursor = true;
-force force js_jc_fa18_interactionRadiusMod = 1;
-force force js_jc_fa18_mav_tdcDepressRequiredForMove = true;
-force force js_jc_fa18_showLabels = true;
+js_jc_fa18_advancedStart = false;
+js_jc_fa18_atflirRequire = false;
+js_jc_fa18_canopyLoss = false;
+js_jc_fa18_cursorSensitivity = 2.5;
+js_jc_fa18_interactCursor = true;
+js_jc_fa18_interactionRadiusMod = 1;
+js_jc_fa18_mav_tdcDepressRequiredForMove = true;
+js_jc_fa18_showLabels = true;
 
 // IFF strobe
 force force GDMN_setting_NVG = true;
@@ -769,7 +769,7 @@ force force VCM_ForceSpeed = true;
 force force VCM_FRMCHANGE = true;
 force force Vcm_GrenadeChance = 5.59572;
 force force VCM_HEARINGDISTANCE = 500;
-force force VCM_MEDICALACTIVE = true;
+force force VCM_MEDICALACTIVE = false;
 force force VCM_MINECHANCE = 9.90013;
 force force VCM_MINEENABLED = false;
 force force Vcm_PlayerAISkills = true;
