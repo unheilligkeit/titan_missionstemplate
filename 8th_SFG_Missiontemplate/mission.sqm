@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2935;
+		nextID=2949;
 	};
 	class Camera
 	{
-		pos[]={14660.512,25.809547,16815.143};
-		dir[]={-0.8290388,-0.45105642,0.33053532};
-		up[]={-0.4189854,0.89249551,0.16704829};
-		aside[]={0.37034988,4.627509e-008,0.9288981};
+		pos[]={14607.821,25.809547,16629.334};
+		dir[]={-0.40315065,-0.72749561,0.5551852};
+		up[]={-0.42746362,0.68610948,0.5886659};
+		aside[]={0.80917126,1.5291153e-007,0.58758402};
 	};
 };
 binarizationWanted=0;
-sourceName="titan_missiontemplate";
+sourceName="8th_SFG_Missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -27538,7 +27538,7 @@ class Mission
 							{
 								name="heli_1";
 								condition="call{this and (vehicle player in thisList)}";
-								onActivation="call{_nul = [vehicle player,heli_1]execVM ""TitanAddon\vehicle_service\VehicleService.sqf"";}";
+								onActivation="call{_nul = [vehicle player,heli_1]execVM ""TitanAddons\vehicle_service\VehicleService.sqf"";}";
 								sizeA=5;
 								sizeB=5;
 								sizeC=5;
@@ -28072,7 +28072,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14650.25,18.544996,16821.25};
-				angles[]={-0,5.5103011,0};
+				angles[]={0,5.5103011,0};
 			};
 			side="Empty";
 			flags=4;
@@ -28089,7 +28089,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14644.375,18.544996,16826.875};
-				angles[]={-0,5.5103011,0};
+				angles[]={0,5.5103011,0};
 			};
 			side="Empty";
 			flags=4;
