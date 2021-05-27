@@ -15,7 +15,7 @@ if (isServer) then {
 				};
 			} forEach _connectedPlayers;
 		} forEach connectedPilots;
-	}, 2] call CBA_fnc_addPerFrameHandler;
+	}, 10] call CBA_fnc_addPerFrameHandler;
 
 	addMissionEventHandler ["PlayerDisconnected", {
 		params ["_id", "_uid", "_name", "_jip", "_owner"];
