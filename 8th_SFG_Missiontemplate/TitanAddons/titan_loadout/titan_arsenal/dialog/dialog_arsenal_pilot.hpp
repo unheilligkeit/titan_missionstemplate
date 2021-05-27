@@ -4,7 +4,7 @@
 class titan_arsenal_pilot_gui
 {
 	idd = 4;
-	movingenable = 0;
+	movingenable = 1;
 
 	class ControlsBackground
 	{
@@ -13,6 +13,7 @@ class titan_arsenal_pilot_gui
 		class home_wallpaper_pilot: RscPicture
 		{
 			idc = -1;
+			moving = 1;
 			text = "TitanAddons\titan_loadout\titan_arsenal\picture\titan_background.paa";
 
 			x = 0 + pixelW * pixelGrid * 4.15;
