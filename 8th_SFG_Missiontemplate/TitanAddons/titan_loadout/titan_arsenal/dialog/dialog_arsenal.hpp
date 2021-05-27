@@ -164,7 +164,7 @@ class titan_arsenal_gui
 //=============================== SAVE ============================
 		class button_mtp_save: TITAN_ArsenalButton
 		{
-			idc = mtp_save;
+			idc = 4100;
 			text = "MTP-SAVE";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -178,7 +178,7 @@ class titan_arsenal_gui
 
 		class button_jtp_save: TITAN_ArsenalButton
 		{
-			idc = jtp_save;
+			idc = 4110;
 			text = "JTP-SAVE";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -192,7 +192,7 @@ class titan_arsenal_gui
 
 		class button_wtp_save: TITAN_ArsenalButton
 		{
-			idc = wtp_save;
+			idc = 4120;
 			text = "WTP-SAVE";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -206,7 +206,7 @@ class titan_arsenal_gui
 
 		class button_bdu_save: TITAN_ArsenalButton
 		{
-			idc = bdu_save;
+			idc = 4130;
 			text = "BDU-SAVE";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -223,7 +223,7 @@ class titan_arsenal_gui
 //================================ MTP ==========================
 		class button_mtp_ptl: TITAN_ArsenalButton
 		{
-			idc = mtp_ptl;
+			idc = 4101;
 			text = "PTL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -237,7 +237,7 @@ class titan_arsenal_gui
 
 		class button_mtp_sql: TITAN_ArsenalButton
 		{
-			idc = mtp_sql;
+			idc = 4102;
 			text = "SQL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -251,7 +251,7 @@ class titan_arsenal_gui
 
 		class button_mtp_ftl: TITAN_ArsenalButton
 		{
-			idc = mtp_ftl;
+			idc = 4103;
 			text = "FTL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -265,7 +265,7 @@ class titan_arsenal_gui
 
 		class button_mtp_cct: TITAN_ArsenalButton
 		{
-			idc = mtp_cct;
+			idc = 4104;
 			text = "CCT";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -279,7 +279,7 @@ class titan_arsenal_gui
 
 		class button_mtp_sotac: TITAN_ArsenalButton
 		{
-			idc = mtp_sotac;
+			idc = 4105;
 			text = "SOTAC";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -293,7 +293,7 @@ class titan_arsenal_gui
 
 		class button_mtp_eng: TITAN_ArsenalButton
 		{
-			idc = mtp_eng;
+			idc = 4106;
 			text = "ENG";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -307,7 +307,7 @@ class titan_arsenal_gui
 
 		class button_mtp_wpn: TITAN_ArsenalButton
 		{
-			idc = mtp_wpn;
+			idc = 4107;
 			text = "WPN";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -321,7 +321,7 @@ class titan_arsenal_gui
 
 		class button_mtp_atmo: TITAN_ArsenalButton
 		{
-			idc = mtp_atmo;
+			idc = 4108;
 			text = "ATMO";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -335,7 +335,7 @@ class titan_arsenal_gui
 //================================ jtp ==========================
 		class button_jtp_ptl: TITAN_ArsenalButton
 		{
-			idc = jtp_ptl;
+			idc = 4111;
 			text = "PTL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -349,7 +349,7 @@ class titan_arsenal_gui
 
 		class button_jtp_sql: TITAN_ArsenalButton
 		{
-			idc = jtp_sql;
+			idc = 4112;
 			text = "SQL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -363,7 +363,7 @@ class titan_arsenal_gui
 
 		class button_jtp_ftl: TITAN_ArsenalButton
 		{
-			idc = jtp_ftl;
+			idc = 4113;
 			text = "FTL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -377,7 +377,7 @@ class titan_arsenal_gui
 
 		class button_jtp_cct: TITAN_ArsenalButton
 		{
-			idc = jtp_cct;
+			idc = 4114;
 			text = "CCT";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -391,7 +391,7 @@ class titan_arsenal_gui
 
 		class button_jtp_sotac: TITAN_ArsenalButton
 		{
-			idc = jtp_sotac;
+			idc = 4115;
 			text = "SOTAC";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -405,7 +405,7 @@ class titan_arsenal_gui
 
 		class button_jtp_eng: TITAN_ArsenalButton
 		{
-			idc = jtp_eng;
+			idc = 4116;
 			text = "ENG";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -419,7 +419,7 @@ class titan_arsenal_gui
 
 		class button_jtp_wpn: TITAN_ArsenalButton
 		{
-			idc = jtp_wpn;
+			idc = 4117;
 			text = "WPN";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -433,7 +433,7 @@ class titan_arsenal_gui
 
 		class button_jtp_atmo: TITAN_ArsenalButton
 		{
-			idc = jtp_atmo;
+			idc = 4118;
 			text = "ATMO";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -448,7 +448,7 @@ class titan_arsenal_gui
 //================================ wtp ==========================
 		class button_wtp_ptl: TITAN_ArsenalButton
 		{
-			idc = wtp_ptl;
+			idc = 4121;
 			text = "PTL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -462,7 +462,7 @@ class titan_arsenal_gui
 
 		class button_wtp_sql: TITAN_ArsenalButton
 		{
-			idc = wtp_sql;
+			idc = 4122;
 			text = "SQL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -476,7 +476,7 @@ class titan_arsenal_gui
 
 		class button_wtp_ftl: TITAN_ArsenalButton
 		{
-			idc = wtp_ftl;
+			idc = 4123;
 			text = "FTL";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -490,7 +490,7 @@ class titan_arsenal_gui
 
 		class button_wtp_cct: TITAN_ArsenalButton
 		{
-			idc = wtp_cct;
+			idc = 4124;
 			text = "CCT";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -504,7 +504,7 @@ class titan_arsenal_gui
 
 		class button_wtp_sotac: TITAN_ArsenalButton
 		{
-			idc = wtp_sotac;
+			idc = 4125;
 			text = "SOTAC";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -518,7 +518,7 @@ class titan_arsenal_gui
 
 		class button_wtp_eng: TITAN_ArsenalButton
 		{
-			idc = wtp_eng;
+			idc = 4126;
 			text = "ENG";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -532,7 +532,7 @@ class titan_arsenal_gui
 
 		class button_wtp_wpn: TITAN_ArsenalButton
 		{
-			idc = wtp_wpn;
+			idc = 4127;
 			text = "WPN";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -546,7 +546,7 @@ class titan_arsenal_gui
 
 		class button_wtp_atmo: TITAN_ArsenalButton
 		{
-			idc = wtp_atmo;
+			idc = 4128;
 			text = "ATMO";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -560,7 +560,7 @@ class titan_arsenal_gui
 //======================== startloadout ========================================
 		class button_bdu: TITAN_ArsenalButton
 		{
-			idc = mtp_atmo;
+			idc = 4131;
 			text = "BDU";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 

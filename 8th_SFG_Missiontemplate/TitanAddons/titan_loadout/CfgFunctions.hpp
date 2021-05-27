@@ -78,5 +78,13 @@ class titan
         class limitarsenal_wtp {postInit = 1;};
         class limitarsenal_rot {postInit = 1;};
         class limitarsenal_fix {postInit = 1;};
+        class arsenalcontrolls {};
+        class mtpcontrolls {};
+        class jtpcontrolls {};
+        class wtpcontrolls {};
+        class bducontrolls {};
+        class fixcontrolls {};
+        class rotcontrolls {};
+        class pilotcontrolls {};
     };
 };

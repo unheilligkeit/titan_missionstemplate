@@ -135,7 +135,7 @@ class titan_arsenal_pilot_gui
 //================================ fix =========================================
 		class button_fix_save: TITAN_ArsenalButton
 		{
-			idc = fix_save;
+			idc = 4210;
 			text = "FIX-SAVE";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -150,7 +150,7 @@ class titan_arsenal_pilot_gui
 //================================ rot =========================================
 		class button_rot_save: TITAN_ArsenalButton
 		{
-			idc = rot_save;
+			idc = 4200;
 			text = "ROT-SAVE";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -167,7 +167,7 @@ class titan_arsenal_pilot_gui
 //================================ fix =========================================
 		class button_fix: TITAN_ArsenalButton
 		{
-			idc = fix;
+			idc = 4211;
 			text = "FIX";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
@@ -182,7 +182,7 @@ class titan_arsenal_pilot_gui
 //================================ rot =========================================
 		class button_rot: TITAN_ArsenalButton
 		{
-			idc = rot;
+			idc = 4201;
 			text = "ROT";
 			sizeEx = "(((((pixelW / pixelH) min 1.2) / 1.2) / 25) * 1)";
 
