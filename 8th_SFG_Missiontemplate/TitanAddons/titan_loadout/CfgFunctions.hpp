@@ -51,6 +51,7 @@ class titan
         class sw_radiosettings {};
         class tfar_settings {};
         class open_rearm {};
+        class titanarrays {preInit = 1;}
     };
 
 

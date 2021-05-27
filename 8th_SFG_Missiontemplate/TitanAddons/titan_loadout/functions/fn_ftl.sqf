@@ -12,14 +12,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom ["USP_G3C_KP_MC","USP_SOFTSHELL_G3C_VQ_MC","USP_PCU_G3C_KP_MX3_MC","USP_G3C_RS2_KP_MX4_VQ_MC","USP_G3C_RS_KP_MX7_MC","USP_G3C_VQ_MC"];
+        _uniformarray = selectRandom titan_mtp_uniform;
         _unit forceAddUniform _uniformarray ;
 
         _mtp_ftl_helm = profileNamespace getVariable "titan_mtp_ftl_helm";
         if (isNil "_mtp_ftl_helm") then
         {
 
-            _helmearray = selectRandom ["USP_OPSCORE_FASTMTC_MG","USP_OPSCORE_FASTMTC_M","USP_OPSCORE_FASTMTC_C","USP_OPSCORE_FASTMT_CGTW","USP_OPSCORE_FASTMT_FCV_TW","USP_OPSCORE_FASTMTC_CMGTW"];
+            _helmearray = selectRandom titan_mtp_helm;
             _unit addHeadgear _helmearray;
 
         } else {
@@ -32,7 +32,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_mtp_ftl_brille") then
         {
 
-            _brillearray = selectRandom ["","USP_DETCORD_TAN3_SM2","USP_BALACLAVA_MC","USP_DETCORD_SMC5","USP_OAKLEY_SI2_MC_BLK","USP_DETCORD_MC2"];
+            _brillearray = selectRandom titan_mtp_brille;
             _unit addGoggles _brillearray;
 
         } else {
@@ -41,7 +41,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom ["USP_VEST_PLATEFRAME_LOAD2_MC","USP_VEST_STRANDHOGG2_MC","USP_EAGLE_MMAC_FAST_MC","USP_CRYE_JPC_ASLTB","USP_CRYE_CPC_MEDIC_BELT_MC","USP_CRYE_JPC_TLB","USP_CRYE_JPC_MG","USP_CRYE_JPC_DMB","USP_CRYE_JPC_TL","USP_CRYE_JPC_FS","USP_CRYE_JPC_GRB","USP_CRYE_JPC_ASLTB"];
+        _westarray = selectRandom titan_mtp_westen;
         _unit addVest _westarray;
 
         _unit addBackpack "Titan_BAG_FTL_MTP";
@@ -54,14 +54,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom ["USP_G3C_KP_MX3_MCT","USP_G3C_RS_KP_MCT"];
+        _uniformarray = selectRandom titan_jtp_uniform;
         _unit forceAddUniform _uniformarray ;
 
         _jtp_ftl_helm = profileNamespace getVariable "titan_jtp_ftl_helm";
         if (isNil "_jtp_ftl_helm") then
         {
 
-            _helmearray = selectRandom ["USP_OPSCORE_FASTMT_OD_CMGTW","USP_OPSCORE_FASTMTC_TGS_SW"];
+            _helmearray = selectRandom titan_jtp_helm;
             _unit addHeadgear _helmearray;
 
         } else {
@@ -74,7 +74,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_jtp_ftl_brille") then
         {
 
-            _brillearray = selectRandom ["","USP_OAKLEY_SI2_BLK","USP_DETCORD_TAN_UP_SMC2","USP_BALACLAVA_RGR"];
+            _brillearray = selectRandom titan_jtp_brille;
             _unit addGoggles _brillearray;
 
         } else {
@@ -82,7 +82,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
             _unit addGoggles _jtp_ftl_brille;
 
         };
-        _westarray = selectRandom ["USP_CRYE_CPC_MEDIC_BELT_RGR","USP_VEST_STRANDHOGG2_MCT","USP_EAGLE_MBAV_LOAD_MCT","USP_CRYE_CPC_MEDIC_BELT_RGR"];
+        _westarray = selectRandom titan_jtp_westen;
         _unit addVest _westarray;
 
         _unit addBackpack "Titan_BAG_FTL_MTP";
@@ -93,14 +93,14 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom ["USP_OVERWHITE_G3C_MX_VQ_MCA_MC","USP_SOFTSHELL_G3C_GRY_BLK"];
+        _uniformarray = selectRandom titan_wtp_uniform;
         _unit forceAddUniform _uniformarray ;
 
         _wtp_ftl_helm = profileNamespace getVariable "titan_wtp_ftl_helm";
         if (isNil" _wtp_ftl_helm") then
         {
 
-            _helmearray = selectRandom ["USP_OPSCORE_FASTMTC_KTYETI_SW","USP_OPSCORE_FASTMTC_MCA_GT"];
+            _helmearray = selectRandom titan_wtp_helm;
             _unit addHeadgear _helmearray;
 
         } else {
@@ -113,7 +113,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         if (isNil "_wtp_ftl_brille") then
         {
 
-            _brillearray = selectRandom ["","USP_BALACLAVA_WHT","USP_ADVANCER_SF"];
+            _brillearray = selectRandom titan_wtp_brille;
             _unit addGoggles _brillearray;
 
         } else {
@@ -122,7 +122,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom ["USP_EAGLE_MBAV_LOAD_MCA","USP_VEST_STRANDHOGG2_MCA"];
+        _westarray = selectRandom titan_wtp_westen;
         _unit addVest _westarray;
         _unit addBackpack "Titan_BAG_FTL_WTP";
 
