@@ -13,8 +13,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom titan_mtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _mtp_wpn_uniform = profileNamespace getVariable "titan_mtp_wpn_uniform";
+        if (isNil "_mtp_wpn_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_mtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _mtp_wpn_helm = profileNamespace getVariable "titan_mtp_wpn_helm";
         if (isNil "_mtp_wpn_helm") then
@@ -42,8 +52,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom titan_mtp_westen;
-        _unit addVest _westarray;
+        _mtp_wpn_west = profileNamespace getVariable "titan_mtp_wpn_west";
+        if (isNil "_mtp_wpn_west") then
+        {
+
+            _westarray = selectRandom titan_mtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addVest _mtp_wpn_west;
+
+        };
 
         _unit addBackpack "Titan_BAG_WPN_MTP";
 
@@ -55,8 +75,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom titan_jtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _jtp_wpn_uniform = profileNamespace getVariable "titan_jtp_wpn_uniform";
+        if (isNil "_jtp_wpn_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_jtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _jtp_wpn_helm = profileNamespace getVariable "titan_jtp_wpn_helm";
         if (isNil "_jtp_wpn_helm") then
@@ -84,8 +114,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom titan_jtp_westen;
-        _unit addVest _westarray;
+        _jtp_wpn_west = profileNamespace getVariable "titan_jtp_wpn_west";
+        if (isNil "_jtp_wpn_west") then
+        {
+
+            _westarray = selectRandom titan_jtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addVest _jtp_wpn_west;
+
+        };
         _unit addBackpack "Titan_BAG_WPN_MTP";
 
     };
@@ -94,8 +134,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom titan_wtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _wtp_wpn_uniform = profileNamespace getVariable "titan_wtp_wpn_uniform";
+        if (isNil "_wtp_wpn_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_wtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _wtp_wpn_helm = profileNamespace getVariable "titan_wtp_wpn_helm";
         if (isNil" _wtp_wpn_helm") then
@@ -123,8 +173,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom titan_wtp_westen;
-        _unit addVest _westarray;
+        _wtp_wpn_west = profileNamespace getVariable "titan_wtp_wpn_west";
+        if (isNil "_wtp_wpn_west") then
+        {
+
+            _westarray = selectRandom titan_wtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addGoggles _wtp_wpn_west;
+
+        };
         _unit addBackpack "Titan_BAG_WPN_WTP";
 
     };

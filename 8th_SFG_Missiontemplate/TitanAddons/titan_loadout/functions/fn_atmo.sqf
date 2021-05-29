@@ -14,9 +14,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     // MTP
     if (_tarnmuster == 0) then
     {
+        _mtp_atmo_uniform = profileNamespace getVariable "titan_mtp_atmo_uniform";
+        if (isNil "_mtp_atmo_uniform") then
+        {
 
-        _uniformarray = selectRandom titan_mtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+            _uniformarray = selectRandom titan_mtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _mtp_atmo_helm = profileNamespace getVariable "titan_mtp_atmo_helm";
         if (isNil "_mtp_atmo_helm") then
@@ -68,8 +77,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom titan_jtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _jtp_atmo_uniform = profileNamespace getVariable "titan_jtp_atmo_uniform";
+        if (isNil "_jtp_atmo_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_jtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _jtp_atmo_helm = profileNamespace getVariable "titan_jtp_atmo_helm";
         if (isNil "_jtp_atmo_helm") then
@@ -118,8 +137,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom titan_wtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _wtp_atmo_uniform = profileNamespace getVariable "titan_wtp_atmo_uniform";
+        if (isNil "_wtp_atmo_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_wtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _wtp_atmo_helm = profileNamespace getVariable "titan_wtp_atmo_helm";
         if (isNil" _wtp_atmo_helm") then

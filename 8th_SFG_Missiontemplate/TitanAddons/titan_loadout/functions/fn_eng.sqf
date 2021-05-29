@@ -15,8 +15,18 @@ _unit setVariable ["ACE_isEOD",1,true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom titan_mtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _mtp_eng_uniform = profileNamespace getVariable "titan_mtp_eng_uniform";
+        if (isNil "_mtp_eng_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_mtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _mtp_eng_helm = profileNamespace getVariable "titan_mtp_eng_helm";
         if (isNil "_mtp_eng_helm") then
@@ -44,9 +54,18 @@ _unit setVariable ["ACE_isEOD",1,true];
 
         };
 
+        _mtp_eng_west = profileNamespace getVariable "titan_mtp_eng_west";
+        if (isNil "_mtp_eng_west") then
+        {
 
-        _westarray = selectRandom titan_mtp_westen;
-        _unit addVest _westarray;
+            _westarray = selectRandom titan_mtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addVest _mtp_eng_west;
+
+        };
 
         _unit addBackpack "Titan_BAG_ENG_MTP_2";
 
@@ -58,8 +77,18 @@ _unit setVariable ["ACE_isEOD",1,true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom titan_jtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _jtp_eng_uniform = profileNamespace getVariable "titan_jtp_eng_uniform";
+        if (isNil "_jtp_eng_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_jtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _jtp_eng_helm = profileNamespace getVariable "titan_jtp_eng_helm";
         if (isNil "_jtp_eng_helm") then
@@ -87,8 +116,18 @@ _unit setVariable ["ACE_isEOD",1,true];
 
         };
 
-        _westarray = selectRandom titan_jtp_westen;
-        _unit addVest _westarray;
+        _jtp_eng_west = profileNamespace getVariable "titan_jtp_eng_west";
+        if (isNil "_jtp_eng_west") then
+        {
+
+            _westarray = selectRandom titan_jtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addVest _jtp_eng_west;
+
+        };
 
         _unit addBackpack "Titan_BAG_ENG_MTP_2";
 
@@ -98,8 +137,18 @@ _unit setVariable ["ACE_isEOD",1,true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom titan_wtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _wtp_eng_uniform = profileNamespace getVariable "titan_wtp_eng_uniform";
+        if (isNil "_wtp_eng_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_wtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _wtp_eng_helm = profileNamespace getVariable "titan_wtp_eng_helm";
         if (isNil" _wtp_eng_helm") then
@@ -127,10 +176,18 @@ _unit setVariable ["ACE_isEOD",1,true];
 
         };
 
+        _wtp_eng_west = profileNamespace getVariable "titan_wtp_eng_west";
+        if (isNil "_wtp_eng_west") then
+        {
 
+            _westarray = selectRandom titan_wtp_westen;
+            _unit addVest _westarray;
 
-        _westarray = selectRandom titan_wtp_westen;
-        _unit addVest _westarray;
+        } else {
+
+            _unit addGoggles _wtp_eng_west;
+
+        };
 
 
         _unit addBackpack "Titan_BAG_ENG_WTP_2";

@@ -36,7 +36,18 @@ if (isNil "_bdu_brille") then
 
 };
 
-_unit addVest "V_Rangemaster_belt";
+_bdu_start_west = profileNamespace getVariable "titan_bdu_start_west";
+if (isNil "_bdu_start_west") then
+{
+
+    _unit addVest "V_Rangemaster_belt";
+
+} else {
+
+    _unit addVest _bdu_start_west;
+
+};
+
 
 //[_unit,"TITAN_Patch_SF"] call bis_fnc_setUnitInsignia;
 

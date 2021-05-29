@@ -14,8 +14,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 0) then
     {
 
-        _uniformarray = selectRandom titan_mtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _mtp_lrs_uniform = profileNamespace getVariable "titan_mtp_lrs_uniform";
+        if (isNil "_mtp_lrs_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_mtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _mtp_lrr_helm = profileNamespace getVariable "titan_mtp_lrr_helm";
         if (isNil "_mtp_lrr_helm") then
@@ -43,8 +53,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom titan_mtp_westen;
-        _unit addVest _westarray;
+        _mtp_lrs_west = profileNamespace getVariable "titan_mtp_lrs_west";
+        if (isNil "_mtp_lrs_west") then
+        {
+
+            _westarray = selectRandom titan_mtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addVest _mtp_lrs_west;
+
+        };
         _unit addBackpack "USP_PACK_HYDRATION";
 
 
@@ -55,11 +75,21 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 1) then
     {
 
-        _uniformarray = selectRandom titan_jtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _jtp_lrs_uniform = profileNamespace getVariable "titan_jtp_lrs_uniform";
+        if (isNil "_jtp_lrs_uniform") then
+        {
 
-        _jtp_lrr_helm = profileNamespace getVariable "titan_jtp_lrr_helm";
-        if (isNil "_jtp_lrr_helm") then
+            _uniformarray = selectRandom titan_jtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
+
+        _jtp_lrs_helm = profileNamespace getVariable "titan_jtp_lrs_helm";
+        if (isNil "_jtp_lrs_helm") then
         {
 
             _helmearray = selectRandom ["H_Booniehat_tna_F"];
@@ -71,8 +101,8 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _jtp_lrr_brille = profileNamespace getVariable "titan_jtp_lrr_brille";
-        if (isNil "_jtp_lrr_brille") then
+        _jtp_lrs_brille = profileNamespace getVariable "titan_jtp_lrs_brille";
+        if (isNil "_jtp_lrs_brille") then
         {
 
             _brillearray = selectRandom titan_jtp_brille;
@@ -84,8 +114,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom titan_jtp_westen;
-        _unit addVest _westarray;
+        _jtp_lrs_west = profileNamespace getVariable "titan_jtp_lrs_west";
+        if (isNil "_jtp_lrs_west") then
+        {
+
+            _westarray = selectRandom titan_jtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addVest _jtp_lrs_west;
+
+        };
         _unit addBackpack "USP_ZIPON_PANEL_RGR";
 
     };
@@ -94,8 +134,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
     if (_tarnmuster == 2) then
     {
 
-        _uniformarray = selectRandom titan_wtp_uniform;
-        _unit forceAddUniform _uniformarray ;
+        _wtp_lrs_uniform = profileNamespace getVariable "titan_wtp_lrs_uniform";
+        if (isNil "_wtp_lrs_uniform") then
+        {
+
+            _uniformarray = selectRandom titan_wtp_uniform;
+            _unit forceAddUniform _uniformarray ;
+
+        } else {
+
+            _unit forceAddUniform _uniformarray ;
+
+        };
 
         _wtp_lrr_helm = profileNamespace getVariable "titan_wtp_lrr_helm";
         if (isNil" _wtp_lrr_helm") then
@@ -123,8 +173,18 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         };
 
-        _westarray = selectRandom titan_wtp_westen;
-        _unit addVest _westarray;
+        _wtp_lrs_west = profileNamespace getVariable "titan_wtp_lrs_west";
+        if (isNil "_wtp_lrs_west") then
+        {
+
+            _westarray = selectRandom titan_wtp_westen;
+            _unit addVest _westarray;
+
+        } else {
+
+            _unit addGoggles _wtp_lrs_west;
+
+        };
         _unit addBackpack "USP_ZIPON_PANEL_MCA";
 
     };
