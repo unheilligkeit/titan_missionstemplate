@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2949;
+		nextID=2963;
 	};
 	class Camera
 	{
-		pos[]={14607.821,25.809547,16629.334};
-		dir[]={-0.40315065,-0.72749561,0.5551852};
-		up[]={-0.42746362,0.68610948,0.5886659};
-		aside[]={0.80917126,1.5291153e-007,0.58758402};
+		pos[]={14683.911,83.810272,16700.207};
+		dir[]={-0.50560516,-0.69856787,0.50632632};
+		up[]={-0.49360988,0.71554381,0.49431393};
+		aside[]={0.70761049,0,0.70660263};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_Missiontemplate";
+sourceName="titan_missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -1152,7 +1152,7 @@ class Mission
 									dataType="Logic";
 									class PositionInfo
 									{
-										position[]={14665.199,17.91,16776.949};
+										position[]={14665.2,17.91,16776.949};
 										angles[]={0,5.2532139,0};
 									};
 									id=907;
@@ -2647,7 +2647,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -2679,7 +2679,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14607.192,17.911438,16728.543};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
@@ -2804,7 +2804,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -2818,7 +2818,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -3037,7 +3037,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -3069,7 +3069,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14605.534,17.911438,16730.135};
-												angles[]={0,2.3575253,0};
+												angles[]={0,2.3575211,0};
 											};
 											side="West";
 											flags=4;
@@ -3194,7 +3194,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item2
@@ -3208,7 +3208,7 @@ class Mission
 																				"STRING"
 																			};
 																		};
-																		value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+																		value="";
 																	};
 																};
 																class Item3
@@ -3427,7 +3427,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -3978,7 +3978,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -4528,7 +4528,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -4918,7 +4918,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -5308,7 +5308,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -5858,7 +5858,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -6248,7 +6248,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -6638,7 +6638,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -7188,7 +7188,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -7578,7 +7578,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -7968,7 +7968,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -8518,7 +8518,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -9068,7 +9068,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -9458,7 +9458,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -9848,7 +9848,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -10398,7 +10398,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -10788,7 +10788,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -11178,7 +11178,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -11728,7 +11728,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -12118,7 +12118,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -12508,7 +12508,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -13060,7 +13060,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -13610,7 +13610,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -14000,7 +14000,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -14390,7 +14390,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -14940,7 +14940,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -15330,7 +15330,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -15720,7 +15720,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -16270,7 +16270,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -16660,7 +16660,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -17050,7 +17050,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -17599,7 +17599,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -17989,7 +17989,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -18379,7 +18379,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -18773,7 +18773,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_C";
+															value="";
 														};
 													};
 												};
@@ -19297,7 +19297,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -19687,7 +19687,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -20071,7 +20071,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_C";
+															value="";
 														};
 													};
 												};
@@ -20595,7 +20595,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -20985,7 +20985,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -21369,7 +21369,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_C";
+															value="";
 														};
 													};
 												};
@@ -21874,7 +21874,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -22264,7 +22264,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -22648,7 +22648,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_C";
+															value="";
 														};
 													};
 												};
@@ -23172,7 +23172,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -23562,7 +23562,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_Can";
+															value="";
 														};
 													};
 												};
@@ -23980,7 +23980,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -24186,7 +24186,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -24637,7 +24637,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -24844,7 +24844,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -25292,7 +25292,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -25575,7 +25575,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -25802,7 +25802,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -26028,7 +26028,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -26254,7 +26254,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -26480,7 +26480,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -26587,7 +26587,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={14655.699,17.911438,16776.701};
+												position[]={14655.7,17.911438,16776.701};
 												angles[]={0,2.3675389,0};
 											};
 											side="West";
@@ -26706,7 +26706,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -26932,7 +26932,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -27158,7 +27158,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
@@ -27384,7 +27384,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TITAN_Patch_SQ";
+															value="";
 														};
 													};
 												};
