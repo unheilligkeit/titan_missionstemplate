@@ -244,7 +244,6 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "tf_anprc152";
   _unit linkItem "B_UavTerminal";
 
-  _unit addItem "muzzle_snds_acp";
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
   _unit addItem "muzzle_snds_l";
