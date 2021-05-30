@@ -207,35 +207,34 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 // mtp waffen
   if (_tarnmuster == 0) then
   {
-    _unit addWeapon "SMA_HK416GLCQB";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_TAN";
-	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_RDS";
+    _unit addWeapon "SMA_HK416CUSTOMafgB";
+	_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+	_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
   };
 
 // jtp waffen
   if (_tarnmuster == 1) then
   {
-    _unit addWeapon "SMA_HK416GLCQB_ODP";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_RDS";
+    _unit addWeapon "SMA_HK416CUSTOMafgB";
+	_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+	_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
   };
 
 // wtp waffen
   if (_tarnmuster == 2) then
   {
-    _unit addWeapon "SMA_HK416GLCQB_B";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_RDS";
+    _unit addWeapon "SMA_HK416CUSTOMafgB";
+	_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+	_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
   };
 
 
 
 //sec Weapon
-  _unit addWeapon "hgun_Pistol_heavy_01_F";
+  _unit addWeapon "hgun_P07_F";
 
 //Launcher
   _unit addWeapon "launch_MRAWS_green_F";
-  _unit addSecondaryWeaponItem "acc_pointer_IR";
   _unit addWeapon "Rangefinder";
 
 //Items
@@ -243,18 +242,17 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "ItemCompass";
   _unit linkItem "ItemWatch";
   _unit linkItem "tf_anprc152";
-  _unit linkItem "ItemGPS";
+  _unit linkItem "B_UavTerminal";
 
-  _unit addItem "acc_pointer_IR";
   _unit addItem "muzzle_snds_acp";
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
-  _unit addItem "SMA_CMORE";
-  _unit addItem "SMA_BARSKA";
-  _unit addItem "SMA_supp1tan_556";
+  _unit addItem "muzzle_snds_l";
+  _unit addItem "optic_Holosight_blk_F";
+  _unit addItem "SMA_supp2smaB_556";
 
 //Backpack
-  _unit addItem "USP_GPNVG18_TAN";
+  _unit addItem "ACE_NVG_Wide";
   _unit addItem "USP_A2_PATROL_CAP_MC";
 
 

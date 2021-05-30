@@ -205,28 +205,28 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 // mtp waffen
   if (_tarnmuster == 0) then
   {
-    _unit addWeapon "hlc_m249_pip3";
-	_unit addPrimaryWeaponItem "hlc_optic_HensoldtZO_Hi_Docter";
+    _unit addWeapon "sma_minimi_mk3_762tsb";
+	_unit addPrimaryWeaponItem "SMA_BARSKA";
   };
 
 // jtp waffen
   if (_tarnmuster == 1) then
   {
-    _unit addWeapon "hlc_m249_pip3";
-	_unit addPrimaryWeaponItem "hlc_optic_HensoldtZO_Hi_Docter";
+    _unit addWeapon "sma_minimi_mk3_762tsb";
+	_unit addPrimaryWeaponItem "SMA_BARSKA";
   };
 
 // wtp waffen
   if (_tarnmuster == 2) then
   {
-    _unit addWeapon "hlc_m249_pip3";
-	_unit addPrimaryWeaponItem "hlc_optic_HensoldtZO_Hi_Docter";
+    _unit addWeapon "sma_minimi_mk3_762tsb";
+	_unit addPrimaryWeaponItem "SMA_BARSKA";
   };
 
 
 
 //sec Weapon
-  _unit addWeapon "hgun_Pistol_heavy_01_F";
+  _unit addWeapon "hgun_P07_F";
   _unit addWeapon "Rangefinder";
 
 //Items
@@ -238,7 +238,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
   _unit addItem "acc_pointer_IR";
   _unit addItem "sma_gemtech_one_blk";
-  _unit addItem "muzzle_snds_acp";
+  _unit addItem "muzzle_snds_l";
   _unit addItem "ACE_MapTools";
 
 

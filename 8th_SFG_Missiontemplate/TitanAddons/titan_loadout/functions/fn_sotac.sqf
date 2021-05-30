@@ -203,37 +203,33 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 
 // mtp waffen
-  if (_tarnmuster == 0) then
-  {
-    _unit addWeapon "SMA_HK416GLCQB";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_MK18TOP_TAN";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_TAN";
-    _unit addPrimaryWeaponItem "SMA_eotech552_3XDOWN_des"
-  };
+if (_tarnmuster == 0) then
+{
+  _unit addWeapon "SMA_HK416GL";
+    _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+    _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
+};
 
 // jtp waffen
-  if (_tarnmuster == 1) then
-  {
-    _unit addWeapon "SMA_HK416GLCQB_ODP";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_MK18TOP_BLK";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-    _unit addPrimaryWeaponItem "SMA_eotech552_3XUP_wdl"
-  };
+if (_tarnmuster == 1) then
+{
+  _unit addWeapon "SMA_HK416GL";
+      _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+      _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
+};
 
 // wtp waffen
-  if (_tarnmuster == 2) then
-  {
-    _unit addWeapon "SMA_HK416GLCQB_B";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_MK18TOP_BLK";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-    _unit addPrimaryWeaponItem "SMA_eotech552_3XUP_wdl"
-  };
+if (_tarnmuster == 2) then
+{
+  _unit addWeapon "SMA_HK416GL";
+      _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+      _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
+};
 
 
 
 //sec Weapon
-  _unit addWeapon "hgun_ACPC2_F";
-  _unit addHandgunItem "acc_flashlight_pistol";
+  _unit addWeapon "hgun_P07_F";
   _unit addWeapon "Laserdesignator";
 
 //Items
@@ -243,9 +239,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "tf_anprc152";
   _unit linkItem "ItemGPS";
 
-  _unit addItem "acc_pointer_IR";
-  _unit addItem "SMA_supp1tan_556";
-  _unit addItem "muzzle_snds_acp";
+  _unit addItem "SMA_supp2smaB_556";
+  _unit addItem "optic_Holosight_blk_F";
+  _unit addItem "muzzle_snds_l";
   _unit addItem "ACE_Kestrel4500";
   _unit addItem "ACE_microDAGR";
   _unit addItem "ACE_MapTools";

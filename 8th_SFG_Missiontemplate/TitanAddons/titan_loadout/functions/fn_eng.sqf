@@ -204,28 +204,25 @@ _unit setVariable ["ACE_isEOD",1,true];
 // mtp waffen
   if (_tarnmuster == 0) then
   {
-    _unit addWeapon "SMA_M4_GL";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_M4TOP_BLK";
+    _unit addWeapon "SMA_HK416GL";
+	  _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
 	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
-    _unit addPrimaryWeaponItem "SMA_BARSKA";
   };
 
 // jtp waffen
   if (_tarnmuster == 1) then
   {
-    _unit addWeapon "SMA_M4_GL";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_M4TOP_BLK";
-	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
-    _unit addPrimaryWeaponItem "SMA_BARSKA";
+    _unit addWeapon "SMA_HK416GL";
+		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
   };
 
 // wtp waffen
   if (_tarnmuster == 2) then
   {
-    _unit addWeapon "SMA_M4_GL";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_M4TOP_BLK";
-	  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
-    _unit addPrimaryWeaponItem "SMA_BARSKA";
+    _unit addWeapon "SMA_HK416GL";
+		_unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+		_unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
   };
 
 
@@ -240,11 +237,10 @@ _unit setVariable ["ACE_isEOD",1,true];
   _unit linkItem "tf_anprc152";
   _unit linkItem "ItemGPS";
 
-  _unit addItem "acc_pointer_IR";
-  _unit addItem "SMA_Silencer_556";
-  _unit addItem "muzzle_snds_L";
+  _unit addItem "SMA_supp2smaB_556";
+  _unit addItem "optic_Holosight_blk_F";
+  _unit addItem "muzzle_snds_l";
   _unit addItem "ACE_MapTools";
-  _unit addItem "SMA_CMORE";
 
 //Backpack
   _unit addItem "ACE_NVG_Wide";

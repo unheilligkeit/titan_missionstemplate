@@ -203,31 +203,28 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 
 // mtp waffen
-  if (_tarnmuster == 0) then
-  {
-    _unit addWeapon "SMA_MK18_GL";
-	  _unit addPrimaryWeaponItem "SMA_SFPEQ_MK18TOP_TAN";
-	  _unit addPrimaryWeaponItem "SMA_BARSKA";
-    _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_TAN_ARDRDS"
-  };
+if (_tarnmuster == 0) then
+{
+  _unit addWeapon "SMA_HK416CUSTOMafgB";
+  _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
+};
 
 // jtp waffen
-  if (_tarnmuster == 1) then
-  {
-    _unit addWeapon "SMA_MK18afgOD";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_MK18TOP_BLK";
-		_unit addPrimaryWeaponItem "SMA_BARSKA";
-    _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_ARDRDS"
-  };
+if (_tarnmuster == 1) then
+{
+  _unit addWeapon "SMA_HK416CUSTOMafgB";
+  _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
+};
 
 // wtp waffen
-  if (_tarnmuster == 2) then
-  {
-    _unit addWeapon "SMA_MK18afgBLK";
-		_unit addPrimaryWeaponItem "SMA_SFPEQ_MK18TOP_BLK";
-		_unit addPrimaryWeaponItem "SMA_BARSKA";
-    _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER_ARDRDS"
-  };
+if (_tarnmuster == 2) then
+{
+  _unit addWeapon "SMA_HK416CUSTOMafgB";
+  _unit addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
+  _unit addPrimaryWeaponItem "SMA_ELCAN_SPECTER";
+};
 
 
 
@@ -242,9 +239,9 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "tf_anprc152";
   _unit linkItem "ItemGPS";
 
-  _unit addItem "acc_pointer_IR";
-  _unit addItem "SMA_supp1tan_556";
-  _unit addItem "muzzle_snds_acp";
+  _unit addItem "SMA_supp2smaB_556";
+  _unit addItem "optic_Holosight_blk_F";
+  _unit addItem "muzzle_snds_l";
   _unit addItem "ACE_microDAGR";
   _unit addItem "ACE_MapTools";
 

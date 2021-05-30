@@ -27,9 +27,3 @@ for "_i" from 1 to 2 do {_unit addItem "SmokeShellGreen";};
 
 for "_i" from 1 to 5 do {_unit addItem "HandGrenade";};
 for "_i" from 1 to 4 do {_unit addItem "B_IR_Grenade";};
-for "_i" from 1 to 15 do {_unit addItem "1Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 6 do {_unit addItem "1Rnd_Smoke_Grenade_shell";};
-for "_i" from 1 to 6 do {_unit addItem "1Rnd_SmokeRed_Grenade_shell";};
-for "_i" from 1 to 6 do {_unit addItem "UGL_FlareGreen_F";};
-for "_i" from 1 to 6 do {_unit addItem "UGL_FlareRed_F";};
-for "_i" from 1 to 6 do {_unit addItem "UGL_FlareCIR_F";};
