@@ -103,4 +103,6 @@ switch (_loadclass) do
 
 };
 
+[_unit] call ACE_medical_treatment_fnc_fullHealLocal;
+
 systemChat "Rearm Done";
