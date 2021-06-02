@@ -8,6 +8,10 @@ call compileFinal preprocessFileLineNumbers "TitanAddons\init.sqf";
 [muli1] call titan_fnc_open_rearm;
 [muli2] call titan_fnc_open_rearm;
 [muli3] call titan_fnc_open_rearm;
+[little_box_1] call titan_fnc_open_rearm;
+[little_box_2] call titan_fnc_open_rearm;
+[little_box_3] call titan_fnc_open_rearm;
+
 
 //teleport
 Flage addAction ["<t color='#FCB514'> Teleport </t>","[player] call titanMB_fnc_teleport_to_group","",51,true,true,"","", 5];
@@ -15,6 +19,14 @@ Flage addAction ["<t color='#FCB514'> Teleport </t>","[player] call titanMB_fnc_
 //loadout kiste
 loadout_box_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 loadout_box_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+little_box_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+little_box_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+little_box_3 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+muli1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+muli2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+muli3 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+
+
 ASVS_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 ASVS_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 

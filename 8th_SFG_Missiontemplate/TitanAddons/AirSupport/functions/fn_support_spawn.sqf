@@ -66,7 +66,7 @@ for "_i" from 0 to 12 do {
 			case (3): {_veh1 = format ["%1",  (_vehicle select 1) select 0];};
 			case (4): {_veh1 = format ["%1",  (_vehicle select 1) select 1];};
 			case (5): {_veh1 = format ["%1",  (_vehicle select 1) select 2];};
-			case (6): {_veh1 = format ["%1",  (_vehicle select 2) select 3];};
+			case (6): {_veh1 = format ["%1",  (_vehicle select 1) select 3];};
 			case (7): {_veh1 = format ["%1",  (_vehicle select 2) select 0];};
 			case (8): {_veh1 = format ["%1",  (_vehicle select 2) select 1];};
 			case (9): {_veh1 = format ["%1",  (_vehicle select 2) select 2];};
@@ -96,7 +96,7 @@ for "_i" from 0 to 12 do {
 			case (3): {_veh2 = format ["%1",  (_vehicle select 1) select 0];};
 			case (4): {_veh2 = format ["%1",  (_vehicle select 1) select 1];};
 			case (5): {_veh2 = format ["%1",  (_vehicle select 1) select 2];};
-			case (6): {_veh2 = format ["%1",  (_vehicle select 2) select 3];};
+			case (6): {_veh2 = format ["%1",  (_vehicle select 1) select 3];};
 			case (7): {_veh2 = format ["%1",  (_vehicle select 2) select 0];};
 			case (8): {_veh2 = format ["%1",  (_vehicle select 2) select 1];};
 			case (9): {_veh2 = format ["%1",  (_vehicle select 2) select 2];};
@@ -127,7 +127,7 @@ for "_i" from 0 to 12 do {
 			case (3): {_veh3 = format ["%1",  (_vehicle select 1) select 0];};
 			case (4): {_veh3 = format ["%1",  (_vehicle select 1) select 1];};
 			case (5): {_veh3 = format ["%1",  (_vehicle select 1) select 2];};
-			case (6): {_veh3 = format ["%1",  (_vehicle select 2) select 3];};
+			case (6): {_veh3 = format ["%1",  (_vehicle select 1) select 3];};
 			case (7): {_veh3 = format ["%1",  (_vehicle select 2) select 0];};
 			case (8): {_veh3 = format ["%1",  (_vehicle select 2) select 1];};
 			case (9): {_veh3 = format ["%1",  (_vehicle select 2) select 2];};
@@ -158,7 +158,7 @@ for "_i" from 0 to 12 do {
 			case (3): {_veh4 = format ["%1",  (_vehicle select 1) select 0];};
 			case (4): {_veh4 = format ["%1",  (_vehicle select 1) select 1];};
 			case (5): {_veh4 = format ["%1",  (_vehicle select 1) select 2];};
-			case (6): {_veh4 = format ["%1",  (_vehicle select 2) select 3];};
+			case (6): {_veh4 = format ["%1",  (_vehicle select 1) select 3];};
 			case (7): {_veh4 = format ["%1",  (_vehicle select 2) select 0];};
 			case (8): {_veh4 = format ["%1",  (_vehicle select 2) select 1];};
 			case (9): {_veh4 = format ["%1",  (_vehicle select 2) select 2];};
