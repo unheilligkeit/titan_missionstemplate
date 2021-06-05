@@ -1,13 +1,20 @@
+
+// Init
 tarnmuster = "param_tarnmuster" call BIS_fnc_getParamValue;
 [player] call titan_fnc_mff_changeuniform;
 [player] call titan_fnc_diver_changeuniform;
 call compile preprocessFileLineNumbers "TitanAddons\AirSupport\init_air_support.sqf";
 call compileFinal preprocessFileLineNumbers "TitanAddons\init.sqf";
-
+[] spawn
+{
+	waitUntil {time > 1};
+	[true] spawn titanMB_fnc_player_addtozeus;
+};
 // rearm boxen
 [muli1] call titan_fnc_open_rearm;
 [muli2] call titan_fnc_open_rearm;
 [muli3] call titan_fnc_open_rearm;
+
 [little_box_1] call titan_fnc_open_rearm;
 [little_box_2] call titan_fnc_open_rearm;
 [little_box_3] call titan_fnc_open_rearm;
@@ -19,13 +26,14 @@ Flage addAction ["<t color='#FCB514'> Teleport </t>","[player] call titanMB_fnc_
 //loadout kiste
 loadout_box_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 loadout_box_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+
 little_box_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 little_box_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 little_box_3 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
+
 muli1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 muli2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 muli3 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
-
 
 ASVS_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
 ASVS_2 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];

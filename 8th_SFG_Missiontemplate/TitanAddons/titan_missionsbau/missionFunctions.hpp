@@ -17,6 +17,7 @@ class titanMB
     {
         file = "TitanAddons\titan_missionsbau\client";
         class teleport_to_group {};
+        class player_addtozeus {};
     };
 
 };
