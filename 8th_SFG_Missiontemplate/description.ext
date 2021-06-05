@@ -22,12 +22,20 @@ overviewText = "SI VIS PACEM PARA BELLUM";
 overviewTextLocked = "SI VIS PACEM PARA BELLUM";
 DisabledAI = true;
 loadScreen = "Bilder\MissionPicture.jpg";
-overviewPicture = "Bilder\MissionPicture.jpg";
 enableDebugConsole = 1;
 onLoadIntroTime = false;
 onLoadMissionTime = false;
 skipLobby = false;
-joinUnassigned = false;
+joinUnassigned = true;
+
+corpseManagerMode = 1;
+corpseLimit = 10;
+corpseRemovalMinTime = 10;
+corpseRemovalMaxTime = 1200;
+wreckManagerMode = 1;
+wreckLimit = 4;
+wreckRemovalMinTime = 10;
+wreckRemovalMaxTime = 1800;
 
 /* ================ Includes =============== */
 
