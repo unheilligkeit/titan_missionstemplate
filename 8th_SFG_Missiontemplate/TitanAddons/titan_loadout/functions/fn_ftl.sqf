@@ -255,3 +255,4 @@ if (_tarnmuster == 2) then
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "ftl"];
+missionNamespace setVariable ["titan_special_loadout", "none"];

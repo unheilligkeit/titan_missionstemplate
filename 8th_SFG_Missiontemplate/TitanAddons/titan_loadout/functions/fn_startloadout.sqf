@@ -9,7 +9,7 @@ params ["_unit"];
 [_unit] call titan_fnc_loadoutremove;
 
 
-_unit forceAddUniform "U_B_CombatUniform_mcam";
+_unit forceAddUniform "USP_SOFTSHELL_G3C_MX_RGR_MC";
 
 _bdu_helm = profileNamespace getVariable "titan_bdu_start_helm";
 if ( isNil "_bdu_helm" ) then
@@ -51,8 +51,8 @@ if (isNil "_bdu_start_west") then
 
 //[_unit,"TITAN_Patch_SF"] call bis_fnc_setUnitInsignia;
 
-_unit addWeapon "hgun_Pistol_heavy_01_F";
-for "_i" from 1 to 2 do {_unit addItem "11Rnd_45ACP_Mag";};
+_unit addWeapon "hgun_P07_F";
+for "_i" from 1 to 2 do {_unit addItem "16Rnd_9x21_red_Mag";};
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
@@ -66,3 +66,4 @@ for "_i" from 1 to 2 do {_unit addItem "Chemlight_green";};
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 
 missionNamespace setVariable ["titan_loadout_class", "start"];
+missionNamespace setVariable ["titan_special_loadout", "start"];

@@ -253,3 +253,4 @@ _unit setVariable ["ACE_isEOD",1,true];
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "eng"];
+missionNamespace setVariable ["titan_special_loadout", "none"];

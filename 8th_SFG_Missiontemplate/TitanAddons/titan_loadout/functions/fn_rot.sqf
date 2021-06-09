@@ -104,3 +104,4 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
 missionNamespace setVariable ["titan_loadout_class", "rot"];
+missionNamespace setVariable ["titan_special_loadout", "none"];

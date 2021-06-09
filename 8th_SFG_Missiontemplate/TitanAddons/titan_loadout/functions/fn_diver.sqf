@@ -29,7 +29,6 @@ _unit setVariable ["ace_medical_medicClass", 0, true];
 
 //sec Weapon
   _unit addWeapon "hgun_P07_F";
-  _unit addHandgunItem "muzzle_snds_L";
   _unit addWeapon "Rangefinder";
 
 //Items
@@ -38,10 +37,10 @@ _unit setVariable ["ace_medical_medicClass", 0, true];
   _unit linkItem "ItemWatch";
   _unit linkItem "tf_anprc152";
   _unit linkItem "ItemGPS";
+  _unit linkItem "ACE_NVG_Wide";
 
   _unit addItem "ACE_MapTools";
   _unit addItem "ACE_microDAGR";
-  _unit addItem "ACE_NVG_Wide";
   _unit addItem "ACE_Clacker";
 
 
@@ -52,3 +51,5 @@ _unit setVariable ["ace_medical_medicClass", 0, true];
 [_unit, 1, ["ACE_SelfActions"], diver_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
+
+missionNamespace setVariable ["titan_special_loadout", "diver"];

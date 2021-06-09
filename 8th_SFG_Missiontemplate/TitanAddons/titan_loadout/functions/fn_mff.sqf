@@ -148,8 +148,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
 
 //sec Weapon
-  _unit addWeapon "hgun_ACPC2_F";
-  _unit addHandgunItem "acc_flashlight_pistol";
+  _unit addWeapon "hgun_P07_F";
 
 //Items
   _unit linkItem "ItemMap";
@@ -157,6 +156,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
   _unit linkItem "ACE_Altimeter";
   _unit linkItem "tf_anprc152";
   _unit linkItem "ItemGPS";
+  _unit linkItem "ACE_NVG_Wide";
 
 [_unit] call titan_fnc_addmedicalequipment;
 
@@ -167,3 +167,5 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 [_unit, 1, ["ACE_SelfActions"], mff_changeuniform] call ace_interact_menu_fnc_addActiontoObject;
 
 _unit action ["SwitchWeapon", _unit, _unit, 100];
+
+missionNamespace setVariable ["titan_special_loadout", "mff"];

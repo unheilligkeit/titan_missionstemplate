@@ -45,7 +45,7 @@ switch (_loadclass) do
 
     case ("ptl"): {
         chlight = "Chemlight_Red" createVehicle [0,0,0];
-			  chlight attachTo [player,[0,-0.073,0.056],"LeftShoulder"];
+		chlight attachTo [player,[0,-0.073,0.056],"LeftShoulder"];
     };
 
     case ("rct"): {
