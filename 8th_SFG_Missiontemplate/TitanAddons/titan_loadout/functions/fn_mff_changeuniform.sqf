@@ -11,7 +11,7 @@ params ["_unit"];
 
 mff_changeuniform = [
 	"mff_changeuniform",
-	"Falschirm Uniform tauschen",
+	"Fallschirm Uniform tauschen",
 	"",
 	{
 
