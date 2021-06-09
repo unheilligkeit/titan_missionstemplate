@@ -16,8 +16,10 @@ mff_changeuniform = [
 	{
 
 		params ["_unit"];
+		//params ["_unit"];
 		_loadclass = missionNamespace getVariable "titan_loadout_class";
 		_chemlightoff = missionNamespace getVariable "titan_mff_chemlite_off";
+		_tarnmuster = "param_tarnmuster" call BIS_fnc_getParamValue;
 
 		if (_unit call zade_boc_fnc_chestpack != "") then
 		{
@@ -30,62 +32,62 @@ mff_changeuniform = [
 		{
 				case ("atmo"):
 				{
-						[_unit] call titan_fnc_atmo;
+						[_unit, _tarnmuster] call titan_fnc_atmo;
 				};
 
 				case ("cct"):
 				{
-						[_unit] call titan_fnc_cct;
+						[_unit, _tarnmuster] call titan_fnc_cct;
 				};
 
 				case ("eng"):
 				{
-						[_unit] call titan_fnc_eng;
+						[_unit, _tarnmuster] call titan_fnc_eng;
 				};
 
 				case ("ftl"):
 				{
-					[_unit] call titan_fnc_ftl;
+						[_unit, _tarnmuster] call titan_fnc_ftl;
 				};
 
 				case ("lrr"):
 				{
-						[_unit] call titan_fnc_lrr;
+						[_unit, _tarnmuster] call titan_fnc_lrr;
 				};
 
 				case ("lrs"):
 				{
-						[_unit] call titan_fnc_lrs;
+						[_unit, _tarnmuster] call titan_fnc_lrs;
 				};
 
 				case ("ptl"):
 				{
-						[_unit] call titan_fnc_ptl;
+						[_unit, _tarnmuster] call titan_fnc_ptl;
 				};
 
 				case ("rct"):
 				{
-						[_unit] call titan_fnc_rct;
+						[_unit, _tarnmuster] call titan_fnc_rct;
 				};
 
 				case ("rifle"):
 				{
-						[_unit] call titan_fnc_rifle;
+						[_unit, _tarnmuster] call titan_fnc_rifle;
 				};
 
 				case ("sql"):
 				{
-						[_unit] call titan_fnc_sql;
+						[_unit, _tarnmuster] call titan_fnc_sql;
 				};
 
 				case ("sotac"):
 				{
-						[_unit] call titan_fnc_sotac;
+						[_unit, _tarnmuster] call titan_fnc_sotac;
 				};
 
 				case ("wpn"):
 				{
-						[_unit] call titan_fnc_wpn;
+						[_unit, _tarnmuster] call titan_fnc_wpn;
 				};
 
 		};

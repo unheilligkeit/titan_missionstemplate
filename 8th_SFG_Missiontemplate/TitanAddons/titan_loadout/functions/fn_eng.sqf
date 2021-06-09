@@ -1,7 +1,5 @@
 params ["_unit","_tarnmuster"];
 
-
-
 [_unit] call titan_fnc_loadoutremove;
 
 // Ace medic deklaration

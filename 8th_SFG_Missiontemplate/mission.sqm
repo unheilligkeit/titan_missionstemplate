@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3121;
+		nextID=3181;
 	};
 	class Camera
 	{
-		pos[]={14681.521,59.182167,16712.027};
-		dir[]={-0.6311,-0.47425023,0.61396974};
-		up[]={-0.33996513,0.88034213,0.3307361};
-		aside[]={0.69736528,2.818706e-007,0.71682161};
+		pos[]={14677.438,45.990074,16711.953};
+		dir[]={-0.63418365,-0.34662703,0.69113016};
+		up[]={-0.23435447,0.938003,0.2553983};
+		aside[]={0.73681015,1.4901161e-008,0.67609978};
 	};
 };
 binarizationWanted=0;
-sourceName="titan_missiontemplate";
+sourceName="8th_SFG_Missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
@@ -852,7 +852,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14645.375,18.098724,16737.25};
-								angles[]={-0,3.9362061,0};
+								angles[]={0,3.9362061,0};
 							};
 							side="Empty";
 							flags=4;
@@ -932,7 +932,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14644.375,18.098724,16736};
-								angles[]={-0,3.9362061,0};
+								angles[]={0,3.9362061,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1012,7 +1012,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14643.25,18.098724,16734.75};
-								angles[]={-0,3.9362061,0};
+								angles[]={0,3.9362061,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1116,7 +1116,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={14635.625,17.91,16731};
-										angles[]={-0,3.9784606,0};
+										angles[]={0,3.9784606,0};
 									};
 									id=92;
 									type="ModuleRespawnPosition_F";
