@@ -4,13 +4,15 @@
 class loadout_gui
 {
 	idd = 1000;
-	movingenable = 0;
+	movingenable = 1;
+
 
 	class ControlsBackground
 	{
 		class home_screen: RscPicture
 		{
 			idc = 1201;
+			moving = 1;
 			text = "TitanAddons\titan_loadout\loadout_gui\picture\TITAN_Loadout_Panel.paa";
 
 			x = 0 - pixelW * pixelGrid * 5;

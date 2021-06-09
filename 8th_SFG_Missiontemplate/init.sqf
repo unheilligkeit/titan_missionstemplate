@@ -11,8 +11,8 @@ call compileFinal preprocessFileLineNumbers "TitanAddons\init.sqf";
 	[true] spawn titanMB_fnc_player_addtozeus;
 };
 
-schild1 setObjectTextureGlobal [0, "\bilder\loadout.paa"];
-schild2 setObjectTextureGlobal [0, "\bilder\arsenal.paa"];
+schild1 setObjectTextureGlobal [0, "bilder\loadout.paa"];
+schild2 setObjectTextureGlobal [0, "bilder\arsenal.paa"];
 // rearm boxen
 [muli1] call titan_fnc_open_rearm;
 [muli2] call titan_fnc_open_rearm;
