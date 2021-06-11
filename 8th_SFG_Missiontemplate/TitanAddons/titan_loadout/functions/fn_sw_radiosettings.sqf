@@ -17,6 +17,10 @@ _fqSW =[
 	"78","78.1","78.2","78.3","78.4","80.1","81","88"
 ];
 
+_fqSQ =[
+	"80.1", "80.2", "80.3", "80.4", "80.5", "80.6"
+];
+
 switch true do {
 	case (_groupID isEqualTo "B TITAN_1_0"):
   {
@@ -48,7 +52,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 3],
-    	format ["%1", _fqSW select 2],
+    	format ["%1", _fqSQ select 1],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 6],
     	format ["%1", _fqSW select 10],
@@ -61,7 +65,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 4],
-    	format ["%1", _fqSW select 2],
+    	format ["%1", _fqSQ select 1],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 6],
     	format ["%1", _fqSW select 10],
@@ -74,7 +78,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 5],
-    	format ["%1", _fqSW select 2],
+    	format ["%1", _fqSQ select 1],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 6],
     	format ["%1", _fqSW select 10],
@@ -100,7 +104,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 7],
-    	format ["%1", _fqSW select 6],
+    	format ["%1", _fqSQ select 2],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 1],
     	format ["%1", _fqSW select 10],
@@ -113,7 +117,7 @@ switch true do {
   {
     _freq =[
     	format ["%1", _fqSW select 8],
-    	format ["%1", _fqSW select 6],
+    	format ["%1", _fqSQ select 2],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 1],
     	format ["%1", _fqSW select 10],
@@ -126,7 +130,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 9],
-    	format ["%1", _fqSW select 6],
+    	format ["%1", _fqSQ select 2],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 1],
     	format ["%1", _fqSW select 10],
@@ -152,7 +156,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 11],
-    	format ["%1", _fqSW select 10],
+    	format ["%1", _fqSQ select 3],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 1],
     	format ["%1", _fqSW select 10],
@@ -165,7 +169,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 12],
-    	format ["%1", _fqSW select 10],
+    	format ["%1", _fqSQ select 3],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 1],
     	format ["%1", _fqSW select 10],
@@ -178,7 +182,7 @@ switch true do {
   {
     _freq = [
     	format ["%1", _fqSW select 13],
-    	format ["%1", _fqSW select 10],
+    	format ["%1", _fqSQ select 3],
     	format ["%1", _fqSW select 0],
     	format ["%1", _fqSW select 1],
     	format ["%1", _fqSW select 10],
