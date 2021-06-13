@@ -53,7 +53,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
         _westarray = selectRandom titan_mtp_westen;
         _unit addVest _westarray;
 
-        _unit addBackpack "COS_PARACHUTE";
+        _unit addBackpack "B_Parachute";
 
 
     };
@@ -97,7 +97,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         _westarray = selectRandom titan_jtp_westen;
         _unit addVest _westarray;
-        _unit addBackpack "COS_PARACHUTE";
+        _unit addBackpack "B_Parachute";
 
     };
 
@@ -139,7 +139,7 @@ _unit setVariable ["ace_medical_medicClass", 1, true];
 
         _westarray = selectRandom titan_wtp_westen;
         _unit addVest _westarray;
-        _unit addBackpack "COS_PARACHUTE";
+        _unit addBackpack "B_Parachute";
 
     };
 
