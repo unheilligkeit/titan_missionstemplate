@@ -52,6 +52,7 @@ class titan
         class tfar_settings {};
         class open_rearm {};
         class titanarrays {preInit = 1;}
+        class addacefreqchange {};
     };
 
 

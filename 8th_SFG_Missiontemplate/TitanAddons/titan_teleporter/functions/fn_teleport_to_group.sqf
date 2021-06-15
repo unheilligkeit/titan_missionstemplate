@@ -131,3 +131,5 @@ if (vehicle _target != _target) then {
         _success = true;
     };
 };
+
+systemChat "Teleport done";

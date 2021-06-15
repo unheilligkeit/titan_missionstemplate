@@ -1,6 +1,8 @@
 
 [player] call titan_fnc_startloadout;
+[Player] call titan_fnc_addacefreqchange;
 ["Preload"] spawn BIS_fnc_arsenal;
+
 
 [player] execVM "TitanAddons\titan_missionsbau\briefing.sqf";
 
