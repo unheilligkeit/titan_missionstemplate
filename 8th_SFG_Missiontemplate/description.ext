@@ -45,6 +45,7 @@ class CfgFunctions
 	#include "TitanAddons\titan_loadout\CfgFunctions.hpp"
 	#include "TitanAddons\AirSupport\CfgFunctionAirSupport.hpp"
 	#include "TitanAddons\SotacTabletSystem\functions.hpp"
+    #include "TitanAddons\titan_teleporter\teleportFunctions.hpp"
 };
 
 class RscTitles {

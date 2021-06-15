@@ -24,7 +24,8 @@ schild2 setObjectTextureGlobal [0, "bilder\arsenal.paa"];
 
 
 //teleport
-Flage addAction ["<t color='#FCB514'> Teleport </t>","[player] call titanMB_fnc_teleport_to_group","",51,true,true,"","", 5];
+[Flage] call titanTP_fnc_ace_teleport;
+//Flage addAction ["<t color='#FCB514'> Teleport </t>","[player] call titanMB_fnc_teleport_to_group","",51,true,true,"","", 5];
 
 //loadout kiste
 loadout_box_1 addAction ["<t color='#FCB514'> Loadout </t>","call titan_fnc_loadoutgui","", 100, false, True, "", "", 5];
@@ -67,3 +68,23 @@ if ( _hcvar == 1 ) then {
 // Tasks
 
 if (isServer) then {execVM "TitanAddons\titan_missionsbau\task.sqf"};
+
+
+// freefall test
+[
+    free,											// Object the action is attached to
+    "HALO TRANING",										// Title of the action
+    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_takeOff1_ca.paa",	// Idle icon shown on screen
+    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_takeOff1_ca.paa",	// Progress icon shown on screen
+    "_this distance _target < 10",						// Condition for the action to be shown
+    "_caller distance _target < 10",						// Condition for the action to progress
+    {},													// Code executed when action starts
+    {},													// Code executed on every progress tick
+    { _caller setPos [14703.2,16721.4,6000] },				// Code executed on completion
+    {},													// Code executed on interrupted
+    [],													// Arguments passed to the scripts as _this select 3
+    3,													// Action duration [s]
+    10,													// Priority
+    false,												// Remove on completion
+    false												// Show in unconscious state
+] call BIS_fnc_holdActionAdd;

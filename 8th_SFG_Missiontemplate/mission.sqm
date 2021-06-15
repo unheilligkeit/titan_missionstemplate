@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1288;
+		nextID=1299;
 	};
 	class LayerIndexProvider
 	{
@@ -20,20 +20,20 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14677.438,45.990074,16711.953};
-		dir[]={-0.63418365,-0.34662703,0.69113016};
-		up[]={-0.23435447,0.938003,0.2553983};
-		aside[]={0.73681015,1.4901161e-008,0.67609978};
+		pos[]={14630.914,27.032166,16742.844};
+		dir[]={-0.22309177,-0.4797228,-0.84864002};
+		up[]={-0.12197611,0.87739676,-0.46400255};
+		aside[]={-0.96718919,-1.8470018e-007,0.2542513};
 	};
 };
 binarizationWanted=0;
-sourceName="8th_SFG_Missiontemplate";
+sourceName="titan_missiontemplate";
 addons[]=
 {
 	"A3_Weapons_F_Ammoboxes",
 	"ace_cargo",
 	"A3_Modules_F_Multiplayer",
-	"A3_Structures_F_Mil_Flags",
+	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Drones_F_Soft_F_Gamma_UGV_01",
 	"A3_Characters_F_Common",
 	"A3_Signs_F",
@@ -49,9 +49,9 @@ addons[]=
 	"FIR_PilotCrewPack_US",
 	"ace_nouniformrestrictions",
 	"ace_parachute",
-	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Structures_F_Mil_Cargo"
+	"A3_Structures_F_Mil_Cargo",
+	"A3_Structures_F_Mil_Helipads"
 };
 class AddonsMetaData
 {
@@ -81,8 +81,8 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -184,15 +184,15 @@ class AddonsMetaData
 		};
 		class Item18
 		{
-			className="A3_Structures_F";
-			name="Arma 3 - Buildings and Structures";
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item19
 		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -263,7 +263,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=34;
+		items=37;
 		class Item0
 		{
 			dataType="Layer";
@@ -1225,7 +1225,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={14631.5,21.886805,16733};
+										position[]={14631.5,18.485363,16733};
 										angles[]={0,2.3631585,0};
 									};
 									side="Empty";
@@ -1234,15 +1234,15 @@ class Mission
 									{
 										name="Flage";
 									};
-									id=93;
-									type="Flag_US_F";
+									id=1298;
+									type="Land_InfoStand_V1_F";
 								};
 							};
 							id=91;
 						};
 					};
 					id=83;
-					atlOffset=137.3381;
+					atlOffset=137.55371;
 				};
 				class Item2
 				{
@@ -2331,7 +2331,7 @@ class Mission
 				};
 			};
 			id=0;
-			atlOffset=-0.27502441;
+			atlOffset=-0.27513123;
 		};
 		class Item1
 		{
@@ -2546,7 +2546,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="call{This setGroupId [""TITAN_1_0""];}";
+						init="call{This setGroupId [""TITAN_1_0""];" \n "titan_1_0 = group this;}";
 						name="z1";
 						description="Platoonlead@TITAN_1_0";
 						isPlayer=1;
@@ -2609,7 +2609,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{This setGroupId [""TITAN_1_0""];}";
+						init="call{This setGroupId [""TITAN_1_0""];" \n "titan_1_0 = group this;}";
 						description="CCT";
 						isPlayable=1;
 					};
@@ -2671,7 +2671,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_1_0""];}";
+						init="call{This setGroupId [""TITAN_1_0""];" \n "titan_1_0 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -2733,7 +2733,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_1_0""];}";
+						init="call{This setGroupId [""TITAN_1_0""];" \n "titan_1_0 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -2795,7 +2795,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_1_0""];}";
+						init="call{This setGroupId [""TITAN_1_0""];" \n "titan_1_0 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -2857,7 +2857,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_1_0""];}";
+						init="call{This setGroupId [""TITAN_1_0""];" \n "titan_1_0 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -2939,7 +2939,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{This setGroupId [""TITAN_2_0""];}";
+						init="call{This setGroupId [""TITAN_2_0""];" \n "titan_2_0 = group this;}";
 						name="z2";
 						description="SQL@TITAN_2_0";
 						isPlayable=1;
@@ -3002,7 +3002,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{This setGroupId [""TITAN_2_0""];}";
+						init="call{This setGroupId [""TITAN_2_0""];" \n "titan_2_0 = group this;}";
 						description="SOTAC";
 						isPlayable=1;
 					};
@@ -3077,7 +3077,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_2_1""];}";
+						init="call{This setGroupId [""TITAN_2_1""];" \n "titan_2_1 = group this;}";
 						description="FTL@TITAN_2_1";
 						isPlayable=1;
 					};
@@ -3138,7 +3138,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_1""];}";
+						init="call{This setGroupId [""TITAN_2_1""];" \n "titan_2_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3199,7 +3199,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_1""];}";
+						init="call{This setGroupId [""TITAN_2_1""];" \n "titan_2_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3260,7 +3260,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_1""];}";
+						init="call{This setGroupId [""TITAN_2_1""];" \n "titan_2_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3335,7 +3335,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_2_2""];}";
+						init="call{This setGroupId [""TITAN_2_2""];" \n "titan_2_2 = group this;}";
 						description="FTL@TITAN_2_2";
 						isPlayable=1;
 					};
@@ -3396,7 +3396,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_2""];}";
+						init="call{This setGroupId [""TITAN_2_2""];" \n "titan_2_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3457,7 +3457,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_2""];}";
+						init="call{This setGroupId [""TITAN_2_2""];" \n "titan_2_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3518,7 +3518,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_2""];}";
+						init="call{This setGroupId [""TITAN_2_2""];" \n "titan_2_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3593,7 +3593,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_2_3""];}";
+						init="call{This setGroupId [""TITAN_2_3""];" \n "titan_2_3 = group this;}";
 						description="FTL@TITAN_2_3";
 						isPlayable=1;
 					};
@@ -3654,7 +3654,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_3""];}";
+						init="call{This setGroupId [""TITAN_2_3""];" \n "titan_2_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3715,7 +3715,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_3""];}";
+						init="call{This setGroupId [""TITAN_2_3""];" \n "titan_2_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3776,7 +3776,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_2_3""];}";
+						init="call{This setGroupId [""TITAN_2_3""];" \n "titan_2_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -3851,7 +3851,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{This setGroupId [""TITAN_3_0""];}";
+						init="call{This setGroupId [""TITAN_3_0""];" \n "titan_3_0 = group this;}";
 						name="z3";
 						description="SQL@TITAN_3_0";
 						isPlayable=1;
@@ -3914,7 +3914,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{This setGroupId [""TITAN_3_0""];}";
+						init="call{This setGroupId [""TITAN_3_0""];" \n "titan_3_0 = group this;}";
 						description="SOTAC";
 						isPlayable=1;
 					};
@@ -3989,7 +3989,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_3_1""];}";
+						init="call{This setGroupId [""TITAN_3_1""];" \n "titan_3_1 = group this;}";
 						description="FTL@TITAN_3_1";
 						isPlayable=1;
 					};
@@ -4050,7 +4050,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_1""];}";
+						init="call{This setGroupId [""TITAN_3_1""];" \n "titan_3_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4111,7 +4111,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_1""];}";
+						init="call{This setGroupId [""TITAN_3_1""];" \n "titan_3_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4172,7 +4172,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_1""];}";
+						init="call{This setGroupId [""TITAN_3_1""];" \n "titan_3_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4247,7 +4247,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_3_2""];}";
+						init="call{This setGroupId [""TITAN_3_2""];" \n "titan_3_2 = group this;}";
 						description="FTL@TITAN_3_2";
 						isPlayable=1;
 					};
@@ -4308,7 +4308,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_2""];}";
+						init="call{This setGroupId [""TITAN_3_2""];" \n "titan_3_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4369,7 +4369,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_2""];}";
+						init="call{This setGroupId [""TITAN_3_2""];" \n "titan_3_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4430,7 +4430,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_2""];}";
+						init="call{This setGroupId [""TITAN_3_2""];" \n "titan_3_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4505,7 +4505,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_3_3""];}";
+						init="call{This setGroupId [""TITAN_3_3""];" \n "titan_3_3 = group this;}";
 						description="FTL@TITAN_3_3";
 						isPlayable=1;
 					};
@@ -4566,7 +4566,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_3""];}";
+						init="call{This setGroupId [""TITAN_3_3""];" \n "titan_3_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4627,7 +4627,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_3""];}";
+						init="call{This setGroupId [""TITAN_3_3""];" \n "titan_3_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4688,7 +4688,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_3_3""];}";
+						init="call{This setGroupId [""TITAN_3_3""];" \n "titan_3_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -4763,7 +4763,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{This setGroupId [""TITAN_4_0""];}";
+						init="call{This setGroupId [""TITAN_4_0""];" \n "titan_4_0 = group this;}";
 						name="z4";
 						description="SQL@TITAN_4_0";
 						isPlayable=1;
@@ -4826,7 +4826,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{This setGroupId [""TITAN_4_0""];}";
+						init="call{This setGroupId [""TITAN_4_0""];" \n "titan_4_0 = group this;}";
 						description="SOTAC";
 						isPlayable=1;
 					};
@@ -4901,7 +4901,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_4_1""];}";
+						init="call{This setGroupId [""TITAN_4_1""];" \n "titan_4_1 = group this;}";
 						description="FTL@TITAN_4_1";
 						isPlayable=1;
 					};
@@ -4962,7 +4962,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_1""];}";
+						init="call{This setGroupId [""TITAN_4_1""];" \n "titan_4_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5023,7 +5023,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_1""];}";
+						init="call{This setGroupId [""TITAN_4_1""];" \n "titan_4_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5084,7 +5084,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_1""];}";
+						init="call{This setGroupId [""TITAN_4_1""];" \n "titan_4_1 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5159,7 +5159,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_4_2""];}";
+						init="call{This setGroupId [""TITAN_4_2""];" \n "titan_4_2 = group this;}";
 						description="FTL@TITAN_4_2";
 						isPlayable=1;
 					};
@@ -5220,7 +5220,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_2""];}";
+						init="call{This setGroupId [""TITAN_4_2""];" \n "titan_4_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5281,7 +5281,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_2""];}";
+						init="call{This setGroupId [""TITAN_4_2""];" \n "titan_4_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5342,7 +5342,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_2""];}";
+						init="call{This setGroupId [""TITAN_4_2""];" \n "titan_4_2 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5417,7 +5417,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{This setGroupId [""TITAN_4_3""];}";
+						init="call{This setGroupId [""TITAN_4_3""];" \n "titan_4_3 = group this;}";
 						description="FTL@TITAN_4_3";
 						isPlayable=1;
 					};
@@ -5478,7 +5478,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_3""];}";
+						init="call{This setGroupId [""TITAN_4_3""];" \n "titan_4_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5539,7 +5539,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_3""];}";
+						init="call{This setGroupId [""TITAN_4_3""];" \n "titan_4_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5600,7 +5600,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{This setGroupId [""TITAN_4_3""];}";
+						init="call{This setGroupId [""TITAN_4_3""];" \n "titan_4_3 = group this;}";
 						description="Operator";
 						isPlayable=1;
 					};
@@ -5675,7 +5675,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{This setGroupId [""SQUADRON""];}";
+						init="call{This setGroupId [""SQUADRON""];" \n "SQUADRON = group this;}";
 						name="z5";
 						description="Squadronelead@SQUADRON";
 						isPlayable=1;
@@ -7526,7 +7526,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14671.5,21.7854,16809.75};
-				angles[]={0,5.5515418,0};
+				angles[]={0,5.472806,0};
 			};
 			side="Empty";
 			flags=5;
@@ -7535,6 +7535,54 @@ class Mission
 			};
 			id=1281;
 			type="Land_Cargo_HQ_V1_F";
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14623.246,18.498323,16726.678};
+				angles[]={0,2.4981945,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="free";
+			};
+			id=1294;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14772.125,17.91,16660.5};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1295;
+			type="Land_JumpTarget_F";
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15361.375,18.009367,17275.5};
+				angles[]={6.2525291,0,0.0053377044};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1296;
+			type="Land_JumpTarget_F";
 		};
 	};
 };
