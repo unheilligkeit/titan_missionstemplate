@@ -2,65 +2,66 @@ private _success = false;
 private _targetInVehicle = false;
 private _unit = _this select 0;
 private _targetgroup = _this select 1;
+private _group = nil;
+
 switch (_targetgroup) do {
     case ("TITAN_1_0"): {
-        [_unit] joinSilent titan_1_0;
+        _group = titan_1_0;
     };
 
     case ("TITAN_2_0"): {
-        [_unit] joinSilent titan_2_0;
+        _group = titan_2_0;
     };
 
     case ("TITAN_2_1"): {
-        [_unit] joinSilent titan_2_1;
+        _group = titan_2_1;
     };
 
     case ("TITAN_2_2"): {
-        [_unit] joinSilent titan_2_2;
+        _group = titan_2_2;
     };
 
     case ("TITAN_2_3"): {
-        [_unit] joinSilent titan_2_3;
+        _group = titan_2_3;
     };
 
     case ("TITAN_3_0"): {
-        [_unit] joinSilent titan_3_0;
+        _group = titan_3_0;
     };
 
     case ("TITAN_3_1"): {
-        [_unit] joinSilent titan_3_1;
+        _group = titan_3_1;
     };
 
     case ("TITAN_3_2"): {
-        [_unit] joinSilent titan_3_2;
+        _group = titan_3_2;
     };
 
     case ("TITAN_3_3"): {
-        [_unit] joinSilent titan_3_3;
+        _group = titan_3_3;
     };
 
     case ("TITAN_4_0"): {
-        [_unit] joinSilent titan_4_0;
+        _group = titan_4_0;
     };
 
     case ("TITAN_4_1"): {
-        [_unit] joinSilent titan_4_1;
+        _group = titan_4_1;
     };
 
     case ("TITAN_4_2"): {
-        [_unit] joinSilent titan_4_2;
+        _group = titan_4_2;
     };
 
     case ("TITAN_4_3"): {
-        [_unit] joinSilent titan_4_3;
+        _group = titan_4_3;
     };
 
     case ("SQUADRON"): {
-        [_unit] joinSilent SQUADRON;
+        _group = SQUADRON;
     };
 };
 
-private _group = group _unit;
 private _leader = leader _group;
 private _target = _leader;
 
