@@ -66,7 +66,7 @@ private _leader = leader _group;
 private _target = _leader;
 
 
-if ((_unit == _leader) && ((count (units _group)) < 2)) exitWith {
+if ((count (units _group)) < 2) exitWith {
 	    //hint "Du bist alleine in der Gruppe";
 };
 
