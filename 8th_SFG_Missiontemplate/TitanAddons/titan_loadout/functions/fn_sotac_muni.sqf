@@ -39,3 +39,4 @@ for "_i" from 1 to 3 do {_unit addItem "SmokeShellYellow";};
 for "_i" from 1 to 3 do {_unit addItem "SmokeShellGreen";};
 for "_i" from 1 to 4 do {_unit addItem "ACE_M14";};
 for "_i" from 1 to 1 do {_unit addItem "ACE_SpraypaintRed";};
+for "_i" from 1 to 10 do {_unit addItem "Laserbatteries";};
