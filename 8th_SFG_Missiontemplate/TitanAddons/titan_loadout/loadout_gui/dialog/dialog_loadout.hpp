@@ -1,24 +1,19 @@
-#include "\a3\3DEN\UI\macros.inc"
-#include "\a3\3DEN\UI\macroexecs.inc"
-
 class loadout_gui
 {
 	idd = 1000;
-	movingenable = 1;
-
+	movingenable = 0;
 
 	class ControlsBackground
 	{
 		class home_screen: RscPicture
 		{
 			idc = 1201;
-			moving = 1;
 			text = "TitanAddons\titan_loadout\loadout_gui\picture\TITAN_Loadout_Panel.paa";
 
-			x = 0 - pixelW * pixelGrid * 5;
-			y = 0 - pixelH * pixelGrid * 20;
-			w = pixelW * pixelGrid * 86;
-			h = pixelH * pixelGrid * 90;
+			x = 0.265 * safezoneW + safezoneX;
+			y = 0.035 * safezoneH + safezoneY;
+			w = 0.465 * SafeZoneW;
+			h = 0.855 * SafeZoneH;
 
 		};
 
@@ -28,10 +23,10 @@ class loadout_gui
 			idc = -1;
 			text = "TitanAddons\titan_loadout\loadout_gui\picture\TITANLogo.paa";
 
-			x = 0 + pixelW * pixelGrid * 7;
-			y = 0;
-			w = pixelW * pixelGrid * 30;
-			h = pixelH * pixelGrid * 10;
+			x = 0.335 * safezoneW + safezoneX;
+			y = 0.230 * safezoneH + safezoneY;
+			w = 0.150 * safezoneW;
+			h = 0.090 * safezoneH;
 
 		};
 
@@ -41,10 +36,10 @@ class loadout_gui
 			idc = -1;
 			text = "LOADOUT";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0;
-			w = pixelW * pixelGrid * 30;
-			h = pixelH * pixelGrid * 12;
+			x = 0.405 * safezoneW + safezoneX;
+			y = 0.230 * safezoneH + safezoneY;
+			w = 0.314 * safezoneW;
+			h = 0.090 * safezoneH;
 
 		};
 
@@ -55,11 +50,10 @@ class loadout_gui
 			idc = -1;
 			text = "COMMAND";
 
-
-			x = 0 + pixelW * pixelGrid * 8;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.335 * safezoneW + safezoneX;
+			y = 0.335 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 
 		// Box 2
@@ -68,10 +62,10 @@ class loadout_gui
 			idc = -1;
 			text = "CONTROL";
 
-			x = 0 + pixelW * pixelGrid * 22;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.412 * safezoneW + safezoneX;
+			y = 0.335 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 
 		// Box 3
@@ -80,10 +74,10 @@ class loadout_gui
 			idc = -1;
 			text = "OPERATOR";
 
-			x = 0 + pixelW * pixelGrid * 36;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.489 * safezoneW + safezoneX;
+			y = 0.335 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 
 		// Box 4
@@ -92,10 +86,10 @@ class loadout_gui
 			idc = -1;
 			text = "RECON";
 
-			x = 0 + pixelW * pixelGrid * 50;
-			y = 0 + pixelH * pixelGrid * 12;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.566 * safezoneW + safezoneX;
+			y = 0.335 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 
 		// Box 5
@@ -104,10 +98,10 @@ class loadout_gui
 			idc = -1;
 			text = "PILOT";
 
-			x = 0 + pixelW * pixelGrid * 8;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.335 * safezoneW + safezoneX;
+			y = 0.470 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 
 		// Box 6
@@ -116,10 +110,10 @@ class loadout_gui
 			idc = -1;
 			text = "STS";
 
-			x = 0 + pixelW * pixelGrid * 22;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.412 * safezoneW + safezoneX;
+			y = 0.470 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 /*
 		// Box 7
@@ -128,10 +122,10 @@ class loadout_gui
 			idc = -1;
 			text = "";
 
-			x = 0 + pixelW * pixelGrid * 36;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.485 * safezoneW + safezoneX;
+			y = 0.470 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 */
 		// Box 8
@@ -140,10 +134,10 @@ class loadout_gui
 			idc = -1;
 			text = "SPECIAL";
 
-			x = 0 + pixelW * pixelGrid * 50;
-			y = 0 + pixelH * pixelGrid * 27;
-			w = pixelW * pixelGrid * 13;
-			h = pixelH * pixelGrid * 14;
+			x = 0.566 * safezoneW + safezoneX;
+			y = 0.470 * safezoneH + safezoneY;
+			w = 0.070 * safezoneW;
+			h = 0.130 * safezoneH;
 		};
 
 	};
@@ -158,10 +152,10 @@ class loadout_gui
 			idc = 0005;
 			//text = "CLOSE";
 
-			x = 0 + pixelW * pixelGrid * 72;
-			y = 0 + pixelH * pixelGrid * 40;
-			w = pixelW * pixelGrid * 3;
-			h = pixelH * pixelGrid * 3;
+			x = 0.678 * safezoneW + safezoneX;
+			y = 0.596 * safezoneH + safezoneY;//0.660
+			w = "(40.0000000000003 / 1920) * SafeZoneW";
+			h = "(40 / 1080) * SafeZoneH";
 			tooltip = "CLOSE";
 			action = "closeDialog 1000;";
 		};
@@ -172,10 +166,10 @@ class loadout_gui
 			idc = 0006;
 			text = "REARM";
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 42.5;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.618 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player] call titan_fnc_loadout_rearm";
 		};
@@ -186,13 +180,12 @@ class loadout_gui
 			idc = 0007;
 			text = "SET RADIO";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 42.5;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.493 * safezoneW + safezoneX;
+			y = 0.618 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "player remoteExec ['titan_fnc_sw_radiosettings', player];";
-
 		};
 
 //============================================= UNIFORM BUTTONS ==========================
@@ -202,10 +195,10 @@ class loadout_gui
 			idc = 0101;
 			text = "PTL";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 14;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.355 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action =  "[player,tarnmuster] call titan_fnc_ptl; call titan_fnc_buttoncontroll";
 		};
@@ -215,10 +208,10 @@ class loadout_gui
 			idc = 0102;
 			text = "SQL";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 17;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.380 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_sql; call titan_fnc_buttoncontroll";
 		};
@@ -228,10 +221,10 @@ class loadout_gui
 			idc = 0103;
 			text = "FTL";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 20;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.405 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_ftl; call titan_fnc_buttoncontroll";
 		};
@@ -241,10 +234,10 @@ class loadout_gui
 			idc = 0104;
 			text = "EMPTY";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 23;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.430 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -256,10 +249,10 @@ class loadout_gui
 			idc = 0201;
 			text = "CCT";
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 14;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.355 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_cct; call titan_fnc_buttoncontroll";
 		};
@@ -269,10 +262,10 @@ class loadout_gui
 			idc = 0202;
 			text = "SOTAC";
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 17;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.380 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_sotac; call titan_fnc_buttoncontroll";
 		};
@@ -282,10 +275,10 @@ class loadout_gui
 			idc = 0203;
 			text = "";
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 20;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.405 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -295,10 +288,10 @@ class loadout_gui
 			idc = 0204;
 			text = "";
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 23;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.430 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -310,10 +303,10 @@ class loadout_gui
 			idc = 0301;
 			text = "ENG";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 14;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.493 * safezoneW + safezoneX;
+			y = 0.355 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_eng; call titan_fnc_buttoncontroll";
 		};
@@ -323,10 +316,10 @@ class loadout_gui
 			idc = 0302;
 			text =  "WPN";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 17;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.493 * safezoneW + safezoneX;
+			y = 0.380 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_wpn; call titan_fnc_buttoncontroll";
 		};
@@ -336,10 +329,10 @@ class loadout_gui
 			idc = 0303;
 			text = "ATMO";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 20;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.493 * safezoneW + safezoneX;
+			y = 0.405 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_atmo; call titan_fnc_buttoncontroll";
 		};
@@ -348,10 +341,10 @@ class loadout_gui
 			idc = 0304;
 			text = "RIFLE";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 23;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.493 * safezoneW + safezoneX;
+			y = 0.430 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_rifle; call titan_fnc_buttoncontroll";
 		};
@@ -363,10 +356,10 @@ class loadout_gui
 			idc = 0401;
 			text = "RCT";
 
-			x = 0 + pixelW * pixelGrid * 51;
-			y = 0 + pixelH * pixelGrid * 14;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.570 * safezoneW + safezoneX;
+			y = 0.355 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_rct; call titan_fnc_buttoncontroll";
 		};
@@ -375,10 +368,10 @@ class loadout_gui
 			idc = 0402;
 			text = "LRR";
 
-			x = 0 + pixelW * pixelGrid * 51;
-			y = 0 + pixelH * pixelGrid * 17;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.570 * safezoneW + safezoneX;
+			y = 0.380 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_lrr; call titan_fnc_buttoncontroll";
 		};
@@ -387,10 +380,10 @@ class loadout_gui
 			idc = 0403;
 			text = "LRS";
 
-			x = 0 + pixelW * pixelGrid * 51;
-			y = 0 + pixelH * pixelGrid * 20;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.570 * safezoneW + safezoneX;
+			y = 0.405 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_lrs; call titan_fnc_buttoncontroll";
 		};
@@ -400,10 +393,10 @@ class loadout_gui
 			idc = 0404;
 			text = "";
 
-			x = 0 + pixelW * pixelGrid * 51;
-			y = 0 + pixelH * pixelGrid * 23;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.570 * safezoneW + safezoneX;
+			y = 0.430 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -415,10 +408,10 @@ class loadout_gui
 			idc = 0501;
 			text = "FIX";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 29;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.490 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_fix; call titan_fnc_buttoncontroll";
 		};
@@ -428,10 +421,10 @@ class loadout_gui
 			idc = 0502;
 			text = "ROT";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 32;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.515 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_rot; call titan_fnc_buttoncontroll";
 		};
@@ -441,10 +434,10 @@ class loadout_gui
 			idc = 0503;
 			text = "";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 35;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.540 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -454,10 +447,10 @@ class loadout_gui
 			idc = 0504;
 			text = "";
 
-			x = 0 + pixelW * pixelGrid * 9;
-			y = 0 + pixelH * pixelGrid * 38;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.339 * safezoneW + safezoneX;
+			y = 0.565 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -470,10 +463,10 @@ class loadout_gui
 			text = "STS IN";
 
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 29;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.490 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[] call TitanAddons_SotacTabletSystem_fnc_loginPilot; call titan_fnc_buttoncontroll";
 		};
@@ -484,10 +477,10 @@ class loadout_gui
 			text = "STS OUT";
 
 
-			x = 0 + pixelW * pixelGrid * 23;
-			y = 0 + pixelH * pixelGrid * 32;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.515 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[name player] call TitanAddons_SotacTabletSystem_fnc_logoutPilot; call titan_fnc_buttoncontroll";
 		};
@@ -500,10 +493,10 @@ class loadout_gui
 			idc = 0701;
 			text = "DIVER";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 29;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.490 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "";
 		};
@@ -513,10 +506,10 @@ class loadout_gui
 			idc = 0702;
 			text = "MFF";
 
-			x = 0 + pixelW * pixelGrid * 37;
-			y = 0 + pixelH * pixelGrid * 32;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.416 * safezoneW + safezoneX;
+			y = 0.515 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = ""
 		};
@@ -528,10 +521,10 @@ class loadout_gui
 			text = "DIVER";
 
 
-			x = 0 + pixelW * pixelGrid * 51;
-			y = 0 + pixelH * pixelGrid * 29;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.570 * safezoneW + safezoneX;
+			y = 0.490 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_diver; closeDialog 1000;";
 		};
@@ -542,10 +535,10 @@ class loadout_gui
 			text = "MFF";
 
 
-			x = 0 + pixelW * pixelGrid * 51;
-			y = 0 + pixelH * pixelGrid * 32;
-			w = pixelW * pixelGrid * 11;
-			h = pixelH * pixelGrid * 2.5;
+			x = 0.570 * safezoneW + safezoneX;
+			y = 0.515 * safezoneH + safezoneY;
+			w = 0.062 * safezoneW;
+			h = 0.022 * safezoneH;
 
 			action = "[player,tarnmuster] call titan_fnc_mff; closeDialog 1000;";
 		};
